@@ -1,0 +1,34 @@
+\documentclass[12pt, oneside]{book}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage[para]{footmisc}
+\usepackage[shortlabels]{enumitem}   
+
+\geometry{
+ a4paper,
+ total={170mm,245mm},
+ left=25mm,
+ top=25mm,
+ }
+
+\title{Oposición TIC}
+\author{Pont}
+\date{}
+
+\begin{document}
+    \setlength\parindent{0pt}
+
+    \maketitle
+    \tableofcontents
+
+    \input{Temario/General/index}
+    \input{Temario/Específicos/index}
+    \newpage
+    \input{meta/Glosario.tex}
+    \newpage
+    \input{meta/Siglas.tex}
+    \newpage
+    \input{meta/leyes.tex}
+\end{document}

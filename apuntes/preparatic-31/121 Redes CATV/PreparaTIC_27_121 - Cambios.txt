@@ -1,0 +1,9 @@
+CONTENIDOS: 
+	- Nuevo documento: "PreparaTIC_27_120 - Resumen express"
+
+DOCUMENTACIÓN ADICIONAL:
+Se elmina el siguiente fichero (no corresponde al tema):
+	- "CCN-CERT BP-05-16 Dispositivos IoT.pdf"
+
+ESQUEMAS:
+Se añaden esquemas en formato xmind ("PreparaTIC_27_120 - Esquema.xmind") y pdf ("PreparaTIC_27_120 - Esquema.pdf") en sus correspondientes carpetas

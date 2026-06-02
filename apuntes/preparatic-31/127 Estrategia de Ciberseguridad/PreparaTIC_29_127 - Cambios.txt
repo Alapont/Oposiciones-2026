@@ -1,0 +1,10 @@
+TEMA 126 - CIBERSEGURIDAD. LA ESTRATEGIA NACIONAL DE CIBERSEGURIDAD
+
+Cambios realizados:
+
+- reorganización de apartados para coincidir con los 5 capitulos de la Estrategia Nacional de Ciberseguridad
+- Actualización de normativa y referencias en apartado 3 sobre el Marco jurídico relevante
+
+- asociación de Líneas de Acción a Objetivos en el Resumen express
+- actualización de documentación en carpeta de documentación adicional
+- creación de hoja de referencias

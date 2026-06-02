@@ -1,0 +1,10 @@
+TEMA 101 - Gestión de cambios, configuración, versiones y entornos - CAMBIOS 2020
+
+- Resumen:
+    	Se crea un nuevo resumen amplio.
+- Resumen Express:
+	Se crea un nuevo resumen express.
+- Material extra:
+	Sin cambios.
+- Esquemas:
+	Sin cambios. 

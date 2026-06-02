@@ -1,0 +1,6 @@
+- Se genera documento .md para una edición más sencilla e independiente del formato de la plantilla.
+- Se actualizan enlaces a datos estadísticos
+- Se actualizan herramientas de desarrollo de aplicaciones híbridas
+- Se elimina Xamarin.Forms y se incluye Ionic en las herramientas multiplataforma
+- Se elimina app Radar Covid y se incluye ALERTCOPS
+

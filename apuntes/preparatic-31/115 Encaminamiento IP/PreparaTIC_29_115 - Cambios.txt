@@ -1,0 +1,21 @@
+Resumen:
+ - Se corrige error en la imagen de la cabecera de IPv4
+ - Se amplía explicación de algún campo relevante de la cabcera
+ - Se incorpora ejemplo sobre direcciones de red y broadcast
+ - Se añade imagen de la cabecera de ICMP
+ - Se añade párrafo con breve descripción de ARP
+ - Se añaden tipos de asignación de direcciones DHCP
+ - Se añaden items sobre características IPv6
+
+
+Resumen express:
+ - Se añade nuevo
+
+Doc adicional:
+ - Se añade documento sobre IP
+
+Preparatic29
+
+Resumen:
+- Se añaden algunas características a los distintos protocolos
+- Se incluye un apartado de convivencia IPv4-IPv6

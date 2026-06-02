@@ -1,0 +1,15 @@
+CONTENIDOS: 
+	- Nuevo documento: "PreparaTIC_27_091 - Resumen"
+	- Nuevo documento: "PreparaTIC_27_091 - Resumen express"
+	- Fichero de referencias actualizado con el número de tema correcto: "PreparaTIC_27_091 - Referencias"
+
+DOCUMENTACIÓN ADICIONAL:
+Se trasladan a esta subcarpeta, desde la sección de "Contenidos" los siguientes ficheros:
+	- "Diseño Arquitectura Del Software.pdf"
+	- "Diseño Arquitectonico.pdf"
+	- "Diagramas de Despliegue.pdf"
+
+ESQUEMAS:
+Se actualizan los esquemas con los siguientes ficheros:
+	- Esquema actualizado del tema (coherente con el resumen) en formato xmind: "PreparaTIC_27_091 - Esquema"
+	- Esquema actualizado del tema (coherente con el resumen) en formato pdf: "PreparaTIC_27_091 - Esquema"

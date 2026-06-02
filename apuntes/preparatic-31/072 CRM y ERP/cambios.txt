@@ -1,0 +1,4 @@
+realizado resumen express
+revisado resumen, realizando cambios menores
+Sin cambios en los esquemas
+

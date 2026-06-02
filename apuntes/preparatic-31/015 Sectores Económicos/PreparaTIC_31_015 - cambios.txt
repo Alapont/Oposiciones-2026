@@ -1,0 +1,32 @@
+Modificaciones sobre el tema y resumen 015:
+
+- Apartado 2: Peso de los distintos sectores en la economía:
+	- Se actualizan los datos y el link de la distribución de los ocupados por sector económico y sexo (2025T4)
+	- Se actualiza la tabla de distribución porcentual de los ocupados de los dos últimos años y se mueve al lado de la del último trimestre.
+- Apartado 3: Sector Primario
+	- Agricultura: se comprueba que los datos de Eurostat proporcionados son de 2023 y se añade la fecha para facilitar las futuras actualizaciones.
+	- Agricultura: Se actualiza el dato de la encuesta "España en Cifras" sobre agricultura ecológica.
+	- Agricultura: Se comprueba que los link de la PAC son válidos.
+	- Pesca: se añade dato sobre la producción acuícola.
+	- Ganadería: se cambian los verbos a pasado en el párrafo que habla de la pandemia y el confinamiento.
+	- Las TIC: se añade párrafo con información sacada del Observatorio de la Digitalización del Sector Agroalimentario
+- Apartado 4: Sector Secundario
+	- Industria: se actualizan los valores de España en cifras 2025 y la Encuesta Industrial de Productos a 2024
+	- Energía: se actualizan los valores al informe de 2024. Además, se cambia la figura de Red Eléctrica a la que muestra la evolución anual de generación de energía renovable para facilitar la comprensión de los datos.
+	- Energía: se modifica brevemente el apartado 4.2.3 añadiendo cosas de actualidad
+	- Construcción: se modifica el Informe sobre el sector de la Construcción de 2023 a 2024
+- Apartado 5: Sector Servicios
+	- Se modifica el valor del porcentaje de ocupados a 2025T4
+	- Comercio: se cambia Mincotur por Mintur
+	- Comercio (impacto TIC): se añade breve párrafo sobre la IA
+	- Comunicaciones: se dato sobre la red de fibra óptica y se añade el link a los indicadores de España Digital
+	- Turismo: se modifica el dato relativo al PIB de 2024 y se añade link al INE
+- Apartado 6: 
+	- Se modifica el título a "6. Estrategias de modernización económica", ya que antes solo estaba centrado en el PRTR
+	- Se añaden dos sub apartados, el antiguo centrado en el PRTR (no se modifica) y uno nuevo centrado en "España Crece"
+
+- Se actualiza el QR al de P31.
+
+
+Adicionalmente, se actualiza el cuadro resumen de los indicadores coyunturales de industria y turismo a febrero de 2026.
+

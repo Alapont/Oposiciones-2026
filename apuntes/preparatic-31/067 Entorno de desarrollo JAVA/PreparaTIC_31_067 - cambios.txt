@@ -1,0 +1,8 @@
+TEMA 067 - Entorno de desarrollo JAVA
+
+- Revisión general de los textos y nueva redacción
+- Extensión del índice para adecuarlo al nuevo contenido
+- Revisión de las tablas de versiones eliminando lo menos interesante para el test
+- Añadido de algunos detalles que ha aparecido en preguntas de test
+- Actualización de frameworks y productos comerciales y opersource
+- Transformación apartado spring para adecuarse a novedades y springboot

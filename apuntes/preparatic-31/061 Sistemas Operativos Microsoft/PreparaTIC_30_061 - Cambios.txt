@@ -1,0 +1,13 @@
+CONTENIDO
+
+Resumen
+- Corrección de errores tipográficos y de estilo.
+- Se añade exFAT en los Sistemas de Archivos en el apartado de Conceptos Básicos.
+- Se añade Fluent Design System como lenguaje de diseño de la interfaz de Windows 10 y 11.
+- Se añade Windows 11.
+- Se añade Windows Server 2022.
+- Se añade Windows Server 2025.
+
+Resumen Express
+- Se añade Windows 11 y Windows Server 2022.
+- Se añade exFAT en los Sistemas de Archivos en el apartado de Conceptos Básicos.

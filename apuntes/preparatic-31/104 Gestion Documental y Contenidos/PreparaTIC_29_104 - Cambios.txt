@@ -1,0 +1,16 @@
+﻿
+Cambios en el resumen:
+
+.- Se añade indice.
+.- Se realizan cambios de formato en el documento.
+.- Se cambia el orden de algunos de los apartados.
+.- Se complementa tablas comparativas entre los distintos gestores documentales.
+.- Se añaden nuevo gestores de contenidos.
+.- Se añaden soluciones reutilizables de la AGE relacionadas con la gestión documental.
+.- Se añade apartado de sindicación.
+
+
+
+Cambios en el Resumen Express:
+
+.- Se indica que las aplicaciones de las AAPP como Inside no son gestores documentales per se, sino herramientas relacionadas con la gestión documental. En el caso de Archive se usa para el archivado definitivo de expedientes y documentos electrónicos

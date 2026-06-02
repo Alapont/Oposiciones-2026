@@ -1,0 +1,21 @@
+Resumen
+- Se revisan erratas en el texto y se actualizan algunos elementos, como las licencias compatibles con la EUPLv1.2.
+- Se amplían las definiciones básicas y contexto del SW libre y del SW de código abierto.
+- Se redactan de una forma menos esquemática los tipos de licencia.
+- Se incluyen las licencias Creative Commons.
+- Se elimina el antiguo punto 3 "Consecuencias legales del modelo de SW libre" y sus ideas se agrupan en otros puntos.
+- Se eliminan el antiguo punto 6 "SW libre en la Administración" y el antiguo punto 7 "Estándares" y se ubica mucho de su contenido en el nuevo punto 3 "Principales actores e intereses", dentro del subapartado "SW libre en la Administración".
+- Dentro del nuevo apartado 4, "Proyectos de SW libre", se reduce considerablemente el contenido técnico demasiado específico y pormenorizado de los subapartados "KDE", "GNOME" y "Apache".
+- Se incluyen una página final de acrónimos.
+
+Resumen express
+- Se actualiza y se articula en relación al resumen "largo".
+- Se incluyen las licencias Creative Commons.
+
+Referencias
+- Se incluye un documento de referencias bibliográficas.
+
+Doc adicional
+- Se incluye una infografía de las licencias Creative Commons.
+- Se incluye una revisión más concreta de las 10 directrices de la OSD.
+- Se incluye el artículo "Del SW libre al conocimiento libre: argumentos de carácter técnico para aspirar a una sociedad digital universal, igualitaria y libre", de José Luis González Sánchez (2007).

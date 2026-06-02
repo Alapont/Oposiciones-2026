@@ -1,0 +1,88 @@
+﻿Preparatic 31
+
+Versión 31.1
+-------------
+
+Resumen:
+* Punto 3.3. "Preprocesado"
+  - Se añade una breve descripción.
+  - Se explica con más detalle el proceso de limpieza.
+  - Se añade la etapa de integración.
+  - Se añade la etapa de codificación de variables categóricas.
+  - Se añade la etapa de selección de características.
+  - Se añade la etapa de construcción de características.
+  - Se explica el concepto de dataset y las librerias de Python más utilizadas.
+* Punto 3.5. "Principales técnicas de regresión"
+  - Se añade la regresión lineal múltiple.
+  - Se añade la regresión polinómica.
+  - Se añaden regresiones con regularización (Ridge y Lasso).
+  - Se introduce la métrica MSE (Error Cuadrático Medio).
+* Punto 3.6. "Principales técnicas de agrupamiento"
+  - Se añade el desplazamiento de media.
+  - Se introducen el método del Codo (Elbow Method) y el Coeficiente de Silueta.
+* Punto 4.1. "Componentes"
+  - Se estructura en comprensión y generación del lenguaje natural.
+* Punto 5. "Visión artificial"
+  - Se introduce el concepto de Redes Neuronales Convolucionales.
+  - Se añade la aplicación de clasificación de imágenes.
+  - Se introducen los modelos de reconocimiento de objetos YOLO y SSD.
+  - Se añade la aplicación de reconocimiento de caracteres.
+  - Se añaden sectores industriales impactados.
+  - Se introduce el proceso de entrenamiento de un modelo de inteligencia artificial.
+* Punto 6. "Sistemas expertos"
+  - Se amplia la descripción.
+  - Se añade la interfaz de usuario como componente.
+  - Se amplia el apartado de herramientas de Desarrollo.
+* Punto 7. "Robótica"
+  - Se amplian los planes en los que el SAI se encuentra encuadrado.
+* Punto 8.1. "Tipos básicos de agente inteligente"
+  - Se añaden agentes cooperativos, competitivos, de interfaz, móviles y de información.
+* Punto 8.4. "Sistemas de comunicación y coordinación"
+  - Se añade el sistema de coordinación por estigmergia.
+* Punto 8.5. "Lenguajes de comunicación entre agentes"
+  - Se añade el lenguaje FIPA-ACL, SL y OWL.
+* Punto 8.7. "Protocolos de interoperabilidad y conectividad"
+  - Se añade el capitulo completo.
+* Punto 9.1. "LLMs (Large language models)"
+  - Se añade el capitulo completo.
+* Punto 9.2. "Asistentes de IA generativa"
+  - Se añade el capitulo completo.
+* Punto 11. "Reglamento de Inteligencia Artificial (RIA)"
+  - Se añade el capitulo completo.
+
+
+Resumen Express:
+* Punto 3.3. "Preprocesado"
+  - Se añaden nuevas etapas.
+* Punto 3.5. "Principales técnicas de regresión"
+  - Se añaden nuevas técnicas.
+* Punto 3.6. "Principales técnicas de agrupamiento"
+  - Se añaden nuevas técnicas.
+* Punto 4.1. "Componentes"
+  - Se añaden nuevos componentes.
+* Punto 5. "Visión artificial"
+  - Se introduce el concepto de Redes Neuronales Convolucionales.
+  - Se añade la aplicación de clasificación de imágenes.
+  - Se introducen los modelos de reconocimiento de objetos YOLO y SSD.
+  - Se añade la aplicación de reconocimiento de caracteres.
+  - Se añaden sectores industriales impactados.
+  - Se introduce el proceso de entrenamiento de un modelo de inteligencia artificial.
+* Punto 6. "Sistemas expertos"
+  - Se añade la interfaz de usuario como componente.
+* Punto 8.1. "Tipos básicos de agente inteligente"
+  - Se añaden agentes cooperativos, competitivos, de interfaz, móviles y de información.
+* Punto 8.3. "Sistemas de comunicación y coordinación"
+  - Se añade el sistema de coordinación por estigmergia.
+* Punto 8.4. "Lenguajes de comunicación entre agentes"
+  - Se añade el capitulo completo.
+* Punto 8.5. "Protocolos de interoperabilidad y conectividad"
+  - Se añade el capitulo completo.
+* Punto 9.1. "LLMs (Large language models)"
+  - Se añade el capitulo completo.
+* Punto 9.2. "Asistentes de IA generativa"
+  - Se añade el capitulo completo.
+* Punto 11. "Reglamento de Inteligencia Artificial (RIA)"
+  - Se añade el capitulo completo.
+
+Documentación adicional:
+-

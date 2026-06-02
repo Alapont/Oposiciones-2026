@@ -1,0 +1,7 @@
+﻿PreparaTIC_29_110 - Cambios
+
+	* Cambios de formato
+	* Se introduce gráfico con las primitivivas en el apartado 3.- COMUNICACIÓN: SERVICIOS E INTERFACES
+	* Modificado el punto 4 con dos gráficos añadidos de paralelismo con VOIP y TCP/IP
+
+

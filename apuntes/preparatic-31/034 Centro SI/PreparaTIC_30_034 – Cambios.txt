@@ -1,0 +1,5 @@
+﻿* Definición de DevOps
+* Se añade la definición básica de los tipos de mantenimiento de Métrica v3. 
+* Se añaden comentarios de Seguridad. 
+* Se añade definición de ITIL. 
+* Mención al nuevo RD 1125/2024, que deroga el RD 806/2014.

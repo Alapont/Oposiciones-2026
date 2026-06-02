@@ -1,0 +1,6 @@
+Parte del Tema nuevo de Preparatic 29
+Se aclaran las definiciones de blockchain y las características y se añade un gráfico de la cadena de bloques
+Se actualizan las versiones de los estándares ISO
+Se actualiza estado y partipantes de las iniciativas Públicas
+Se reestructura el formato del documento
+

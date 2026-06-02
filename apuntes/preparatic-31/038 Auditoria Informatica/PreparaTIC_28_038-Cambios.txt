@@ -1,0 +1,6 @@
+- Introducción de la definición de qué es una auditoría y tipos de controles básicos que se inspeccionan.
+- Se añade en las referencias de MAGERIT, la estrategia adecuada de gestión del riesgo.
+- Se añaden las referencias de protección de datos en materia penal.
+- Se incluyen en la explicación de la guía 802, cuando un informe puede ser favorable o no y los plazos.
+
+Se ha modificado en consecuencia tanto el resumen como el resumen express.

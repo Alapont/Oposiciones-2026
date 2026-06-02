@@ -1,0 +1,14 @@
+Versión 31
+- Correcciones tipográficas
+- Se actualiza la tabla 1.1.1 Discos magnéticos con la velocidad teórica máxima de SAS4.
+- Se actualiza la tabla 1.2 Cintas magnéticas con la última versión de LTO.
+- Se añade capítulo 2.1.2 Características de una red NAS.
+- Se actualiza última versión SAS en tabla e 1.1.1 Discos magnéticos.
+- Se añade NVMe over Fabrics (NVMe-oF) en 2.1.1 Características de una red san
+- Se añade concepto WORM en 2.2 arquitectura de backup
+- Se añade en punto  4 de últimas tendencias: 
+    - Infraestructura hiperconvergente (HCI)
+    - Almacenamiento orientado a objetos (Object Storage)
+    - Content Addressable Storage (CAS) 
+- Actualizado el resumen exprés
+

@@ -1,0 +1,5 @@
+Se revisa la vigencia de los docs de carpeta contenidos: sin cambios
+Se revisa y adapta el resumen a la nueva plantilla: No hay cambios en contenido
+Se revisa y adapta el resumen express a la nueva plantilla: cambios menores.
+Se mantienen los esquemas de preparatic 25
+* PREPARATIC XXVII: Revisión del formato del documento

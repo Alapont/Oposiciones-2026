@@ -1,0 +1,13 @@
+PreparaTIC29
+--------------------
+
+Se añade un índice para el tema debido a su extensión
+Se modifica el contexto normativo y se incluye introducción
+Se quita la referencia al AM 13/2018 para la contratación de servicios Cloud al no encontrarse en vigor
+Se simplifican las características
+Se añade referencia al nuevo ENS
+Se modifican el punto de soluciones cloud y proveedores para añadir información actualizada y concretar las herramientas
+Se añade una comparativa de cloud vs on-premise
+Se añade un punto de contratación para hacer referencia al nuevo AM 27/2023 propuesto por la DGRCC
+Actualizado el resumen exprés para homogenizar con el resumen ampliado
+

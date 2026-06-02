@@ -1,0 +1,14 @@
+﻿PREPARATIC 29:
+* Se actualiza el diseño y el contenido de la tabla 2.1 para adaptarla a las modificaciones normativas
+* Se añade referencia a la Norma Técnica de Interoperabilidad de Plan de Direccionamiento que deberá ser desarrollada en virtud de lo dispuesto en el RD 203/2021
+* Se añade el nuevo apartado 2.5 “Roles” que incluye tabla resumen del apartado V de la NTI de requisitos de conexión a la red de comunicaciones de las Administraciones Públicas españolas (se añade, igualmente, en el resumen express en formato texto más resumido aún)
+
+PREPARATIC 31:
+* Actualizado formato a Preparatic 31
+* Añadido Indice
+* Se modifica el texto para marcar como derogado el RD 806/2014 y se añade la información de los nuevos RD: RD 1125/2024 y RD 1118/2024.
+* Cambiadas todas las referencias a la SGAD por AEAD.
+* Se cambian todas las referencias de sTESTA a TESTA-ng. Se mantiene TESTA como la mención a la red que actualmente está en version TESTA-ng
+* Añadida mención a Gestores Open-Source.
+* Actualizado plan de direccionamiento de la AGE a DOC ADICIONAL
+* Añadida nueva transparencia de TESTA a DOC ADICIONAL

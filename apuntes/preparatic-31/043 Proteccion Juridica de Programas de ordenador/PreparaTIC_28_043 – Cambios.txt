@@ -1,0 +1,11 @@
+
+Resumen:
+	- En la parte de legislación relativa a derechos de autor: se añade ligeramente contenido, ligera reestructuración de texto y formato.
+        - Correcciones menores y ajustes estéticos en el resto de documento.
+
+Resumen express:
+	- Actualización mínima con información introducida en el Resumen
+
+Creación de documento Referencias con recursos online en Doc adicional
+
+

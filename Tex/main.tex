@@ -1,34 +1,67 @@
-\documentclass[12pt, oneside]{book}
-\usepackage[spanish]{babel}
+% !TeX root = ./main.tex
+% Preámbulo
+    % Paquetes que van a modificar el documento
+%tipo de documento utilizado
+\documentclass[12pt, ]{article} 
+    % one side quita páginas en blanco, bueno para no impresos
+%\documentclass{article} 
+    % two column para ponerlo en 2 columnas
+
+%Paquetes usados
 \usepackage[utf8]{inputenc}
-\usepackage{geometry}
-\usepackage{hyperref}
-\usepackage[para]{footmisc}
-\usepackage[shortlabels]{enumitem}   
+\usepackage[spanish]{babel} %Gestor de locales
+\usepackage{hyperref} % links
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
 
-\geometry{
- a4paper,
- total={170mm,245mm},
- left=25mm,
- top=25mm,
- }
 
-\title{Oposición TIC}
-\author{Pont}
-\date{}
+%Gestión de niveles de organización
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex} 
+
+%\usepackage{graphicx} %gráficos extendidos
+\usepackage{float} %numeración flotante
+
+%Geometría del documento
+\usepackage[margin=25.4mm]{geometry}
+\AddToHook{cmd/section/before}{\clearpage}
+
+
+\title{Apuntes oposiciones} %titulo del documento
+\author{Pont}%también en metadatos
+\date{2026-06-01}
 
 \begin{document}
-    \setlength\parindent{0pt}
+    % \setlength\parindent{0pt}
 
     \maketitle
     \tableofcontents
-
-    \input{Temario/General/index}
-    \input{Temario/Específicos/index}
     \newpage
+    \part{Apuntes}
+    \input{Temario/General/index}
+    \input{Temario/Especifico/index.tex}
+
+    \newpage
+    \part{Otros}
+    \setcounter{section}{0}
+    Información transversal a toda la oposición
     \input{meta/Glosario.tex}
     \newpage
     \input{meta/Siglas.tex}
     \newpage
     \input{meta/leyes.tex}
 \end{document}
+
+
+% Jerarquía de los apuntes
+% -1	\part{part} Dividir el documento en partes
+% 0	\chapter{chapter} 
+% 1	\section{section} división entre temario general y específico
+% 2	\subsection{subsection} cada uno de los temas
+% 3	\subsubsection{subsubsection} apartados dentro de cada temario

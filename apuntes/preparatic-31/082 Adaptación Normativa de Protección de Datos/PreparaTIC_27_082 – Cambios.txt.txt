@@ -1,0 +1,17 @@
+TEMA 082 - Adaptación Normativa de Protección de Datos - CAMBIOS 2020
+
+- Resumen:
+    	Se crea el documento resumen amplio, con:
+		-> Nueva normativa
+		-> Adaptación y medidas
+		-> Herramientas de auditoría y cifrado
+- Resumen Express:
+	Se crea un documento resumen, basado en el anterior
+- Material extra:
+	Se conservan los archivos adicionales disponibles en el Pack de Preparatic 26 (Carpeta Normativa)
+	Se añade carpeta AEPD
+		-> Guías: Evaluación de impacto y Análisis de Riesgos
+		-> Novedades: para los ciudadanos, para el Sector Privado y obligaciones para el Sector Público
+		-> Listas: tipos tratamientos exentas y obligadas a una evaluación de impacto
+- Esquemas:
+	Sin cambios. No se añade nada

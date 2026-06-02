@@ -1,0 +1,11 @@
+PreparaTIC31
+Modificaciones sobre el tema 007:
+
+- Se actualiza el tema a la plantilla nueva por cambios significativos.
+- Se añade más contenido a todos los apartados. En particular:
+	- Se actualiza el esquema de jerarquía normativa, un poco más completo.
+	- Se añade tabla de competencias de los reglamentos.
+	- Se complementa el tema con artículos del Código Civil y de la Constitución relevantes.
+- Se organiza la carpeta del tema dado que no seguía la estructura del resto de temas.
+- Se crea este fichero, que no estaba en ediciones anteriores.
+- Se crea el resumen express que no estaba en ediciones anteriores. 

@@ -1,0 +1,8 @@
+TEMA 101 - Mantenimiento de sistemas - CAMBIOS 2024
+
+- Resumen:
+	Se actualiza la referencia del apartado 7 del tema 94 al tema 95    	
+- Resumen Express:
+	Sin cambios. 
+- Doc adicional:
+	Sin cambios. 

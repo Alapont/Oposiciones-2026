@@ -1,0 +1,18 @@
+Preparatic29:
+
+	Capítulo 1 "EL MODELO RELACIONAL" - LAS 12 REGLAS DE CODD: 
+		- Se cambia la redacción para hacerla más breve.
+	Capítulo 1 "EL MODELO RELACIONAL" - CONCEPTOS: 
+		- Se corrige la definición de clave externa.
+	Capítulo 1 "EL MODELO RELACIONAL" - NORMALIZACIÓN DE BD: 
+		- Se amplía la definición de la 3FN.	
+		- Se cambia la definición de FNBC para que sea más sencilla.
+		- Se añade un ejemplo de FNBC.
+
+	Capítulo 2 "EL LENGUAJE SQL (ISO/IEC 9075 - SQL2)" - COMANDOS:
+		- Se cambia la definición de MERGE para que sea más sencilla y completa.
+	Capítulo 2 "EL LENGUAJE SQL (ISO/IEC 9075 - SQL2)" - RELACIÓN ENTRE SQL Y EL ALGEBRA RELACIONAL:
+		- Se añade otra sentencia SQL para implementar JOINs.
+
+	Capítulo 3 "IMPLEMENTACIONES COMERCIALES":
+		- Se actualiza la tabla de db-engines.com

@@ -1,0 +1,19 @@
+﻿CONTENIDOS:
+
+
+- Documento "PreparaTIC_29_131 - Resumen":
+        - Apartado 2.1.        "HIPERVISOR”:
+                - Se añaden imágenes para clarificar
+        - Apartado 2.2. “Tipos de virtualización de servidores”
+                - Cambio en el nombre
+                - Se destacan algunas características en negrita
+                - Se añade alguna aclaración a la “Virtualización a nivel de sistema operativo”
+                - Eliminados algunos ejemplos de productos de “Paravirtualización”
+                - Se incluye el concepto de “ring deprivileging” en la paravirtualización con Xen
+        
+- Documento "PreparaTIC_29_131 - Resumen express":
+        - Apartado 2.1.        "HIPERVISOR”:
+                - Se añaden imágenes para clarificar
+        - Apartado 2.2. “Tipos de virtualización de servidores”
+                - Cambio en el nombre
+                - Se destacan algunas características en negrita

@@ -1,0 +1,9 @@
+CONTENIDO
+
+- Actualización de estilo.
+- Actualización plataformas admitidas macOS
+- Actualización versiones macOS, iOS, Android y z/OS
+- Actualización datos cuotas de mercado Android e iOS
+- Actualización Android añadiendo el formato de publicación para Android "aab" (Android App Bundle)
+- Se añaden otros SS.OO móviles
+	

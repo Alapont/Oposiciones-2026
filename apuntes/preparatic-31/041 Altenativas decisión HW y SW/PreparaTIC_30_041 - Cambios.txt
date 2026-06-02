@@ -1,0 +1,10 @@
+Nuevos documentos:
+	- "REINA-2022.pdf" (Contenidos\Doc Adicional)
+	- "Tablas-REINA-2022.xlsx" (Contenidos\Doc Adicional)
+            - "PreparaTIC_30_041 - Resumen.docx" (Contenidos)
+	- "PreparaTIC_30_041 - Resumen Express.docx" (Contenidos)
+
+Documentos eliminados:
+	- "PreparaTIC_27_041 - Referencias.docx" (Contenidos)
+
+Se han añadido los nuevos SDA, se han actualizado los AM, se ha actualizado el ENS y los productos software y hardware TIC dedicados a seguridad.

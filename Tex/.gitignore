@@ -1,4 +1,6 @@
 output/*
+*.log
+main.pdf
 # Github tex gitignore:
 ## Core latex/pdflatex auxiliary files:
 *.aux

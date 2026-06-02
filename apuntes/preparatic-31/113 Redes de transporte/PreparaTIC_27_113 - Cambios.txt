@@ -1,0 +1,11 @@
+Resumen
+
+ - Se modifica la redacción dada a algunos puntos y se añaden imágenes (fundamentalmente: 1, 1.2, 1.3, 7.2 y 7.3)
+
+Resumen Express
+
+ - Se crea nuevo
+
+Doc adicional
+
+ - Se incluye presentación Universidad de Navarra sobre SDH

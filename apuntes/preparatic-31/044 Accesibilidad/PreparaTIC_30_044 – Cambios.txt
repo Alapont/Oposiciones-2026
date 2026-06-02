@@ -1,0 +1,16 @@
+/// Preparatic 30///
+
+EDICION DEL TEMA 044- ACCESIBILIDAD Y USABILIDAD. W3C. DISEÑO UNIVERSAL. DISEÑO WEB ADAPTATIVO
+
+- Se amplía el resumen y se crea el tema con mayor información. 
+– Se actualizan y reordenan conceptos de las WCAG dando más peso a pecularidades de criterios y medidas de WCAG 2.2. 
+- Se actualizan los links que hacían referencia a WCAG 2.1.
+- Se hace mención en el apartado de accesibilidad al Real Decreto 193/2023, de 21 de marzo.
+- Se incluye definición de accesibilidad de la W3C.
+- Se incluye apartado de diseño fijo.
+- Se amplía el apartado de usabilidad.
+- Se revisa el documento. 
+
+NOTA: Se recomienda eliminar el documento de referencias normativas ya que están incluidos todos los enlaces externos en el propio documento del resumen. 
+
+

@@ -1,0 +1,25 @@
+Cambios PREPARATIC29:
+
+En el Tema - Reeditado:
+- Corrección de erratas y errores de formato/estilo.
+- Aclaración de algunas definiciones o simplificación de frases.
+- Desarrollo de las 4 dimensiones de ITIL v4: se ha puesto una pequeña definición para cada una de ellas.
+- Inclusión del concepto Parte interesada entre los conceptos generales de ITILv4.
+- Modificación de la figura de las prácticas de ITILv4 (en la anterior no se leían bien las categorías de prácticas).
+- Inclusión de la definición de las prácticas que faltaban y agrupación de estas por categorías.
+- Inclusión del apartado de cascada de metas de COBIT 2019.
+
+En el Resumen - Cambios menores:
+- Corrección de erratas y errores de formato/estilo.
+- Aclaración de algunas definiciones o simplificación de frases.
+- Eliminada la figura de la certificación de ITIL v4.
+- Inclusión resumen de cascada de metas de COBIT 2019.
+
+En el resumen expres de COBIT - Cambios menores:
+- Corrección de erratas y errores de formato/estilo.
+- Aclaración de algunas definiciones o simplificación de frases.
+
+En el resumen expres de ITILv4- Cambios menores:
+- Corrección de erratas y errores de formato/estilo.
+- Aclaración de algunas definiciones o simplificación de frases.
+- Cambio de la figura de las prácticas de ITILv4.

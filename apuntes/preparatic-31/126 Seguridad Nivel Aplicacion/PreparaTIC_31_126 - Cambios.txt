@@ -1,0 +1,31 @@
+Preparatic 31
+
+TEMA 126 - Seguridad a nivel de aplicación
+
+Versión 31.1
+-------------
+
+Creado documento de TEMA
+	- Añadido OWASP Top 10 para aplicaciones web 2025 y otros ataques
+	- Añadida referencia a ASVS (Application Security Verification Standard).
+	- Añadida referencia a OWASP ZAP.
+	- Añadida referencia a CCN-STIC-673 GUÍA DE CONFIGURACIÓN SEGURA EN SERVIDORES WEB
+	- Añadido aspectos seguridad microservicios vs monolítica
+	- Añadido OWASP Top 10 para APIs 2023
+	- Añadida tabla comparativa de API SOAP vs REST
+	- Añadido apartados API SOAP y API REST
+	- Añadido JSON Web Token
+
+Resumen:
+	- Actualizado OWASP Top 10 para aplicaciones web 2025 y otros ataques
+	- Añadida referencia a ASVS (Application Security Verification Standard).
+	- Añadida referencia a OWASP ZAP.
+	- Añadido aspectos seguridad microservicios vs monolítica
+	- Añadido Top 5 de OWASP para APIs 2023
+	- Añadido apartados API SOAP y API REST
+	- Añadido JSON Web Token
+
+Resumen Express:
+	- Actualizado cuadro resumen OWASP Top 10 para aplicaciones web 2025 y otros ataques
+	- Añadida referencia a OWASP ZAP.
+	- Añadido JSON Web Token

@@ -1,0 +1,6 @@
+﻿* Actualización y ampliación de las características generales de PHP
+* Se añade tabla de sintaxis básica
+* Se añaden epígrafes sobre manejo automático de memoria,  casos de uso, arquitectura, integración con bases de datos, PHP en aplicaciones escalables y Buenas practicas
+* Se añaden las actualizaciones y mejoras de PHP 7 y 8
+* Actualizacion y ampliacion de frameworks PHP
+*  Actualizacion y ampliacion de CMS PHP

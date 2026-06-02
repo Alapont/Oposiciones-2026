@@ -57,6 +57,14 @@ El plan es que no hay plan. De momento estoy en una fase de recapitulación. Qui
 - Contingencias
   - Planes para llevar (o no) las oposiciones en caso de que ocurran cosas en mi vida
 
+## Estado de los apuntes
+_O cómo vamos con todo este lío_
+
+Tema | Apuntes  | Notas
+----:|----------|-------
+1    | Empezado
+
+
 
 # Preguntas pendientes
 - ¿Con qué frecuencia se anulan preguntas?

@@ -1,0 +1,17 @@
+PreparaTIC 29
+
+TEMA 027 - LA POLÍTICA DE PROTECCIÓN DE DATOS DE CARÁCTER PERSONAL. 
+	RÉGIMEN JURÍDICO. 
+	EL REGLAMENTO UE 2016/679, DE 27 DE ABRIL, RELATIVO A LA PROTECCIÓN DE LAS PERSONAS FÍSICAS EN LO QUE RESPECTA AL TRATAMIENTO DE DATOS PERSONALES Y A LA LIBRE CIRCULACIÓN DE ESTOS DATOS. 
+	PRINCIPIOS Y DERECHOS. 
+	OBLIGACIONES. 
+	EL DELEGADO DE PROTECCIÓN DE DATOS EN LAS ADMINISTRACIONES PÚBLICAS. 
+	LA AGENCIA ESPAÑOLA DE PROTECCIÓN DE DATOS.
+
+Cambios:
+
+- pequeños cambios en algunas frases para aportar claridad
+- incluído en apartado 2 el régimen de sanciones para Reglamento (UE) 2016/679
+- incluído en apartado 3 la prescripción de las sanciones
+- incluído en apartado 4 la aprobación del Estatuto de la AEPD
+- actualizadas guías AEPD en carpeta Documentación Adicional

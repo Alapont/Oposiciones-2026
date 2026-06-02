@@ -1,0 +1,10 @@
+﻿- Resumen:
+	- Añadida explicacion de tipos de ataques en las redes
+	- Se añaden medidas ENS relacionadas con las seguridad en las redes  
+	- Se añade referencias a Guias CCN-STIC serie 800 relacionadas con la seguridad de las redes
+	- Añadidos tipos de ataques: a contraseñas, de inyección, de sw y sistemas
+        - Añadidas contramedidas y protección.
+	- Resumido y sintetizado el apartado normativa de seguridad, atendiendo a lo específico del tema: la seguridad en las redes
+	- Añadida normativa europea relacionada con la seguridad en las redes
+	- Se incluye OWASP móvil top 10 vulnerabilidades de 2024
+-

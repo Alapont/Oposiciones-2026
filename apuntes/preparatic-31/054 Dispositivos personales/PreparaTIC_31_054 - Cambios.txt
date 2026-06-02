@@ -1,0 +1,18 @@
+Preparatic 31:
+
+Resumen:
+	- Se actualiza contenido, omitiendo tecnologías o estándares obsoletos. 
+	- Se añade tabla comparativa CISC y RISC
+	- Se añade apartado de componentes GPU, NPU y TPU
+	- Se amplia políticas de dispositivos móviles 
+	- Referencias Guías CCN
+
+Resumen Express:
+	- Se actualiza contenido, omitiendo tecnologías o estándares obsoletos. 
+	- Se añade tabla comparativa CISC y RISC
+	- Se añade apartado de componentes GPU, NPU y TPU
+	- Se omite sección de sistemas operativos móviles que se tratan en tema 62.
+	- Se amplia políticas de dispositivos móviles
+	- Referencias Guías CCN
+
+

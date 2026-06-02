@@ -1,0 +1,63 @@
+Preparatic 31
+
+Versión 31.2
+-------------
+Resumen:
+* Punto 2 Generaciones de tecnologías de telefonía móvil
+  - Se actualizan diferentes informaciones en los epígrafes del 2.1 al 2.7, cambios relevantes en el 2.4 UMTS
+* Punto 3
+  - Se corrige título
+* Pie de página
+  - Se actualiza número de versión y fecha
+
+Resumen Express:
+* Punto 2 Generaciones de tecnologías de telefonía móvil:
+  - Se actualiza la tabla para separar Generación y Tecnología, pudiendo así ordenar de 1G a 5G. 
+  - Se completan o actualizan algunos de los campos de la tabla
+
+
+Versión 31.1
+-------------
+
+Resumen:
+* Punto 1.1. "Introducción"
+  - Se extiende la explicación de cada uno de los sistemas móviles.
+  - Se incluyen ejemplos de cada uno de los sistemas móviles.
+* Punto 1.2. "Estandarización"
+  - Se cambia el título de “Releases 3GPP” a “Estandarización”.
+  - Se enumeran y describen brevemente los distintos organismos de estandarización.
+  - Se añaden imágenes de las distintas releases de 3GPP por generación.
+* Punto 1.3. "Releases 3GPP 5G"
+  - Se cambia el título de “Releases 5G” a “Releases 3GPP 5G”.
+  - Describe con más detalle cada una de las Releases de 5G.
+  - Añade las últimas Releases 19 y 20.
+
+* Punto 2.6. "LTE - 4G (RELEASES 8-10)"
+  - Se sustituye la imagen de la red de acceso y core.
+* Punto 2.7.1. "Bandas de frecuencias"
+  - Se desglosa el reparto de frecuencias por banda y operador actualizado a 2026.
+* Punto 2.7.2. "Arquitectura de red"
+  - Se sustituye la imagen que muestra la arquitectura de red.
+* Punto 2.7.3. “Releases”
+  - Añade las releases 18 y 19 de 3GPP.
+* Punto 2.8. “6G”
+  - Añade una breve descripción de la release 20 de 3GPP.
+
+* Punto 3.4. “RD Ley 7/2022”
+  - Añade los principales puntos sobre redes móviles.
+
+Resumen Express:
+* Punto 1.”Las comunicaciones móviles”.
+  - Añade ejemplos de comunicaciones móviles por satélite.
+
+* Punto 2.”Generaciones de tecnologías de telefonía móvil”.
+  - Modifica 5G NR y añade 5G Advanced.
+* Punto 2.1.”Arquitecturas de red”.
+  - Sustituye diagramas LTE y 5G.
+
+* Punto 3.”Planes y otras referencias”.
+  - Añade información sobre el RDL 7/2022.
+
+
+Documentación adicional:
+-

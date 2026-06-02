@@ -1,0 +1,16 @@
+- Incorporación de Resumen Express.
+
+- Cambios realizados en el Resumen:
+
+- Numeración más detallada y organizada, facilitando la navegación del documento.
+- Ampliación de stándares en videoconferencia.
+- Incorporación de punto nuevo con los dos tipos de implantación de videoconferencia: on-premise vs nube
+- Ampliación de mecanismos de calidad de servicio.
+- Incorporación de punto específico de Acondicionamiento de salas y equipos.
+- Ampliación de características en Streaming de vídeo con unicast vs multicast.
+
+- Cambios realizados en Referencias:
+
+- Eliminación de enlaces obsoletos o rotos como https://circuit.com, https://www.ciscolive.com/c/dam/r/ciscolive/us/docs/2016/pdf/BRKSPV-2160.pdf y https://www.bluejeans.com 
+- Incorporación de enlaces nuevos enlaces como [WEB]: https://www.itu.int/rec/T-REC-H.323/es, [WEB]: https://datatracker.ietf.org/doc/html/rfc3261, [WEB]: https://www.cisco.com/c/dam/global/es_es/assets/publicaciones/07-01-Cisco-telepresencia-presentacion.pdf, [WEB]: https://www.hp.com/es-es/poly.html, [WEB]: https://support.microsoft.com/es-es/topic/trabajo-en-equipo-real-en-microsoft-teams-c724a033-092c-4ccd-96af-286a29a0757e y [WEB]: https://es.wikipedia.org/wiki/Calidad_de_servicio
+

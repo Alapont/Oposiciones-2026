@@ -1,0 +1,11 @@
+Cambios PREPARATIC29:
+
+1) Resumen: 
+   - Corrección de erratas y errores de formato/estilo.
+   - Reescritura de algunas frases y aclaración de algunos conceptos.
+   - Reescritura apartado SAFe para aclarar conceptos e incluir información más relevante.
+
+2) Resumen express:
+   - Corrección de erratas y errores de formato/estilo.
+   - Reescritura de algunas frases y aclaración de algunos conceptos.
+   - Reescritura apartado SAFe para aclarar conceptos e incluir información más relevante.

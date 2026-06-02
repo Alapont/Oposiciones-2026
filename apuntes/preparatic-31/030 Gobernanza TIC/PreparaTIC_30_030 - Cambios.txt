@@ -1,0 +1,13 @@
+Resumen
+ - Se actualiza el contexto normativo
+ - Se redacta de nuevo el capítulo 2, Gobernanza TIC en la AGE, con las modificaciones relativas a los RD 1118/2024 (Estatuto Agencia Estatal de Administración Digital) y RD 1125/2024 (Organización e instrumentos operativos para la Administración Digital de la AGE).
+
+Resumen express
+ - Se actualiza con los cambios del resumen del tema
+
+Referencias:
+ - Se actualiza con referencias actualizadas 
+
+Doc Adicional
+ - Se incluyen las directrices PADTD en formato EPUB
+ - Se incluye el BOE en PDF de los RD 1118/2024 y RD 1125/2024

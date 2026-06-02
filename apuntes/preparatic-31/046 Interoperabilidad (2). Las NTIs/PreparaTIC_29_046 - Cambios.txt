@@ -1,0 +1,5 @@
+﻿- Correcciónde errores menores en la descripción de las nuevas NTIs introducidas por la disposición final 2ª del RD 203/2021 sobre el RD 4/2010 ENI.
+- Se cambia el orden en el que se presentan las NTIs para que coincida con el órden lógico del RD 203/2021.
+- Se modifica el contenido de las NTIs para detalle y facilitar una mejor comprensión.
+- Añadida la Plataforma de Intermediación de Administración General del Estado del RD 203/2021, de 30 de marzo..
+- Se añade la sección 'Referencias' con enlaces útiles.

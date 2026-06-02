@@ -1,0 +1,4 @@
+﻿- Pequeñas puntualizaciones. Referencias a SGAD. Normativa (RD 203/2021 ya no es "nuevo")
+- Ampliación a nivel de interoperabilidad en Europa: Reglamento (UE) 2024/903, Agenda 2026 , Portal, etc.
+- Interoperabilidad en otra normativa.
+- Actualización en nombres de organismos.

@@ -1,0 +1,6 @@
+- Actualización nombres IBM Tivoli
+- Añadidos referencias al CTT para Cl@ve y nodo eIDAS
+- Modificado capítulo eIDAS2
+- Doc Adicional:
+	- Añadido documento "Cl@ve Identificación.pdf"
+	- Añadido documento "Manual Integracion Cl-ve2-0 - SP v2-8-4-07-"

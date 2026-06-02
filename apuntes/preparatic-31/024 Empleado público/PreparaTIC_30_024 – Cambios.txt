@@ -1,0 +1,33 @@
+Resumen de cambios de la versión preparativo 30 del tema 024:
+
+2 cambios fundamentales:
+1) El resumen por dimensión pasa a ser Tema.
+2) El resumen express por dimensión pasa a ser resumen.
+
+---------
+//// 1) Cambios en el tema (antes resumen)
+- Actualización del 12 de Enero: Se saca del listado de tipo de empleado público al personal directivo y se especifica los requisitos del personal directivo.
+- En la Introducción, se añade a las leyes relevantes el RDL 2/2015, de 23 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto de los Trabajadores y se indica que es aplicable sólo para empleados del sector privado para no confundir con el del temario en cuestion.
+- Se revisa el link del proyecto de ley de función pública revisado en julio de 2024)
+- Se redacta de nuevo el apartado Grupos de clasificación de los Funcionarios de carrera.
+- Se incluyen los apartados Grado personal, Intervalos de niveles (según RD Ley 6/2023) y Modalidades de la carrera profesional de los funcionarios de carrera.
+- Se actualizan los derechos individuales conforme a la última actualización de marzo 2023.
+- Se actualiza el apartado de excedencia:
+ a)  se incluye el requisito para obtenerla por interés particular
+ b) se añade excedencia por violencia sexual (por Ley Orgánica 2/2024 de representación paritaria y presencia equilibrada de mujeres y hombres)
+- Se reestructura el párrafo de adquisición y pérdida de la condición de funcionario
+- Se añaden las formas de provisión de puestos en la AGE: Provisión temporal de puestos Adscripción provisional, Atribución temporal de funciones.
+- Se redacta de nuevo el apartado de Sistemas selectivos conforme al RD 364/1995
+- Se actualizan las cifras de plazas ofertadas en las OEP (desde 2022 hasta la actualidad)
+- Se redacta de nuevo el apartado de la Oficina de Conflicto de intereses 
+- Se incluye el régimen sancionador de la ley 3/2015
+- Se añade un apartado sobre el Anteproyecto de ley de FP de la AGE aprobado en julio de 2024 (que recoge la creación del Cuerpo Técnico Informático de carácter interdepatamental).
+
+//// 2) Cambios en el resumen (antes resumen express).
+- Actualización del 12 de Enero: Se saca del listado de tipo de empleado público al personal directivo y se especifica los requisitos del personal directivo.
+- Se amplía detalles de tipos de empleados: funcionarios públicos.
+- Se incluyen los niveles y los grados así como se listan las modalidades de carrera profesional.
+- Se detalla el personal laboral.
+- Se amplía algunos puntos de los órganos de selección.
+- Se incluye apartado de retos actuales, que está desarrollado en el tema.
+- Aquellos apartados modificados en el tema se revisan aquí en el resumen para que haya coherencia.

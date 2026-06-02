@@ -1,0 +1,17 @@
+- Actualización a EFQM 2025: 
+	Sustituye la versión 2020 por la 2025, que ahora cuenta con 29 subcriterios (frente a los 23 anteriores) y pone el foco en la mejora del rendimiento sostenible y el liderazgo tecnológico (IA).
+- Simplificación de REDER: 
+	Se reduce el número de matrices REDER de tres a dos (una para Dirección-Ejecución y otra para Resultados).
+- Nuevas herramientas en la AGE: 
+	Se incorpora el Test Cyklos como herramienta de diagnóstico rápido (64 preguntas) para unidades que se inician en la calidad.
+- Evolución de EVAM: 
+	Se actualiza a la versión 2021, añadiendo a sus ejes transversales el concepto de Integridad Pública junto al de Comunicación.
+- Marco Normativo Detallado: 
+	Incluye una sección específica sobre el RD 951/2005 detallando sus seis programas fundamentales y clarificando los niveles de autoevaluación y evaluación externa.
+- Categorización de Puntuación: 
+	Añade niveles de rendimiento específicos para las puntuaciones EFQM (300 para buen rendimiento, 500 para excelente y 700 para líder mundial).
+- Se añade carpeta de documentación adicional con los documentos de los modelos EFQM 2025, CAF y EVAM
+- Normas ISO 9000:
+	Se añade diagrama con la familia ISO 9000. 
+- Otros modelos de calidad de procesos:
+	Se añade CMMI y ISO 15504 SPICE.

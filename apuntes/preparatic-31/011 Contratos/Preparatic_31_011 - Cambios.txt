@@ -1,0 +1,14 @@
+- Cambios realizados en el Resumen:
+
+- Numeración más detallada y organizada, facilitando la navegación del documento.
+- Punto 5: Actualizados los umbrales SARA a 143.000 € (AGE) y 221.000 € (otras AAPP)
+- Ampliación de los momentos en los que se puede interponer el Recurso Especial en materia de contratación.
+- Punto 6: añadida la Tramitación Ordinaria.
+- Actualizada la información sobre acuerdos marco, incluyendo AM 05/2023, actualizada información del SDA 26/2021 y modificación del valor umbral (143.000) del procedimiento abierto simplificado para los contratos de suministros o servicios.
+- Se añaden algunos hipervínculos.
+
+Preparatic 031
+- Actualizacion de importes umbrales SARA.
+- Actualizacion AM´s y SDA´s así como sus hipervinculos
+- Se Añaden los lotes en los AM´s y SDA´s
+- Se incluyen medidas concretas referentes al Real Decreto-Ley 36/2020

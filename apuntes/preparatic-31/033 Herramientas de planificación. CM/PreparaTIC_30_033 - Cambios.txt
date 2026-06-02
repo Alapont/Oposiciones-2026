@@ -1,0 +1,7 @@
+PREPARATIC 30
+
+- Actualización de estilo
+- Se añaden los tres niveles de gestión
+- Se introduce el concepto de OKR (Objective and Key Results) vs KPIs
+- Se añade planificación y herramientas utilizadas en metodologías ágiles
+- Otros cambios menores

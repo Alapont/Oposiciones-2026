@@ -1,0 +1,6 @@
+CONTENIDOS:
+	- Documento "PreparaTIC_29_75 - Resumen":
+		- Es un tema casi nuevo manteniendo aspectos como Datawarehouse y arquitecturas OLAP
+
+	- Documento "PreparaTIC_29_75 - Resumen express":
+		- Se modifica en función de las modificaciones del Documento "PreparaTIC_29_75 - Resumen"

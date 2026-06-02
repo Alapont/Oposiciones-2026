@@ -1,0 +1,1 @@
+Se rehace el resumen para adaptarlo al contenido del tema de ASTIC, se crea el resumen exprés que no existía. Las referencias a ITIL se actualizan a ITIL 4. Se eliminan los contenidos adicionales que no corresponden específicamente al tema por tratarse en otros temas.

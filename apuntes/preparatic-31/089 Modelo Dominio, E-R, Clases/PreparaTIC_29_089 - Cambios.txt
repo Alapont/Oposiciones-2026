@@ -1,0 +1,8 @@
+Resumen:
+	- Se añade apartado de introducción al análisis y modelado
+	- Se añaden diagramas UML último estándar
+	- Se añade apartado Modelo de dominio
+	- Se añaden principios SOLID
+	- Se añade apartado diagrama de clases
+Resumen express:
+	- Se añade documento

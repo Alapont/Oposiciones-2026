@@ -1,0 +1,15 @@
+TEMA 48 - ENS, Guías CCN-STIC y Estrategia de Seguridad Nacional.
+
+Cambios menores:
+
+   Tema:
+	- Añadidas guías CCN y clasificadas por conceptos.
+	- Actualizada en apartado de ITS la DA2 del ENS, modificada por RD 1125/2024
+	- Añadido normativa europea adicional (DORA, Ciberresiliencia, Cibersolidaridad, Ciberseguridad) 
+
+   Creado Resumen (el anterior resumen era realmente un resumen express)
+
+   Resumen Express: 	
+	- Añadidas guías CCN y clasificadas por conceptos.
+	- Añadido normativa europea adicional (DORA, Ciberresiliencia, Cibersolidaridad, Ciberseguridad) 
+

@@ -1,0 +1,68 @@
+- En el Tema:
+	- Se añade índice.
+	- Se arregla números de página.
+	- Introducción se modifica ámbito subjetivo con la diferencia entre Ley 39 y 40. 
+	- Ley 40:
+		- Se añade ppos. potestad sancionadora
+		- Modificación diagrama de la AGE
+		- Se añade organigrama de ejemplo de Gobierno y Ministerios
+		- Se añade funciones destacadas de cada órgano y su clasificación de personal. 
+		- Se añade relaciones interadministrativas: Conferencias, comisiones, etc. 
+		- Se omite la organización del Sector Publico Institucional, ya que viene en el Tema 6 de manera extensa.
+
+	- Ley 39:
+		- Se añade nota de plazos, siempre hábiles menos práctica de notif. por medios electrónicos (10 naturales)
+		- Se añade Titulo VI sobre la iniciativa legislativa y potestad reglamentaria y principios de buena regulación
+
+	- En Relaciones de ciudadanos con las AAPP y Aspectos de Administración Electrónica
+		- Se añade artículos de Ley 40 (art 155 al 158)
+		- RD 203/2021: 
+			- Se modifica presentación de principios generales del Reglamento
+			- Se modifica algún contenido sobre autenticación de sede electrónica (en formato tabla)
+			- Se añade tabla de identificación y firma de los interesados
+			- Se reduce el detalle de las disposiciones adicionales. 
+
+				 
+- En el resumen
+	- Se añade índice.
+	- Se arregla números de página.
+	- Introducción se modifica ámbito subjetivo con la diferencia entre Ley 39 y 40. 
+	- Ley 40:
+		- Se añade ppos. potestad sancionadora
+		- Modificación diagrama de la AGE
+		- Se añade organigrama de ejemplo de Gobierno y Ministerios
+		- Se añade funciones destacadas de cada órgano y su clasificación de personal. 
+		- Se añade relaciones interadministrativas: Conferencias, comisiones, etc. 
+		- Se omite la organización del Sector Publico Institucional, ya que viene en el Tema 6 de manera extensa.
+
+	- Ley 39:
+		- Se opta por desarrollar en viñetas las enumeraciones de principios, requisitos y demás listados, para hacerlos más legibles. 
+		- Se omite los principios (doctrina) ya que no vienen expresamente en la Ley, para mantener formato resumido. 
+		- Se añade nota de plazos, siempre hábiles menos práctica de notif. por medios electrónicos (10 naturales)
+
+	- En Relaciones de ciudadanos con las AAPP y Aspectos de Administración Electrónica
+		- Se añade artículos de Ley 40 (art 155 al 158)
+		- RD 203/2021: 
+			- Se modifica algún contenido sobre autenticación de sede electrónica
+			- Se añade tabla de identificación y firma de los interesados
+			- Se reduce el detalle de las disposiciones adicionales. 
+
+- En el resumen express
+	- Se arregla números de página.
+	- Introducción se modifica ámbito subjetivo con la diferencia entre Ley 39 y 40. 
+	- Ley 40:
+		- Se añade ppos. potestad sancionadora
+		- Modificación diagrama de la AGE
+		- Se añade funciones destacadas de cada órgano y su clasificación de personal. 
+		- Se añade relaciones interadministrativas: Conferencias, comisiones, etc. 
+
+	- Ley 39:
+		- Se añade nota de plazos, siempre hábiles menos práctica de notif. por medios electrónicos (10 naturales)
+
+	- En Relaciones de ciudadanos con las AAPP y Aspectos de Administración Electrónica
+		- Se añade artículos de Ley 40 (art 155 al 158)
+		- RD 203/2021: 
+			- Se modifica algún contenido sobre autenticación de sede electrónica
+			- Se añade tabla de identificación y firma de los interesados
+			- Se reduce el detalle de las disposiciones adicionales. 
+

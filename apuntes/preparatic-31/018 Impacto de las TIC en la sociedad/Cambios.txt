@@ -1,0 +1,16 @@
+RESUMEN:
+-Marco Normativo Europeo (Actualización de Propuestas a Reglamentos) Se sustituyen las referencias a "propuestas" por los reglamentos definitivos ya en vigor.
+-Se incluye el Reglamento IA. Se detalla su metodología basada en cuatro niveles de riesgo (nulo, limitado, alto e inaceptable).
+-Se cita a eIDAS2 y la cartera digital europea
+-Ley de Datos (Data Act): Se especifica el Reglamento (UE) 2023/2854, indicando que su aplicación comenzó en septiembre de 2025.
+-Europa Interoperable: Se introduce el Reglamento (UE) 2024/903, que entró en vigor en abril de 2024, sustituyendo formalmente a los programas ISA e ISA2.
+-Se añade información sobre la creación de "fábricas de IA" vinculadas a centros de supercomputación e información del supercomputador Marenostrum 5.
+-Se añade la puesta en marcha en 2023 del ESB (European Brochan Sandbox) para apoyar proyectos innovadores y fomentar el diálogo normativo.
+-Informe DESI y Década Digital: se actualiza este apartado al Informe del Estado de la Década Digital y DESI 2025.
+-Plan de Acción para la Democracia: Se menciona que este plan se ha convertido en el marco operativo de seguridad democrática de la Unión Europea en 2026
+-Cambio de paradigma al consumo de información push y algoritmos de recomendación.
+-Actualización de cifras y datos obsoletos en los diferentes apartados
+
+RESUMEN EXPRESS:
+-No existía; se crea.
+

@@ -1,0 +1,30 @@
+Preparatic 31
+
+Versión 31.1
+-------------
+Resumen:
+* Punto 1.3
+  - Se actualiza el epígrafe [2022-Actualidad]
+
+* Punto 1.6 
+  - Se añade un párrafo con datos de Teletrabajo de la EPA 2024 (no hay datos de teletrabajo en la de 2025).
+
+* Punto 2
+  - Se actualizan valores de las tablas con datos de la EPA 4T2025, extraídos de https://www.ine.es/dyngs/Prensa/EPA4T25.htm
+
+* Punto 3.3
+  - Se actualiza el nombre del Ministerio.
+
+* Punto 3.5.10
+  - Se actualiza el párrafo referente a la Estrategia Española de Apoyo Activo al Empleo 2021-2024, por la nueva de 2025-2028.
+
+* Punto "Fuentes"
+  - Se añade el enlace para los datos de la EPA.
+
+Resumen Express:
+* Punto 2
+  - Se incluyen datos de EPA 4T2025
+
+* Punto 6 
+  - Se actualiza la Estrategia Española de Apoyo Activo al Empleo 2021-2024, por la nueva de 2025-2028
+

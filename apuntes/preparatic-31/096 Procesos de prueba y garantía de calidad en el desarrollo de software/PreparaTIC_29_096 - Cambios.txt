@@ -1,0 +1,11 @@
+Cambios realizados en el Tema:
+- Se modifica y amplía el apartado 4.3 y se divide en 2.
+- Se modifica el contenido del apartado y se añaden ejemplos.
+- Corrección de sintaxis y espacios es determinados apartados.
+
+Cambios realizados en el Resumen:
+- Corrección de sintaxis y espacios es determinados apartados.
+- Corrección de textos en los pies de imágenes.
+
+Cambios realizados en el Resumen express:
+- Se crea un resumen express completo.

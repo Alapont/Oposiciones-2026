@@ -1,0 +1,33 @@
+/// Preparatic 30 ///
+
+** De manera general **
+- Se incluye en todos los documentos la referencia al Real Decreto 1125/2024, de 5 de noviembre, por el que se regulan la organización y los instrumentos operativos para la Administración Digital de la Administración del Estado
+
+** Documento REFERENCIAS ** 
+- Se incluye mención a RD 1125/2024 y aclaración que las otras referencias están con la nomenclatura anterior de servicios compartidos.
+- Se incluye infografía de Vicotae
+
+** Documento TEMA **
+- Se actualiza al formato nuevo de Preparatic30.
+- Se modifica el resumen de la anterior versión por tema debido a cuestiones de dimensionamiento de documento.
+- Se revisa la introducción
+- Se reordenan los apartados
+- Se actualizan los servicios exentos de utilizar servicios comunes y compartidos (transversales) (disposición adicional segunda RD 1125/2024)
+- Se incluye la tabla con el coste unitario de IaaS de NubeSara.
+- Se actualizan y se incluyen nuevos links (como el de la guía de uso del sello de tiempo y Marca de tiempo".
+- Se revisa y amplía el apartado de identificación.
+- Se incluye gráfica de accesos de autentica a lo largo de los años.
+- Se añade la aplicación eVisor y el portal de firma.
+- Se revisa el apartado de 3.3	Atención al ciudadano y empresa
+- Se elimina emprende 3 por el PAE electrónico (Punto de atención al emprendimiento)
+- Se amplía la información de cita previa.
+- Se introduce la diferencia entre sede electrónica y portal y se hace referencia  a la normativa.
+- Se reestructura la información de mi carpeta ciudadana.
+- Se incluye la plataforma electrónica de adhesiones
+- Se actualiza el tamaño máximo por fichero en Almacén
+
+
+** Documento RESUMEN**
+- Se elimina el resumen express y se cambia por resumen.
+- Se corrigen los mismos aspectos que en el TEMA relacionados con servicios compartidos --> servicios transversales (disposición adicional segunda RD 1125/2024) y se incluyen los mismos apartados revisados de manera resumida.
+

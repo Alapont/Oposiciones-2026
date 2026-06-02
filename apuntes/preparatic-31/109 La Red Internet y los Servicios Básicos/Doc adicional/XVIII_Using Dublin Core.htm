@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><title>Using Dublin Core</title>
+
+
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta name="DC.title" content="Using Dublin Core">
+<meta name="DC.description" content="This document is intended as an entry point for users of Dublin Core. For non-specialists, it will assist them in creating simple descriptive records for information resources (for example, electronic documents). Specialists may find the document a useful point of reference to the documentation of Dublin Core, as it changes and grows.">
+<meta name="DC.creator" content="Diane Hillmann">
+<meta name="DC.publisher" content="Dublin Core Metadata Initiative">
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="meta" href="http://dublincore.org/documents/usageguide/index.shtml.rdf">
+<link rel="stylesheet" href="Using%20Dublin%20Core_files/default.css" type="text/css">
+<script src="Using%20Dublin%20Core_files/default.js" type="text/javascript"></script></head><body>
+<div class="header">
+<table bgcolor="#ff6600" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td width="70"><a href="http://dublincore.org/index.shtml"><img src="Using%20Dublin%20Core_files/logo_sm.gif" alt="Dublin Core Metadata Initiative logo" height="70" width="150"></a></td>
+<td align="right" height="70" valign="top" width="100%">
+<table cellpadding="0" cellspacing="0" width="328">
+<tbody><tr>
+<td height="30" width="82"><a href="http://dublincore.org/about/"><img src="Using%20Dublin%20Core_files/about.gif" alt="About the Initiative" height="30" width="82"></a></td>
+<td height="30" width="82"><a href="http://dublincore.org/documents/"><img src="Using%20Dublin%20Core_files/documents.gif" alt="Documents" height="30" width="82"></a></td>
+<td height="30" width="82"><a href="http://dublincore.org/groups/"><img src="Using%20Dublin%20Core_files/groups.gif" alt="Working Groups" height="30" width="82"></a></td>
+<td height="30" width="82"><a href="http://dublincore.org/resources/"><img src="Using%20Dublin%20Core_files/resources.gif" alt="Resources" height="30" width="82"></a></td>
+</tr>
+<tr>
+<td height="30" width="82"><a href="http://dublincore.org/news/2008/"><img src="Using%20Dublin%20Core_files/news.gif" alt="Dublin Core Metadata Initiative News" height="30" width="82"></a></td>
+<td height="30" width="82"><a href="http://dublincore.org/tools/"><img src="Using%20Dublin%20Core_files/tools.gif" alt="Tools and Software" height="30" width="82"></a></td>
+<td height="30" width="82"><a href="http://dublincore.org/projects/"><img src="Using%20Dublin%20Core_files/projects.gif" alt="Projects" height="30" width="82"></a></td>
+<td height="30" width="82"><img src="Using%20Dublin%20Core_files/blank.gif" alt="blank" height="30" width="82"></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr><td colspan="2" height="30"><a href="http://dublincore.org/index.shtml"><img src="Using%20Dublin%20Core_files/dcmi_sm.gif" alt="Dublin Core Metadata Initiative" height="30" width="329"></a></td></tr>
+</tbody></table>
+<table cellpadding="6" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="crumb"><a href="http://dublincore.org/">Home</a> &gt;&nbsp;<a href="http://dublincore.org/documents/">Documents</a>&nbsp;&gt;&nbsp;<a href="http://dublincore.org/documents/usageguide/">Usageguide</a>&nbsp;&gt;&nbsp;</td>
+<td align="right">
+<form method="post" action="/cgi-bin/htsearch">
+<input name="method" value="and" type="hidden">
+<input name="format" value="builtin-long" type="hidden">
+<input name="sort" value="score" type="hidden">
+<input name="config" value="htdig" type="hidden">
+<input name="restrict" value="" type="hidden">
+<input name="exclude" value="" type="hidden">
+
+<table cellpadding="2" cellspacing="0">
+<tbody><tr>
+<td nowrap="nowrap"><input value="Enter keyword" name="words" size="20" onfocus="if(this.value=='Enter keyword')this.value='';" onblur="if(this.value=='')this.value='Enter keyword';" class="search" type="text">&nbsp;</td>
+<td><input name="submit" value="Search" class="button" type="submit"></td>
+</tr>
+</tbody></table>
+</form>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="dcmiprint"><img src="Using%20Dublin%20Core_files/dcmi_logo_print.gif" alt="Dublin Core Metadata Initiative" height="91" width="227"></div>
+
+
+<h1>Using Dublin Core</h1>
+
+<table class="docinfo" cellspacing="0">
+<tbody><tr>
+<th>Creator:</th>
+<td><a href="mailto:dih1@cornell.edu">Diane Hillmann</a></td>
+</tr>
+<tr>
+<th>Date Issued:</th>
+<td>2005-11-07</td>
+</tr>
+<tr>
+<th>Identifier:</th>
+<td><a href="http://dublincore.org/documents/2005/11/07/usageguide/">http://dublincore.org/documents/2005/11/07/usageguide/</a></td>
+</tr>
+<tr>
+<th>Replaces:</th>
+<td><a href="http://dublincore.org/documents/2005/08/15/usageguide/">http://dublincore.org/documents/2005/08/15/usageguide/</a></td>
+</tr>
+<tr>
+<th>Is Replaced By:</th>
+<td>Not applicable</td>
+</tr>
+<tr>
+<th>Latest Version:</th>
+<td><a href="http://dublincore.org/documents/usageguide/">http://dublincore.org/documents/usageguide/</a></td>
+</tr>
+<tr>
+<th>Translations:</th>
+<td><a href="http://dublincore.org/resources/translations/">http://dublincore.org/resources/translations/</a></td>
+</tr>
+<tr>
+<th>Status of Document:</th>
+<td><a href="http://dublincore.org/documents/#recommendedresources">DCMI Recommended Resource</a></td>
+</tr>
+<tr>
+<th>Description of Document:</th>
+<td>This document is intended as an entry point for users of Dublin
+Core. For non-specialists, it will assist them in creating simple
+descriptive records for information resources (for example, electronic
+documents). Specialists may find the document a useful point of
+reference to the documentation of Dublin Core, as it changes and grows.</td>
+</tr>
+</tbody></table>
+
+<h2>Table of Contents</h2>
+<p><a href="http://dublincore.org/documents/usageguide/#introduction">1. Introduction</a></p>
+<ul>
+<li><a href="http://dublincore.org/documents/usageguide/#whatismetadata">1.1. What is Metadata?</a></li>
+<li><a href="http://dublincore.org/documents/usageguide/#whatis">1.2. What is the Dublin Core?</a></li>
+<li><a href="http://dublincore.org/documents/usageguide/#purpose">1.3. The Purpose and Scope of This Guide</a></li>
+</ul>
+<p><a href="http://dublincore.org/documents/usageguide/#whichsyntax">2. Syntax, Storage and Maintenance Issues</a></p>
+<ul>
+<li><a href="http://dublincore.org/documents/usageguide/#html">2.1. HTML</a></li>
+<li><a href="http://dublincore.org/documents/usageguide/#rdfxml">2.2. RDF/XML</a></li>
+<li><a href="http://dublincore.org/documents/usageguide/#metadatacontained">2.3. Metadata Storage and Maintenance</a></li>
+</ul>
+<p><a href="http://dublincore.org/documents/usageguide/#basicprinciples">3. Element Content and Controlled Vocabularies</a><br>
+<a href="http://dublincore.org/documents/usageguide/elements.shtml">4. The Elements</a><br>
+<a href="http://dublincore.org/documents/usageguide/qualifiers.shtml">5. Dublin Core Qualifiers</a><br>
+<a href="http://dublincore.org/documents/usageguide/appendix_roles.shtml">6. Appendix, Roles</a><br>
+<a href="http://dublincore.org/documents/usageguide/glossary.shtml">7. Glossary</a><br>
+<a href="http://dublincore.org/documents/usageguide/bibliography.shtml">8. Bibliography</a></p>
+
+<a id="introduction" name="introduction"></a>
+<h2>1. Introduction</h2>
+
+<a id="whatismetadata" name="whatismetadata"></a>
+<h3>1.1. What is Metadata?</h3>
+<p>Metadata has been with us since the first librarian made a list of
+the items on a shelf of handwritten scrolls. The term "meta" comes from
+a Greek word that denotes "alongside, with, after, next." More recent
+Latin and English usage would employ "meta" to denote something
+transcendental, or beyond nature. Metadata, then, can be thought of as
+data about other data. It is the Internet-age term for information that
+librarians traditionally have put into catalogs, and it most commonly
+refers to descriptive information about Web resources.</p>
+<p>A metadata record consists of a set of attributes, or elements,
+necessary to describe the resource in question. For example, a metadata
+system common in libraries -- the library catalog -- contains a set of
+metadata records with elements that describe a book or other library
+item: author, title, date of creation or publication, subject coverage,
+and the call number specifying location of the item on the shelf.</p>
+<p>The linkage between a metadata record and the resource it describes may take one of two forms:</p>
+<ol>
+<li>elements may be contained in a record separate from the item, as in the case of the library's catalog record; or</li>
+<li>the metadata may be embedded in the resource itself.</li>
+</ol>
+<p>Examples of embedded metadata that is carried along with the
+resource itself include the Cataloging In Publication (CIP) data
+printed on the verso of a book's title page; or the TEI header in an
+electronic text. Many metadata standards in use today, including the
+Dublin Core standard, do not prescribe either type of linkage, leaving
+the decision to each particular implementation.</p>
+<p>Although the concept of metadata predates the Internet and the Web,
+worldwide interest in metadata standards and practices has exploded
+with the increase in electronic publishing and digital libraries, and
+the concomitant "information overload" resulting from vast quantities
+of undifferentiated digital data available online. Anyone who has
+attempted to find information online using one of today's popular Web
+search services has likely experienced the frustration of retrieving
+hundreds, if not thousands, of "hits" with limited ability to refine or
+make a more precise search. The wide scale adoption of descriptive
+standards and practices for electronic resources will improve retrieval
+of relevant resources in any venue where information retrieval is
+critical. As noted by Weibel and Lagoze, two leaders in the fields of
+metadata development and digital libraries:</p>
+<blockquote>
+<p>"The association of standardized descriptive metadata with networked
+objects has the potential for substantially improving resource
+discovery capabilities by enabling field-based (e.g., author, title)
+searches, permitting indexing of non-textual objects, and allowing
+access to the surrogate content that is distinct from access to the
+content of the resource itself." (Weibel and Lagoze, 1997)</p>
+</blockquote>
+<p>In the last years we have also seen an increase in the application
+of Dublin Core metadata in more closed environments. There are
+implementations where Dublin Core metadata is used to describe
+resources held, owned or produced by companies, governments and
+international organisations to supporting portal services or internal
+knowledge management. There are also implementations where Dublin Core
+metadata is used as a common exchange format supporting the aggregation
+of collections of metadata, such as the case of the Open Archive
+Initiative. In these cases, like in the open environment of the Web,
+the concept of standardized descriptive metadata provides a powerful
+mechanism to improve retrieval for specific applications and specific
+user communities. It is this need for "standardized descriptive
+metadata" that the Dublin Core addresses.</p>
+
+<a id="whatis" name="whatis"></a>
+<h3>1.2. What is the Dublin Core?</h3>
+<p>The Dublin Core metadata standard is a simple yet effective element
+set for describing a wide range of networked resources. The Dublin Core
+standard includes two levels: Simple and Qualified. Simple Dublin Core
+comprises fifteen elements; Qualified Dublin Core includes three
+additional elements (Audience, Provenance and RightsHolder), as well as
+a group of element refinements (also called qualifiers) that refine the
+semantics of the elements in ways that may be useful in resource
+discovery. The semantics of Dublin Core have been established by an
+international, cross-disciplinary group of professionals from
+librarianship, computer science, text encoding, the museum community,
+and other related fields of scholarship and practice.</p>
+<p>Another way to look at Dublin Core is as a "small language for
+making a particular class of statements about resources". In this
+language, there are two classes of terms -- elements (nouns) and
+qualifiers (adjectives) -- which can be arranged into a simple pattern
+of statements. The resources themselves are the implied subjects in
+this language. (For additional discussion of Dublin Core Grammar, see <a href="http://dublincore.org/usage/documents/principles/">"DCMI Grammatical Principles"</a>)
+In the diverse world of the Internet, Dublin Core can be seen as a
+"metadata pidgin for digital tourists": easily grasped, but not
+necessarily up to the task of expressing complex relationships or
+concepts.</p>
+<p>The Dublin Core basic element set is outlined in <a href="http://dublincore.org/documents/usageguide/elements.shtml">Section 4</a>.
+Each element is optional and may be repeated. Most elements also have a
+limited set of qualifiers or refinements, attributes that may be used
+to further refine (not extend) the meaning of the element. The Dublin
+Core Metadata Initiative (DCMI) has established standard ways to refine
+elements and encourage the use of encoding and vocabulary schemes. The
+full set of <a href="http://dublincore.org/documents/dcmi-terms/">elements and element refinements</a> conforming to DCMI "best practice" is available, with a <a href="http://dublincore.org/dcregistry/">formal registry</a> available as well.</p>
+<p>Three other Dublin Core principles bear mentioning here, as they are
+critical to understanding how to think about the relationship of
+metadata to the underlying resources they describe.</p>
+<blockquote>
+<p>1. The One-to-One Principle. In general Dublin Core metadata
+describes one manifestation or version of a resource, rather than
+assuming that manifestations stand in for one another. For instance, a
+jpeg image of the Mona Lisa has much in common with the original
+painting, but it is not the same as the painting. As such the digital
+image should be described as itself, most likely with the creator of
+the digital image included as a Creator or Contributor, rather than
+just the painter of the original Mona Lisa. The relationship between
+the metadata for the original and the reproduction is part of the
+metadata description, and assists the user in determining whether he or
+she needs to go to the Louvre for the original, or whether his/her need
+can be met by a reproduction.</p>
+</blockquote>
+<blockquote>
+<p>2. The Dumb-down Principle. The qualification of Dublin Core
+properties is guided by a rule known colloquially as the Dumb-Down
+Principle. According to this rule, a client should be able to ignore
+any qualifier and use the value as if it were unqualified. While this
+may result in some loss of specificity, the remaining element value
+(minus the qualifier) must continue to be generally correct and useful
+for discovery. Qualification is therefore supposed only to refine, not
+extend the semantic scope of a property.</p>
+</blockquote>
+<blockquote>
+<p>3. Appropriate values. Best practice for a particular element or
+qualifier may vary by context, but in general an implementor cannot
+predict that the interpreter of the metadata will always be a machine.
+This may impose certain constraints on how metadata is constructed, but
+the requirement of usefulness for discovery should be kept in mind.</p>
+<p>Although the Dublin Core was originally developed with an eye to
+describing document-like objects (because traditional text resources
+are fairly well understood), DC metadata can be applied to other
+resources as well. Its suitability for use with particular non-document
+resources will depend to some extent on how closely their metadata
+resembles typical document metadata and also what purpose the metadata
+is intended to serve. (Implementors interested in using Dublin Core for
+diverse resources are encouraged to browse the <a href="http://dublincore.org/projects/">Dublin Core Projects pages</a> for ideas on using Dublin Core metadata for their resources.)</p>
+<p>Dublin Core has as its goals:</p>
+<p>Simplicity of creation and maintenance</p>
+<blockquote> 
+<p>The Dublin Core element set has been kept as small and simple as
+possible to allow a non-specialist to create simple descriptive records
+for information resources easily and inexpensively, while providing for
+effective retrieval of those resources in the networked environment.</p>
+</blockquote>
+<p>Commonly understood semantics</p>
+<blockquote> 
+<p>Discovery of information across the vast commons of the Internet is
+hindered by differences in terminology and descriptive practices from
+one field of knowledge to the next. The Dublin Core can help the
+"digital tourist" -- a non-specialist searcher -- find his or her way
+by supporting a common set of elements, the semantics of which are
+universally understood and supported. For example, scientists concerned
+with locating articles by a particular author, and art scholars
+interested in works by a particular artist, can agree on the importance
+of a "creator" element. Such convergence on a common, if slightly more
+generic, element set increases the visibility and accessibility of all
+resources, both within a given discipline and beyond.</p>
+</blockquote>
+<p>International scope</p>
+<blockquote> 
+<p>The Dublin Core Element Set was originally developed in English, but versions are being created in <a href="http://dublincore.org/resources/translations/">many other languages</a>, including Finnish, Norwegian, Thai, Japanese, French, Portuguese, German, Greek, Indonesian, and Spanish. <a href="http://dublincore.org/groups/languages/">The DCMI Localization and Internationalization Special Interest Group</a> is coordinating efforts to link these versions in a distributed registry.</p>
+<p>Although the technical challenges of internationalization on the
+World Wide Web have not been directly addressed by the Dublin Core
+development community, the involvement of representatives from
+virtually every continent has ensured that the development of the
+standard considers the multilingual and multicultural nature of the
+electronic information universe.</p>
+</blockquote>
+<p>Extensibility</p>
+<blockquote> 
+<p>While balancing the needs for simplicity in describing digital
+resources with the need for precise retrieval, Dublin Core developers
+have recognized the importance of providing a mechanism for extending
+the DC element set for additional resource discovery needs. It is
+expected that other communities of metadata experts will create and
+administer additional metadata sets, specialized to the needs of their
+communities. Metadata elements from these sets could be used in
+conjunction with Dublin Core metadata to meet the need for
+interoperabilbility. The DCMI Usage Board is presently working on a
+model for accomplishing this in the context of "application profiles."</p>
+<p>Rachel Heery and Manjula Patel, in their article <a href="http://www.ariadne.ac.uk/issue25/app-profiles/">"Application profiles: mixing and matching metadata schemas"</a> define an application profile as:</p>
+<blockquote>
+<p>" ... schemas which consist of data elements drawn from one or more
+namespaces, combined together by implementors, and optimised for a
+particular local application."</p>
+</blockquote>
+<p>This model allows different communities to use the DC elements for
+core descriptive information, and allowing domain specific extensions
+which make sense within a more limited arena.</p>
+</blockquote>
+</blockquote>
+
+<a id="purpose" name="purpose"></a>
+<h3>1.3. The Purpose and Scope of This Guide</h3>
+<p>This document is intended to be an entry point for users of Dublin
+Core. For non-specialists, it will assist in creating simple
+descriptive records for information resources (for example, electronic
+documents, JPEG images, video clips). Specialists may find the document
+a useful point of reference to the documentation of Dublin Core, as it
+changes and grows.</p>
+<p>"Using Dublin Core" will show in a non-technical fashion how Dublin
+Core metadata may be used by anyone to make their material more
+accessible. It discusses the principles, structure and content of
+Dublin Core metadata elements, how to use them in composing a complete
+Dublin Core metadata record, as well as how to qualify elements to
+support use by a wide variety of communities.</p>
+<p>Another important goal of this document is to promote "best
+practices" for describing resources using the Dublin Core element set.
+The Dublin Core community recognizes that consistency in creating
+metadata is an important key to achieving optimal retrieval and
+intelligible display across disparate sources of descriptive records.
+Inconsistent metadata effectively hides desired records, resulting in
+uneven, unpredictable or incomplete search results.</p>
+
+<p>As a general introduction, this document is necessarily brief, and
+cannot address all the issues implementors may encounter while planning
+their use of metadata. Several avenues remain for those who have
+additional questions beyond those addressed in this guide.</p>
+<ol>
+<li>1. Appended to this guide are references to relevant articles and
+other resources, including those with more technical guidance for
+implementors</li>
+<li>The Dublin Core Website contains references to additional documents
+and resources of the DCMI community and ways for implementors to become
+involved in the DCMI</li>
+<li>Specific questions can be addressed to <a href="http://askdcmi.askvrd.org/">AskDCMI</a>.
+In addition to fielding questions, the AskDCMI service maintains a
+searchable archive of already answered questions and links to
+additional resources.</li>
+</ol>
+
+<a id="whichsyntax" name="whichsyntax"></a> 
+<h3>2. Syntax Issues</h3>
+<p><a href="http://dublincore.org/documents/abstract-model/">The Dublin Core Abstract Model</a>
+provides a reference model against which particular DC encoding
+guidelines can be compared, independent of any particular encoding
+syntax. Such a reference model allows implementors to gain a better
+understanding of the kinds of descriptions they are trying to encode
+and facilitates the development of better mappings and translations
+between different syntaxes. Although the document is primarily aimed at
+the developers of software applications that support Dublin Core
+metadata, anyone who is considering implementing Dublin Core --
+particularly those contemplating extending DC in any way -- could
+usefully review the document. Those involved in developing new syntax
+encoding guidelines for Dublin Core metadata or developing metadata
+application profiles based on the Dublin Core should also become
+familiar with the DC Abstract Model.</p>
+<p>In this guide, we have chosen to represent Dublin Core examples in a
+"generic" form (Element="value"). Examples of other syntaxes,
+including: HTML or XHTML (the Web's Hypertext Markup Language format),
+RDF/XML (the Resource Description Framework using eXtensable Markup
+Language) and in plain XML can be found in syntax-specific <a href="http://dublincore.org/resources/expressions/">documents available on the DCMI Website</a>. Some are also referenced within this document and in the <a href="http://dublincore.org/documents/usageguide/bibliography.shtml">Bibliography Section</a> of this guide.</p> <p>Syntax
+choices depend on a number of variables, and "one size fits all"
+prescriptions rarely apply. When considering an appropriate syntax, it
+is important to note that Dublin Core concepts and semantics are
+designed to be syntax independent, are equally applicable in a variety
+of contexts, as long as the metadata is in a form suitable for
+interpretation both by search engines and by human beings.</p>
+
+<a id="html" name="html"></a>
+<h3>2.1. HTML and XHTML</h3>
+<p>HTML or XHTML can be used to express either simple or qualified
+Dublin Core, although there are limitations inherent in representing
+refinements in HTML. Specific instructions for expressing Dublin Core
+in HTML can be found in the following DCMI document:</p>
+<ol>
+<li><a href="http://dublincore.org/documents/dcq-html/">Expressing Qualified Dublin Core in HTML/XHTML meta and link elements</a></li>
+</ol>
+
+<a id="rdfxml" name="rdfxml"></a> 
+<h3>2.2. RDF/XML</h3>
+<p>RDF (Resource Description Framework) allows multiple metadata
+schemes to be read by humans as well as parsed by machines. It uses XML
+(EXtensible Markup Language) to express structure thereby allowing
+metadata communities to define the actual semantics. This decentralized
+approach recognizes that no one scheme is appropriate for all
+situations, and further that schemes need a linking mechanism
+independent of a central authority to aid description, identification,
+understanding, usability, and/or exchange.</p>
+<p>RDF allows multiple objects to be described without specifying the
+detail required. The underlying glue, XML, simply requires that all
+namespaces be defined and once defined, they can be used to the extent
+needed by the provider of the metadata.</p>
+<p>For example:</p>
+<pre class="example">&lt;rdf:RDF 
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"&gt;
+
+   &lt;rdf:Description rdf:about="http://media.example.com/audio/guide.ra"&gt;
+
+      &lt;dc:creator&gt;Rose Bush&lt;/dc:creator&gt;
+      &lt;dc:title&gt;A Guide to Growing Roses&lt;/dc:title&gt;
+      &lt;dc:description&gt;Describes process for planting and nurturing different kinds of rose bushes.&lt;/dc:description&gt; 
+      &lt;dc:date&gt;2001-01-20&lt;/dc:date&gt;
+
+   &lt;/rdf:Description&gt; 
+&lt;/rdf:RDF&gt;
+</pre>
+
+<p>This simple example uses Dublin Core by itself to describe an audio
+recording of a guide to growing rose bushes. With XML or RDF/XML,
+Dublin Core can potentially be mixed with other metadata vocabularies.
+For example, the simple Dublin Core description above might be used
+alongside other vocabularies such as vCard that can describe the
+author's affiliation and contact information, or a more specialized
+"rose description" vocabulary that described the rose bushes in greater
+detail.</p>
+<p>DCMI has made available several recommendations specifically about using these syntaxes:</p>
+<ol>
+<li><a href="http://dublincore.org/documents/dc-xml-guidelines/">Guidelines for Implementing Dublin Core in XML</a></li>
+<li><a href="http://dublincore.org/documents/dcmes-xml/">Expressing Simple Dublin Core in RDF/XML</a></li>
+<li><a href="http://dublincore.org/documents/dcq-rdf-xml/">Expressing Qualified Dublin Core in RDF/XML</a> (Proposed Recommendation)</li>
+</ol>
+
+<a id="metadatacontained" name="metadatacontained"></a>
+<h3>2.3. Metadata Storage and Maintenance Issues</h3>
+<p>Some implementations using Dublin Core have chosen to embed their
+metadata within the resource itself. This approach is taken most often
+with documents encoded using HTML, but is also sometimes possible with
+other kinds of documents. Simple tools have been developed to make
+provision of Dublin Core metadata within HTML encoded pages fairly
+easy. One such tool, <a href="http://www.ukoln.ac.uk/metadata/dcdot/">DC.dot</a>,
+extracts metadata information from an HTML document, and formats it so
+that it can be edited, then cut and pasted back into the HTML header of
+the original document.</p>
+<p>On the other hand, metadata can be stored in any kind of database,
+and provide a link to the described resource rather than be embedded
+within it. This approach is likely to be most practical for many
+non-textual resources, and is increasingly used for text as well,
+primarily to support easier maintenance and sharing of metadata.</p>
+<p>Each of these approaches have their advantages and disadvantages,
+and the balance point changes as implementations become larger and more
+diverse, and also as the metadata ages over time.</p>
+
+<a id="basicprinciples" name="basicprinciples"></a> 
+<h3>3. Element Content and Controlled Vocabularies</h3>
+<p>Each Dublin Core element is optional and repeatable, and there is no
+defined order of elements. The ordering of multiple occurrences of the
+same element (e.g., Creator) may have a significance intended by the
+provider, but ordering is not guaranteed to be preserved in every user
+environment. Ordering or sequencing may be syntax dependent; for
+instance, RDF/XML supports ordering, but HTML does not.</p>
+<p>Content data for some elements may be selected from a "controlled
+vocabulary," which is a limited set of consistently used and carefully
+defined terms. This can dramatically improve search results because
+computers are good at matching words character by character but weak at
+understanding the way people refer to one concept using different
+words, i.e. synonyms. Without basic terminology control, inconsistent
+or incorrect metadata can profoundly degrade the quality of search
+results. For example, without a controlled vocabulary, "candy" and
+"sweet" might be used to refer to the same concept. Controlled
+vocabularies may also reduce the likelihood of spelling errors when
+recording metadata.</p>
+<p>One cost of a controlled vocabulary is the necessity for an
+administrative body to review, update and disseminate the vocabulary.
+For example, the US Library of Congress Subject Headings (LCSH) and the
+US National Library of Medicine Medical Subject Headings (MeSH) are
+formal vocabularies, indispensable for searching rigorously cataloged
+collections. However, both require significant support organizations.
+Another cost is having to train searchers and creators of metadata so
+that they know when using MeSH, for example, to enter "myocardial
+infarction" instead of the more colloquial "heart attack." More
+sophisticated implementations can make such tasks much easier, but the
+controlled vocabulary terms must be available for them to apply.</p>
+<p>Using controlled vocabularies can be done most effectively using <a href="http://dublincore.org/documents/dcmi-terms/#H4">encoding schemes</a>.
+Without an encoding scheme specifically designated, a subject which
+might very well be carefully selected from a particular controlled
+vocabulary cannot be distinguished from a simple keyword.</p>
+
+<a id="elements" name="elements"></a>
+<h3>4. <a href="http://dublincore.org/documents/usageguide/elements.shtml">The Elements</a></h3>
+<a id="qualifiers" name="qualifiers"></a>
+<h3>5. <a href="http://dublincore.org/documents/usageguide/qualifiers.shtml">Dublin Core Qualifiers</a></h3>
+<a id="appendix_roles" name="appendix_roles"></a>
+<h3>6. <a href="http://dublincore.org/documents/usageguide/appendix_roles.shtml">Appendix, Roles</a></h3>
+<a id="glossary" name="glossary"></a>
+<h3>7. <a href="http://dublincore.org/documents/usageguide/glossary.shtml">Glossary</a></h3>
+<a id="bibliography" name="bibliography"></a> 
+<h3>8. <a href="http://dublincore.org/documents/usageguide/bibliography.shtml">Bibliography</a></h3>
+
+<div class="footer">
+<p><a href="http://validator.w3.org/check/referer"><img src="Using%20Dublin%20Core_files/valid-xhtml10.gif" alt="Valid XHTML 1.0!" height="31" width="88"></a><a href="http://jigsaw.w3.org/css-validator/"><img src="Using%20Dublin%20Core_files/vcss.gif" alt="Valid CSS!" height="31" width="88"></a></p>
+<p>Metadata associated with this resource: <a href="http://dublincore.org/documents/usageguide/index.shtml.rdf">http://dublincore.org/documents/usageguide/index.shtml.rdf</a></p>
+<p><a href="http://dublincore.org/about/copyright/index.shtml#copyright">Copyright</a> © 1995-2008 <acronym title="Dublin Core Metadata Initiative"><a href="http://dublincore.org/index.shtml">DCMI</a></acronym> All Rights Reserved. DCMI <a href="http://dublincore.org/about/copyright/index.shtml#liability">liability</a>, <a href="http://dublincore.org/about/copyright/index.shtml#trademark">trademark/service mark</a>, <a href="http://dublincore.org/about/copyright/index.shtml#documentnotice">document use</a> and <a href="http://dublincore.org/about/software/">software licensing</a> rules apply. Your interactions with this site are in accordance with our <a href="http://dublincore.org/about/privacy/">privacy</a> statements. Please feel free to <a href="http://dublincore.org/about/contact/">contact us</a> for any questions, comments or media inquiries.</p>
+<p>DCMI is hosted by <a href="http://www.oclc.org/research/">OCLC Research</a>.<br>
+The DCMI Web site and Conference Paper Repository are hosted by the <a href="http://www.nl.go.kr/">National Library of Korea</a>.<br>
+The DCMI Registry is hosted by the <a href="http://www.kc.tsukuba.ac.jp/index_en.html">Research Center for Knowledge Communities</a> at the University Of Tsukuba, Japan.</p>
+</div>
+<div class="dcmiprint"><p>Copyright © 1995-2008 DCMI. All Rights Reserved.</p></div>
+<!-- Google Analytics Script -->
+
+<script src="Using%20Dublin%20Core_files/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+  _uacct="UA-1053639-1";
+  urchinTracker();
+</script> 
+
+
+</body></html>

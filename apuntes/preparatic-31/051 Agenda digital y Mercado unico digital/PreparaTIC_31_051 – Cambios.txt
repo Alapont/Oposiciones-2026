@@ -1,0 +1,14 @@
+RESUMEN
+
+  APARTADO 2.1.  
+  Se añaden datos concretos que faltaban (https://eur-lex.europa.eu/ES/legal-content/summary/2030-digital-decade-policy-programme.html - añadido como enlace en el documento):
+	-	Cambio: “Gigabit para todos, 5G en todas partes” -> “Gigabit en todas las ubicaciones fijas y 5G en todas las zonas pobladas” para 		ser más explícitos
+	-	Añado: “ , alcanzando el 20% de la producción mundial”
+
+  APARTADO 4.
+  Se modifica la tabla azul del final (y el párrafo que la precede) con los datos actualizados de la página web de España Digital 2026 (https://espanadigital.gob.es/indicadores/espa%C3%B1a-digital - añadido como enlace en el documento)
+
+  APARTADO 5. Se actualiza información sobre DESI 2025 (España Digital 2026)
+
+
+RESUMEN EXPRESS y TEMA - cambios análogos a los del RESUMEN

@@ -1,0 +1,5 @@
+Preparatic31
+
+- Actualización de versiones de ssoo móviles 
+- Se amplía información sobre diferentes SSOO, añadiendo macOS. 
+- Se amplia contenido de tendencias (se omite el Windows phone por obsoleto)

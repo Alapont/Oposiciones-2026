@@ -1,0 +1,39 @@
+﻿# Control de cambios
+
+## PreparaTIC 29
+
+> Abril 2023
+
+* Modificado fichero de resumen
+  * Añadida sección de Introducción
+  * Separado apartado de HTTP/URI a uno nuevo
+  * Cambio de HTTP/3
+  * Reajuste de contenidos de HTML
+  * Ajuste de estilos de código HTML
+  * Añadidas nuevas etiquetas generales y HTML5
+  * Añadidas etiquetas obsoletas
+  * Sección de atributos
+  * Reajuste de contenidos de CSS
+  * Añadidos preprocesadores
+  * Añadidas media queries
+  * Ajuste de referencias y versiones
+  * Reajuste de contenidos XML
+  * No se ha cambiado contenido excepto las herramientas técnicas basadas en XML
+  * Añadida sección de JSON
+  * Añadido uso de naveagdores web y expandidos tipos
+  * Añadida sección de motores de renderizado
+  * Añadida sección de interpretes JS
+  * Reajuste de estándares web y añadido ECMAScript
+
+* Añadido fichero de referencias
+
+* Modificado fichero de resumen express con los cambios del resumen
+
+* Documentación adicional sin cambios
+
+## PreparaTIC 28
+
+* Actualizado el formato y modificado el diseño para una mayor claridad.
+* Añadido HTTP/3.
+* Añadidos lenguajes XAdES y Facturae.
+* Añadida sección 7. Navegadores web y compatibilidad con estándares.

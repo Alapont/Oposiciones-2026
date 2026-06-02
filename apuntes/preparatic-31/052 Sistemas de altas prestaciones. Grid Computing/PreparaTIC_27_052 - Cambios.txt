@@ -1,0 +1,6 @@
+TEMA 52 - Sistemas de altas prestaciones. Grid Computing. Mainframe.
+
+Cambios realizados:
+
+- Adecuación de la estructura de directorios a la acordada por PreparaTIC 27.
+- Adecuación del nombre del resumen al formato acordado por PreparaTIC 27.

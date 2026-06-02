@@ -1,0 +1,5 @@
+﻿Se ha modificado la parte de tecnologías
+Se ha añadido al punto 1 la sección de juegos de caracteres
+Se ha añadido más software OCR
+SE ha ampliado la sección de biometría
+Se han añadido referencias legales en biometría

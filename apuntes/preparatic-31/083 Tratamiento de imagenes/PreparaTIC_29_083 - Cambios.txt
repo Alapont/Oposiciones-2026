@@ -1,0 +1,4 @@
+﻿Se ha modificado el orden de exposición de los apartados
+Se ha añadido el apartado sobre el color
+Se ha añadido más explicación de los distintos algoritmos relacionados con la digitalización de coumentos
+Se ha eliminado normativa obosleta  se ha añadido la referente al RD 203/2023

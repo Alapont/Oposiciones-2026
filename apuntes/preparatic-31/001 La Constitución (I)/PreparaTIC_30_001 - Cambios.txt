@@ -1,0 +1,22 @@
+/// Preparatic 30 ///
+
+EDICIÓN DEL TEAM 001 - La Constitución Española de 1978 (I). Los principios constitucionales. Los derechos fundamentales y sus garantías. La Corona. Cortes Generales. Congreso de los Diputados y Senado. El Gobierno. Los Órganos Constitucionales de control del Gobierno: Tribunal de Cuentas, Defensor del Pueblo. La función consultiva: el Consejo de Estado.
+
+Cambios en el RESUMEN --> TEMA
+- Se reclasifica el resumen como tema debido a la dimensión del documento.
+- Cambio de aspecto formato Preparatic 30, poniendo en negrita conceptos para mejorar la fijación de los mismos e imágenes para mejorar la fijación de conceptos para personas con memoria fotográfica.
+- Se actualiza apartado de reformas constitucionales con la última reforma de la constitución realizada en 2024 y se añade un anexo al final.
+- Se reordenan ciertos aspectos del tema para una mejor comprensión.
+- Se incluyen todos los artículos del Título I, Capítulo III: De los principios rectores de la política social y económica.
+- Se actualiza la composición del gobierno indicada en el Real Decreto 829/2023, de 20 de noviembre.
+- Se actualizan las comisiones delegadas del gobierno según el Real Decreto 1/2024 que deroga a RD 399/2020 que a su vez deroga RD 1886/2011 (indicada en la versión anterior)
+- Se corrije errata en el RD 1674/1980 por el que se aprueba el Reglamento Orgánico del Consejo de Estado.
+- Se corrije la consulta al consejo de estado que puede ser preceptiva o consultiva (por defecto)
+
+Cambios en el RESUMEN Express --> RESUMEN
+- Se reclasifica el resumen express como resumen debido a la dimensión del documento.
+- Cambios en el formato PreparaTIC 30.
+- Se alinean los contenidos con el Tema.
+
+Cambios Doc adicional
+- Se actualiza CE (BOE)

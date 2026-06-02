@@ -1,0 +1,11 @@
+- Se quitan referencias desactualizadas en la introducción y se añaden nuevas iniciativas relacionadas con la Estrategia industrial Europea en 2021
+- se actualizan las líneas de actuación en el plan de industria conectada.
+- Pequeñas actualizaciones en las iniciativas del plan.
+- Se actualiza el plan de ciudades inteligentes porque el plan nacional de ciudades inteligentes ya se acabó.
+- se actualizan los mnicipios en la RECI
+- Se añade el punto 1.2	HACIA LA INDUSTRIA CONECTADA 5.0
+- Se añade plan EU Mission:Climate-Neutral and Smart Cities.
+- Se incluye dentro del 5G de las áreas de intervención prioritarias más detalle de su evolución actual
+- Se actualiza los SO para IOT
+- Se añade el punto 3.3 Tendencias actuales IoT
+- Se añade el apartado 4 CIBERSEGURIDAD EN INDUSTRIA 4.0, IOT Y SMART CITIES

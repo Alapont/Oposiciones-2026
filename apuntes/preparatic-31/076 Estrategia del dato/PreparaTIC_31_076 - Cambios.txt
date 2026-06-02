@@ -1,0 +1,15 @@
+
+ - Se trata de un tema nuevo, por tanto se generan los siguientes documentos:
+	
+	- Resumen
+	- Resumen express
+	- Referencias
+
+ - Se incluye la carpeta Doc Adicional para ampliar los aspectos recogidos en el documento de resumen.
+
+Actualización PREPARATIC XXXI:
+
+- Actualización del Data Act: Reglamento UE 2023/2854 (con capítulo propio)
+- Eliminada referencia al PRTR
+- Actualizado DCAT-AP-ES: DCAT-AP 2.1.1 y extensión DCAT-AP-HVD 2.2.0 (HVD, High-Value Datasets) y algún otro
+- Nuevas normas: UNE 0081, UNE 0085 y UNE 0087. 

@@ -1,0 +1,19 @@
+Preparatic 29:
+Resumen:
+	- Correcciones de formato
+	- Adición de contenidos
+		* Enrutamiento e interconexión de Internet. Protocolos de enrutamiento. Figura de protocolos EGP e IGP
+	- Actualización de contenidos
+		* Historia de Internet
+		* Jerarquía de Internet. Contenido y figura de Tiers.
+		* Servicios de Internet. Actualización de RFCs del protocolo HTTP en sus versiones 1, 2 y 3
+
+Resumen Express:
+	- Correcciones de formato
+	- Actualización menores de contenidos
+		* Organizaciones
+		* Servicios de Internet (WWW y FTP)
+
+Documentación adicional:
+- Se añade el documento "Protocolos de enrutamiento.pdf"
+

@@ -1,0 +1,4 @@
+﻿Se ha añadido un resumen con los contenidos básicos con respecto a la versión de 2018
+Se ha mantenido la Doc Adicional con los artículos, pero no se considera esencial aprenderlo para el test
+No se ha incluido la parte de redes de área extensa para no duplicar contenido.
+Por ello, se recomienda mirar los primeros temas del bloque de redes y los protocolos de encaminamiento

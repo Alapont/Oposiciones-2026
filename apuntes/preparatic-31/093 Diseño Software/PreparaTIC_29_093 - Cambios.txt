@@ -1,0 +1,7 @@
+Resumen:
+	- Se añade un apartado final de patrones de diseño modernos
+Resumen express:
+	- Se añade al resumen el apartado de patrones de diseño modernos
+Referencias:
+	- Se añade un patrón de diseño estructural: Active record
+	- Se añade referencia de patrones de diseño modernos (orientados a microservicios, SAGA)

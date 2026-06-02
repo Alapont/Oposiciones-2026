@@ -1,0 +1,9 @@
+Revisión Preparatic 30 el 28/08/2024 sobre la edición de Preparatic 28.
+
+Modificaciones menores:
+
+-	Se actualiza el año de la ISO 9000:2015 y se incluye nota aclatoria.
+-	Se incluye definición de calidad del SW de Jones.
+-	Se incluye gráfico resumen del modelo mccall.
+-	Se incluye apartado feedback Preparatic
+-	Resumen Express no se modifica.

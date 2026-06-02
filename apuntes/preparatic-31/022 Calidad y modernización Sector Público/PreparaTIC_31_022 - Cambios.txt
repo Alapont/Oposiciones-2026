@@ -1,0 +1,9 @@
+﻿
+PreparaTIC 31:
+
+
+- Se cambia AEAD por SGAD
+- Actualización de legislación
+- Se amplía información en el punto 6.2 sobre la relación entre PRTR, Agenda Digital y Plan de Digitalización de las AAPP. Se añaden los Ejes de la Agenda España Digital.
+
+

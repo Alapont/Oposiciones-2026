@@ -1,0 +1,18 @@
+﻿PREPARATIC 30
+
+Tema:
+- Se reestructura el tema. Se reaprovechan algunas imágenes y párrafos, pero se reformulan otros apartados.
+- Se incluye apartado sobre los protocolos: RTP, RTCP, RSVP, SDP, RTSP
+- Se incluye sub-apartado con principales diferencias entre H.323 y SIP
+- Se incluye sub-apartado relativo a los nodos IMS más importantes, con breve descripción de cada uno.
+- Se describe un breve apartado sobre ToIP, con ambas acepciones
+- Se incluye el índice
+
+
+Resumen:
+(cambios similares al tema)
+- Reestructurado
+- Incluye breve descripción de protocolos: RTP, RTCP, RSVP, SDP, RTSP
+- Incluye listado y breve descripción de nodos IMS
+- Se incluye índice
+

@@ -1,0 +1,13 @@
+Nuevo contenido:
+
+- Apartado "2. Redes WLAN 802.11" -> Se añade PCF a los modos de acceso al medio y banda de 6GHZ de funcionamiento
+
+- Apartado "2.2 Grupos de trabajo IEEE 802.11" -> Se añaden los grupos de trabajo: 802.11f, 802.11v, 802.11s
+
+- Apartado "4. WiFi 802.11- Normativa reguladora"-> Se añade la Directiva RED 2014/53/UE (Radio Equipment Directive)
+
+- Apartaqdo "5. WiMAX (World Wide Interoperability for Microwave Access)" -> Se añade mayor detalle de las variantes principales
+
+- Apartado "6. Bluetooth" -> Se añade tabla con alcance y potencia de los dispositivos, y modos de seguridad
+
+- Apartado "7. Otras tecnologías WPAN y WMAN" -> Se añade IEEE 802.22 a las redes WMAN.

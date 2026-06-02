@@ -1,0 +1,8 @@
+TEMA 127 - Plan de Continuidad de Negocio - CAMBIOS PREPARATIC28
+
+- Resumen:
+    	Reorganización y pequeños añadidos, se añaden recuadros de más información.
+- Resumen Express:
+	Pequeños cambios.
+- Material extra:
+	Se añaden infografías de Contingencia de INCIBE

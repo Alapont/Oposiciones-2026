@@ -1,0 +1,6 @@
+TEMA 035
+========
+
+Se incluye un nuevo documento resumen del tema
+Se introduce la nueva versión de PMBOK v7
+

@@ -1,0 +1,8 @@
+﻿Se generan documentos nuevos:
+- 107 Resumen.pdf
+- 107 Resumen express.pdf
+
+Se renombran documentos:
+- Tema 102. Familia de normas IEEE 802 actualizada. PreparaTIC XXV 2018.docx > Familia de normas IEEE 802 actualizada. PreparaTIC XXV 2018.docx
+- Tema 102. Familia de normas IEEE 802 actualizada. PreparaTIC XXV 2018.pdf > Familia de normas IEEE 802 actualizada. PreparaTIC XXV 2018.pdf
+

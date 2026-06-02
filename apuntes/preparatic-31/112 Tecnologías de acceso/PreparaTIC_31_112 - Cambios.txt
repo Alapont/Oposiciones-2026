@@ -1,0 +1,3 @@
+- Modificas referencias a otros temas por cambio de número.
+- Eliminadas referencias obsoletas en el apartado DSL
+- Añadidas menciones a nuevas tecnologías (NG-PON, LTE, 5G, etc...)

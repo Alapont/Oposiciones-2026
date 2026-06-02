@@ -1,0 +1,13 @@
+PREPARATIC 30
+
+Tema:
+- Se reestructura el documento de "Resumen" de promociones anteriores, incluyendo todos los procesos dentro de un apartado dedicado exclusivamente a ello.
+- Se incluyen apartados relativos a: interfaces, técnicas y prácticas; así como principales roles involucrados. Dado el tamaño de los nuevos apartados incluidos, se recalifica el documento de "Resumen" a "Tema"
+- Se reformula y amplía el apartado introductorio de Métrica v3, de modo que queden amparados los nuevos apartados que se han incluido en esta edición
+- En cada proceso, se incluyen las principales prácticas/técnicas a considerar
+- Se reordenan las imágenes en el proceso EVS y CSI para que aparezcan en el momento en el que se nombran
+- Se incluyen algunos cuadros morados, iconos y textos en negrita para enfatizar información relevante.
+- Se modifica el formato conforme plantilla Preparatic 30
+
+Resumen:
+- Se crea nuevo, de acuerdo a plantilla Preparatic 30

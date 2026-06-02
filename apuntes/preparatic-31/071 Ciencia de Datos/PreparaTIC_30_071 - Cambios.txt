@@ -1,0 +1,12 @@
+Se realizan una serie de pequeñas modificaciones a partir del documento del tema 71 elaborado en la edición Preparatic29. Las modificaciones son:
+
+- Añadido role MLOPS engineer.
+- Modificada definición de regresión lineal.
+- Se aclara concepto de churn.
+- Modificada definición de intervalo de confianza.
+- Modificada definición de regresión y matizada diferencia entre clasificación y clustering. 
+- Ampliada definición scikit-learn.
+- Modificada definición gráfico de dispersión.
+- Matizada definición 'no supervisado' vs 'supervisado'.
+- Incluida explicación de mapreduce.
+

@@ -1,0 +1,7 @@
+###############################
+# Preparatic29 - Tema 47      #
+###############################
+
+- Se actualiza información relativa al nuevo ENS.
+- Se completa informacuíon en todos los apartados y se añade un epígrafe más relativo a tecnicas y herramientas.
+- Se actualiza el resumen express incorporando los cambios del resumen. 

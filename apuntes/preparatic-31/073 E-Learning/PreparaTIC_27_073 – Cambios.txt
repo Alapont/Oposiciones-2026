@@ -1,0 +1,13 @@
+
+Resumen:
+	- Nuevo formato.
+	- Se añaden dos definiciones de tipos de cursos.
+
+Resumen express:
+	- Nuevo formato.
+	- Se añaden dos definiciones de tipos de cursos.
+
+Esquemas:
+	- Se eliminan los esquemas antiguos.
+
+

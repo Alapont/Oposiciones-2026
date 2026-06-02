@@ -1,0 +1,7 @@
+Resumen del contenido de esta carpeta:
+
+- El fichero "CPDs - tipos y caracteristicas.pdf" es un resumen para entender que es un CPD y sus caracteristicas.
+- Del fichero "Declaracion-servicios-compartidos.pdf" recomiendo la lectura del punto "2.3 SERVICIO DE ALOJAMIENTO DE INFRAESTRUCTURAS TIC" y el "Anexo 1" se puede obtener una idea de la situacion de los CPDs en la AGE y hacia donde se pretende ir. 
+- En la carpeta de "Seguridad" hay guias del CCN que pueden servir de ejemplo para saber las medidas de seguridad a implantar sobre sistemas, servidores, etc.
+- Los ficheros de la Xunta son un buen resumen, sobre este tema solo entraria la parte de Equipos departamentales y Servidores, pero es mejor leerlos al completo para situar a estos servidores y equipos departamentales en su contexto.
+

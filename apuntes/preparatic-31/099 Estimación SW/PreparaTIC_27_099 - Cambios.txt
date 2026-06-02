@@ -1,0 +1,3 @@
+Resumen: se incluyen dos contenidos
+- un nuevo método de estimación en el Apartado 2 de métricas (método Karner)
+- un nuevo apartado 3 de herramientas de estimación

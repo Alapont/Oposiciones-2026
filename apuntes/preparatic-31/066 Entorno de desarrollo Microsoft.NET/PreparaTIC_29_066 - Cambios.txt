@@ -1,0 +1,37 @@
+# Control de cambios
+
+## PreparaTIC 29
+
+> Abril 2023
+
+* Modificado fichero de resumen
+  * Reorganización de contenidos
+  * Añadida Introducción
+  * Separación de .NET Framework, .NET (Core) y .NET Standard
+  * Reorganización de Entornos de ejecución, y bibliotecas
+  * Ampliada parte de lenguajes
+  * Añadido NuGet
+  * Añadida arquitectura física
+  * Reorganizado el apartado de desarrollo web
+  * Información ampliada de los frameworks
+  * Ampliada información de WCF
+  * Reorganizada información de ADO.NET
+  * Añadido EF y LINQ
+  * Añadida sección de WinForm y WPF
+  * Añadida sección de desarrollo multiplataforma
+  * Añadida sección de librerías y otras tecnologías
+  * Actualización de referencias de imagenes y versiones
+
+* Añadido fichero de referencias
+
+* Modificado fichero de resumen express con los cambios del resumen
+
+* Documentación adicional sin cambios
+
+## PreparaTIC 27 
+
+> Septiembre 2020
+
+Cambios en el comienzo del documento sobre frameworks, comentando las diferencias 
+y la evolución entre ASP.NET Framework y ASP.NET Core
+

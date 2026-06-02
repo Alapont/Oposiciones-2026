@@ -1,0 +1,33 @@
+Resumen
+- Se corrigen erratas.
+- Se clarifican algunos conceptos y se explicitan algunas referencias para evitar tener que mirar su contenido en la ley.
+- En las menciones a los acuerdos marco se añaden las correspondientes referencias a los sistemas dinámicos de contratación.
+- El antiguo punto 2 "Contratación TIC" y sus 10 apartados se desglosan en los siguientes puntos:
+	2 "Legislación para la contratación TIC"
+	3 "Actores intervinientes"
+	4 "Contratación TIC no centralizada"
+- Se simplifica la redacción de los órganos de contratación del antiguo punto 2.3 "Órganos de contratación" y se lleva la parte del texto sobre la SGAD al punto 6 "Procedimiento general de contratación TIC".
+- Se modifican los plazos donde procede y se incluyen los de los procedimientos con negociación.
+- Se eliminan las referencias al procedimiento especial de adopción de tipo del ya derogado Real Decreto Legislativo 3/2011 (texto refundido de la Ley de Contratos del Sector Público) y se resumen las características de los AM y los SDA.
+- Se actualizan los AM y SDA que están en vigor o lo harán próximamente.
+- Se incluyen referencias al Portal de Contratación Centralizada y las aplicaciones Conecta-Centralización y AUNA.
+
+
+Resumen express
+- Se modifica adaptándose a la estructura y la información actualizada del resumen.
+
+
+Doc adicional
+- NOTA: es posible que los documentos antiguos contengan referencias a umbrales desfasados, pero se mantienen porque el resto del contenido sigue siendo válido.
+- Se cambian los nombres de los archivos para hacerlos más intuitivos.
+- Se elimina el documento "Instrucciones_AM_26_2015 - Valores SARA antiguos", ya que el AM 26/2015 ya no está vigente.
+- Se incluye el archivo "Plazos y cuantías Ley 9-2017 [Melián Abogados].png" con una tabla resumen actualizada a enero de 2022.
+- Se incluye el archivo "Informe JCC Exp. 13-2021 Calificacion juridica prestacion servicios cloud.pdf" con el informe de la Junta Consultiva de Contratación Pública del Estado para el expediente 13/2021 en materia de Calificación jurídica de los contratos de prestación de servicios en la nube.
+- Se incluye el archivo "Orden EHA-1307-2005 Empleo de medios electronicos en contratacion.pdf" con la regulación del Ministerio de Economía y Hacienda.
+
+Preparatic XXXI
+-modificación importes
+-actualizacion documentacion adicional contratacion no centralizada
+-modificacion AM´s y SDA´s
+-añadido nota sobre perfeccionamiento de los contratos. 
+-creación .epubs

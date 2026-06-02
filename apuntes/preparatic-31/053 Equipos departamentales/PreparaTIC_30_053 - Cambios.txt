@@ -1,0 +1,13 @@
+Preparatic 30:
+
+Resumen:
+	- Cambio de formato
+	- Corrección de medidas de seguridad
+	- Eliminación del apartado Tendencias
+	- Añadida la disponibilidad en los Tier
+	- Nueva edición completa del apartado de CPD
+Resumen Express:
+	- Se modifica en base al nuevo Resumen
+
+Se añaden las versiones epub de Resumen y Resumen Express
+

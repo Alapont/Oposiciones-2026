@@ -1,0 +1,44 @@
+# Control de cambios
+
+## PreparaTIC 29
+
+> Abril 2023
+
+* Modificado fichero de resumen
+  * Reorganización de contenidos
+  * Añadida Introducción
+  * Añadidas nuevas secciones a las arquitecturas
+  * Añadida sección de despliegue
+  * Añadida información de ECMAScript y TC39
+  * Añadidas nuevas APIs de JS/ES/HTML5
+  * Añadida sección de tecnologías obsoletas
+  * Añadida sección de Node.js
+  * Cambio de versiones de front-end y añadido modo de renderizado
+  * Modificada sección de UX 
+  * Cambio de versiones de back-end
+  * Añadidos frameworks a BD y ORM
+  * Añadidos más elementos a la interconexión de servicios
+
+* Añadido fichero de referencias
+
+* Modificado fichero de resumen express con los cambios del resumen
+
+* Documentación adicional sin cambios
+
+## PreparaTIC 28
+
+* En el resumen se actualizan las versiones de los frameworks.
+
+## PreparaTIC 27
+
+* Se actualizan los servidores web
+* Se actualizan los frameworks
+* Se actualiza la conexión con BBDD y la interconexión entre servicios
+
+* Se añaden nuevas tecnologías como:
+  * SPA (single page application)
+  * WebComponents
+  * PWA (Progressive Web Apps)
+  * Api Gateway
+  * GraphQL
+  * WebSockets

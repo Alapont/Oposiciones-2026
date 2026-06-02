@@ -1,0 +1,14 @@
+Prepatic 31: 
+
+Resumen:
+	- Se actualizan las cifras de los apartados "1.1 Impacto directo del sector TIC en la economía" y "2.1 Cifras del impacto TIC en el mercado de trabajo"
+	
+Políticas Públicas:
+	- Se rehace el documento, separando políticas europeas y políticas españolas, eliminando las más antiguas y menos relevantes, actualizando con las políticas y cifras recientes, añadiendo fuentes para las cifras.
+	
+Agenda España Digital 2026:
+        - Se añade el apartado "2. Estado de implementación y cumplimiento de la Agenda España Digital 2026" utilizando 
+	
+Resumen express:
+      - se añade un resumen express basado en los 3 documentos anteriores.
+  

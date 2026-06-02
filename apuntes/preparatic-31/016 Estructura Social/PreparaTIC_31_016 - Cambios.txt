@@ -1,0 +1,34 @@
+Modificaciones sobre el tema 016:
+- Se crea el documento "tema" ya que el resumen era demasiado extenso.
+- Apartado 1:
+	- Se redacta por completo nuevo.
+- Apartado 2:
+	- Se reorganiza este apartado en nuevos sub-apartados.
+	- Se incluye la información que antes estaba en el apartado 1 y se completa.
+	- Se actualizan los datos demográficos y los links a las fuentes del INE.
+- Apartado 3:
+	- Se crea el apartado 3.1 "Situación de la mujer en España", se actualizan los indicadores y se añaden algunos nuevos.
+	- Se adelanta el apartado de legislación.
+	- Se pone después el apartado de planes y se añade información.
+- Apartado 4:
+	- Se cambia a este apartado el tema LGTBI, por concordancia con el título del tema
+	- Se añade marco europeo
+- Apartado 5:
+	- Se añade marco internacional y europeo
+	- Se añade el RD 112/2018 sobre accesibilidad
+	- Se separan los apartados de discapacidad y dependencia
+- Apartado 6:
+	- Se divide en dos nuevos sub-apartados para organizar mejor la información.
+	- Se añade información sobre el pacto de estado y los planes nacionales.
+
+Modificaciones sobre el resumen 016:
+- Se crea un nuevo resumen más corto que el existente y con la nueva información del tema.
+
+Modificaciones sobre el resumen express 016:
+- Se crea un nuevo resumen express con la nueva información del tema.
+
+Adicionalmente, se elimina de la carpeta de "Doc adicional" muchos documentos antiguos.
+
+	
+
+

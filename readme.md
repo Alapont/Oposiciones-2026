@@ -67,8 +67,12 @@ Tema | Apuntes  | Notas
 
 
 # Preguntas pendientes
+## Meta
 - ¿Con qué frecuencia se anulan preguntas?
 - Tasa de aprobados del curso selectivo.
+
+## De los apuntes
+Tema 1, L:225: Qué hace una comisión?
 
 # Leyes mencionadas
 

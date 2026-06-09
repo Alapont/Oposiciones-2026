@@ -14,7 +14,7 @@ En caso de obtención de un mínimo del 50% de la nota de los ejercicios. se cos
 #### Primer ejercicio
 Este proceso incluye una primera fase eliminatoria con un cuestionario tipo test de 130 preguntas en dos partes. Las incorectas restan un tercio del valor. Todas las preguntas valen igual. puntúa 0~60 con un mínimo de 30
 
-Una parte de hasta 100 preguntas de **Tema específico** (anexo B) y 5 preguntas adicionales en caso de anulación de alguna anterior. y una segunda 1parte de hasta 30 preguntas con tres adicionales sobre **Temas generales** (Anexo A). Para las dos partes hay dos horas.
+Una parte de hasta 100 preguntas de **Tema específico** (anexo B) y 5 preguntas adicionales en caso de anulación de alguna anterior. y una segunda parte de hasta 30 preguntas con tres adicionales sobre **Temas generales** (Anexo A). Para las dos partes hay dos horas.
 
 #### Segundo ejercicio
 Tabién cuenta con dos partes. Puntúa de la siguiente manera

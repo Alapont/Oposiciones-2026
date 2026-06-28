@@ -1,5 +1,40 @@
 # Oposiciones A1
 
+- [Oposiciones A1](#oposiciones-a1)
+- [Formato del proyecto](#formato-del-proyecto)
+  - [Numeración y versiones.](#numeración-y-versiones)
+- [Ediciones anteriores](#ediciones-anteriores)
+  - [2025](#2025)
+    - [Fase de oposición](#fase-de-oposición)
+      - [Primer ejercicio](#primer-ejercicio)
+      - [Segundo ejercicio](#segundo-ejercicio)
+      - [Tercer ejercicio](#tercer-ejercicio)
+    - [Fase de concurso](#fase-de-concurso)
+    - [Curso selectivo](#curso-selectivo)
+- [Plan de acción](#plan-de-acción)
+  - [Estado de los apuntes](#estado-de-los-apuntes)
+- [Preguntas pendientes](#preguntas-pendientes)
+  - [Meta](#meta)
+  - [De los apuntes](#de-los-apuntes)
+- [Tareas pendientes](#tareas-pendientes)
+
+
+# Formato del proyecto
+El proyecto se usa para generar un pdf de apuntes con todas las notas que voy generando, ordenadas de la mejor manera posible.
+
+
+Localizacin | propósito
+---|---
+**Apuntes** | contiene material externo organizado por temas.
+**dist-online** | es un compendio de examenes ofline
+**Material Bruto** | contiene documentacin no especfica a una fuente de apuntes o a un tema especfico. Puede ser conocimiento genérico, leyes, o documentación específica de las oposiciones.
+**Tex** | Las fuentes para generar mi propia documentación y apuntes.
+
+## Numeración y versiones.
+Se opta por doble numeración, relativa al proyecto y a los apuntes. Dándole la misma importancia a ambos De esta manera, una primera parte son los tradicionales major, minor, patch. Y una segunda parte enfocada a la cantidad de temas y revisiones realizadas. Un primer número con la cantidad de temas completados, y un segundo número de revisiones sobre esa versión. Permitiendo tener mayor control sobre las versiones de los apuntes sin cambiar las versiones del proyecto, y viceversa.
+
+Por ejemplo, la versión 1.0.1-1.0 implica 1.0.1 para el proyecto en sí, y un tema hecho sin mas revisiones.
+
 # Ediciones anteriores
 Listado de convocatorias anteriores, por referencia.
 
@@ -62,8 +97,7 @@ _O cómo vamos con todo este lío_
 
 Tema | Apuntes  | Notas
 ----:|----------|-------
-1    | Empezado
-
+1    | Hecho
 
 
 # Preguntas pendientes
@@ -73,8 +107,6 @@ Tema | Apuntes  | Notas
 
 ## De los apuntes
 Tema 1, L:225: Qué hace una comisión?
-
-# Leyes mencionadas
 
 # Tareas pendientes
 - Decidir si me mto a esto o no.

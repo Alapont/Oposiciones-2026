@@ -3,7 +3,7 @@
 
 # A. Temas generales
 ## I. Marco constitucional español y Unión Europea
-- [ ] 1. La Constitución Española de 1978 (I). Los principios constitucionales. Los derechos fundamentales y sus garantías. La Corona. Cortes Generales. Congreso de los Diputados y Senado. El Gobierno. Los Órganos Constitucionales de control del Gobierno: Tribunal de Cuentas, Defensor del Pueblo. La función consultiva: el Consejo de Estado.
+- [x] 1. La Constitución Española de 1978 (I). Los principios constitucionales. Los derechos fundamentales y sus garantías. La Corona. Cortes Generales. Congreso de los Diputados y Senado. El Gobierno. Los Órganos Constitucionales de control del Gobierno: Tribunal de Cuentas, Defensor del Pueblo. La función consultiva: el Consejo de Estado.
 - [ ] 2. La Constitución Española de 1978 (II). El Poder Judicial. La justicia en la Constitución. El Consejo General del Poder Judicial. El Ministerio Fiscal. El Tribunal Constitucional. Naturaleza, organización y atribuciones.
 - [ ] 3. La Constitución Española de 1978 (III). Las Comunidades Autónomas: organización política y administrativa. La Administración local: regulación constitucional y entidades que la integran.
 - [ ] 4. La Constitución Española de 1978 (IV). La Administración pública: Principios constitucionales. La Administración General del Estado. Sus órganos centrales. 
@@ -32,7 +32,7 @@
 - [ ] 24. Empleo Público en España. Tipología del empleo público. Estatuto Básico del Empleado Público. Planificación de recursos humanos en las Administraciones Públicas: la oferta de empleo público. Ley de Incompatibilidades del personal al servicio de las Administraciones Públicas.
 - [ ] 25. La gobernanza pública y el gobierno abierto. Concepto y principios informadores del gobierno abierto: colaboración, participación, transparencia y rendición de cuentas. Datos abiertos y reutilización. El marco jurídico y los planes de gobierno abierto en España. La Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno. El Consejo de Transparencia y Buen Gobierno: Real Decreto 919/2014, de 31 de octubre, por el que se aprueba su estatuto. Funciones. La Oficina de Transparencia y Acceso a la Información (OTAI): Funciones. El Portal de Transparencia. Las Unidades de Información y Transparencia (UITS): Funciones. La transparencia y el acceso a la información en las comunidades autónomas y entidades locales.
 - [ ] 26. La dinamización y el apoyo a la actividad económica y al emprendimiento. La garantía de la unidad de mercado.
-- [ ] 27. La política de protección de datos de carácter personal. Régimen jurídico. El Reglamento UE 2016/679, de 27 de abril, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos. Principios y derechos. Obligaciones. El Delegado de Protección de Datos en las Administraciones Públicas. La Agencia Española de Protección de Datos.
+- [x] 27. La política de protección de datos de carácter personal. Régimen jurídico. El Reglamento UE 2016/679, de 27 de abril, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos. Principios y derechos. Obligaciones. El Delegado de Protección de Datos en las Administraciones Públicas. La Agencia Española de Protección de Datos.
 # B. Temas específicos
 ## I. Organización y gestión de los sistemas de información
 - [ ] 28. Definición, estructura, y dimensionamiento eficiente de los sistemas de información.

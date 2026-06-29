@@ -113,3 +113,5 @@ Tema 1, L:225: Qué hace una comisión?
 - Obtener y organizar apuntes
   - Teoría y examenes (si es posible)
 - Crear alerta para encontrar la próxima convcatoria
+- Comprender el funcionamiento de las leyes de la unión europea.
+- Crear registro offline de leyes y textos legales.

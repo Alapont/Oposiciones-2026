@@ -4,6 +4,10 @@ Este changelog separa las [actualizaciones del proyecto](#changelog-proyecto) y 
 
 # Changelog Proyecto
 
+## 1.2.0
+- Añadida la chuleta
+- Corrección de errores
+
 ## 1.1.0
 - Introducción del sistema de versiones, changelog.
 - makefile para generar el pdf de la release

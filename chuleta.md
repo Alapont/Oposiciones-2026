@@ -1,3 +1,6 @@
+# Cosas de Latex
+Vienen de la [página del autor](https://github.com/James-Yu/LaTeX-Workshop/wiki/Snippets)
+
 # Auto sectioning
 
 short | level

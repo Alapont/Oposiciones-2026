@@ -35,8 +35,8 @@
 - [x] 27. La política de protección de datos de carácter personal. Régimen jurídico. El Reglamento UE 2016/679, de 27 de abril, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos. Principios y derechos. Obligaciones. El Delegado de Protección de Datos en las Administraciones Públicas. La Agencia Española de Protección de Datos.
 # B. Temas específicos
 ## I. Organización y gestión de los sistemas de información
-- [ ] 28. Definición, estructura, y dimensionamiento eficiente de los sistemas de información.
-- [ ] 29. La información en las organizaciones. Las organizaciones basadas en la información. La Administración como caso específico de este tipo de organización.
+- [x] 28. Definición, estructura, y dimensionamiento eficiente de los sistemas de información.
+- [x] 29. La información en las organizaciones. Las organizaciones basadas en la información. La Administración como caso específico de este tipo de organización.
 - [ ] 30. Modelos de gobernanza TIC. Organización e instrumentos operativos de las tecnologías de la información y las comunicaciones en la Administración General del Estado y sus organismos públicos. La transformación digital de la Administración General del Estado.
 - [ ] 31. Reutilización de la información en el sector público en Europa y España. Papel de las TIC en la implantación de políticas de datos abiertos y transparencia.
 - [ ] 32. Estrategia, objetivos y funciones del directivo de sistemas y tecnologías de la información en la Administración.

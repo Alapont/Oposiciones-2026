@@ -1,5 +1,7 @@
 # Oposiciones A1
 
+Información general sobre el funcionariado en [Este vídeo](https://www.youtube.com/watch?v=76KDt0VeXyY&t=100s)
+
 - [Oposiciones A1](#oposiciones-a1)
 - [Formato del proyecto](#formato-del-proyecto)
   - [Numeración y versiones.](#numeración-y-versiones)

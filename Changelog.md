@@ -2,9 +2,12 @@
 
 Este changelog separa las [actualizaciones del proyecto](#changelog-proyecto) y [sobre apuntes](#changelog-apuntes).
 
-> Versión propuesta 1.1.1-3.0
+> Versión propuesta 1.1.2-3.0
 
 # Changelog Proyecto
+
+## 1.1.2
+- Escritura de procesos de inicio y fin de tema
 
 ## 1.1.1
 - Cambio de tema para ir a la piscina y no dejarme los ojos.

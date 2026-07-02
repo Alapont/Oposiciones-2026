@@ -5,6 +5,9 @@ Información general sobre el funcionariado en [Este vídeo](https://www.youtube
 - [Oposiciones A1](#oposiciones-a1)
 - [Formato del proyecto](#formato-del-proyecto)
   - [Numeración y versiones.](#numeración-y-versiones)
+  - [Procesos](#procesos)
+    - [Tema nuevo](#tema-nuevo)
+    - [Fin de tema](#fin-de-tema)
 - [Ediciones anteriores](#ediciones-anteriores)
   - [2025](#2025)
     - [Fase de oposición](#fase-de-oposición)
@@ -36,6 +39,17 @@ Localizacin | propósito
 Se opta por doble numeración, relativa al proyecto y a los apuntes. Dándole la misma importancia a ambos De esta manera, una primera parte son los tradicionales major, minor, patch. Y una segunda parte enfocada a la cantidad de temas y revisiones realizadas. Un primer número con la cantidad de temas completados, y un segundo número de revisiones sobre esa versión. Permitiendo tener mayor control sobre las versiones de los apuntes sin cambiar las versiones del proyecto, y viceversa.
 
 Por ejemplo, la versión 1.0.1-1.0 implica 1.0.1 para el proyecto en sí, y un tema hecho sin mas revisiones.
+## Procesos
+
+### Tema nuevo
+- Preparar changelog
+- Generar nuevo tex y añadirlo al index
+
+### Fin de tema
+- Añadir cambios al changelog
+- marcar el programa
+- generar y subir etiqueta y versión
+- borrar WIP
 
 # Ediciones anteriores
 Listado de convocatorias anteriores, por referencia.

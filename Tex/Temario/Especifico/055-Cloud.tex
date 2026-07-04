@@ -1,0 +1,124 @@
+\setcounter{section}{54} % tema número N-1
+\section{Cloud}
+
+Nombre completo: Cloud Computing. IaaS, PaaS, SaaS. Nubes privadas, públicas e híbridas.
+
+\localtableofcontents
+
+\subsection{Contexto normativo}
+    \begin{description}
+        \item[UE 2016/679] Protección de datos
+        \item[L 9/2017] Contratos de sector público. Tipifica el cloud como un contrato de servicios. Aunque se pueden usar otro tipo de contrato.
+        \item[RD 311/2022] Esquema nacional de seguridad. Incluye medidas de seguridad específicas como Servicios en la nube
+        \item[CCN-STIC 823] Guía de seguridad de las TIC. Recomendaciones para el uso, contratación y auditoría.
+        \item[Esquema Nacional de interoperabilidad] Asociado a la portabilidad.
+        \item[L 7/2023 de Aragón] Primera ley cloud de España regulando para sector público y privado
+    \end{description}
+
+\subsection{Definición}
+
+    El cloud es un modelo que permite el acceso bajo demanda y a  la red a un conjunto de recursos compartidos y configurables. Estos pueden ser asignados y liberados rápidamente y con minima gestin por parte del proveedor.
+
+    La tecnología ofrece flexibilidad, escalabilidad y reducción de costes. Pagando sólamente por los recursos utilizados.
+
+\subsection{Característica básicas}
+
+    El NIST define las siguientes características básicas:
+
+    \begin{description}
+        \item[Autoservicio bajo demanda] de forma automática sin interactuar con personal
+        \item[Acceso a través de redes] Independientemente del dispositivo
+        \item[Agrupación de recursos] El cliente percibe un aislamiento de recursos, aunque físicamente estén compartidos. Se puede especificar la localización a alto nivel.
+        \item[Elasticidad rápida] La capacidad es escalable rápidamente según la demanda
+        \item[Servicio medido] El uso puede ser medido, monitorizado y controlado transparentemente por cliente y proveedor.
+    \end{description}
+
+\subsection{Soluciones cloud}
+
+    \subsubsection{Tipo de infraestructura}
+    Es la forma física de desplegar servicios en nube. Puede ser pública, privada, híbrida o comunitaria.
+
+    \paragraph{Nube pública}
+        Es aquella que ser encuentra disponible para el público general. Es escalable y flexible, barata y relega el mantenimiento a otro. Por otro lado limita personalización y la conexión con sistemas heredados, también introduce dependencias con el proveedor y tiene riesgo de interrupciones de servicio.
+
+    \paragraph{Nube privada}
+        Se crea con los recursos propios de una empresa (puede relegar la creación, localización y mantenimiento a terceros) y solo es accesible por esta. 
+
+        Permite mejorar la privacidad y el control sobre la infraestructura.Tiene mayor integración con sistemas heredados. Por otro lado es un coste mayor, necesita personal para su construcción y mantenimiento.
+
+    \paragraph{Nube híbrida}
+        Es un suo conjunto de varias infraestructuras cloud de cualquier tipo. Se encuentran separadas lógicamente, pero se unen tecnológicamente.
+
+    \paragraph{Nube Comunitaria}
+        Dos o mas organizaciones forman una alianza para implementar una infraestructura cloud con objetivos y requisitos similares.
+
+        Permiten el acceso a tecnologías y escalas no disponibles individualmente. Mejora de costes al compartir viaje. Mejora de colaboración entre organizaciones. Por otro lado la seguridad depende últimamente del anfitrión. Puede tener una falta de flexibilidad al compartir estructura y coordinar a los interesados puede ser difícil.
+
+        CAIA-X es un cloud comunitario que busca establecer una alternativa a los proveedores estadounidenses. Se impulsó por Alemania y Francia y se adoptó por la Comisión Europea como un bloque clave en la Estrategia Digital Europea. Está desarrollando una federación de infraestructura de datos y proveedores de servicio.
+
+    \subsubsection{Tipo de servicios}
+        IaaS PaaS y SaaS
+
+    \subsubsection{Otros modelos de servicio}
+        Aquí cualquier gilipollas le pone as a Service a algo y ya ha inventado la rueda.
+        \begin{description}
+            \item[PBaaS Business process] un saas de cosas de negocio como contabilidad o atención al cliente
+            \item[PraaS Process] Plataforma para ejecutar procesos empresariales
+            \item[FaaS Functions] aka serverless. Incrementa dependencia, pero para cosas pequeñas suele ahorrar.
+            \item[SEC-aaS Seguridad]
+            \item[BaaS Backend] proporciona herramientas y servicios para aplicaciones móviles. puede incluir autenticación, almacenamiento, push\dots
+            \item[CaaS Communications]
+            \item[DaaS Desktop]
+            \item[DBaaS Base de Datos] 
+            \item[HaaS Hardware]
+            \item[IDaaS Identidad]
+            \item[RaaS Recovery]
+            \item[SaaS Storage]
+            \item[NaaS Network]
+        \end{description}
+
+    \subsubsection{Modelos de negocio}
+        Un \textbf{proveedor} presta servicios en nube al cliente directamente. Es responsable de proveer la infraestructura, software y servicios.
+
+        Un \textbf{intermediario} actúa entre cliente y proveedor. Pueden proporcionar servicios de agregación, integración, personalización, gestión, monitorización\dots
+
+        Un \textbf{Habilitador} implica la venta de hardware y Software a terceros para que desarrollen y ofrezcan servicios en nube. Pueden proporcionar servicios de consultoría, formación o soporte.
+
+        Un \textbf{Auditor} lleva a cabo evaluaciones independientes de los servicios en nube y su seguridad. Puede implicar auditoríá, certificación o adecuación a normativas.
+
+\subsection{Seguridad}
+    Según el ENS, se incluye una medida de protección de servicios en la nube. Se requiere que los sistemas sean conformes con el ENS o con las medidas establecidas en una guía CCN-STIC. Algunos requisitos están relaccionados con la auditoría de pruebas de pen-testing, transparencia en la gestión de datos, implementación de cifrado, gestión de claves y definir la jurisdicción de datos.
+
+    Se recomienda los siguientes niveles de seguridad. Para una nube pública es un nivel bajo, para una privada externa o comunitaria un nivel medio y para una interna nivel alto.
+
+\subsection{Proveedores cloud}
+    Los principales proveedores son AWS (33\%) Azure (21\%) y google (5\%). Todos ofrecen servicios similares bajo distintos nombres y detalles ligéramente distintos.
+
+    \begin{table}[H]
+    \begin{tabular}{rlll}
+        Producto                   & AWS               & Azure             & Google           \\
+        hline
+        Servidor                   & Instancia         & VMs               & VM Instance      \\
+        PaaS                       & Elastic Beanstalk & Cloud Services    & App Engine       \\
+        Serverless                 & Lambda            & Azure functions   & Cloud functions  \\
+        Docker                     & ECS               & Container Service & Container Engine \\
+        K8                         & EKS               & K8 Service        & K8 Engine        \\
+        Almacenamiento de objetos  & S3                & Block blob        & Cloud Storage    \\ 
+        Archivo de objetos         & Glacier           & Archive storage   & Coldline         \\
+        Almacenamiento de ficheros & EFS               & Azure files       & ZFS / Avere      \\
+    \end{tabular}
+    \end{table}
+
+
+    También hay proveedores de cloud de código abierto. Como Eucalyptus, Nebula, OpenStack o CloudStack. Suelen ofrecer compatibilidad con otros proveedores, mayormente AWS
+
+\subsection{Cloud vs On-prem}
+
+    Los criterios pueden ser variados y dependen de la situación y del organismo. En general las soluciones cloud ofrecen facilidad, rapidez, flexibilidad, eficiencia, escalabilidad y servicios adicionales. Mientras que dependen de la conexión a internet, los proveedores, la desconfianza hacia estos y límites de personalización.
+
+\subsection{Contratación}
+La \textbf{Dirección General de Racionalización, Centralización y Contratación} propone la contratación mediante procedimiento abierto, ya que no hay una técnica de racionalización asociada a la tramitación del contrato.
+
+Se considera que son contratos de suministro para la Junta Consultiva de Contratación.
+
+Hasta que no esté vigente el Acuerdo Marco 27/2023 %  ToDo Esto es muy raro, preguntar

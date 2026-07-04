@@ -28,12 +28,12 @@ Información general sobre el funcionariado en [Este vídeo](https://www.youtube
 El proyecto se usa para generar un pdf de apuntes con todas las notas que voy generando, ordenadas de la mejor manera posible.
 
 
-Localizacin | propósito
----|---
-**Apuntes** | contiene material externo organizado por temas.
-**dist-online** | es un compendio de examenes ofline
+Localización       | propósito
+-------------------|----------------------------------------------------
+**Apuntes**        | contiene material externo organizado por temas.
+**dist-online**    | es un compendio de examenes ofline
 **Material Bruto** | contiene documentacin no especfica a una fuente de apuntes o a un tema especfico. Puede ser conocimiento genérico, leyes, o documentación específica de las oposiciones.
-**Tex** | Las fuentes para generar mi propia documentación y apuntes.
+**Tex**            | Las fuentes para generar mi propia documentación y apuntes.
 
 ## Numeración y versiones.
 Se opta por doble numeración, relativa al proyecto y a los apuntes. Dándole la misma importancia a ambos De esta manera, una primera parte son los tradicionales major, minor, patch. Y una segunda parte enfocada a la cantidad de temas y revisiones realizadas. Un primer número con la cantidad de temas completados, y un segundo número de revisiones sobre esa versión. Permitiendo tener mayor control sobre las versiones de los apuntes sin cambiar las versiones del proyecto, y viceversa.

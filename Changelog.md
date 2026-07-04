@@ -2,7 +2,7 @@
 
 Este changelog separa las [actualizaciones del proyecto](#changelog-proyecto) y [sobre apuntes](#changelog-apuntes).
 
-> Versión propuesta 1.1.2-3.0
+> Versión propuesta 1.1.2-4.0
 
 # Changelog Proyecto
 
@@ -25,6 +25,10 @@ Este changelog separa las [actualizaciones del proyecto](#changelog-proyecto) y 
 - makefile para generar el pdf de la release
 
 # Changelog Apuntes
+
+## 4.0
+- Tema 52 Tecnología básica
+- Tema 53 Equipos departamentales
 
 ## 3.0
 - Tema 28 Sistemas de la información

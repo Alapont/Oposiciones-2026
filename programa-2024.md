@@ -60,8 +60,8 @@
 - [ ] 50. Organizaciones internacionales y nacionales de normalización. Pruebas de conformidad y certificación. El establecimiento de servicios de pruebas de conformidad.
 - [ ] 51. Planes y Actuaciones de la Agenda Digital para España. Descripción, estructura y objetivos de los planes. El Mercado Único Digital.
 ## II. Tecnología básica
-- [ ] 52. Sistemas de altas prestaciones. Grid Computing. Mainframe.
-- [ ] 53. Equipos departamentales. Servidores. Medidas de seguridad para equipos departamentales y servidores. Centros de proceso de datos: diseño, implantación y gestión.
+- [x] 52. Sistemas de altas prestaciones. Grid Computing. Mainframe.
+- [x] 53. Equipos departamentales. Servidores. Medidas de seguridad para equipos departamentales y servidores. Centros de proceso de datos: diseño, implantación y gestión.
 - [ ] 54. Dispositivos personales de PC y dispositivos móviles. La conectividad de los dispositivos personales. Medidas de seguridad y gestión para equipos personales y dispositivos móviles.
 - [ ] 55. Cloud Computing. IaaS, PaaS, SaaS. Nubes privadas, públicas e híbridas.
 - [ ] 56. Sistemas de almacenamiento para sistemas grandes y departamentales. Dispositivos para tratamiento de información multimedia. Virtualización del almacenamiento. Copias de seguridad.

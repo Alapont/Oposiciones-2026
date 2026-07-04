@@ -2,9 +2,12 @@
 
 Este changelog separa las [actualizaciones del proyecto](#changelog-proyecto) y [sobre apuntes](#changelog-apuntes).
 
-> Versión propuesta 1.1.3-4.0
+> Versión propuesta 1.1.4-4.0
 
 # Changelog Proyecto
+
+## 1.1.4
+- creado template para los temas
 
 ## 1.1.3
 - Añadido gitattributes para ignorar carpetas de apuntes en las estadísticas
@@ -34,6 +37,7 @@ Este changelog separa las [actualizaciones del proyecto](#changelog-proyecto) y 
 - Tema 52 Tecnología básica
 - Tema 53 Equipos departamentales
 - Tema 54 Equipos personales
+- Tema 55 Cloud
 
 ## 3.0
 - Tema 28 Sistemas de la información

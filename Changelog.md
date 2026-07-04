@@ -6,6 +6,9 @@ Este changelog separa las [actualizaciones del proyecto](#changelog-proyecto) y 
 
 # Changelog Proyecto
 
+## 1.1.3
+- Añadido gitattributes para ignorar carpetas de apuntes en las estadísticas
+
 ## 1.1.2
 - Escritura de procesos de inicio y fin de tema
 
@@ -29,6 +32,7 @@ Este changelog separa las [actualizaciones del proyecto](#changelog-proyecto) y 
 ## 4.0
 - Tema 52 Tecnología básica
 - Tema 53 Equipos departamentales
+- Tema 54 Equipos personales
 
 ## 3.0
 - Tema 28 Sistemas de la información

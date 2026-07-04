@@ -2,12 +2,13 @@
 
 Este changelog separa las [actualizaciones del proyecto](#changelog-proyecto) y [sobre apuntes](#changelog-apuntes).
 
-> Versión propuesta 1.1.2-4.0
+> Versión propuesta 1.1.3-4.0
 
 # Changelog Proyecto
 
 ## 1.1.3
 - Añadido gitattributes para ignorar carpetas de apuntes en las estadísticas
+- Añadido audios
 
 ## 1.1.2
 - Escritura de procesos de inicio y fin de tema

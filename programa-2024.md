@@ -64,7 +64,7 @@
 - [x] 53. Equipos departamentales. Servidores. Medidas de seguridad para equipos departamentales y servidores. Centros de proceso de datos: diseño, implantación y gestión.
 - [x] 54. Dispositivos personales de PC y dispositivos móviles. La conectividad de los dispositivos personales. Medidas de seguridad y gestión para equipos personales y dispositivos móviles.
 - [x] 55. Cloud Computing. IaaS, PaaS, SaaS. Nubes privadas, públicas e híbridas.
-- [ ] 56. Sistemas de almacenamiento para sistemas grandes y departamentales. Dispositivos para tratamiento de información multimedia. Virtualización del almacenamiento. Copias de seguridad.
+- [x] 56. Sistemas de almacenamiento para sistemas grandes y departamentales. Dispositivos para tratamiento de información multimedia. Virtualización del almacenamiento. Copias de seguridad.
 - [ ] 57. Tipos de sistemas de información multiusuario. Sistemas grandes, medios y pequeños. Servidores de datos y de aplicaciones. Virtualización de servidores.
 - [ ] 58. El procesamiento cooperativo y la arquitectura cliente-servidor. Arquitectura SOA.
 - [ ] 59. Conceptos y fundamentos de sistemas operativos. Evolución y tendencias.

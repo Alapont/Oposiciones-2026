@@ -2,9 +2,12 @@
 
 Este changelog separa las [actualizaciones del proyecto](#changelog-proyecto) y [sobre apuntes](#changelog-apuntes).
 
-> Versión propuesta 1.1.4-4.0
+> Versión propuesta 1.1.5-5.0
 
 # Changelog Proyecto
+
+## 1.1.5
+- El programa ahora marca el tamaño de los temas
 
 ## 1.1.4
 - creado template para los temas
@@ -32,6 +35,12 @@ Este changelog separa las [actualizaciones del proyecto](#changelog-proyecto) y 
 - makefile para generar el pdf de la release
 
 # Changelog Apuntes
+
+## 5.0
+- Tema 56 Almacenamiento
+- Tema 57 Multi usuario
+- Tema 59 Sistemas operativos
+- Tema 60 Unix
 
 ## 4.0
 - Tema 52 Tecnología básica

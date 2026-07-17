@@ -86,10 +86,10 @@
 - [C]  56. Sistemas de almacenamiento para sistemas grandes y departamentales. Dispositivos para tratamiento de información multimedia. Virtualización del almacenamiento. Copias de seguridad.
 - [C]  57. Tipos de sistemas de información multiusuario. Sistemas grandes, medios y pequeños. Servidores de datos y de aplicaciones. Virtualización de servidores.
 - [C]  58. El procesamiento cooperativo y la arquitectura cliente-servidor. Arquitectura SOA.
-- [ ]  59. Conceptos y fundamentos de sistemas operativos. Evolución y tendencias.
-- [ ]  60. Sistemas operativos UNIX-LINUX. Fundamentos, administración, instalación, gestión.
-- [ ]  61. Sistemas operativos Microsoft. Fundamentos, administración, instalación, gestión.
-- [ ]  62. Conceptos básicos de otros sistemas operativos: OS X, iOS, Android, z/OS. Sistemas operativos para dispositivos móviles.
+- [C]  59. Conceptos y fundamentos de sistemas operativos. Evolución y tendencias.
+- [C]  60. Sistemas operativos UNIX-LINUX. Fundamentos, administración, instalación, gestión.
+- [C]  61. Sistemas operativos Microsoft. Fundamentos, administración, instalación, gestión.
+- [C]  62. Conceptos básicos de otros sistemas operativos: OS X, iOS, Android, z/OS. Sistemas operativos para dispositivos móviles.
 - [ ]  63. Los sistemas de gestión de bases de datos SGBD. El modelo de referencia de ANSI.
 - [ ]  64. El modelo relacional. El lenguaje SQL. Normas y estándares para la interoperabilidad entre gestores de bases de datos relacionales.
 - [ ]  65. Arquitectura de desarrollo en la web. Desarrollo web front-end. Scripts de cliente. Frameworks. UX. Desarrollo web en servidor, conexión a bases de datos e interconexión con sistemas y servicios.

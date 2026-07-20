@@ -1,0 +1,59 @@
+\setcounter{section}{57} % tema número N-1
+\section{Servicios}
+
+Nombre completo: El procesamiento cooperativo y la arquitectura cliente-servidor. Arquitectura SOA.
+
+\localtableofcontents
+
+\subsection{Procesamiento cooperativo}
+
+Contra los sistemas centralizados. El procesamiento distribuido utiliza componentes autónomos y heterogéneos que se ejecutan en unidades de hardware interconectadas. Cada elemento lógico trabaja en una tarea común.
+
+Estos elementos se sincronizan a un reloj común. Tienen concurrencia global. Tienen tolerancia a fallos, de forma que un nodo fallando se ve transparente al resto de usuarios. Los sistemas son abiertos y heterogéneos. PErmitiendo no hacer vendor-locking.
+
+Con esto se consigue transparencia, fiabilidad, rendimiento, escalabilidad y flexibilidad.
+
+\subsection{Arquitectura cliente-servidor}
+
+Es uno de los modelos mas extendidos. Se basa en la existencia de un sistema servidor encargado de proporcionar servicios a un cliente.
+
+Normalmente se parte en tres componentes: presentación, lógica de negocio y base de datos. En algunos casos se queda separada la base de datos de presentación y negocio.
+
+\subsection{Arquitectura SOA}
+
+El objetivo de la arquitectura SOA (Service Oriented Architecture) es ofrecer una estrategia para integrar servicios, no necesariamente aplicaciones finales. OASIS define SOA como \textit{Un paradigma para organizar capacidades distribuidas y bajo el control de propietarios y dominios}.
+
+Un servicio expone una funcionalidad definida y concreta, mientras que la aplicación orquesta la ejecución de servicios (los servicios pueden llamar a mas servicios). Un servicio puede enmascarar a un sistema Legacy preexistente. Facilitando su integración.
+
+La arquitectura define servicios a utilizar, interacciones, tecnologías implementadas e interfaces.
+
+Hay 8 principios base:
+
+\begin{enumerate}
+    \item Contrato de servicio
+    \item Bajo acoplamiento
+    \item Abstracción
+    \item Reusabilidad
+    \item Autonomía
+    \item Sin estado
+    \item Garantía de descubrimiento
+    \item Preparados para usarse en composiciones
+\end{enumerate}
+
+Se aplica un sistema de capas para separar ciertos elementos. En la capa de sistemas operacionales hay sistemas légacy o no orientados a aplicaciones, de esta forma se pueden integrar. Los componentes de servicio aseguran los acuerdos a su nive y la calidad de servicios externos. Se soportan por servidores de aplicaciones con alta disponibilidad, balanceo, etc. La capa de servicios permite que estos sean expuestos e invocados por aplicaciones. En la capa de coreografía se establece el flujo para que los servicios interactuen conjuntamente hacia el exterior.
+
+\subsubsection{Colaboración entre servicios}
+
+\begin{description}
+    \item[Orquestación] Un proceso controlado totalmente por una única entidad. Esta define completamente las interacciones entre servicios, y la lógica para conducir las interacciones. Toda la lógica del flujo de control está en un único punto.
+    \item[Coreografía] Un proceso de coreografía no es controlado por un único participante y se comporta mas como un proceso público y no ejecutable.
+\end{description}
+
+\subsubsection{Soa + Web services}
+Se puede contruir sobre servicios web como SOAP. Según el W3C se puede definir un servicio web como un sistema diseñado para soportar la interacción máquina-máquina a través de red. Normalmente cuenta con una interfaz descrita e en una interaz procesable por un sistema por la que se intercambian mensajes sobre http.
+
+\subsubsection{Entreprise Service Bus}
+
+Categoría de productos y middlewares basados en estándares de servicios que habilitan la creación de estructuras de servicios. Definen la infraestructura de integración y es donde reside el grueso de la comunicación SOA. Son a su vez servicios SOA, permitiéndole aprovecharse de esas ventajas.
+
+El objeto de los ESB es también la integración de sistemas no servicios dentro de un SOA para su uso por parte de otras aplicaciones.

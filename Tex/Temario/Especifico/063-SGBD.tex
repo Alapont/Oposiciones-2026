@@ -1,0 +1,156 @@
+\setcounter{section}{62} % tema número N-1
+\section{Sistemas de gestión de Bases de Datos}
+
+Nombre completo: Los sistemas de gestión de bases de datos SGBD. El modelo de referencia de ANSI
+
+\localtableofcontents
+
+\subsection{Bases de datos}
+Una base de datos es un sistema capaz de trabajar con un conjunto de datos estructurados y relacionados, almacenados en un soporte informático.
+
+Un diccionario de datos almacena información acerca de los objetos que conforman la base de datos. Su estructura, definiciones, restricciones. Es un elemento vivo donde se van incorporando elementos y metadatos. Si el diccionario está limitado a la definición existente, se llama diccionario activo. Si no se encuentran estas restricciones se denomina diccionario pasivo.
+
+
+\subsection{Sistema de Gestión de Bases de Datos}
+    Es un conjunto de programas, procedimientos y lenguajes que permiten almacenar, actualizar y consultar datos en una base de datos.
+
+    \subsubsection{características y Aspectos}
+        \begin{itemize}
+            \item Utiliza un modelo de datos soportado por si mismo
+            \item Usa lenguajes de alto nivel para interactuar y administrar
+            \item Soporta acceso congruente de forma consistente y sin conflictos.
+            \item Separa la parte lógica y física
+            \item Redundancia controlada de datos
+            \item Integridad y consistencia de datos
+            \item Seguridad
+            \item Alto rendimiento funcional
+            \item Alto volumen de datos
+            \item Recuperación (a un estado anterior íntegro)
+            \item Privacidad
+        \end{itemize}
+        Según el teorema de CAP, en un SGBD no se pueden garantizar mas de dos de los tres aspectos:
+        p=\begin{description}
+            \item[Consistencia] Las lecturas son o la última escritura o un error.
+            \item[Disponibilidad] Cualquier petición recibe una respuesta no erronea, pero sin garantizar la mas reciente.
+            \item[Tolerancia al particionado] Seguir funcionando aún con una cantidad arbitraria de mensajes descartados entre nodos.
+        \end{description}
+
+    \subsubsection{Tipos de Lenguaje}
+        \begin{description}
+            \item[Data Definition Languaje DDL] Manipulación de tablas y del modelo de datos.
+            \item[Data Manipulation Languaje DML] CRUD de datos
+            \item[Data Control Languaje DCL] Gestión de la base de datos en sí misma.
+            \item[Transaction Control Languaje TCL] Permite controlar las transacciones y concurrencia para mantener la integridad de los datos.
+        \end{description}
+
+    \subsubsection{Transacción y Concurrencia}
+        Una transacción es una unidad de trabajo. En SQL se limitan entre \texttt{BEGIN-TRANSACTION} y \texttt{COMMIT-ROLBACK}.
+
+        Estas tienen que respetar el principio ACID:
+        \begin{description}
+            \item[Atomicidad] La transacción se ejecuta totalmente o no se ejecuta. Commit afianza los cambios y Rollback los descarta.
+            \item[Consistencia] Solo se ejecutan las operaciones que respeten la integridad de los datos
+            \item[Aislamiento] Una operación no afectará a las demás.
+            \item[Persistencia] Una vez se ha terminado la transacción los cambios son persistentes y sobreviven a fallos de sistema.
+        \end{description}
+
+        Se denomina concurrencia a varias operaciones pudiendo actuar al mismo tiempo. Esto genera una serie de problemas:
+        \begin{description}
+            \item[Lectura no repetible] Una transacción lee dos veces un valor esperando el mismo y no coincide porque una segunda transacción lo ha modificado.
+            \item[Lectura Sucia] Una transacción lee un dato modificado pero no commiteado. Si la segunda transacción falla, el dato leido no es válido y por lo tanto no es consistente.
+            \item[Lectura fantasma] una transacción realiza varias consultas iguales, y una segunda transacción inserta datos entre ambas consultas, dando mas datos en la segunda lectura.
+        \end{description}
+
+        Según el nivel de error aceptable se pueden establecer niveles de aislamiento.
+
+        \begin{description}
+            \item[Lectura no comprometida] Los cambios realizados se encuentran disponibles inmediatamente. No evita ningún tipo de problema
+            \item[Lectura comprometida] Los cambios solo se encuentran disponibles a partir del commit. Previene las lecturas sucias.
+            \item[Lectura repetible] Las filas leidas o actualizadas quedan bloqueadas hasta el fin de la transacción. Previene lecturas sucias y no repetibles.
+            \item[Serializable] Las transacciones ejecutadas simultáneamente producen los mismos efectos que si se ejecutan en serie.
+        \end{description}
+
+        También existe un mecanismo llamado \textbf{Two phase locking} que obliga a ejecutar transacciones en dos fases, adquisición de recursos y liberación. De esta forma, se liberan todos de una sola vez cuando se hace commit o rollback.
+
+    \subsubsection{Arquitectura interna}
+        Se pueden distinguir tres partes. El almacenamiento en disco, el gestor de almacenamiento y el procesador de consultas. 
+
+        El \textbf{Procesador de consultas} es la parte frontal. Analiza sintáxis y semántica de consultas. También las optimiza y las transforma en instrucciones de bajo nivel.
+
+        El \textbf{Gestor de Transacciones} recibe múltiples transacciones concurrente y ordena las operaciones a ejecutar. También proporciona aislamiento entre transacciones.
+
+        El \textbf{Planificador} controla concurrencia y planifica la ejecución de transacciones. Restringe el orden en el que se ejecutan las operaciones. También se denomina Gestor de Bloqueos.
+
+        El \textbf{Gestor de Datos} Gestiona buffers de lectura y escritura. También tiene un Gestor de recuperación que maneja commit y rollback. Gestiona atomicidad, persistencia y recuperación.
+
+\subsection{Modelo de referencia ANSI}
+    Según definiciones se diferencian tres niveles.
+
+    El invel interno o físico se encarga de las partes relacionadas con el servidor. Esta parte se dedica a mejorar el tiempo de respuesta, minimizar el espacio de almacenamiento y evitar la redundancia de datos.
+
+    El nivel conceptual materializa la representación de datos, independientemente de su estructura física. En esta parte reside el esquema de la base de datos.
+
+    El nivel Externo o lógico filtra los esquemas conforme a los usuarios concretos. Corresponde a la vista.
+
+    De esta forma se garantiza la independencia de los datos y la base de datos.
+
+    Existen tres familias de modelos de datos. El mas sencillo es el modelo jerárquico, donde se dispone en árbol y se tiene relaciones 1:n. En el modelo Codasyl hay relaciones en red. El mas extendido es el modelo relacional, donde se aplican teorías de conjuntos. Las tablas tienen relaciones con ciertas restricciones.
+
+\subsection{Ejemplos de bases de datos}
+
+\begin{itemize}
+    \item Relacionales
+    \begin{itemize}
+        \item Oracle
+        \item SQL-Server
+        \item MySQL
+        \item MariaDB
+        \item DB2
+        \item PostgreSQL
+    \end{itemize}
+    \item Orientadas a objetos
+    \begin{itemize}
+        \item ObjectDB
+        \item Zope
+        \item Perst
+        \item ObjectStore
+        \item DB4O
+    \end{itemize}
+    \item Orientadas a Grafos
+    \begin{itemize}
+        \item Allegro
+        \item Neo4j
+        \item Sparksee
+        \item ArangoDB
+        \item OrientDB
+    \end{itemize}
+    \item No-SQL
+        \begin{itemize}
+            \item Clave valor
+            \begin{itemize}
+                \item DynamoDB
+                \item ArangoDB
+                \item OrientDB
+                \item Cassandra
+                \item Memcached
+                \item Redis
+            \end{itemize}
+            \item Orientadas a Columnas
+            \begin{itemize}
+                \item Cassandra
+                \item HBase
+            \end{itemize}
+            \item Documentales
+            \begin{itemize}
+                \item MongoDB
+                \item BaseX
+                \item MarkLogic
+                \item CouchDB
+                \item RavenDB
+                \item Arango
+                \item OrientDB
+                \item eXistdb
+            \end{itemize}
+        \end{itemize}
+    \item Multidimensionales
+\end{itemize}

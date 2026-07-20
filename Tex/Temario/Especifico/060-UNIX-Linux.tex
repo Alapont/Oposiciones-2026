@@ -1,0 +1,96 @@
+\setcounter{section}{59} % tema número N-1
+\section{Sistemas Linux}
+
+Nombre completo: Sistemas operativos UNIX-Linux.
+
+\localtableofcontents
+
+\subsection{Historia}
+    \subsubsection{Unix}
+        Creado en BELL en los 70 por Dennis Ritchie y Ken Thompson. Debido a las múltiples versiones se creo el estándar POSIX.
+        \begin{description}
+            \item[1003.0] Introducción
+            \item[1003.1] Llamadas al sistema
+            \item[1003.2] Intérprete de comandos
+            \item[1003.3] Métodos de prueba
+            \item[1003.4] Extensiones para tiempo real
+            \item[1003.5] Ada
+            \item[1003.6] Extensiones de seguridad
+            \item[1003.7] Administración del sistema
+            \item[1003.8] Acceso a archivos
+            \item[1003.9] Fortran
+            \item[1003.10] Supercómputo
+        \end{description}
+
+        De Unix surgen varias familias:
+        \begin{description}
+            \item[AT\&T] SystemIII y SystemV
+            \item[BSD] a partir de las licencias de Unix a Berkeley
+            \item[AIX] a partir de las licencias a IBM
+            \item[Xenix] a partir de los derechos de AT\&T por Microsoft y SCO
+            \item[GNU] Esfuerzo por crear un Sistema libre similar a Unix
+            \item[Linux] creado como ejercicio por Linux Torvalds.
+        \end{description}
+
+    \subsubsection{Linux}
+        Creado inspirado en el sistema Unix y Minix. Creando el Kernel. Es un núcleo monolítico colaborado por múltitud de personas.
+
+        El proyecto GNU intenta generar compiladores, librerías y utilidades bajo licencia pública. Normalmente se empaqueta con Lixux (aunque no son necesarios el uno para el otro).
+
+\subsection{Visión General}
+    \subsubsection{Unix}
+        Aunque se considera núcleo monolítico, hay dos partes principales. La parte dependiente de la máquina que lleva las interrupciones, la memoria y los dispositivos a bajo nivel. La parte independiente incluye las llamadas del sistema, procesos, pipes, señales, paginación, discos, filesystem.
+
+        Unix se basa en el manejo de todo como strings, que cada proceso tenga acceso a tres ficheros: entrada, salida y error. La redirección y concatenación de programas, usando entrada y salida como interfaz.
+
+    \subsubsection{Linux}
+        Soporta gran cantidad de arquitecturas. Tiene gestión de memoria, múltiples sistemas de ficheros, comunicación entre procesos, librerías compartidas y dinámicas.
+
+        Aun siendo una estructura monolítica, admite la carga de módulos de forma dinámica.
+
+\subsection{Procesos e hilos}
+    Unix utiliza un sistema de prioridad y round-robin. En algunas versiones se usa también un ajuste dinámico según el tiempo de espera y de uso de la CPU.
+
+    Unix permite también que un proceso haga fork y el envío de mensajes y señales entre procesos.
+
+    Cuando un proceso no es interactivo se denomina \textbf{demonio}. Todo proceso tiene varios elementos configurados:
+    \begin{table}[H]
+    \begin{tabular}{ll}
+        Elemento &  \\
+        \midrule
+        PID & ID del proceso \\
+        PPID & PID del padre\\
+        GID & Grupo \\
+    \end{tabular}
+    \end{table}
+
+    Linux además implementa la categoría de proceso ordinario o real. Permitiendo a los procesos reales una planificación fifo para ciertas tareas
+
+\subsection{Gestión de memoria}
+    Actualmente se utiliza un manejo de memoria virtual, usando normalmente paginación bajo demanda. Unix utiliza un sistema de memoria virtual sobre particiones tipo SWAP.
+
+\subsection{Entrada y salida}
+    En unix todo son ficheros y se trata como tal. Los dispositivos se pueden acceder (normalmente) dentro de \texttt{/dev}
+
+    Unix permite ejecutar llamadas al sistema de forma síncrona y asíncrona. Normalmente se usa la primera, donde el ejecutor espera a que el sistema le responda. La forma asíncrona permite manejar varios descriptores y conocer su estado.
+
+    En el caso de la red se utilizan \texttt{SOCKETS}, que una vez abiertos se tratan como ficheros.
+
+\subsection{Sistema de archivos}
+    Los ficheros son secuencias de bytes, por POSIX, no se distinguen los tipos de ficheros, pudiendo ser regulares, redirecciones, directorios, procesos, redirecciones\dots
+
+    Los ficheros no requieren de una extensión (encontrándose ésta en el interior al principio del fichero). El sistema parte de una raiz de donde cuelgan todos los ficheros, aún incluidos en múltiples dispositivos, o pudiéndo ser estos virtuales.
+
+    Cada dispositivo tiene un bloque de inicio, un suprbloque y un conjunto de i-nodos. Cada i-nodo puede contener datos o redirecciones a mas i-nodos. Pudiendo ocupar bloques dinámicamente, bajo demanda y no contíguos
+
+    Linux soporta múltiples sistemas de ficheros: ext \{2,3,4\}, nfs, Reiser3 \dots
+
+\subsection{Seguridad}
+    Se basa en un sistema de usuarios y grupos (identificados numéricamente). Cada fichero tiene asignado un permiso definido por 9 caracteres. Dentro de cada triada define permisos de Lectura, Escritura y Ejecución, y cada tirada define los permisos para el usuario, el grupo y otros.
+
+    Los permisos en unix se gestionan mediante chmod (se denominan mode bits). Permite declarar los permisos como octetos, o caracteres, también permite modificar solo una parte de ellos.
+
+\subsection{Interfaz hombre máquina}
+    La interfaz por defecto es la SHELL, el intérprete de línea de comandos. No es parte del núcleo, por lo que pueden usarse varias versiones. Las mas conocidas son Bash, sh, chs, ksh y zsh.
+
+    También se definió una especificación para entorno gráfico llamada \texttt{X-Window}, que mas tarde bifurcaría en \texttt{X.org}. Sobre este se han construido multitud de entornos de escritorio. Siendo los mas conocidos KDE, GNome, Xfce y Unity

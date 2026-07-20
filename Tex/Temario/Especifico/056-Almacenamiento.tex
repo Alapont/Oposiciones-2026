@@ -1,8 +1,108 @@
-\setcounter{section}{0} % tema número N-1
-\section{Nombre corto}
+\setcounter{section}{55} % tema número N-1
+\section{Almacenamiento}
 
-Nombre completo: 
+Nombre completo: Almacenamiento para sistemas grandes y departamentales. Dispositivos para trataimento de información multimedia. Virtualización del almacenamiento. Copias de seguridad.
 
 \localtableofcontents
 
-% Aquí va la primera parte
+\subsection{Soportes o Medios de almacenamiento de datos}
+    \subsubsection{Discos}
+        \paragraph{Discos magnéticos}
+            Dispositivos basados en un estrato magnético giratorio. Incorporan una controladora que incluye una caché. Tienen gran capacidad (del orden de TB) y un tiempo de acceso medio. Las últimas interfaces utilizadas son \textbf{SATA} 600MB/s y \textbf{SAS} 2400MB/s
+
+        \paragraph{Discos de estado sólido}
+            Basan su almacenamiento en memoria no volátil. Tienen mayor ratio de lectura y escritura, menos peso y tamaño, a cambio son mas caros y tienen menos capacidad. Pueden usar las interfaces de los discos duros magnéticos o \textbf{NVMe} y \textbf{PCI-e}, pensadas para reducir la latencia y aumentar el ancho de banda.
+
+        \paragraph{Cabinas de discos}
+            Dispositivos que aglutinan discos. Proporcionan rendimiento mediante caché e integran múltiples discos en una unidad lógica mediante RAID.
+
+            En el fron-end permite la conexión con servidores por bloques, o ficheros. Se caracterizan por número de puertos y velocidad.
+
+            En el back-end se ofrece la conexion a los fistintos discos, típicamente FC y SAS.
+
+            En medio se encuentra la controladora que gestiona el funcionamiento de la cabina y proporciona características como RAID, cifrado, deduplicación, snapshots, backups, monitorización\dots
+
+            Los volúmenes se pueden crear \textbf{thick-provisioning} donde se asigna el espacio de uso, o \textbf{thin-provisioning} donde se asignan dinámicamente los bloques que se vayan consumiento. Los datos pueden moverse con \textbf{autotiering} donde se acercan los datos mas frecuentes y se alejan los mas raros a discos mas rápidos o lentos. Por último se usa \textbf{deduplicación} que permite reducir los datos ya existentes, ideal para backups y repositorios.
+    \subsubsection{RAID}
+        Tecnologías basadas en la combinación de varios discos duros para formar una única unidad lógica. Se utilizan diferentes técicas y mecanismos.
+
+        Se usa el \textbf{particionado} donde se divide la escritura en distintos discos, aumentando la velocidad y la tasa de transferencia.
+
+        Se \textbf{duplican} datos para permitir integridad y tolerancia a fallos. Se usa \textbf{mirroring} para almacenarlos simultáneamente en varios discos, o \textbf{paridad} para obtener función resumen, que permite reconstruir los datos en caso de que un disco se pierda, esta necesita menos espacio que el mirroring.
+
+        \begin{table}[H]
+        \begin{tabular}{rlll}
+            nivel & descripción & discos mínimos & Pérdida soportada\\
+            \midrule
+            RAID 0 & Stripping a nivel de bloque, pegar con cinta dos discos & 2 & 0 \\
+            RAID 1 & Mirroring a nivel de bloque, un copiapega. La capacidad es la del disco mas pequeño.  & 2 & 1 \\
+            RAID 2 & Tripping a nivel de bit con un disco de paridad. Todos los discos giran a la misma velocidad, en desuso & 3 & 1 \\
+            RAID 3 & Stripping a nivel de byte con disco de paridad dedicado & 3 & 1 \\
+            RAID 4 & Stripping a nivel de bloque cdon disco de paridad dedicado & 3 & 1\\
+            RAID 5 & Stripping a nivel de bloque con paridad distribuida. La eficiencia es 1-1/n & 3 & 1 \\
+            RAID 6 & STripping a nivel de bloque con paridad distribuida, (2 bloques) & 4 & 2\\
+            RAID 0+1 & Espejo de dos RAID 0 & 4 & 2* \\
+            RAID 1+0 & Stripping de dos mirror & 4 & 2*\\
+        \end{tabular}
+        \end{table}
+        Las RAID 1+0 y 0+1 soportan hasta 2 díscos de pérdida, según cuales. Otras opciones de RAID como suma utilizan otras RAID como discos.
+
+        También existen RAID 5E y 6E con discos de reserva como hot-spare que permiten minimizar el tiempo de reconstrucción en caso de fallo.
+    \subsubsection{Cintas magnéticas}
+        Soporte en pistas magnéticas flexibles. Proporcionan gran capacidad a bajo coste, a cambio tienen menor rendimiento, mayor degradación y tiempos de búsqueda de segundos. Se usan para el respaldo de ficheros. Las cintas pueden ubicarse en armarios robotizados con cargadores automáticos.
+
+\subsection{Sistemas de almacenamiento de datos}
+
+    \subsubsection{Modelos de conectividad del almacenamiento}
+        Los modelos mas simples se basan en el uso directo de discos internos en los propios servidores. Si se extraen estos discos a una cabina de discos se conoce como Direct Attached Storage. Aunque en este caso no se comparte el disco entre servidores ni tampoco la creación de clústeres. Los modelos SAN y NAS se basan en modelos de acceso frente a datos por red.
+
+        \paragraph{Red SAN}
+            El Storage Area Network es una red independiente de datos dedicada al almacenamiento. Se compone de dispositivos de almacenamiento, conmutadores y conexiones (Fibra óptica). El dispositivo de almacenamiento (cabina) presenta discos virtuales a los servidores, los cuales gestionan el sistema de ficheros. Opera a nivel de bloque de datos.
+
+            Una red SAN tiene tres capas. La capa cliente son los propios servidores con tarjetas HBA. La capa de red son los cables de fibra, hubs y switches. La capa de dispositivos son las cabinas de discos y librerías de cintas.
+
+            La topología puede ser punto a punto, en bucle o conmutada (switched fabric). Ésta última utiliza una malla de switches para aumentar la velocidad y resiliencia de la red.
+
+            \begin{description}
+                \item[SAN FC - SAN Fiber channel] son un conjunto de switches que conmutan tramas. Tiene un alto rendimiento llegando a 16GBPS. Asigna nómbres de 64 bits a cada dispositivo o FCID de 24 para optimizar conmutación de tramas. También tienen una interfaz que permite a cualquier nodo conectar con otro sin necesidad de conocer el esquema de conexión entre nodos.
+                \item[iSCSI - Internet SCSI] se basa en el intercambio de tramas sobre TCP/IP en lugar de FC. Mas barato, pero menor rendimiento.
+                \item[FCoE - Fiber Channel over Ethernet]. Permite usar una única red para dats y almacenamiento. Los servidores requieren tarjetas específicas que combinan NIC y HBA.
+                \item[iFCP - Internet FiberChanel Protocol] permite el tráfico Fiber Channel sobre TCP/IP. Actúa de puerta de enlace.
+                \item[FCIP - Fiber Channel Over IP] interconecta sistemas SAN FC sobre redes IP y permite la transmisión de tramas FC sobre túneles IP
+                \item[NVMe-oF NVMe over Fabrics] Permite extender el oriticiki NVMe sobre redes de almacenamiento, reduciendo latencias. Puede implementarse sobre FC, TCP o RDMA, siendo cada vez mas habitual.
+            \end{description}
+
+            La seguridad se implementa por \textbf{Zoning} en base al WWN de los dispositivos. Por \textbf{LUN Masking}, haciendo invisibles los nodos que no sean necesarios. y por Port Binding. Limitando la los puertos a los que se puede conectar un nodo.
+
+            La replucación puede ser local o remota. bien síncrona bien asíncrona.
+
+        \paragraph{NAS}
+            El NAS o Network Attached Storage es un dispositivo de almacenamiento disponible a través de red (independientemente del medio). Los sistemas NAS gestionan sus propios sistemas de ficheros y lo presentan a la red a través de protocolos como NFS o CIFS (Obsoleto).
+
+            Un NAS es un nodo autónomo en una red con su propia dirección. El Nas procesa los accesos y su propio filesystem, que es opaco para el cliente. Se usan los protocolos NFS y SMB en unix y windows. El NAS enmascara el hardware, si hay raid o cualquier otro detalle. NAS permite también control de acceso, implementando cuotas de usuario, permisos y auditorías de acceso.
+
+    \subsubsection{Arquitecturas de backup}
+
+        Los sistemas de backup realizan copias con una periodicidad definida y permiten recuperar datos  de un momento anterior en el tiempo.
+
+        El backup puede ser completo si se copian todos los archiovos seleccionados. Incremental, si solo se copian los que se han modificado. diferencial, si se almacenan a parte los cambios desde una copia completa.
+
+        Un esquema común es el abuelo-padre-hijo, donde se realiza un backup mensual que se guarda un año, un backup semanal durante un mes, y un backup diario guardado una semana.
+
+        Las soluciones modernas incorporan almacenamiento inmutable que impide su modificación o borrado durante un periodo de tiempo.
+
+\subsection{Virtualización del almacenamiento y backup}
+    Permite una capa de abstracción entre dispositivos. Elimina los detalles y sólo proporciona una vista lógica enmascarando por detrás los detalles de implementación. Permite centralizar la gestión del espacio de diferentes dispositivos. Incorpora escalabilidad, permitiendo el crecimiento y decrecimiento en caliente. También se pueden incorporar otros servicios como replicación, caché, tiering, etc.
+
+    Según a qué nivel se realice, se realiza de una u otra forma. A nivel de host se trata de una capa que agrupa varios dispositivos en uno solo. A nivel de red es mas común en sistemas SAN. En cabinas se pueden virtualizar los recursos físicos disponibles. Permitiendo el reemplazo de discos en calientes, recuperación de paridad RAID. La RAID per sé también se considera un caso simple de virtualización.
+
+    Los sistemas VTL permiten presentar un dispositivo de almacenamiento como si fuera una librería de cintas ante un software de backup. Permitiendo mayor rendimiento.
+
+\subsection{Nuevas tendencias}
+
+\begin{description}
+    \item[Software Defined Storage] Separa el almacenamiento subyacente permitiendo flexibilidad.
+    \item[Infraestructura HiperConvergente] Integran en un mismo nodo cómputo, almacenamiento y red. Distribuyendo el almacenamiento entre nodos y compartiéndose como un pool unificado.
+    \item[Almacenamiento orientado a objetos] Modelo en el que la información se organiza por objetos en lugar de bloques asociados. Los objetos se almacenan en plano y se acceden mediante un identificador, sin estructúra jerárquica.
+    \item[Content Addressable Storage] Almacenamiento direccionable por contenido hashea el dato garantizando integridad y evitando duplicación. Se usa principalmente en sistemas de archivo y preservación.
+\end{description}

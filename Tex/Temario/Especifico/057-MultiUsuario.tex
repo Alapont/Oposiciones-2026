@@ -1,0 +1,45 @@
+\setcounter{section}{56} % tema número N-1
+\section{Multi Usuario}
+
+Nombre completo: Tipos de sistemas de información multiusuario. Sistemas grandes, medios y pequeños. Servidores de datos y aplicaciones. Virtualización de servidores.
+
+\localtableofcontents
+
+\subsection{Sistemas de información multiusuario}
+La clasificación es aproximada, y tiene herencias legacy. De mayor a menor son
+
+\begin{description}
+    \item[Mainframes] Soportan una elevada carga de trabajo y usuarios. Son estructuras centralizadas. Tienen una alta fiabilidad y se diseñan para trabajar sin interrupción durante años
+    \item[Super ordenadores] Gran potencia en base a arquitecturas paralelas. Se gestionan por personal especializado.
+    \item[Miniordenador o Servidor] Ordenador medio. Puede realizar cálculos complejos y soporta una gran cantidad de usuarios. Están a mitad de camino entre el mainframe y el microordenador.
+    \item[Estaciones de trabajo] Ordenadores personales con altas prestaciones. Se usan comúnmente para CAD o diseño 3D
+    \item[Microordenadores] Ordenadores de sobremesa o portátiles.
+    \item[Otros] Tablets y smartphones.
+\end{description}
+
+\subsection{Servidores de datos y aplicaciones}
+Según el papel que asumen se pueden clasificar como \textbf{dedicados} si se usan para un único fin. o \textbf{no dedicados} si aceptan varios servicios simultáneamente.
+
+Los usos mas comunes son
+\begin{description}
+    \item[web] se encargan de la capa de presentación
+    \item[aplicaciones] Ejecutan la lógica de negocio
+    \item[datos] Sistemas de base de datos
+    \item[correo]
+    \item[multimedia] Distribuye contenido multimedia
+    \item[noticias]
+    \item[colaboración] Provee de herramientas colavorativas para sincronizar el trabajo de varios usuarios
+    \item[proxy] Intermediario de conexión para sus usuarios
+\end{description}
+
+\subsection{Virtualización}
+Gracias a tecnologías como la nube se permite una reducción de costes operativos. Cambiando el paradigma a los servicios por uso en lugar de por disponibiilidad. Gracias a ello se pueden hacer despliegues automáticos, escalado bajo demanda o continuidad de negocio.
+
+Según cuanto se virtualiza y qué capa queda expuesta, la virtualización puede ser de varios tipos.
+\begin{description}
+    \item[Emulación] se emulta completamente un tipo de arquitectura en otra. (DosBox)
+    \item[Nativa o total] La máquina virtual emula una cantidad suficiente de hardware para que el entorno virtualizado funcione completamente sin modificar (VMWare, VirtualBox)
+    \item[para-virtualización] El host no emula el hardware, sino que ofrece una serie de APIs a un sistema convenientemente modificado (UML, xVM)
+    \item[Virtualización a nivel de SO] Los huéspedes comparten el mismo kernel que el host. Creandose instancias independientes entre si. (Linux V Server, OpenVZ)
+    \item[Virtualización de aplicaciones] Las aplicaciones tienen su propio entorno virtualizado con lo necesario para ejecutarse tanto sobre un servidor, como un cliente.
+\end{description}

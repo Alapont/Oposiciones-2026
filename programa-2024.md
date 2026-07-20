@@ -90,8 +90,8 @@
 - [C]  60. Sistemas operativos UNIX-LINUX. Fundamentos, administración, instalación, gestión.
 - [C]  61. Sistemas operativos Microsoft. Fundamentos, administración, instalación, gestión.
 - [C]  62. Conceptos básicos de otros sistemas operativos: OS X, iOS, Android, z/OS. Sistemas operativos para dispositivos móviles.
-- [ ]  63. Los sistemas de gestión de bases de datos SGBD. El modelo de referencia de ANSI.
-- [ ]  64. El modelo relacional. El lenguaje SQL. Normas y estándares para la interoperabilidad entre gestores de bases de datos relacionales.
+- [M]  63. Los sistemas de gestión de bases de datos SGBD. El modelo de referencia de ANSI.
+- [M]  64. El modelo relacional. El lenguaje SQL. Normas y estándares para la interoperabilidad entre gestores de bases de datos relacionales.
 - [ ]  65. Arquitectura de desarrollo en la web. Desarrollo web front-end. Scripts de cliente. Frameworks. UX. Desarrollo web en servidor, conexión a bases de datos e interconexión con sistemas y servicios.
 - [ ]  66. Entorno de desarrollo Microsoft.NET.
 - [ ]  67. Entorno de desarrollo JAVA.

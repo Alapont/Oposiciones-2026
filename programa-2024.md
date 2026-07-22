@@ -92,8 +92,8 @@
 - [C]  62. Conceptos básicos de otros sistemas operativos: OS X, iOS, Android, z/OS. Sistemas operativos para dispositivos móviles.
 - [M]  63. Los sistemas de gestión de bases de datos SGBD. El modelo de referencia de ANSI.
 - [M]  64. El modelo relacional. El lenguaje SQL. Normas y estándares para la interoperabilidad entre gestores de bases de datos relacionales.
-- [ ]  65. Arquitectura de desarrollo en la web. Desarrollo web front-end. Scripts de cliente. Frameworks. UX. Desarrollo web en servidor, conexión a bases de datos e interconexión con sistemas y servicios.
-- [ ]  66. Entorno de desarrollo Microsoft.NET.
+- [M]  65. Arquitectura de desarrollo en la web. Desarrollo web front-end. Scripts de cliente. Frameworks. UX. Desarrollo web en servidor, conexión a bases de datos e interconexión con sistemas y servicios.
+- [M]  66. Entorno de desarrollo Microsoft.NET.
 - [ ]  67. Entorno de desarrollo JAVA.
 - [ ]  68. Entorno de desarrollo PHP.
 - [ ]  69. Software de código abierto. Software libre. Conceptos base. Aplicaciones en entorno ofimático y servidores web.

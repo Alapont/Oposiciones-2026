@@ -1,0 +1,186 @@
+\setcounter{section}{64} % tema número N-1
+\section{Arquitectura web}
+
+Nombre completo: Arquitectura de desarrollo en la web. Desarrollo web front-end. Scripts de cliente. Frameworks. UX. Desarrollo web en servidor, conexión a bases de datos e interconexión con sistemas y servicios.
+
+\localtableofcontents
+
+\subsection{Introducción}
+
+    Las aplicaciones web permiten a los usuarios acceder a un servicio web alojado en un servidor a través de una red a través de un navegador. 
+
+\subsection{Arquitectura del desarrollo web}
+
+    La arquitectura web ha evolucionado enormemente para adaptarse a la tecnología y necesidades. Pasando de páginas html estáticas a Javascript con las que dinamizar. Creando nuevas arquitecturas cada vez.
+
+    \subsubsection{Arquitectura cliente-servidor}
+
+        Se divide en dos partes. El cliente es el encargado de ejecutar la interfaz del usuario y solicitar los datos y servicios al servidor. El Servidor gestiona la lógica de la aplicación y los datos, responde a los clientes.
+
+        Esta arquitectura permite una mayor escalabilidad y permite compartir los recursos entre multitud de clientes. Encapsula entre la lógica entre ambas partes.
+
+    \subsubsection{Arquitectura en capas}
+
+        En la arquitectura de tres niveles aparecen varias funciones claramente dedicadas a una parte en concreto. Se necesitan todas las partes para desplegar una aplicación. Se denomina arquitectura monolítica.
+
+        La \textbf{capa de presentación} presenta los datos de la base de datos, interactúa con el usuario y con los objetos de la aplicación.
+
+        La \textbf{capa de aplicación} o negocio intervienen los objetos de negocio. Estos están ubicados en el servidor de aplicaciones y procesan la lógica de negocio. El cliente solicita información a los objetos de negocio, y estos interactúan con la base de datos.
+
+        La \textbf{capa de datos} se encarga del almacenamiento. Sus componentes son bases de datos con tablas, vistas, triggers...
+
+    \subsubsection{microservicios}
+
+        En esta arquitectura se separa la presentación de un conjunto de servicios a los que se llama de manera independiente.
+
+        Cada servicio se desarrolla con una aplicación diferente. Facilitando la escalabilidad, el rendimiento y el despliegue de aplicaciones. Las comunicaciones se realizan mediante API-REST con JSON, aunque hay múltiples alternativas.
+
+        Los microservicios se implementan y operan de manera independiente. Separando la autonomía de los servicios y acotando los problemas que puedan tener.
+
+        Se desarrollan en SpringBoot en java, ASP.NET Core en .NET, y Laravel con PHP.
+
+        Ha surgido un paradigma llamado \textbf{API GATEWAY} que funciona de proxy inverso. Se puede centralizar autentificación, protección contra amenazas, transformación de datos, traducción de protocolos.
+
+    \subsubsection{p2p}
+
+        Se compone de una red de ordenadores que interactúan como clientes y servidores simultáneamente. Es Altamente escalable y resistente a ataques. Es posible encontrar nodos maliciosos. También surge el problema de añadir e identificar nodos en la red, ya que ninguno tiene una dirección física.
+
+    \subsubsection{Web3}
+
+        Arquitectura emergente centrada en aplicaciones descentralizadas y la integración de tecnologías blockchain en el desarrollo web. Se usa blockchain para descentralizar procesos y almacenamiento.
+
+\subsection{Despliegue de aplicaciones}
+
+    Significa poner en funcionamiento una aplicación. Incluye configuración y preparación del entorno.
+
+    \subsubsection{servidores web}
+
+        Son programas que procesan una aplicación del lado del servidor. Realizan conexiones con el cliente.
+
+        Los servidores mas importantes son:
+        
+        \paragraph{Apache}
+            Apache es desarrollado por la fundación Apache. Software libre, disponible para todos los sistemas operativos. Es Altamente configurable y expandible. Buena compatibilidad y seguro.
+
+        \paragraph{Apache-Tomcat}
+            Contenedor de Servlets, implementa estas especificaciones. También Java-Server Pages. También es software abierto. Se despliegan aplicaciones Java. Aunque existen otras alternativas como JBoss, WebLogic, Websphere\dots
+
+        \paragraph{Internet Information Services}
+            Servidor windows desarrollado por microsoft. Se basa en módilos que le dan versatilidad, y le permite desplegar múltiples tipos de páginas web.
+
+        \paragraph{NGINX}
+            Software libre y código abierto. Permite realizar proxy inverso y para otros protocolos. Es un software asíncrono.
+
+        \paragraph{Node.js}
+            Permite la ejecución de JavaScripot en el backend.
+
+        \paragraph{Embebidos}
+            Múltitud de frameworks de desarrollo permiten ejecutar su propio servidor.
+
+    \subsubsection{contenedores}
+        Son entornos de ejecución portables y aislados que encapsulan aplicación, dependencias. Permitiendo su ejecución en cualquier sistema operativo. Cada contenedor incluye todo lo necesario para la ejecución. Existiendo múltiples plataformas de contenedores como Docker o LXC, y gestión de clústeres como K8, Rancher o EC2.
+
+        Desplegar por microservicios permite implementar y escalar cada servicio independientemente. Aumentando la flexibilidad y disponibilidad.
+
+    \subsubsection{cloud}
+        Desplegar en cloud significa alojarla en infraestructuras de computación en nube, con sus propios beneficios. Se usan servicios PaaS e IaaS. Permitiendo flexibilidad y gestión de infraestructuras.
+
+\subsection{Desarrollo web front-end}
+
+    Se refiere a la creación de la parte visible y funcional de un sitio web con la que interactúa el usuario final. Incluye la implementación de elementos visuales y la disposición de elementos.
+
+    \subsubsection{Elementos comunes}
+        Se utiliza html para crear la estructura y el contexto de la página web, y css para definir el aspecto visual. también se utiliza javascript para agregar interactividad y dinamismo. Permitiendo manipular el contenido en vivo.
+
+        Se usa XML y JSON como formatos de intercambio de datos 
+
+    \subsubsection{JavaScript y ECMAScript}
+        Javascript se creó con nestcape. Mas tarde se crearía ECMAScript como estándar de lenguajes de Script basados en Javascript. Se ha convertido en estandar de facto y se ha implementado en diferentes navegadores web.
+
+        Hay un proceso contínuo de mejora por parte del TC39, que va madurando e incorporando propuestas al estándar, de donde se nutren los demás lenguajes.
+
+        \paragraph{Estándares ECMA}
+
+        El estándar ha ido evolucionando desde su primera versión en 1997. En los 2000 el ecosistema se encontraba fragmentado con Microsoft obligando al uso de Internet Explorer frente a Nestcape. En 2003 Nestcape propone la última versión de EMCAScript, descartada por considerarse compleja y extensa. Perdiendo popularidad frente a Flash o Jav Applets. Finalmente se publica EMCAScript 5, con nuevos navegadores y soportes.
+
+        A principios de 2010 Node.js gana popularidad y se empieza a considerar como el nuevo estándar de facto. Siendo los navegadores 100\% compatibles. Y se publica ECMAScript 6 como última versión. Esta no es retrocompatible, existiendo transpiladores para convertirlo a ECMAScript5
+
+        \paragraph{TypeScript}
+            Se posiciona como una alternativa a JavaScript, con soporte a framewroks como Angular o React.introduciendo el tipado dinámico, y otras características del lenguaje de Objetos. La mayoríá de estos lenguajes necesitan ser transpilados a JS para usarse.
+
+    \subsubsection{APIs de JAvascript y HTML5}
+        Las APIs permiten el acceso mediante funciones y métodos a funcionalidades del navegador y del sistema operativo. HTML5 también manipular la estructura de html.
+
+        Para la ejecución asíncrona se utiliza AJAX para poder actualizar partes de la página web sin recargar todo al completo. Promesas para trabajar con respuestas a solicitudes. y la API fetch para poder realizar solicitudes http.
+
+        Para modificar el html des utiliza el dom. Permitiendo el acceso por una interfaz de objetos, búsqueda y edición. jQuey permite un acceso mas fácil.
+
+        En cuanto a almacenamiento se puede usar \texttt{window.localStorage} para almacenar pares clave-valor. \texttt{sessionStorage} para almacenar temporalmente e \texttt{indexDB} para almacernar datos de forma estructural.
+
+        se usan webSockets para permitir comunicación bidireccional entre cliente y servidor. Estos servidores pueden estar implementados en js, como Socket.io o ws. en JAva o en .net.
+
+        Web Assembly se utiliza para la ejecución de código a bajo nivel. Este se compila en el navegador, permitiendo saltase virtualización.
+
+    \subsubsection{Tecnologías obsoletas}
+        Después de muchos años de tecnologías web., Muchas han caido en el olvido.
+
+        JScript era una implementación de ECMAScrpt en .nte, solo funciona en IE. Similar VBScript.
+
+        Java Applets ejecuta código java en la máquina virtual del cliente. Soportado hasta JDK8.
+
+        Adobe flash. Mas agujeros que un colador.
+
+\subsection{Node}
+    Google decidió que qué es eso de que JS se ejecutase solo en el navegador. Así que sacó node como motor independiente. Incluye Node Runtime como entorno de ejecución asíncrono. También incluye un sistema de módilos.
+
+    El sistema de eventos permite manejar varias operaciones asíncronas al mismo tiemp. A cada vuelta del bucle de eventos empieza a ejecutar la siguiente operación, sin esperar a que termine la anterior.
+
+    El Paquete Node Packet Manager permite gestionar paquetes y dependencias parecido a maven en java.
+
+    Las Build-tools ejecutan tareas para generar código front-end. como minimizado, compresión, agrupación. Los linter revisan el código fuente para mejorar la calidad del código. Y varios entornos de testing.
+
+\subsection{Frameworks Front-End}
+    Sacar frameworks de js ocurre todos los días. Pero algunos se quedan como React, Angular o Vue. La librería jQuery ha sido fundamental para el desarrollo js y sigue usándose a día de hoy, esta permitía manejar el dom desde el cliente.
+
+\subsubsection{Arquitectura de frameworks}
+    Algunos patrones usados con los frameworks js son MVC. Model View ViewModel, que incorpora el viewModel como alternativa al Presenter, que permite traducir entre el modelo y la vista. Viper es un patrón que incorpora Vista, Interactor, Presentador, Entidad y Enrutador. Dividiendo mas las responsabilidades. y el Model View Update para gestionar aplicaciones de una sola página.
+
+    \subsubsection{clasificación de aplicaciones y renderizado}
+        Las aplicaciones se pueden agrupar en tres tipos. Las páginas estáticas, las MultiPage Application, donde cada página es procesada y enviada por el servidor. Y las Single Page Application donde la misma página va cargando contenido dinámicamente según el flujo.
+
+        En cuanto al renderizado. Las Single Page también entran aquí. Junto con el ServerSide Rendering. Donde el servidor genera html y lo sirver con cada petición. y Static Side Generation minimizando el envío. Útil para páginas con poco cambio e interacción.
+
+    \subsubsection{Aplicaciones híbridas}
+        Los frameworks frontend se pueden usar para desarrollar aplicaciones multiplatadorma, como React Native o Electron.
+
+\subsection{User Experience}
+    Para favorecer la usabilidad han aparecido frameworks para generar aplicaciones frontend con Responsive web design. Y que los componentes html se visualicen, redimensiones y ubiquen. Aunque pueden ocupar mas espacio de visualización que otras opciones.
+
+    Los mas usados son bootstrap, tailwindCSS y Materialize. Otros precompiladores de CSS son SASS, LESS y STYLUS. Que permiten parametrizar hojas CSS que acaban generando la hoja de estilos definitiva que se enviará al cliente. CSS3 soporta mediaqueries. Que permite que ciertos estilos solo se apliquen si se dan ciertos casos, como una pantalla de al menos una resolución.
+
+\subsection{Frameworks backend}
+    Los Frameworks backend permiten generar cualquier arquitectura extendida, abstraer bases de datos, enrutar solicitudes y otras características accesorias como herramientas de seguridad y autenticación.
+
+    Muchos lenguajes de propósito general incluyen utilidades y librerías para desarrollar web.
+
+    \subsubsection{Motores de plantillas}
+        Son herramientas para generar código html independientemente a la lógica de la aplicación. Permitiendo controlar la aplicación sin modificar html.
+
+    \subsubsection{JAMStack}
+        JavaScript, API y Markup Stack. Las páginas se compilan y sirven de forma estática. Esto con la gestión de caché sirve para generar contenido estático servido a través de un CDN. Al no haber lógica en el servidor, son sitios mas seguros. Usan Markdown como lenguaje ligero para dar formato al documento. 
+
+\subsection{Conexión a BD}
+    Una aplicación puede realizar una conexión a base de datos diréctamente, con drivers, librerías u ORM (usa objetos como consultas.)
+
+\subsection{Interconexión con sistemas y servicios}
+    Las soluciones mas habituales para interconectar servicios o microservicios son
+
+    \begin{description}
+        \item[Servicios WEB] información serializada con xml y uso del estandar SOAP
+        \item[RPC Remote call procedure] Permite a una aplicación invocar procedimientos en otra máquina como si fuera local
+        \item[API REST] Habitual que se serialice información con JSON. Hay herramientas como Swagger para generar la API y documentación, y el estandar OpenAPI.
+        \item[API Restful] Forma del API Rest que se basa en llamadas http y sus verbos.
+        \item[GRAPH-QL] Sistema con un solo endpoint, que puede realizar múltiples funciones.
+        \item[gRPC] versión de google de RPC. Soporte limitado.
+        \item[RabbitMQ, JMI y Kafka] herramientas de colas de mensajes.
+    \end{description}

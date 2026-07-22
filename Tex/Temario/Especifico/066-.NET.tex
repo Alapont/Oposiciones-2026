@@ -1,0 +1,180 @@
+\setcounter{section}{65}
+\section{.NET}
+
+Nombre completo: Entorno de desarrollo Microsoft .NET
+
+\localtableofcontents
+
+\subsection{Introducción}
+    Entorno de desarrollo software de Microsoft lanzada en 2002. Es una plataforma unificada para desarrollar en diferentes lenguajes. Esta compite con la JVM de Oracle. Enfocando .NET a C\# y VisualBasic. En comparación JVM implica una máquina virtual, mientras que .NET usa llamadas bajas del sistema.
+
+    Microsoft lanza en 2016 \texttt{.NET Core} para unificar entornos en una única platadorma y expandirse a otros sistemas y arquitecturas. La tendencia es eliminar \texttt{.NET Framework} y que .NET Core se quede como única plataforma bajo el nombre de .NET
+
+\subsection{Ecosistema .NET}
+\begin{description}
+    \item[.NET Standard] Especificación formal de las APIs
+    \item[.NET Implementations] .NET framework, .NET (Core, Mono, UWP)
+    \item[.NET Runtimes] CLR, CoreCLR, Mono Runtime .NET native for UWP
+    \item[.NET Tooling] Cli, compilador y otras herramientas
+    \item[Bibliotecas de clases y tipos] 
+    \item[Servidores .NET] Enterprise e IIS
+    \item[Lenguajes de programación] C\#, F\# VB.NET \dots
+    \item[Entornos de desarrollos]
+    \item[Gestores de paqueres] NuGet
+    \item[Frameworks de desarrollo] ASP.NET, Xamarin
+\end{description}
+
+\subsection{Framework .NET}
+    Es un conjunto de tecnologías desarrollado por Microsoft en 2002, proporcionando una plataforma para crear, ejecutar y desplegar aplicaciones y servicios en entornos windows. Incluye un entorno de ejecución, biblioteca de clases, compiladores y otros componentes y herramientas. El plan es dejarlo obsoleto a medio plazo en favor de .NET, por lo que no se recomienda su uso.
+
+\subsection{.NET (core)}
+    Diseñada como versión ligera y modular de .NET Framework. Esta es código abierto y multiplatadorma, incluyendo Linux, OSx, nube, consolas\dots
+
+    Actualmente tiene un desarrollo activo unificado y preferente. Se ha intentado mantener la retrocompatibilidad, pero no ha sido implacable, prefiriendo un ecosistema variado frente a la retrocompatibilidad.
+
+\subsection{.NET standar}
+    Es una especificación de biblioteca de clases introducida con .NET core, y actualizada con cada versión mayor. Proporciona una API común utilizable en todas las implementaciones. Permitiendo crear aplicaciones con esta base y portarla a todos los sistemas incluidos. Es solo una implementación, y cada versión debe de implementar ésta. Por razones de compatibilidad (problemas de arquitectura) no se recomienda su uso en favor de .NET Core.
+
+% \subsection{novedades}
+% Es una lista de versiones
+
+\subsection{Entorno de ejecución}
+    Se usa un modelo de ejecución similar a Java, con una máquina virtual y código intermedio.
+
+    \subsection{CLR / CoreCLR}
+        El \texttt{Common Languaje Runtime} es un componente del marco de .NET que funciona como capa des abstracción entre el programa y el sistema operativo. Puede ejecutar código de varios lenguajes de programación y proporciona herramientas y servicios.
+
+        Trabaja junto con el compilador de .NET para compilar el código en un lenguaje común, el \texttt{Common Intermediate Languaje}. Mas tarde el CLR compila ese código en tiempo de ejecución al código máquina pertinente. Esta puede ser \textit{Just in Time} o \textit{Ahead of time}.
+        
+        CLR es parte de la implementación original de Microsoft de .NET Framework, existiendo CoreCLR como  versión simplificada, optimizada y multiplataforma. Los entornos de ejecución implementan su propio CLR.
+
+    \subsection{Código intermedio}
+        Es un lenguaje de nivel intermedio similar al bytecode en java. Los compiladores convierten las fuentes en código IL. El código se asemeja a ensamblador, pero es independiente de la platadorma, permitiendo un paso extra para compilar a código específico.
+
+    \subsubsection{Compiladores y Roslyn}
+        Cada lenguaje tiene su propio compilador al código intermedio, tanto lenguajes oficiales como implementaciones de la comunidad. Con la llegada de .NET Core se rediseñó el sistema de compilación y se nombró Roslyn. Éste es código abierto y es un conjunto de herramientas y bibliotecas usadas para crear compiladores y analizadores de código.
+
+        Opera como un Compiler as a Service. Permite hacer análisis semánticos y sintácticos de código, refactorizar, aplicar estilos, u otras taréas.
+
+    \subsubsection{Ensamblados}
+        Es la unidad fundamental de distribución, versión y seguridad de un componente. Es un archivo que contiene Código Ejecutable, recursos necesarios, metadatos y manifiesto.
+
+        Cada ensamblado tiene un nombre único, una versión asociada y uno o varios dominios de aplicación. También tienen una forma de especificar dependencias.
+
+\subsection{Librerías y herramientas}
+    .NET dispone de 37.118 APIS utilizables desde todos los lenguajes y entornos, amén de herramientas de consola y gui para gestionar manifiestos de aplicación, certificados y firmas.
+
+    También se crea una cli para gestionar proyectos, incluido plantillas, compilación, despliegue, ejecución, plugins. También para recargar código automáticamente.
+
+    \subsubsection{FCL y BCL}
+        La \texttt{Base Class Library} es una biblioteca de tipos primitivos  de .NET. Se compone de un conjunto de clases, interfaces y tipos que porporcionan funcionalidad básica para aplicaciones .NET, cosas como Object, String, Array, Math\dots
+
+        La \texttt{Framework Class Library} es una biblioteca mas amplia, construida sobre BCL y expande clases y funcionalidades, como aplicaciones web, escritorio, móviles, servicios\dots 
+        
+        FCL es el conjunto de .NET que incluye librerías exclusivas de Windows, mientras que BCL se usa en .NET core junto con otras añadidas a BCL.
+
+\subsection{Lenguajes de programación}
+
+    Al estar basado en un código intermedio, puede soportar cualquier lenguaje (además de los oficiales) que tenga un compilador hacia código intermedio, y que se ajuste al CTS y CLS.
+
+    \subsubsection{CLS y CTS}
+        El \texttt{Common Type System} es una especificación sobre cómo se definen, usan y administran los tipos de datos. Define reglas para la creación de tipos, asignación de memoria e interoperabilidad entre lenguajes
+
+        El \texttt{Common Languaje Specification} es una especificación de reglas a seguir entre los lenguajes para garantizar su iteroperabilidad. Estas afectan a nombres, tipos, y otros elementos. Permitiendo crear una estructura común de lenguajes.
+
+    \subsubsection{C\#}
+        Pronunciado C Sharp. Es un lenguaje de programación de alto nivel de propósito general y multiparadigma. Admite tipado estático, fuerte, imperativo, declarativo, funcional, genérico, orientado a objetos y a componentes. Es el lenguaje principal de .NET y un competidor de Java.
+
+    \subsubsection{Visual Basic .NET}
+        Sucesor de Visual Basic. No siendo retrocompatible, pero si similar. Microsoft anunción que seguiría manteniendo el lenguaje.
+
+    \subsubsection{F\#}
+        Pronunciado F Sharp. Es un lenguaje multiparadigma, fuértemente tipado y funcional. Se usa como lenguaje de propósito general, pero también puede generar JavaScript y código para GPUs. Utiliza compiladores propios para .NET Framework y .NET Core. Tiene popularidad en Data Science, Aprendizaje automático e informática financiera.
+    
+    \subsubsection{Otros}
+        Otros lenguajes con compiladores a .NET Core son Python, PHP, C++ o Pascal. a .NET Framework existen muchos mas, pero incluyen: Python, PHP, Java, C++, Pascal, JScript\dots
+
+\subsection{NuGet}
+    Es un gestor de paquetes de código abierto. Permite buscar, instalar y administrar bibiotecas de terceros y otros componente software. Funciona como un repositorio centralizado donde se puede acceder y añadir funciones. Se puede integrar con entornos de desarrollo y herramientas de despliegue.
+
+\subsection{Arquitectura física}
+    Las aplicaciones pueden desplegarse de múltiples maneras.
+
+    \begin{description}
+        \item[Krestel] Srvidor web integrado en .Net Core. Es el predeterminado
+        \item[IIS] Servidor web integrado en Windows Server. Se integra nativamente con .NET Framework.
+        \item[Servidor web] Nginx y Apache tienen plugins que permiten entornos de ejecución (como mod\_mono)
+        \item[Contenedores] Microsoft proporciona multitud de imágenes de contenedores para desplegar .NET, .NET Framework no es compatible con contenedores Linux.
+        \item[Proveedores cloud] Múltiples proveedores proporcionan servicios de despliegue de aplicaciones, como Azure, AWS, GCP. O desplegarse en entornos que soporten docker.
+    \end{description}
+
+\subsection{Entornos de desarrollo}
+    Funcamentalmente VisualStudio, aunque hay otros. Cada versión de Visual Studio suele venir acompañada de versión de .NET
+
+\subsection{Desarrollo web - ASP.NET}
+Existen multitud de Frameworks para desarrollo web.
+
+    \subsubsection{Active Server Pages}
+        Desarrollado en 1996. Combina HTML, Scripts, ActiveX, y Visual Basic para generar webs dinámicas. Todo ello en un solo pack.
+
+    \subsubsection{ASP.NET}
+        Modernización y revisión de ASP. También se han incluido multitud de librerías. Incluyéndose todo en IIS.
+
+    \subsubsection{ASP.NET webforms}
+        Centrado en la creación de xhtml con controles de servidor. Crean componentes reusables de html con capacidad de responder a eventos. Separa el código diámico, generando una estructura mas límpia. Las páginas contienen también un ciclo de vida antes de ser enviadas al cliente.
+
+    \subsubsection{ASP.NET mvc}
+        Centrado en el patrón MVC, separa responsabilidad y el TDD.
+
+        Incorpora controladores, con un motor de renderizado de páginas. Al incorporar el modelo vista controlador hace un diseño mas limpio y facilita el testing unitario.
+
+    \subsubsection{ASP.NET webpages y Razor}
+        Razor permite desarrollar código html mas eficiente y con plantillas. También aplica MVC y directivas.
+
+        WebPages permite un modelo basado en MVVM, combinable con MVC. Se crea un fichero asociado que actúa de ViewModel y genera la ruta a la página sin controlador.
+
+    \subsubsection{ASP.Net core}
+        Permite el despliegue en múltiples entornos. Sin muchos mas cambios funcionales.
+
+    \subsubsection{Blazor}
+        Migración a C\# en lugat de JAvaScript. Blazor usa WebAssembly para ejecutar código.
+
+    \subsubsection{Otros}
+        SignalIR se usa para comunicación de mensajes en tiempo real, como chats o videojuegos. Silverlight se propuso como alternativa a Flash.
+
+\subsection{Desarrollo de servicios}
+    Windows Communication Foundation (WCF) es un framework para construir servicios sin necesidad de usa html y ASP.
+
+\subsection{Acceso a datos}
+    Librerías para acceder a Base de datos, similar a JDBC
+
+    \subsubsection{ADO.NET}
+        Proporciona comunicación entre sistemas relacionales a través de componentes comunes. Los DataProviders proporcionan acceso a las base de datos (independientemente de esta). Los DataSets son objetos para contener y manipular datos en memoria, previo a la base de datos relacional.
+
+        ADO ha mantenido gran parte de su funcionalidad tras moverse a .NET Core
+
+    \subsubsection{LINQ}
+        Tecnología que permite hacer consultas en diferentes fuentes de datos (no solo bases de datos). Utiliza funciones lambda para tratar los datos. Se integra con C\# y VB.NET.
+
+    \subsubsection{Entity framework}
+        Tecnolofíás para acceso y gestión de datos en .NET. es un Mapeo de Objetos Relacionales, permitiendo trabajar como tipos nativos a datos en una base de datos.
+
+        Igualmente tiene versiones en .NET Framework y .NET Core
+
+\subsection{Desarrollo de aplicaciones de escritorio}
+    Se usa WinForms como framework de desarrollo gráfico basado en ventanas y controles. Proporcionando multitud de elementos como botones, cuadtros, listas\dots
+
+    \texttt{Windows Presentation Foundation} Es un framework evolución de WinForms. Siendo mas moderno y avanzado. Permite programar interfaces en xaml. Prporciona la capacidad de realizar animaciones y graficos 2D y 3D. Es compatible con otras tecnologías de Microsoft como silverlight y Windows phone.
+
+    Ambas están disponibles en .NET Core.
+
+    A partir de Windows 8 se crea la Universal Windows Platform, disponible en .NET Core.
+% \subsection{Desarrollo de aplicaciones multiplataforma}
+
+\subsection{Otras tecnologías .NET}
+
+\begin{description}
+    \item[WinAPI] Api de Windows en C++
+    \item[ML.NET] Framework de machine learning.
+    \item[Unity] Motor gráfico.
+\end{description}

@@ -1,0 +1,71 @@
+\setcounter{section}{67}
+\section{Equipos personales}
+
+Nombre completo: Entorno de desarrollo PHP
+
+\subsection{Introducción}
+\texttt{PHP Hypertext Preprocessor} es un lenguaje de código abierto muy adaptado al desarrollo web. Es un lenguaje interpretado con una sintáxis parecida a C, Java y Pearl y usa tipado dinámico. Es compatible con multitud de bases de datos y multiplataforma. 
+
+\subsection{Lenguaje PHP}
+    Es un lenguaje de scripting desde el lado del servidor. Este procesa peticiones, genera contenido dinámico y envia la salida al cliente en forma de html. De esta forma el código fuente queda oculto al cliente. PHP también puede crear imágenes, PDFs, XML o JSON.
+
+    PHP se puede escribir dentro de html con la etiqueta \texttt{<?PHP} y \texttt{?>}. Esto será interpretado y ejecutado por el servidor antes de ser enviado.
+
+\subsection{Arquitectura de aplicaciones PHP}
+    Existen varios modelos y arquitecturas que integran PHP. Los mas importantes son:
+    \begin{description}
+        \item[Cliente SErvidor] El cliente envía solicitudes y php las procesa y responde
+        \item[LAMP] Linx Apache MySQL PHP
+        \item[Arquitectura] MVC, Componentes o Microservicios
+        \item[Sesiones y estado] php es capaz de manejar esto por encima de html.
+        \item[Despliegues y escalabilidad] Mediante servidores web, Cachés y Balanceo de carga
+    \end{description}
+
+\subsection{Integración con bases de datos}
+    PHP permite integrar varias bases de datos:
+    \begin{description}
+        \item[mysqli] MySQL Improved. Interfaz para el manejo de bases de datos
+        \item[PDO] PHP data objects, permite mapear bases de datos con objetos.
+        \item[Consultas preparadas]
+    \end{description}
+
+\subsection{Evolución y mejoras en PHP 7 y 8}
+    \subsubsection{PHP 7}
+        Rendimiento mejorado, con un motor de ejecución nuevo. También incluye el spaceship operator <=> (sobre el cual tengo opiniones). Tipos escalares (oh la lá), manejo de errores, operador  nulo y gestión de memoria.
+    \subsubsection{PHP 8}
+        JIT compilation, atributos, unón de tipos, operador nulo seguro, argumentos nombrados, match (switch con cosas) y mejora de expresiones regulares.
+
+\subsection{Frameworks PHP}
+    \subsubsection{Laravel}
+        De los mas populares y utilizados, es código abierto. Facilita la integración con bases de datos mapeando objetos con relaciones.
+
+        Maneja rutas de manera sencilla y flexible. Tiene sistemas de autenticación y autorización. También puede manejar Queues y Jobs para trabajos en segundo plano.
+
+
+    \subsubsection{Symfony}
+        Es conocido por su estabilidad y ser altamente configurable. Está basado en MVC, separando lógica de negocio, de servidor, y de la aplicación web.
+    \subsubsection{Codeigniter}
+        Alto rendimineto y fácil de usar. Es simple y rápido.
+
+\subsection{CMS en PHP}
+    Hay multitud de sistemas de gestión de contenido basados en php, listas para gestionar páginas web sin necesidad de conocimientos avanzados de programación.
+
+    \begin{description}
+        \item[Wordpress] Es el mas popular del mundo, originalmente para blogs, con gran cantidad de plugins.
+        \item[Jooma] Ampliamente utilizado, es algo mas complejo que wordpress, con características para integrar muiltilenguajes, plantillas, extensiones\dots
+        \item[Drupal] Ideal para tener un amplio grado de personalización, gran cantidad de módulos
+        \item[Magento] Plataforma de comercio electrónico con un alto grado de personalización.
+        \item[PrestaShop] Otra plataforma de comercio electrónico.
+    \end{description}
+
+\subsection{PHP en aplicaciones escalables}
+    Permite crear microservicios independientes con todos los protocolos de despliegue que ello implica. 
+
+    También existen APIs REST con frameworks como LAravel o Symfony. Con múltiples estrategias de autenticación. 
+
+\subsection{Buenas prácticas}
+    Estndares PSR son recomendaciones adaptadas por la comunidad para garantizar consistencia y calidad de cdigo. Ver \href{https://www.php-fig.org/psr/}{página de estándares}.
+
+    La gestión de dependencias se hace con Composer, similar a maven.
+
+    EL testing se realiza con PHPUnit.

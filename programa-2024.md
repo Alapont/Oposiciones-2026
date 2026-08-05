@@ -80,7 +80,7 @@
 - [ ]  51. Planes y Actuaciones de la Agenda Digital para España. Descripción, estructura y objetivos de los planes. El Mercado Único Digital.
 ## II. Tecnología básica
 - [C]  52. Sistemas de altas prestaciones. Grid Computing. Mainframe.
-- [C]  53. Equipos departamentales. Servidores. Medidas de seguridad para equipos departamentales y servidores. Centros de proceso de datos: diseño, implantación y gestión.
+- [C]  53. Equipos departamentales. Servidores. Medidas de seguridad para equipos departamentales y servidores. **Centros** de proceso de datos: diseño, implantación y gestión.
 - [C]  54. Dispositivos personales de PC y dispositivos móviles. La conectividad de los dispositivos personales. Medidas de seguridad y gestión para equipos personales y dispositivos móviles.
 - [C]  55. Cloud Computing. IaaS, PaaS, SaaS. Nubes privadas, públicas e híbridas.
 - [C]  56. Sistemas de almacenamiento para sistemas grandes y departamentales. Dispositivos para tratamiento de información multimedia. Virtualización del almacenamiento. Copias de seguridad.
@@ -94,9 +94,9 @@
 - [M]  64. El modelo relacional. El lenguaje SQL. Normas y estándares para la interoperabilidad entre gestores de bases de datos relacionales.
 - [M]  65. Arquitectura de desarrollo en la web. Desarrollo web front-end. Scripts de cliente. Frameworks. UX. Desarrollo web en servidor, conexión a bases de datos e interconexión con sistemas y servicios.
 - [M]  66. Entorno de desarrollo Microsoft.NET.
-- [ ]  67. Entorno de desarrollo JAVA.
-- [ ]  68. Entorno de desarrollo PHP.
-- [ ]  69. Software de código abierto. Software libre. Conceptos base. Aplicaciones en entorno ofimático y servidores web.
+- [C]  67. Entorno de desarrollo JAVA.
+- [C]  68. Entorno de desarrollo PHP.
+- [M]  69. Software de código abierto. Software libre. Conceptos base. Aplicaciones en entorno ofimático y servidores web.
 - [ ]  70. Inteligencia artificial: Finalidad y clasificación: machine learning, deep learning, NLP, visión artificial, sistemas expertos, robótica, y agentes inteligentes. Aspectos éticos.
 - [ ]  71. Ciencia de datos. Ciclo de vida de los procesos de modelado de datos (ETL, preprocesado, modelado, validación, MLops). Fundamentos estadísticos. Herramientas y lenguajes. Visualización de datos.
 - [ ]  72. Sistemas CRM (Customer Relationship Management) y ERP (Enterprise Resource Planning). Generación de informes a la dirección.

@@ -97,7 +97,7 @@
 - [C]  67. Entorno de desarrollo JAVA.
 - [C]  68. Entorno de desarrollo PHP.
 - [M]  69. Software de código abierto. Software libre. Conceptos base. Aplicaciones en entorno ofimático y servidores web.
-- [ ]  70. Inteligencia artificial: Finalidad y clasificación: machine learning, deep learning, NLP, visión artificial, sistemas expertos, robótica, y agentes inteligentes. Aspectos éticos.
+- [G]  70. Inteligencia artificial: Finalidad y clasificación: machine learning, deep learning, NLP, visión artificial, sistemas expertos, robótica, y agentes inteligentes. Aspectos éticos.
 - [ ]  71. Ciencia de datos. Ciclo de vida de los procesos de modelado de datos (ETL, preprocesado, modelado, validación, MLops). Fundamentos estadísticos. Herramientas y lenguajes. Visualización de datos.
 - [ ]  72. Sistemas CRM (Customer Relationship Management) y ERP (Enterprise Resource Planning). Generación de informes a la dirección.
 - [ ]  73. E-learning: conceptos, herramientas, sistemas de implantación y normalización.

@@ -1,0 +1,171 @@
+\setcounter{section}{68}
+\section{Software Libre}
+
+Nombre completo: Software de cdigo abierto. Software libre. Conceptos base. Aplicaciones en entorno ofimtico y servidores web.
+
+\localtableofcontents
+
+\subsection{Software propietario, libre y abierto}
+    Los derechos de autor son un sistema de protección de creaciones humanas originales, independientemente del soporte. Estas incluyen el software. Una Licencia es un contrato entre partes. Una licencia de uso es un contrato empleado por el titular de un software para otorgar permisos de uso. Se considera software propietario al software cuyo uso, redistribución o modificación está restringida por el titular. Mientras que el software libre respeta las cuatro libertades definidas por Richard Stallman. Se denomina Copyleft a la licencia que incluye términos de distribución que impiden añadir restricciones  a la licencia, al software original y a las obras deribadas. Se denomina Software abierto a aquel que cumple als diez restricciones definidas por la Open Source Iniciative.
+
+    \subsubsection{Software Libre}
+        El argumento por el Software Libre no es técnico, es filosófico e Ideológico. EL principio es que el conocimiento no pertenece a nadie, ya que todo depende de unos conocimientos anteriores. Por lo tanto, el conocimiento debe ser social y llegar a la mayor cantidad de personas.
+
+        Las bases se sentaron por Stallman con el proyecto GNU, sentando los fundamentos del software como conocimiento y  obligando a esa función social.
+
+        El término Free no se traduce como gratis, sino como libre. Estableciendose que la licencia bajo la cual se distribuye un software cumple las cuatro libertades básicas:
+        \begin{description}
+            \item[Libertad 0] ejecutar y usar el software para cualquier propósito
+            \item[Libertad 1] Estudiar y adaptar el software a las necesidades propias
+            \item[Libertad 2] Distribuir copias
+            \item[Libertad 3] Modificar el programa y liberar esas modificaciones al público
+        \end{description}
+
+        Que el usuario tenga acceso al código fuente no es una libertad per sé. Pero se deriva de las libertades 1 y 3. Para ello se creó la GPL, una licencia copyleft que establece la imposibilidad legal de capturar software libre, modificarlo y volverlo privativo.
+
+    \subsubsection{Software Abierto}
+        En 1998 se escinde la iniciativa OSI, que establece la definición de OSD para ofrecer una perspectiva pragmática y orientada al mundo empresarial. La OSI toma como punto de partida las directivas de Debian, porque son lo suficientemente amplias para cubrir desde GPL a Apache.
+
+        OSD no es una licencia, ni un modelo, son diez directrices para clasificar aplicaciones. Respeta las cuatro libertades, pero no incluye el concepto de copyleft para flexibilizar la distribución de obras modificadas.
+        
+        \begin{enumerate}
+            \item Permitir redistribución libre
+            \item Dar acceso al código fuente
+            \item Permitir obras derivadas y distribuirlas en los mismos términos
+            \item Asegurar la integridad del código fuente del autor
+            \item No discriminar a personas o grupos
+            \item No discriminar a sectores de actividad
+            \item Distribuir la licencia asociada al programa sin necesidad de firmar una licencia adicional
+            \item No ser específica de un producto o versión
+            \item No limitar a otro Software que se distribuya conjuntamente
+            \item Ser neutra respecto a la tecnología.
+        \end{enumerate}
+
+    \subsubsection{Software Libre vs Abierto}
+        Noi son movimientos opuestos, sino que persiguen objetivos distintos. la FSF busca libertad de usuarios y OSI dar libertad a los desarrolladores.
+
+        La FSF defiende la libertad de uso y distribución a cualquier precio para beneficio de la comunidad, aún a riesgo de perder el apoyo y contribuciones de desarrolladores que quieran un control económico de su obra. Mientras que OSI busca que las compañías se sumen al proyecto.
+
+        FSF considera que, el software que no esté bajo su licencia no es libre, porque no evita que en un futuro no se garanticen las cuatro libertades básicas. Mientras que OSI argumenta que se garantiza un mayor acceso y distribución
+
+\subsection{Tipos de licencias Libres}
+    Una licencia establece lo que un usuario puede o no hacer con el Software. Las licencias abiertas y propietarias suelen ser opuestas entre sí en cuanto a derechos y obligaciones. Algunas licencias son ams permisivas que otras y protegen mas al usuario o al desarrollador.
+
+    \subsubsection{Con copyleft Robusto}
+        Se denomina robustas aquellas que buscan que sus modificaciones y obras derivadas, se distribuyan en las mismas condiciones.
+
+        \paragraph{GNU GPLv2}
+            Licencia principal con copyleft robusto. Creada en 1986 y se incluye la filosofía y resumen en su preámbulo. Permite por tanto la modificación para uso personal y comercial. Y permite cobrar por la distribución de una copia.
+
+            El programa debe distribuirse junto con la licencia, también se obliga distribuir el código fuente con los ejecutables, o a proveerlo.
+
+            La distribución debe incluir autoría, modificaciones realizadas, ausencia de garantías y copia de la licencia. Basta con enlazar el texto de la FSF.
+
+            El usuariuo no debe de aceptar la licencia para ejecutar el programa, pero si para modificar o distribuir el software (aceptándola implícitamente), incluyendo no agregar mas restricciones sobre esta u otras obras derivadas.
+        \paragraph{GNU GLPv3}
+            Evolución de GPLv2.
+            
+            Se impide que el hardware que implementa el software libre empotrado, imponga restricciones de DRM. Conocido como \href{https://en.wikipedia.org/wiki/Tivoization}{tivoización} quiere decir que no se puede impedir por hardware las libertades del software.
+
+            Si un software necesita de una patente cedida a dicho software, se entienede como una licencia de uso de dicha patente ilimitada.
+
+            Facilita el uso de código GPLv3 con SW bajo otras licencias. También se permite integrar con aspectos limitados como marcas, indemnizaciones, garantías y responsabilidades.
+
+        \paragraph{GNU LGPLv3}
+            la \texttt{Lesser} se diseñó para aplicarse a bibliotecas, garantizando menos libertades. Esta permite que se entregen algunos componentes con programas no libres, sin afectar al programa resultante. Por tanto, una librería ofrece comoidad de desarrollar aplicaciones privativas sin necesidad de vincular estas a la licencia.
+
+        \paragraph{GNU AGPLv3}
+            La Affero se usa para red. Son los mismos principios que la GPLv3, con un párrafo protegiendo a los usuarios que interactúan con un software sin ejecutarlo personalmente. Ya que si se ofrece un servicio, pero no se ejecuta el software por el usuario. Es incompatible con gplv2 y v3, aunque es posible combinar módulos en varias licencias.
+
+        \paragraph{EUPLv1.2}
+            European Union Public License. REcomendado por el Esquema Nacional de Interoperabilidad para liberar software privativo de la administración. Es una licencia mundial gratuita y no exclusiva.
+
+            Autoriza al licenciatario a dar cualquier uso a la obra, a reproducirla, modificarla y crear obras derivadas, a comunicarla al público, distribuirla, prestarla y alquilarla y a subcontratar los derechos de la obra o copias de la misma.
+
+            Así mismo se obliga o restringe:
+            \begin{description}
+                \item[Atribución] Debe citar integras las advertencias y menciones de los derechos de autor, patentes, marcas registradas, licencias o responsabilidades. También se tienen que notificar las modificaciones
+                \item[Copyleft] No se puede ofrecer o imponer condiciones adicionales sobre la obra o derivadas.
+                \item[Compatibilidad] Si se mezcla código EUPL con otra licencia compatible, se puede distribuir con esa licencia (por ser mas restrictiva)
+                \item[Código fuente] Se debe distribuir con copias de la obra
+                \item[Otros derechos] No se permite el uso de nombres comerciales o marcas, salvo para mencionar el origen de la obra y los derechos de autor
+                \item[Aceptación con el uso] y no con la modificación como GPL
+            \end{description}
+
+            Se obliga a adjuntar el código o la manera de acceder a él gratuitamente. Secede el uso no exclusivo de patentes necesarias para el uso de la obra y se permite cobrar por mantenimiento o garantías, pero no en nombre del licenciante original.
+
+            Son licencias compatiblesL
+            \begin{itemize}
+                \item GPLv2, GPLv3, AGPLv3
+                \item OSLv2.1 y OSLv3.0
+                \item CPLv1.0
+                \item EPLv1.0
+                \item Mozilla Public License
+                \item Licence Libre du Quebec
+            \end{itemize}
+
+    \subsubsection{Sin copyleft Robusto}
+        \paragraph{BSD}
+            La primera licencia libre y la mas simple. Nace en los 70, de la distribución de versiones UNIX. Es fruto del hecho de que el producto de las investigaciones financiadas con dinero público deben ser de acceso libre.
+
+            Permite el uso, modificación, copia y redistribución en código ejecutable o fuentes. Obliga a distribuir el código, incluyendo el copyright, las condiciones, y la negación de responsabilidad, e impide el uso del nombre de los autores.
+
+            Ya que la licencia permite modificar el software e imponer otra licencia, BSD no es una licencia persistente. De esta licencia nacen otras como la MIT o Apache.
+
+        \paragraph{ASL}
+            El servidor web Apache nace en Illinois. fruto de financiación pública, está obligado a difundir el código. Las obras derivadas no pueden usar el nombre de apache sin su autorización.
+
+            En la versión 2. se intenta facilitar su suo en proyectos fuera de la fundación apache. Es compatible con GPLv3, pero no con GPLv2, ya que requiere una licencia de patente asociada al código que lo requiera.
+
+\subsection{Licencias Creative Commons}
+    Creative Commons es una organización estadounidense que permite utilizar licencias gratuitas de manera simple y estandarizada. Otorgan al público permiso para compartir y usar el trabajo creativo. No reemplazan a los derechos de autor, de hecho, reserva algunos derechos (según las necesidades del autor).
+
+    Las licencias están compuestas por cuatro módulos que se combinan en 6 licencias distintas:
+    \begin{description}
+        \item[BY] Reconocimiento, se requiere la referencia al autor original
+        \item[SA] Compartir igual, permite obras derivadas bajo la misma licencia o similar
+        \item[NC] No copmercoial
+        \item[ND] Sin obras derivadas.
+    \end{description}
+
+    Resultando en las siguientes licencias, y una especial CC0 sin derechjos reservados, equivalente al dominio público global.
+    \begin{itemize}
+        \item CC BY 
+        \item CC BY-SA
+        \item CC BY-ND
+        \item CC BY-NC
+        \item CC BY-NC-SA
+        \item CC BY-NC-ND
+    \end{itemize}
+
+\subsection{Principales actores e intereses}
+
+    \subsubsection{Generadores y distribuidores de software libre}
+        Para las empresas de SW el modelo mas habitual es el desarrollo interno por programadores asalariados. Aunque en el mundo libre, se suele generar cooperativamente por programadores, tanto voluntarios, como asalariados, que trabajan de forma coordinada a través de internet.
+
+        Se pueden clasificar los proyectos de software en tres tipos:
+
+        \begin{description}
+            \item[Vinculados a empresas] Pasando su fuente de ingresos en el valor añadido al producto, como el soporte, formación y prsonalización. Es el ejemplo de RedHAt, Mozilla o IBM
+            \item[Desarrollos públicos] Hechos con dinero público y donaciones, como el desarrollo de BSD
+            \item[Voluntarios] como Log4J u OpenSSH.
+        \end{description}
+
+    \subsubsection{Software libre en la administración}
+        Diferentes comunidades autónomas y universidades han desarrollado distribuciones de linux. La mas famosa es LinEx, por Extremadura. Normalmente estas distribuciones caen en desuso por falta de mantenimiento.
+
+        Legislativamente hablando, el RD 4/2010 regula el \textit{Esquema Nacional de Interoperabilidad} señala que es preferible el uso de estándares abiertos en los documentos y servicios de la administración electrónica. Se pretende facilitar la interopeación entre administraciones, la neutralidad tecnbológica y la accesibilidad ciudadana. También se declara que las administraciones públicas promoverán las actividades de normalización para facilitar la disponibilidad de estándares abiertos relevantes.
+
+        Incidiendo en la importancia de los formatos, se desarrolla la Norma Técnica de Interoperabilidad de Catálogo de Estándares. Donde se recoge un buen número de estándares abiertos para emplear en las administraciones públicas. Como la norma ISO/IEC 26300:2006, que incluye ODF como formato de documentación abierto. 
+
+    \subsubsection{Usuarios}
+        Tradicionalmente los usuarios eran la comunidad de desarrolladores y distribuciones, aunque se ha ampliado a la sociedad en general. Las motivaciones del cambio son varias:
+        \begin{itemize}
+            \item Ahorro de costes en licencias
+            \item Evitar dependencia tecnológica
+            \item Posibilidad de personalización
+            \item El software como herramienta política.
+        \end{itemize}
+
+\subsection{Proyectos de Software libre}
+

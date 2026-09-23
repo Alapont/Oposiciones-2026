@@ -41,6 +41,12 @@ Este changelog separa las [actualizaciones del proyecto](#changelog-proyecto) y 
 - Tema 57 Multi usuario
 - Tema 59 Sistemas operativos
 - Tema 60 Unix
+- Tema 61 Windows
+- Tema 62 Móviles
+- Tema 63 BAses de datos
+- Tema 64 Modelo Relacional
+- Tema 65 Arquitectura Web
+- Tema 66 .NET
 
 ## 4.0
 - Tema 52 Tecnología básica

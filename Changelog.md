@@ -2,9 +2,13 @@
 
 Este changelog separa las [actualizaciones del proyecto](#changelog-proyecto) y [sobre apuntes](#changelog-apuntes).
 
-> Versión propuesta 1.1.5-5.0
+> Versión propuesta 1.1.6-5.0
 
 # Changelog Proyecto
+## 1.1.6
+- Gitignore
+- Lista de tareas
+- Preparación de apuntes de clase
 
 ## 1.1.5
 - El programa ahora marca el tamaño de los temas

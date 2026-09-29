@@ -1,0 +1,53 @@
+\setcounter{section}{51}
+\section{Sistemas de la Información}
+
+Nombre completo: Sistemas de altas prestaciones. Grid Computing. Mainframe.
+
+\localtableofcontents
+
+\subsection{Tipos de sistemas de altas prestaciones}
+
+También llamados High Performance Computing. Se pueden clasificar en varios tipos:
+\begin{description}
+    \item[Centralizado] Grandes servidores monolíticos de tipo SIMD o MIMD. Son difíciles de manejar y se crean de forma específica para la organización en ka que prestan servicio.
+    \item[Cluster] Sistemas de distribución paralela y distribuida en un ámbito local.
+    \item[Distribuido] Sistemas de distribución paralela en ámbito no localizado.
+\end{description}
+
+\subsubsection{Taxonomía de Flynn}
+Es una clasificación de arquitecturas de computadores. Se basan en el número de instrucciones concurrentes y en los flujos de datos disponibles. 
+
+Algunos ejemplos de estas clasificaciones son
+\begin{description}
+    \item[SISD] Von Neuman
+    \item[SIMD] Gráficas y arquitectrura vectorial, minadores de bitcoins
+    \item[MISD] Paralelismo redundante, navegación aérea, poco uso
+    \item[MIMD] Sistemas distribuidos.
+    \begin{description}
+        \item[Memoria compartida] Se ejecuta un acceso simétrico a la memoria desde cualquier procesador
+        \item[Memoria distribuida] Asignan una porción de memoria a los procesadores
+        \item[Memoria distribuida compartida] Engloban los dos anteriores con memoria compartida y porciones distribuidas
+        \item[Memoria solo caché] Procesador que solo usa caché como memoria, es un caso especial.
+    \end{description}
+\end{description}
+\begin{table}[H]
+\begin{tabular}{rcc}
+                        & Una instrucción & Multiples instrucciones \\
+    Un dato             & \texttt{SISD} & \texttt{MISD} \\
+    Múltioples datos    & \texttt{SIMD} & \texttt{MIMD} \\
+\end{tabular}
+\end{table}
+
+\subsection{Mainframes}
+Sistemas multiusuario, multitarea y multiprocesador, orientado al procesamiento de grandes volúmenes de información y cálculo científico
+
+\subsection{Sistemas con múltiples computadoras}
+Son arquitecturas escalables que permiten un comportamiento dinámico.
+
+\subsubsection{Clustering}
+Arquitectura paralela distribuida formada por un conjunto de ordenadores independientes interconectados operando como un único recurso computacional. Se forma por nodos de computación, red de interconexión y un midleware que hace de interfaz proveiendo un único recurso computacional.
+
+\subsubsection{Grid computing}
+Sistema distribuido y paralelo que permite compartir, seccionar y agregar recursos de forma dinámica y en tiempo real. Estos recursos pueden asignarse dependiendo de disponibilidad, capacidad, rendimiento, o cualquier otro criterio.
+
+El ejemplo mas famoso de Grid computing es el proyecto SETI.

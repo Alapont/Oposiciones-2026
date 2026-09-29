@@ -1,0 +1,119 @@
+\setcounter{section}{63} % tema número N-1
+\section{Modelo Relacional}
+
+Nombre completo: El Modelo Relacional. El lenguaje SQL. Normas y Estándares para la interoperabilidad entre Gestores de Bases de datos relacionales
+
+\localtableofcontents
+
+\subsection{El modelo relacional}
+
+Propuesto en 1970, es un modelo de datos basado en el concepto de relación de la teoría de conjuntos.
+    \subsubsection{12 reglas de CODD}
+        \begin{table}[H]
+        \begin{tabular}{>{\bf}p{0.25\linewidth}p{0.74\linewidth}}
+            % Dos columnas a 30%-70% con la izquierda en negrita
+            % \toprule
+            0 Gestión de una BDR & Usar exclusivamente capacidades relacionales para gestionar la BD \\
+            1 Representación de la información & Toda la información debe representarse mediante tablas \\
+            2 Acceso garantizado & Los datos son accesibles sin ambiguedades mediante el nombre de una tabla, una clave primaria y una columna. \\
+            3 Tratamiento sistemático de valores nulos & Estos valores deben ser tratados sistemáticamente por el sistema sin fallar. También debe ofrecer facilidades para su tratamiento \\
+            4 Catálogo dinámico en línea basado en el modelo relacional & La descripción de la base de datos debe ser accesible igual que otros datos.\\
+            5 Sublenguaje completo de datos & Debe existir un lenguaje que permita el manejo completo de la base de datos. Manejo de datos, definiciones y administración. \\
+            6 Actualización de vistas & Toda vista debe poder ser actualizable por el sistema \\
+            7 Inserciones, modificaciones y eliminaciones de alto nivel & Todas las operaciones de manipulación de datos deben operar sobre conjuntos de filas y no sobre registros individuales. \\
+            8 Independencia física de datos & El acceso a los datos debe ser independiente del medio físico subyacente \\
+            9 Independencia lógica de datos & El acceso a los datos debe ser independiente el acceso a la base de datos o el almacenamiento. \\
+            10 Independencia de la integridad & Las reglas de intgridad deben ser definible por un lenguaje de datos relacional y no almacenarse en los programas de aplicación. \\
+            11 Independencia de la distribución & El usuario final no debe ver los datos distribuidos en varios lugares. Debe poder verlos como un único lugar. \\
+            12 Regla de no subversión & La posibilidad de acceso fila a fila no debe poder usarse para saltarse las reglas de integridad. \\
+            % \bottomrule
+        \end{tabular}
+        \end{table}
+
+    \subsubsection{Conceptos}
+        Definiciones de elementos de una base de datos.
+        \begin{description}
+            \item[Dominio] Conjunto de posibles valores que puede tener un atributo
+            \item[Relación o tabla] Conjunto definido de atributos y reglas
+            \item[Esquema] Es la definición de la estructura de la tabla.
+            \item[Tupla o Fila] Conjuto de atributos para una entrada en concreto
+            \item[Atributo] Conjunto de columnas que representan propiedades de la relación
+            \item[Cardinalidad] Número de tuplas
+            \item[Grado] Número de atributos
+            \item[Vista] Tabla virtual que representa el resultado de una columna. Solo se almacena su definición y los datos se extráen automáticamente
+            \item[Vista materializada] Vista que se almacena en caché y se actualiza de forma periódica
+            \item[Clave] Atributo (o conjunto) de atributos que identifican por su valor a una tupla
+            \item[Clave Simple] Formada por un único atributo
+            \item[Clave Compuesta] Formada por dos o mas atributos
+            \item[Clave Candidata] Conjunto de posibles claves de una relación.
+            \item[Clave Primaria] Clave que identifica unívocamente a cada tupla
+            \item[Clave Externa o foránea] Datos que definen una tupla de una tabla distinta.
+            \item[Superclave] Clave que puede contener mas elementos de los mínimos.
+            \item[Índice] Tabla interna de la base de datos para acelerar consultas sobre otras tablas.
+        \end{description}
+
+    \subsubsection{Restricciones}
+        En una base de datos relacional, los atributos deben ser atómicos. Las claves no pueden repetirse.
+
+        En cuanto a las claves, ningún valor componente de la clave primaria puede ser nulo o repetido. Cualquier valor no nulo de una clave externa  debe tener asociado un valor de la clave primaria de la tabla objetivo.
+
+    \subsubsection{Lenguajes formales del modelo de datos relacional}
+        El álgebra relacional es un sistema cerrado de operaciones definidas sobre relaciones. Las relaciones primarias son Selección ?, Proyección \begin{math}\sigma\end{math}
+        , Unión \begin{math}\pi\end{math}, Diferencia y Producto Cartesiano \begin{math}\times\end{math}.
+
+        Adicionalmente se derivan la intersección \begin{math}\cup\end{math}, División :, Combinación o Join \begin{math}\Join\end{math}. Los Join pueden ser Right, Left o Full outer join, si incluyen los valores nulos de cada lado.
+
+
+    \subsubsection{Normalización}
+        Es un proceso de rediseño de tablas para minimizar la redundancia de datos. LAs mas usadas son:
+        \begin{description}
+            \item[Primera forma normal] Los valores de una tabla toman atributos atómicos no descomponibles.
+            \item[Segunda forma normal] Está en primera forma normal, y los atributos dependen de forma completa de la clave (y no de un subconjunto de los atributos)
+            \item[Tercera forma normal] Está en segunda forma normal y ningún atributo secundario depende transitivamente de la clave.
+            \item[Forma normal de Boyce-Codd] Está en tercera forma normal y cada dependencia tiene una clave candidata.
+        \end{description}
+
+        Existen mas formas normales, hasta la sexta forma normal. Pero no están tan extendidas, y no se contemplan en metrica3. Después de normalizar una base de datos puede desnormalizarse en algún punto por razones de eficiencia.
+
+\subsection{Lenguaje SQL}
+    Es un lenguaje declarativo de acceso a BD. Permite realizar consultas, definir datos y estructuras y administrar la propia base de datos.
+    \subsubsection{Tipos de datos}
+        Para cadenas se definen varios tipos. Siendo \texttt{char} una cadena de longitud n. \texttt{varchar} un máximo de n, \texttt{nchar} y \texttt{nvarchar} soportan alfabetización internacional. Varias definiciones de enteros, coma flotante y decimales. Para tiempo se usa \texttt{DATE TIME, TIMEZ, TIMESTAMP y TIMESTAMPZ}.
+
+    \subsubsection{Comandos}
+        SQL puede dividir sus comandos en varios grupos.
+
+        \textbf{Data Definition Languaje} permite trabajar con datos, \texttt{CREATE}, \texttt{DROP}, \texttt{TRUNCATE} y \texttt{ALTER}. La \textbf{Data Manipulation Languaje} permite consultar el contenido de la base de datos: \texttt{SELECT INSERT UPDATE DELETE MERGE}. \textbf{Data Control Languaje} Permite trabajar con los permisos de usuarios con \texttt{GRANT y REVOKE}, y la \textbf{Transaction Control Languaje}`controla transacciones para gestionar transacciones con \texttt{BEGIN COMMIT y ROLLBACK}
+
+    \subsubsection{Cláusulas}
+        Permiten filtrar los datos obtenidos en una consulta:
+        \begin{description}
+            \item[ALL] por defecto devuelve todos los campos
+            \item[TOP] devuelve un número determinado de campos
+            \item[DISTINCT] Omite los campos repetidos
+            \item[DISTINCTROW] Omite campos repetidos en todo el registro
+            \item[FROM] Especifica la tabla de donde se leen registros
+            \item[WHERE] Especifica condiciones que deben cumplir
+            \item[GROUP BY] Las funciones de agregación permiten trabajar por grupos de tuplas
+            \item[HAVING] Condiciones a cumplir para cada grupo de tuplas
+            \item[ORDER BY] Por defecto no se garantiza el orden
+            \item[CONSTRAINT] Crea o elimina índices
+        \end{description}
+
+    \subsubsection{Operadores}
+        A parte de los operadores que se encuentran en \texttt{PASCAL} se puede usar: \texttt{CASE, BETWEEN...AND, LIKE, IN, ANY, ALL, IS e IS NOT}. En consultas se usan   \texttt{UNION, UNION ALL, INTERSECT, EXCEPT}
+    \subsubsection{Funciones de agregado}
+        Permiten agrupar todas las tuplas en un único valor: \texttt{AVG, MAX, COUNT, MIN y SUM}
+
+    \subsubsection{SQL y Álgebra relacional}
+        El álgebra relacional es un modelo matemático, cubierto prácticamente por SQL, excepto el Cociente.
+
+\subsection{Implementaciones Comerciales}
+    Ver el tema anterior, que no voy a repetirlo.
+
+\subsection{Estándares ODBC y JDBC}
+        Para trabajar con bases de datos es necesario usar un driver para conectarse. Existe ODBC como estándar abierto que implementa una capa intermedia entre la aplicación y el SGBD.
+
+        Java implementa su propio driver JDBC. De esta manera puede implementarse como un puente con ODBC, un driver parcialmente nativo, un middleware o un driver puro en java.
+
+        En los motores de persistencia se hace un mapeo objeto-relacional como técnica par convertir datos de un lenguaje orientado a objetos con un lenguaje de base de datos. En Java es Hibernate, iBatis, JDO. En .NET Entity Framework y nHibernate, y en PHP Propel y Doctrine

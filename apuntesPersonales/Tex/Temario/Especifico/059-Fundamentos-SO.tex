@@ -1,0 +1,71 @@
+\setcounter{section}{58} % tema número N-1
+\section{Fundamentos de Sistemas Operativos}
+
+Nombre completo: Conceptos y Fundamentos de Sistemas Operativos. Evolución y tendencias.
+
+\localtableofcontents
+
+El sistema Operativo es el componente software mas importante de un ordenador ta que se ocupa de gestionar los recursos de la máquina y ejerce de interfaz entre los componentes hardware y el usuario.
+
+\subsection{Componentes}
+
+\subsubsection{Gestión de procesos}
+Los procesos utilizan recursos que proporciona el sistema. También orquestra la sincronización entre procesos. El sistema mantiene una estructura que le permite organizar y describir el estado y propiedad de los recursos, así como ejercer el control sobre las aplicaciones. 
+
+Un SO Multitarea es aquel capaz de ejecutar varios procesos al mismo tiempo. Al contrario que en la multiprogramación, dónde el procesador asigna y desasigna el proceso en marcha.
+
+Los procesos se asignan y desasignas mediante interrupciones software o hardware. Esta orquestación la hace el \textbf{scheduler} según las políticas que implemente, como: Round robin, FIFO, LIFO, SJF, SRT...
+
+Unm proceso puede estar activo, preparado, o bloqueado. El sistema operativo lleva registro de estos estados para cada aplicación. 
+
+\subsubsection{Administración de memoria}
+
+La memoria es usada para almacenar los datos de los programas que se ejecutan en la CPU. El SO es responsable de saber qué partes están libres u ocupadas y cual asignar a quien. También hay varios algoritmos para asignar memoria como: FIFO, NRU, LRU, NFU, LFU, random.
+
+La segmentación es una técnica aplicada a los programas para dividirlos en partes y asignar a cada una un elemento de la memoria. De esta forma, un mismo segmento puede ser compartido por varios programas (como una librería)
+
+\subsubsection{Entrada y Salida}
+
+También se encarga de gestionar la comunicación con los elementos. Pueden ser orientados a bloque (direccionables) o a carácter (no direccionables). 
+
+\begin{description}
+    \item[Driver] Parte del sistema encargada de gobernar un dispositivo. Es un software que conoce los detalles de un dispositivo.
+    \item[DMA] (Direct Memory Access) Tecnología que permite a un dispositivo transferir datos entre este y la memoria sin pasar por el procesador activamente.
+    \item[PnP] Especificación que permite conectar un periférico en caliente sin configurar ningún elemento hardware.
+\end{description}
+
+\subsubsection{Gestión de archivos}
+
+Organización que permite almacenar ficheros y datos y usarlos por el sistema y las aplicaciones. Normalmente los dispositivos proveen de una serie de sectores consecutivos, o cadena de bloques. Siendo los sistemas los intermediarios entre esa cadena de bloques y las aplicaciones. También tienen utilidades para gestionar permisos, mover elementos, renombrar, direccionar, agrupar, etc\dots
+
+\begin{itemize}
+    \item Sistemas Windows
+    \begin{description}
+        \item[FAT] desarrollado para DOS. Es sencillo y ampliamente extendido.
+        \item[HPFS] Creado para superar las limitaciones de FAT. Permite nombres largos, metadatos, seguridad e información estructural.
+        \item[NTFS] Basado en HPFS, permite definir el tamaño de cluster superior a 512B independienteal tamaño de la partición.
+    \end{description}
+    \item Sistemas UNIX
+    \begin{description}
+        \item[Ext2] Baja fragmentación, compatible con sistemas grandes de ficheros.
+        \item[Ext3] Mejora de Ext2 y compatible. Añade Journaling para posibilitar recuperación frente a fallos.
+        \item[Ext4] Mejora de Ext3, menor uso de cpu y mas velocidad de escritura.
+        \item[SWAP] Linux utiliza una partición dedicada a la memoria virtual.
+    \end{description}
+    \item Sistemas OSx
+    \begin{description}
+        \item[APFS] Estandar moderno, está optimizado para SSD e incluye cifrado.
+        \item[HFS+] Estandar antiguo, utilizado aún para discos mecánicos.
+    \end{description}
+
+\end{itemize}
+
+\subsection{Tipos de Sistemas Operativos}
+Mira macho. Según estas características, una o mucha: usuarios, tareas concurrentes y procesadores.
+
+\subsection{Tendencias}
+Cambio en los paradigmas de sistemas con la introducción de los dispositivos móviles.
+
+Google desarrolla Android, basado en Linux. Tiene una cuota de 80\%. Desarrollado en paralelo con Android Open Source Project (Android como tal no es libre)
+
+Apple desarrolla iOS para iPhone, y iPad. Se deriva de macOS, y este de Darwin BSD. Es un sistema fuertemente dependiente del ecosistema de apple.

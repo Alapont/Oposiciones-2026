@@ -1,0 +1,295 @@
+\setcounter{section}{69}
+\section{Inteligencia Artificial}
+
+Nombre completo: Inteligencia artificial: Finalidad y Clasificación: Machine learning, Deep Learning, NLP, Visión artificial, Sistemas expertos, Robótica y Agentes inteligentes. Aspectos éticos.
+
+\localtableofcontents
+
+\subsection{Problemas de búsqueda y optimización. Resolución de problemas mediante espacios de estados}
+    Consiste en representar el problema como un espacio de estados. Buscando un conjunto de transiciones que permiten pasar del estado inicial al objetivo. Las búsquedads pueden ser completas (encuentran la solución si existe), u óptimas (encuentran la mejor solución).
+
+    \subsubsection{Estrategias de búsqueda}
+        Los métodos ciegos evalúan los estados sistemáticamente. Terminando cuando se alcanza el objetivo o no queda nada mas por evaluar.
+        \begin{description}
+            \item[Búsqueda en anchura] Se evalúan todos los nodos al alcance antes de pasar al nsiguiente nivel. Se toma una lista FIFO de nodos a considerar.
+            \item[Búsqueda en profundidad] Se evalúan caminos completos, no es completa ni óptima. Se toman los candidatos como una pila.
+            \item[Coste uniforme] Se elige el nodo cuyo coste acumulado sea menor. Es completa y óptima. Los candidatos se consideran como un heap.
+            \item[Profundidad limitada] Se limita la profundidad de nodos en la que buscar. No es completa si el límite es inferior a la solución, tampoco es óptima
+            \item[Profundidad iterativa] Evolución sobre la anterior, donde el límite se va aumentando si no se encuentra el estado objetivo.
+            \item[Bidireccional] Se busca desde los estado s inicial y final simultáneamente. Es completa y óptima.
+        \end{description}
+
+        En los métodos heurísticos o informados, el algoritmo tiene una cierta información sobre el espacio de búsqueda.
+
+        \begin{description}
+            \item[Algoritmo voraz] Elije a cada paso la opción óptima entre las disponibles
+            \item[A*] Considera la opción óptima, incluyendo el cóste de alcanzar cada opción, no solo su coste inmediato. 
+        \end{description}
+
+        La búsqueda con adversario incluye la toma de decisiones de otro actor en contra nuestra. Esto se usa en juegos.
+
+        \begin{description}
+            \item[Min-Max] Se aplica la evaluación a los hijos, y se propagan los valores hasta el nodo raiz. A cada nodo Max se le asigna el valor máximo de sus descendientes, y a los nodos Min el mínimo. En la Raiz se puede valorar la mejor jugada.
+            \item[Poda \begin{math}\alpha-\beta\end{math}] Mejora del Min'Max, donde se dejan de evaluar las ramas que no se van a dar.
+        \end{description}
+
+    \subsubsection{Optimización}
+        Los problemas de optimización consisten en maximizar o minimizar una función, eligiendo valores y computándo la función.
+
+        Se pueden usar algoritmos que terminen en un número finito de pasos o iteraciones, que convergen a una solución o heurísticas que provean soluciones aproximadas.
+        \begin{description}
+            \item[Algoritmos de exploración]\begin{description}
+                \item[Simplex] Evaluación de una función objetivos que acotan la solución hasta un óptimo.
+                \item[Optimización combinatoria] Reduce el espacio de búsqueda
+            \end{description}
+            \item[Iterativos basados en gradientes] \begin{description}
+                \item[Método de Newton] Evaluando la matrix Hessiana y gradiente
+                \item[Gradiente descendiente/ascendiente] Siguiendo la dirección de máxima variación
+                \item[Gradiente conjugado] Se varía la dirección del gradiente para evitar mínimos locales
+                \item[Método de punto interior]
+            \end{description}
+            \item[Métodos heurísticos]\begin{description}
+                \item[Evolución diferencial] Usando soluciones candidatas, que se combinan y mutan.
+                \item[Búsqueda diferencial]
+                \item[Algoritmos genéticos] Sometidos a una serie de puntos a acciones aleatorias
+                \item[Nelder-Mead] Sin llamadas a gradientes
+                \item[por Enjambre de partículas] a partir de soluciones candidatas aproximadas
+            \end{description}
+        \end{description}
+
+\subsection{Inteligencia artificial: finalidad y clasificación}
+    La inteligencia artificial es una disciplina cuyo objetivo es la creción de sistemas que imiten a la inteligencia humana. Mejorando el rendimiento, capacidades y contribuciones de los sere humanos.
+
+    Existen diversas maneras de clasificar sistemas de IA. Peter Norvig y Struart Rusell las clasificaban así:
+    \begin{description}
+        \item[Sistemas reactivos] Capaces de responder a situaciones y estímules en el entorno, sin tener en cuenta el pasado ni considerar el futuro.
+        \item[Sistemas basados en memoria] Conservan una representación parcial del mundo, y pueden usarla para evaluar situaciones actuales y pasadas.
+        \item[Sistemas basados en metas] Capaces de formular planes para alcanzar metas, usan información actual del mundo y desarrollan estrategias.
+        \item[Sistemas basados en modelos]  Tienen una representación interna y detallada del mundo, que les permite simular situaciones y escenarios. Pueden razonar y tomar decisiones basadas en estas simulaciones. Son capaces de predecir los efectos de sus acciones y actuar en consecuencia.
+    \end{description}
+
+\subsection{Aprendizaje automático o Machine Learning. Deep Learning}
+    Es la rama de la inteligencia artificial que pretende desarrollar técnicas que permitan a las computadoras aprender los datos sin ser programadas explícitamente. Se usan modelos estadísticos y algoritmos para analizar muestras de datos y extraer patrones con los que tomar decisiones y tomar predicciones. Los modelos deben ser capaces de generalizar comportamientos e inferencias para un conjunto potencialmente infinito de datos.
+
+    Puede ser visto como un intento de de automattizar partes del método científico mediante métodos matemáticos. Es un proceso de inducción del conocimiento.
+    \subsubsection{Modelos}
+        El aprendizaje automático resulta en un modelo para resolver una tarea dada. Los modelos pueden ser de distintos tipos:
+        \begin{description}
+            \item[geométricos] Se representan los datos en forma de vectores. Si se pueden separar con una frontera los datos son linealmente separables.
+            \item[probabilísticos] Intentan determinar la distribución de probabilidades de la función que enlaza los valores con valores determinados. Se usa estadística bayesiana.
+            \item[lógicos] Representan el conocimiento y la relación entre elementos mediante reglas lógicas. Los modelos pueden representar relaciones complejas y hacer inferencias y predicciones. Por ejemplo los árboles de decisión.
+        \end{description}
+        También pueden clasificrse como modelos de agrupamiento, donde se dividie el espacio en grupos o clústers o de potenciación del graciente, donde se determinan funciones que intentan predecir resultados.
+
+    \subsubsection{Tipos de aprendizaje}
+        Se denomina aprendizaje a la toma de datos para construir un modelo. Según la interacción que tenga el algoritmo con el exterior en este proceso se pueden clasificar en:
+        \begin{description}
+            \item[Aprendizaje supervisado] Se entrenan modelos a partir de datos previamente etiquetados, son ejemplos de entrada y la salida esperada. El modelo ajusta los parámetros para que los resultados coincidan con las etiquetas propuestas, e infiere los demás datos.
+            \item[Aprendizaje no supervisado] Se lleva a cabo sobre un conjunto de ejemplos sin etiquetar. El modelo no tiene información sobre las categorías o clases. El modelo debe ser capaz de encontrar patrones y agrupaciones.
+            \item[Aprendizaje semi-supervisado] Se combinan datos etiquetados y no etiquetados. Se emplea donde la obtención de datos clasificados es difícil y costósa.
+            \item[Aprendizaje por refuerzo] Se basa en la interacción de un agente con un entorno para aprender a realizar acciones que maximicen una recompensa. Durante el entrenamiento el agente realiza unas acciones y recibe recompensas según la calidad de la acción. El agente intentará maximizar la recompensa obtenida. Se emplea en robótica, juegos, y tareas autónomas.
+            \item[Transducción] Similar al aprendizaje supervisado, pero sin construir explícitamente una función. Trata de predecir las categoríás basándose en los ejemplos de entrada, sus categoríás, y los ejemplos nuevos del sistema.
+            \item[Aprendizaje multi-tarea] Se entrena al modelo para múltiples tareas, pudiendo aprovechar el conocimiento de unas tareas para las siguientes.
+        \end{description}
+        
+    \subsubsection{Preprocesado}
+        Es el proceso de preparar los datos para el aprendizaje. El proceso incluye:
+        \begin{description}
+            \item[Limpieza] Es posible que haya datos no estructurados, inconsistentes, valores anormales, duplicados\dots Estos datos pueden ser eliminados o inferidos de distintas maneras (interpolación, regresión lineal, suavizado gaussiano)
+            \item[Integración] Si los datos provienen de varias fuentes, estos deben de integrarse en un moismo tipo de datos.
+            \item[Filtrado] Son técnicas para mejorar la calidad, como eliminar el ruido, o facilitar búsquedas. Se usa sobre todo en imágen.
+            \item[Normalizació] Comprimir o extender los datos para que el rango en el que se encuentren tenga sentido entre todos los datos. En la normalización estandar se resta el valor de la media y se divide por la varianza.
+            \item [Codificación de categorías] Se dan valores numéricos a cada categoría. Estos pueden ser One-Hot encoding, donde el valor es 1 si pertenece a esa categoría en concreto, pudiendo pertenecer a varias categoríás simultáneamente, o label-encoding, donde se asigna un número distinto a cada categoría, haciéndolas mútuamente excluyentes
+            \item[Reducción de datos] No todos los datos iniciales tienen por qué ser importantes. Por eso se usan técnicas como la Selección de características, elegir las variables que influyen en el resultado, o la reducción de dimensionalidad, intentando tener una representación reducida de los datos originales.
+            \item[Construcción de características] Consiste en crear variables nuevas a partir de las existentes para ayudar al modelo.
+        \end{description}
+
+        Todo este conjunto de datos se conoce como dataset. Éste se divide en datos de entrenamiento y datos de prueba, usados para evaluar si el modelo funciona con datos no vistos.
+
+    \subsubsection{Principales técnicas de clasificación}
+        La clasificación consiste en asignar categorías a una muestra de datos. Algunas técnicas utilizadas son:
+        \begin{description}
+            \item[Bayes ingénuo] Se usa el teorema debayes para predecir la clase de una muestra desconocida en función de la probabilidad condicional. No tiene en cuenta correlaciones entre variables
+            \item[Árboles de decisión] Se contruyen a través de decisiones binarias que dividen el conjunto en subconjuntos de datos mas pequeños, o lo clasifican en una hoja.
+            \item[Regresión logística] El modelo estima las probabilidades de pertenecer a cada categoría en función de una o mas variables.
+            \item[Random Forest] Se crean múltiples árboles de decisión, entrenados con subconjuntos diferentes de datos y características. Decidiéndose por votación de la mayoríá de los árboles.
+            \item[K-vecinos cercanos] Clasificación según la clase predominante de sus k vecinos cercanos.
+            \item[Máquinas de vectores de soporte] Busca un hiperplano qeu maximice la separación entre dos clases. Si no son linealmente separables, se pueden transformar en un espacio de mas dimensión donde si lo sean. 
+            \item[Redes neuronales] Paradigma inspirado en las neuronas para construir una estructura de capas donde cada neurona emite una salida en funcin de la capa anterior. El proceso de entrenamiento consiste en determinar la funcin propia de cada neurona.
+            \item[Gradient Boosting Tree] Construccin de una secuencia de árboles de decisión, donde cada árbol se ajusta a los fallos del etiquetado.
+            \item[Reglas de asociación] Procuran descubrir relaciones entre variables.
+            \item[Algoritmos genéticos] procesos de búsqueda heurística que simulan a la selección natural. 
+            \item[Redes Bayesianas] Modelo probabilístico que representa una serie de variables y sus interdependencias condicionales.
+        \end{description}
+    \subsubsection{Principales técnicas de regresión}
+        Consiste en predecir un valor numérico contínuo en función de los datos de entrada. Puede ser un precio, o una temperatura.
+        \begin{description}
+            \item[Árboles de decisión o regresión]
+            \item[Regresión lineal]
+            \item[Regresión polinómica]
+            \item[Regresiones con regulación] Variantes de la regresión lineal que buscan simplicidad. \textit{Ridge} penaliza los coeficientes grandes, evitando que ninguno domine, y \textit{Lasso} puede hacer 0 los coeficientes menos importantes.
+            \item[Random forest]
+            \item[Redes neuronales]
+            \item[Gradient boosting tree]
+        \end{description}
+
+    \subsubsection{Principales técnicas de agrupamiento}
+        Es una tarea no supervisada que consiste en agrupar datos similares en conjuntos o clústers.
+        \begin{description}
+            \item[K-medias] agrupa en K clústeres predefinidos, funciona iterativamente, recalculándo los centros de cada clister y repitiendo hasgta que se alcanza convergencia. Se minimizan la suma de las distancias a cada punto.
+            \item[k-medioids] en lugar de centros se usan medias. Siendo menos sensible a datos atípicos y no esféricos.
+            \item[Density Based Spatial Clustering of Applications with Noise DBSCAN] agrupa puntos en función de su densidad. Define clústeres como zonas de alta densidad separadas por zonas de baja densidad.
+            \item[Mezclas Gaussianas] Generación probabilística de k-medias
+            \item[Desplazamiento de medias] Búsca zonas de máxima densidad desplazando los puntos hacia áreas con mas concentración, hasta que todos convergen en picos de datos.
+            \item[Clústering jerárquico] Puede ser aglomerativo, donde cada punto empieza como su propio clúster y fusiona los clústeres mas cercanos, o divisivo, donde se van separando en clústers mas pequeños hasta que cada dato es un cluster. El resultado es un árbol (dendograma), que muestra la estructura jerárquica de los clústers. La cantidad de nodos dependerá de a qué altura se corte el árbol.
+        \end{description}
+
+        Para valorar los clústers obtenidos se usa el método del codo o de la silueta.
+\subsection{Procesamiento del Lenguaje Natural}
+    Touring propuso en 1950 un test para evaluar la inteligencia de una máquina por su capacidad de generar respuestas indistinguibles de las de un ser humano. Se suele emplear en procesamiento de lenguaje natural para imitar el comportamiento humano.
+
+    Es una rama de la computación y la linguística que estudia las interacciones entre personas y máquinas. Se busca que la comunicación sea eficaz y se pueda aplicar, no solo a la comprensión del lenguaje, también a los aspectos cognitivos y la organización de la memoria. USando el lenguaje como medio.
+
+    Esto se usa en asistentes de voz, traducción reconocimiento de voz, estracción de información y mas tarde en LLMs.
+
+    \subsubsection{Componentes}
+        Se pueden dividir en componentes para la comprensión y para la generación.
+
+        En la comprensión del Lenguaje Natural:
+        \begin{description}
+            \item[Análisis morfológico]
+            \item[Análisis sintáctico]
+            \item[Análisis semántico]
+            \item[Reconocimiento de entidades] De personas, lugares, hechos del mundo real.
+            \item[Análisis pragmático] Identificación del significado implícito de un texto y las intenciones del hablante. Incluye identificar la ironía, el sarcasmo, humor\dots
+        \end{description}
+
+        Y en cuanto a la generación del lenguaje natural:
+        \begin{description}
+            \item[Planificación de contenido]
+            \item[Planificación de la frase]
+            \item[Generación de la frase]
+        \end{description}
+
+\subsection{Visión artificial}
+    Es una rama de la inteligencia artificial que desarrolla métodos para adquirir, procesar y comprender imágenes del mundo real, que puedan ser comprendidas por sistemas de computación. Se utilizan Redes NEuronales Convolucionales que imitan la corteza visual humana.
+
+    Algunas técnicas son:
+    \begin{description}
+        \item[Clasificación de imágenes] Determina la categoría de una imagen completa.
+        \item[Extracción de características] Identificar partes de una imágen como bordes, contornos, texturas, colores. Es una parte intermedia de otros procesos de análisis de imágenes.
+        \item[Segmentación] Divide una imágen en regiones o segmentos mas pequeños para facilitar el análiss posterior.
+        \item[Reconocimiento de objetos] Identifica y caracteriza objetos dentro de una imágen.
+        \item[Seguimiento de objetos] A través de una secuencia de imágenes o de un feed de vídeo.
+        \item[Reconocimiento facial] Identificar personas, o características de ellas (Estado anímico, sentimientos, expresiones)
+        \item[Reconocimiento óptico de caracteres] Identificar y extraer texto de imágenes y documentos escaneados.
+        \item[Realidad aumentada] Combina información visual con información generada, proporcionando una experiencia interactiva en tiempo real.
+    \end{description}
+
+    Entrenar estos modelos puede ser costoso, por lo que se usa \textbf{Transfer Learning} para comenzar de modelos ya entrenados por google o meta y se ajusta al problema concreto del usuario.
+
+\subsection{Sistemas expertos}
+    Es un sistema que emula la capacidad de tomar decisiones de un humano experto en un dominio del conocimiento. Tioene capacidad explicativa de resolución de problemas. Se basan en un conocimiento explícito introducido por humanos. Es capaz de aplicar y explicar las reglas utilizadas para llegar a un resultado.
+
+    Algunos sistemas de razonamiento son basados en:
+    \begin{description}
+        \item[reglas] Aplican reglas, evalúan resultados, y vuelta a empezar
+        \item[casos] Permite resolver nuevos problemas basándose en soluciones de problemas anteriores.
+        \item[redes Bayesianas] Fundamentos de estadística
+    \end{description}
+
+    Un sistema experto se compone de una Base de Conocimiento, que es el conjunto de reglas qwue representan ls conocimientos del dominio experto. La bas de hecho, que contiene los datos de partida y los datos procesados a lo largo de la ejeciución. Un motor de inferencia, donde se interpretan las reglas y se relacionan con los hechos para tener conclusiones. Y una interfaz de usuario con la que interactuar.
+
+    Los sistemas expertos se pueden construir con lenguajes convencionales como C, o python,o con lenguajes específicos como Lisp o Prolog. Hay shells como Clips o Jess. Y entornos de ceación de sistemas expertos.
+
+\subsection{Robótica}
+    En la computación se puede hablar de robótica en dos ámbitos.
+
+    El primero es el aplicado a la ingeniería mecánica, ocupándose del diseño, construcción operación y aplicación de robots físicos. Encargados de diversas tareas específicas, como soldadura, pintura, transporte\dots
+
+    El segúndo ámbito es la automatización robótica de procesos. Un sistema RPA es un software que replica las acciones de un ser humano interactuando con una interfaz. Puede basarse en reglas, no necesariamente una IA moderna. Aunque recientemente se están aplicando reglas de machine learning y reconocimiento de imágenes.
+
+    La AGE cuenta con el Servicio de Automatización de Procesos, que corresponde con la medida 5 del plan de digitalización de las administraciones públicas, y persigue la mejora de la calidad de los servicios y procesos de gestión y tramitación. Proporciona a la administración un servicio integral de robotización centralizada. Cubriendo desde el descubrimiento, desarrollo, mantenimiento y operación. También se encuadra dentro de la Agenda de la \textit{España Digital 2026} el \textit{Plan de Recuperación, Transformación y Resiliencia} y la \textit{Estrategia Nacional de Inteligencia Artificial}
+
+\subsection{Inteligencia artificial distribuida. Agentes inteligentes}
+    La inteligencia artificial distribuida se enfoca en el desarrollo de sistemas que se ejecutan en múltiples nodos trabajando como un único sistema inteligente. Consisten en nodos de procesamiento de aprendizaje autónomos que se distribuyen, a menudo a gran escala. Pueden actuar de manera independiente, para integrar soluciones parciales mediante comunicación asíncrona.
+
+    Los sistemas son robustos y elásticos por necesidad. Están débilmente acoplados. y diseñados para adaptarse a cambios en la definición del problema o de los datos subyacentes.
+
+    Se estudia la solución cooperativa de problemas mediante agentes distribuidos, donde ninguno posee toda la información para resolver el problema. Los agentes son entidades autónomas con concimiento y capacidad para tomar decisiones y actuar de manera flexible con su entorno y otros agentes. Estos agentes suelen desarrollarse en conjunto como un sistema, y no aislados.
+
+    \subsubsection{Tipos de agente inteligente}
+        \begin{description}
+            \item[Reactivo] Agente de bajho nivel capaz de responder a estímulos del entorno. No mantienen una representación interna ni son inteligentes individualmente.
+            \item[Cognitivo/deliberativo] Posee capacidad de razonamiento sobre su base de conocimiento, usan la información del pasado para tomar decisiones. Puede mantener una representación interna. Está diseñado para aprender y adaptarse. También puede comunicarse con otros agentes y lograr acuerdos.
+            \item[Cooperativo] Trabajan juntos para resolver un problema demasiado grande o complejo para uno solo. Dividen en sub-tareas, las ejecutan y combinan resultados.
+            \item[Competitivo] tienen objetivos propios que pueden entrar en conflicto con los demás. Usan teoría de juegos para tomar decisiones.
+            \item[Interfaz] Actúan como intermediarios entre usuarios y el sistema. Pueden aprender las preferencias mediante observación.
+            \item[Movil] transportan su estado y código a través de una red de computadoras. Se mueve a donde están los datos para procesarlos localmente reduciendo el tráfico de red y latencia.
+            \item[Información/Mediadores] Gestionan la explosión de información en sistemas distribuidos. Capaces de localizar y filtrar información relevante y poner en contacto a diferentes agentes con fuentes y sumideros.
+        \end{description}
+
+    \subsubsection{Características}
+        Los agentes son procesos que se ejecutan sin un fín. Son autónomos en la toma de decisiones. Puede socializar con otros agentes y humanos. Pueden razonar y tomar decisiones basados en la información que recopilan y su conocimiento precio. También reaccionan a los cambios en su entorno. Tienen unos objetivos específicos que intentan lograr a través de sus acciones y decisiones. Pueden Alterar su comportamiento en base a su apredizaje y moverse a través de una red. También se asume que un agente es veraz y no comunica información falsa a propósito, y que está dispuesto a ayudar a otros agentes si no entra en conflicto con sus propios objetivos.
+
+    \subsubsection{Tipos de sistema según la coordinación entre agentes}
+        Los \textbf{Sistemas de Resolución Distribuida de Problemas} coordinan los agentes por fases, dividiendo el problema en sub problemas, resolverlos y combinar las soluciones parciales en una global.
+
+        Por otro lado, los \textbf{Sistemas Multiagente} se componen de múltiples agentes autónomos interactuando entre sí.
+
+    \subsubsection{Sistemas de comunicación y coordinación}
+        Hay varios modelos para compartir información:
+        \begin{description}
+            \item[Pizarra] Arbitrada por un controlador que determina el órden en el que los agentes contribuyen a la solución.
+            \item[Mensajes] Intercambio directo uno a uno.
+            \item[Red de contratos] Se basa en dos roles, un contratista que gestiona la tarea y un oferente que la ejecuta.
+            \item[Estigmergia] Se basa en coordinar sus acciones a través de modificaciones del entorno, no mediante mensajes directos.
+        \end{description}
+
+    \subsubsection{Lenguajes de comunicación entre agentes}
+        Se han desarrollado varios lenguajes para coordinar agentes entre sí. Los principales son:
+        \begin{description}
+            \item[FIPA-ACL]Lenguaje mas extendido, se basa en la teoría de los actos de habla. Cada mensaje tiene un parámetro comunicativo que define la intención.
+            \item[KQML Knowledge Query and Manipulation Languaje] Basado en texto que permite interacción y coordinación. Precursor de FIPA.
+            \item[KIF] Lenguaje intermedio usado para representar el conocimiento, independientemente de cualquier lenguaje específico. Se usa para integrar diferentes agentes.
+            \item[SL] Lenguaje por defecto sugerido por el FIPA para el contenido del mensajes.
+            \item[OWL] Utilizado para definir la ontología entre agnetes.
+        \end{description}
+
+    \subsubsection{Aplicaciones}
+        Se usa para el comercio electrónico, estrategias comerciales, reglas financieras. En redes se controlan los recursos cooperativos en redes WLAN. A la hora de enrutar se modela el flujo de vehículos en redes de transporte. También se modela la vida en sistemas multiagente.
+
+    \subsubsection{Protocolos de interoperabilidad y conectividad}
+        En los contextos modernos los agentes no realizan tareas completas, sino que pueden conectarse, intercambiar datos y usar herramientas de forma estándar. Los protocolos mas importantes son:
+        \begin{description}
+            \item[MCP] Impulsado por Arnthropic, es un estándar para conectar Modelos de Lenguaje con el mundo exterior. Permite que un agente acceda a fuentes de datos y utilice herramientas sin tener que programar una interacción específica para cada una.
+            \item[WebSocets y gRCP] Comunicación entre agentes en tiempo real.
+            \item[MQTT] Protocolo para el internet de las cosas y agentes que operan en dispositivos con recursos limitados.
+            \item[Agent to Agent] Permite que servicios de terceros hablen con Alexa para ejecutar acciones coordinadas.
+            \item[Matter] Nuevo estándar universal para hogar inteligente. Permite controlar un mismo dispositivo por agentes de Apple, Google, y Amazon.
+        \end{description}
+
+\subsection{IA generativa}
+    Es aquella que facilita la creación de contenido nuevo, bien texto, imágenes, vídeo o audio, a partir de de grandes volúmenes de datos. Destacan modelos de difusión que aprenden a través de la probabilidad de los datos, como Stable Diffusion.
+
+    Los Grandes Modelos de Lenguaje procesan el lenguaje mediante tokens (unidades de texto inferiores a las palabras). Usan el mecanismo de atención para enfocarse en partes del texto dinámicamente, extratendo el contexto y las relaciones entre palabras.
+
+    Los modelos entrenados con grandes conjuntos de datos sirven como punto de partida para realizar modelos especializados. A estos se les llama modelos fundacionales.
+
+    La ingeniería de prompts se centra en el diseño de instrucciones que se proporcionan a los modelos para obtener respuestas mas específicas, precisas y útiles. Se usan estrategias como el \textbf{Few-shot} donde se incluyen ejemplos, o el \textbf{Zero-shot} donde no se proporcionan ejemplos y se dan descripciones detalladas de la tarea.
+
+    El RAG o \textbf{Retrieval Augmented Generation} busca optimizar la ventana de contexto del modelo. combinando la generacin con la recuperacin de informacin de la Base de Datos previamente indexada. Es un ciclo de rfbfón reduce su tamaño y mejora la velocidad, disminuye el coste de procesamiento, a costa de comprometer la calidad de las respuestas.
+
+    Se pueden elegir mnodelos de lenguaje evaluando su rendimiento con distintos benchmarks.
+
+    Los modelos actuales pueden trabajar con distintos modos de entrada y salida. Combinando texto, imágenes o audio. EStas capacidades les abren la puerta a usarse como agentes autónomos. Optimizando el proceso de backend y otras tareas automáticas.
+
+    De acuerdo con el plan de Digitalización de las Administraciones Públicas. Se da impulso al Datalake de la AGE con la creación de la Plataforma del Dato. Esta platadorma se usa con herramientas de analítica avanzada para entrenar modelos de lenguaje.
+
+    OWASP
+
+%     \subsubsection{Large Languaje Models}
+%     \subsubsection{Asistentes de IA Generativa}
+% \subsection{Aspectos Éticos}
+% \subsection{Reglamento de Inteligencia Artificial}
+

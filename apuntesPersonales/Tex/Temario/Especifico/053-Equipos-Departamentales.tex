@@ -1,0 +1,122 @@
+\setcounter{section}{52}
+\section{Equipos departamentales}
+
+Nombre completo: Equipos departamentales. Servidores. Medidas de seguridad para equipos departamentales y servidores. Centros de proceso de datos: diseño, implantación y gestión.
+
+\localtableofcontents
+
+\subsection{Equipos departamentales: servidores}
+
+Según su propósito se pueden ordenar por tamaño
+
+\begin{description}
+    \item[Miniordenador] Ordenador de nivel medio, cálculos complejos y multiusuario, en desuso por el downsizing.
+    \item[microordenador] Ordenador de sobremesa o portátil
+    \item[workstation] Ordenador de gran rendimiento, dedicado a tareas de cómputo pesado y con hardware de gran capacidad.
+    \item[superordenador] Ordenador de gran capacidad y potencia para cálculos complejpos y tareas especiales
+    \item[Ordenador central / Mainframe] Dedicado al procesamiento de grandes cantidades de datos, prioriza entrada y salida frente a cómputo
+    \item[Servidores] Término genérico para referirse a ordenadores que proveen servicios a través de una red.
+\end{description}
+
+Un servidor es un equipo informático especializado, encargado de proveer de servicios a redes de datos, o a otros ordenadores. Los principales aspectos a valorar son:
+
+\begin{description}
+    \item[Fiabilidad] Elementos redundantes que permitan el funcionamiento continuado frente a fallos de hardware
+    \item[Facilidad de operación y mantenimiento] Como herramientas de gestión remota y monitorización
+    \item[Eficiencia energética] Gran parte del coste de un centro de datos es la electricidad y la refrigeración
+    \item[Facilidad de actualización o ampliación]
+\end{description}
+
+Algunos formatos de servidor son:
+\begin{description}
+    \item[Enracables] preparados para ser integrados en un \textbf{rack} o armario. Permiten modularidad.
+    \item[Blade] Ordenador enrackable de una unidad.
+    \item[Torre] Ordenador no preparado para integrarse en otros sistemas.
+    \item[Sistemas convergentes] Agrupan en un único equipo físico potencia de cálculo, almacenamiento y comuinicaciones. PErmiten gestión y soporte desde un punto común.
+    \item[Sistemas hiperconvergentes] Utilizan tecnologías de virtualización para ofrecer infraestructura definida por software \textbf{SDDC}
+\end{description}
+
+\subsection{Medidas de seguridad para equipos departamentales y servidores}
+
+Se pueden agrupar por niveles (parecido al sistema OSI)
+
+\subsubsection{Nivel Físico}
+Se tiene en cuenta el control de acceso al equipo, redundancia de suministro eléctrico, de discos, de comunicaciones y de refrigeración. Hay herramoientas de monitorización a nivel físico como Nagios o Cacti.
+
+\subsubsection{Nivel lógico}
+Se segmenta la red en zonas de seguridad, evitando comprometer toda la red. Se separan zonas DMZ, VLAN para diferentes grupos.
+
+Uso de gestores de ancho de banda, cortafuegos y firewall. 
+
+Sistemas gestores de eventos de seguridad. Protección anti spam y antivirus.
+
+Realización de auditorías.
+
+Bastionado, políticas de actualización de sistemas, Backups y copias remotas.
+
+Procedimientos reglados para administración, como altas y bajas, conexiones remotas, gestión de usuarios, políticas de contraseñas, y de mínimo privilegio.
+
+Se recomienda comprobar el Esquema Nacional de Seguridad RD 311/2022 y las guías de seguridad CCN-STIC
+
+\subsection{Centros de proceso de datos: diseño, implementación y gestión}
+
+Pueden clasificarse según los servicios proporcionados.
+
+\begin{description}
+    \item[Corporativos] Proveen servicios a la propia organización.
+    \item[Servicios gestionados] Se administran por un tercero en nombre de la empresa. Esta alquila los equipos y su infraestructura.
+    \item[Colocación] Gestionados por una empresa que alquila el espacio e infraestructura, para que otras empresas alojen su hardware.
+    \item[Nube] Equipos y sistemas virtualizados como servicio.
+    \item[Principal] Provee de servicios de forma habitual. Proveyendo de forma continuada y parando solo por intervención o desastre.
+    \item[De respaldo] destinado a la recuperación ante desastres, contingencias o como mecanismo alternativo en caso de problemas con el principal.
+    \begin{description}
+        \item[Sala fría] centro externo con toda la infraestructura para replicar el centro principal a partir de copias de seguridad. Requiere tiempo para transportar los datos.
+        \item[Sala caliente] Funcionan de forma análoga al principal. Replicando los datos de este y pudiendo funcionar solo con las últimas actualizaciones de los datos.
+        \item[Centro espejo] Réplica en tiempo real del principal. Requiere de redes de alta velocidad. Es el modelo mas caro.
+        \item[Backup mútuo] Dos entidades usan sus centros de datos para hacer backup recíproco.
+    \end{description}
+\end{description}
+
+\subsubsection{Subsistemas}
+Según el estandar TIA-942, la infraestructura de los datacenter se compone por cuatro subsistemas:
+
+\begin{description}
+    \item[Telecomunicaciones] Cableado de armarios y horizontal, acceso redundante, cuarto de entrada, área de distribución, backbone, elementos activos, alimentación redundante, patch panels, documentación.
+    \item[Arquitectura] Selección de ubicación, construcción, protección ignífuga, barreras de vapor, techos y pisos, áreas de oficina, UPS, batería y generador, control de acceso, videovigilancia, operación de red.
+    \item[Sistema Eléctrico] Número de accesos, puntos de fallo, cargas críticas, redundancia y topología de UPS. puesta a tierra, apagado de emergencia, sistemas de corte, monitorización generadores.
+    \item[Sistema mecánico] Climatización, presión positiva, canalización, refrigeración, condensadores, detección de incendios y extinción.
+\end{description}
+
+\subsubsection{Elementos}
+
+\begin{description}
+    \item[Centro de operaciones] Oficina donde se encuentran operadores y técnicos. Dispone de sistemas de monitorización e inspección remota. También se controla el acceso a las salas
+    \item[Sala de entrada] Contiene los elementos de comunicaciones de proveedores de acceso, así como almacenes, carga y descarga, etc
+    \item[Sala pricipal] Sala que contiene los servidores y otros equipos del CPD. Suele contar con un falso suelo para mantenimiento sencillo del cableado, los equipos se distribuyen en armarios en hileras.
+    \item[Armarios de comiunicaciones] Se sigue una topología en estrella. Con un backbone que agrupa el grueso de las comunicaciones distribuyéndose a las distintas zonas.
+\end{description}
+
+\subsubsection{Diseño}
+    Los elementos de diseño depende de la clasificación con la que se evalue. La disponibilidad se da en porcentaje de tiempo (al año), se adjunta equivalencia en horas:
+
+    \begin{description}
+        \item[Tier 1 Básico] no hay redundancia, se puede interrumpir el servicio programado o no, tiene una tasa  de 99.671\% ~ 28.82h
+        \item[Tier 2 Redundante] Tiene componentes redundantes, suelos elevados y SAI, tasa de 99.741\% ~ 22.69h
+        \item[Tier 3 Concurrentemente mantenible] Permite planificar mantenimiento sin afectar al servicio, pueden existir paradas no planificadas. Multiples líneas disponibles, pero una activa. Tasa de 99.982\% 1.58h
+        \item[Tier 4 Tolerante a fallos] Sin pérdida de servicio por paradas programadas, capaz de soportar eventos no programados sin pérdida de servicio. Múltiples líneas de electricidad y refrigeración con múltiples componentes redundantes. Tasa de 99.995\% ~ 26m
+    \end{description}
+
+    En cuanto al sistema eléctrico, se recomienda considerar la red eléctrica como un suministro auxiliar de bajo coste, y la generación local como principal.
+
+    Aquí depende de los grupos electrógenos, generadores a gasolina o diesel. Después los \textbf{Sistemas de Alimentación Ininterrumpida} y por último la distribución y cuadros eléctricos. Siendo recomendable 
+
+    Para el sistema de refrigeración se intenta que las temperaturas estén entre 18C y 27C con una humedad de 30\%~50\%. Pudiendo usar distíntos sistemas de refrigeración como expansión directa, condensación en torre, pasillo frío/caliente, aire exterior\dots
+
+    En cuanto a los sistemas de incendios, hay sistemas de detección: de calor, de humo, de gases, de llama\dots y de extinción: agua nebulizada o aspersión de gas inerte con distintos gases.
+
+\subsubsection{Métricas de Eficiencia}
+    \begin{description}
+        \item[Power Usage Effectiveness (PUE)] Hace referencia a la eficacia de uso de la energía. Es la tasa de consumo total contra la del equipo TI. Un PUE de 1 es una asíntota. Se intenta bajar de 2, los datacenter nuevos bajan a 1.2 y algunos llegan a 1.06.
+        \item[Carbon Usage Eggecrtiveness (CUE)] Hace referencia a las emisiones de carbono. Tiene un valor ideal de 0 (se compensa el carbono emitido)
+        \item[Water Usage Effectiveness (WUE)] Efectividad del uso del agua en litros por Rendimiento obtenido. La mertrica del rendimiento es subjetiva a cada centro.
+    \end{description}

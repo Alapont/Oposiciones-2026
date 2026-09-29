@@ -1,0 +1,123 @@
+\setcounter{section}{60} % tema número N-1
+\section{Sistemas Microsoft}
+
+Nombre completo: Sistemas operativos Microsoft. Fundamentos, Administración, Instalación, Gestión.
+
+\localtableofcontents
+
+\subsection{Conceptos}
+    La arquitectura se basa en dos niveles, el nivel usuario y el núcleo. 
+
+    A nivel usuario los recursos están limitados en su acceso. En el entorno se trabaja con una interfaz entre las aplicaciones y el sistema. Estas interfaces son bibliotecas dinámicas. En un principio NT admitía tres interfaces> OS/2, POSIX y Win32. La última tiene llamadas para crear procesos e hilos y asegurar seguridad.
+
+    Windows proporciona entornos de ejecución especiales llamados \texttt{Windows Over Windows}. WoW32 se usa en los sistemas x86 para ejecutar aplicaciones de Windows 3.x, WoW 64 se usa para ejecutar aplicaciones de 32bits en sistemas x64.
+
+    A nivel de núcleo se tiene acceso a memoria y dispositivos externos. Se ejecuta en un área protegida de la memoria. Ahí se controla el acceso a planificación, gestión de hilos, de memoria.
+
+    \subsubsection{Hardware Abstraction Layer}
+        Esta capa presenta una interfaz, ocultando los detalles técnicos específicos.
+
+    \subsubsection{Drivers}
+        Son un componente software que permite al sistema comunicarse con los dispositivos. Son bibliotecas dinámicas. El administrador de E/S organiza una ruta de flujo de datos para cada instancia. Los drivers se ejecutan en modo kernel.
+
+    \subsubsection{MicroKernel}
+        Por encima del nivel de abstracción hardware está el \texttt{NTOS} con kernel y ejecutivo.
+
+        Kernel puede referirse a todo el código que se ejecuta en modo kernel, pero también al ntoskrnl.exe que contiene al código, y también a la capa de kernel dentro.
+
+        Proporciona abstracciones para la CPU. incluyendo la de los hilos, excepciones, traps e interrupciones.
+
+        Para los hilos, el kernel es responsable de determina qué se ejecuta, hasta que se termine su quantum o tiene que esperar a que ocurra algo.
+
+    \subsubsection{Ejecutivo}
+        Se relaciona con todos los subsistemas en modo usuario, se encarga de la entrada/salida, seguridad, gestión de objetos, de procesos y de caché.
+\subsection{Conceptos básicos}
+
+    \subsubsection{Procesos}
+        Windows trabaja con procesos, que son instancias en ejecución de una aplicación. Pueden existir varias copias de un mismo proceso con su propio espacio de memoria y recursos.
+
+        Algunos especiales son \texttt{SYSTEM} para el kernel, \texttt{SMSS.EXE} para administrar sesiones, \texttt{WINLOGON.EXE} para las conexiones y sesiones de usuario, \texttt{CSRSS.EXE} para el entorno win32.
+
+        Los procesos usan hilos para ejecutar código (cada proceso tiene que tener al menos un hilo). Un caso son las fibras, hilos especiales con su propia pila y stack de instrucciones, no se gestionan por el SO sino por el usuario.
+
+        Una Tarea es un conjunto de hilos creados por un proceso. La fibra y la Tarea se usan pocas veces, normalmente quedándose en Procesos e Hilos.
+
+    \subsubsection{Registro de windows}
+        El \texttt{Registro de windows} se usa para gestionar a bajo nivel el sistema. Se organiza en volúmenes separados. Cada uno de estos volúmenes tiene una estructúra jerárquica con directorios y pares clave/valor.
+
+    \subsubsection{Sistema de ficheros}
+        Dentro del sistema de ficheros. Los dispositivos pueden estar formateados en FAT32, NTFS ReFS y exFAT.
+        La estructura está descrita en el Master File Table donde se describen los registros de archivos y directorios. Microsoft desarrolló bitLocker para cifrar discos completos.
+
+    \subsubsection{Seguridad}
+        Windows no se diseñó específicamente para cumplir con requisitos de seguridad. Hereda propiedades de seguridad del diseño original de NT como:
+        \begin{description}
+            \item[Inicio seguro]
+            \item[Controles de acceso discrecionales]
+            \item[Controles de acceso privilegiados]
+            \item[Protección del espacio de direcciones por proceso]
+            \item[Limpieza de memoria antes de reasignarla]
+            \item[Auditoría de seguridad]
+            \item[Identificadores universales de usuario]
+            \item[Discrecional ACL]
+            \item[Privilegios]
+            \item[Descriptor de seguridad]
+            \item[Control de usuarios] 
+        \end{description}
+
+    \subsubsection{Intérprete}
+        Windows utiliza Powershell, desarrollado en .NET, permitiendo la automatización de tareas y de configuración de productos de Microsoft.
+
+
+\subsection{Versiones de Windows}
+    Microsoft gestiona en paralelo versiones de escritorio y servidor. Comparten parte del desarrollo. Aunque no tienen por qué ser equivalencias completas.
+
+    \begin{table}[H]
+    \begin{tabular}{ll}
+        Escritorio & Servidor \\
+        \midrule
+        XP         & Server 2003 \\
+        Vista      & Server 2008 \\
+        7          & Server 2008 R2 \\
+        8          & Server 2012 \\
+        8.1        & Server 2012 R2 \\
+        10         & Server 2016 y Server 2022 \\
+        11         & Server 2025 \\
+    \end{tabular}
+    \end{table}
+    \subsubsection{Windows 10}
+        Se introdujo una arquitectura de aplicaciones universales para poder ejecutarse en todas las familias de productos, desde móviles, ordenadores, consolas, embebidos y otros.
+
+        Se introdujo Edge como navegador web, el acceso por huella o webcam.
+
+    \subsubsection{Windows 11}
+        Requiere un TPM para ejecutarse. Incorpora Windows Hello para iniciar sesión y ejecución de aplicaciones android con WSA.
+
+    \subsubsection{Windows Server 2012}
+        Se parte de la instalación Server Core donde se pueden ir añadiendo elementos.
+
+        Se añade Hyper-V como elemento de virtualización, incluido redes, almacenaiento, copias de seguridad, etc.
+
+        También se añade ReFS como sistema de archivos resiliente.
+
+    \subsubsection{Windows Server 2012 R2}
+        La interfaz gráfica pasa a ser opcional. Se permite la creación de grupos de servidores para gestionar múltiples máquinas en conjunto. También con el almacenamiento.
+
+        Se permite replicar máquinas con Hyper-V siempre que haya una conexión de red.
+
+        DirectAccess permite crear túneles VPN sin necesitar un servidor dedicado.
+
+    \subsubsection{Windows Server 2016}
+        Se incluye el uso de contenedores por Hyper-V. Se pueden blindar las máquinas virtuales y se permite generar guardianes de dispositivos, y otras herramientas de seguridad.
+
+        También se permiten migrar discos duros a discos virtuales.
+
+    \subsubsection{Windows Server 2019}
+        Se integra mas con Azure. Windows Defender ATP, subsistemas de Windows para Linux.
+
+        Se incluyen mejoras en los contenedores, disminuyendo el tamaño, incluido integración con K8 y su gestión.
+
+    \subsubsection{Windows Server 2022}
+        Secured-core server protege el núcleo frente a ataques. Servidores con Azure Arc Habilitados permiten gestión de máquinas virtuales.
+    \subsubsection{Windows Server 2025}
+        Incorpora sudo. y parece que migra al Sistema como servicio.

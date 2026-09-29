@@ -1,0 +1,60 @@
+\setcounter{section}{67}
+\section{Java}
+
+Nombre completo: Entorno de desarrollo Java
+
+\localtableofcontents
+
+\subsection{Introducción}
+    Creado por Sun, posteriormente adquirido por Oracle. La premisa es escribirlo una vez y ejecutarlo independientemente de la plataforma. Oracle mantiene la marca comercial, pero es un desarrollo libre.
+
+\subsection{Plataforma}
+    Java necesita de un lenguaje, que es orientado a objetos y fuertemente tipado. Se compila a bytecode. Este se ejecuta en una máquina irtual llamada JVM, Esta funciona como capa de abstración y permite ejecutar ese código independientemente de la plataforma. Java incorpora una colección extensa de librerías escritas que proporcionan utilidades en el Java API.
+
+    Java sepresenta en tres versiones, la \texttt{Standard Edition}. La \texttt{Enterprise Edition} Diseñada para aplicaciones empresariales distribuidas, y la Micro Edition para microcontroladores.
+
+    Java Distribuye el JRE Java Runtime Environment, y el Java Developmnt Kit, necesario para desarrollar software. Existen múltiples versiones de cada uno escritos por múltiples empresas. El mas importante es OpenJDK, hecho por Microsoft, Amazon, Red Hat, Google e IBM.
+
+\subsection{Java Enterprise Jakarta}
+    Jakarta EE es el estandar para realizar aplicaciones empresariales en java. Define reglas sobre cómo crear componentes críticos como conexiones o API.
+
+    Oracle donó JavaEE a la Eclipse Foundation. Que se renombró a Jakarta por restricciones de Marca.
+
+    Algunas especificaciones son
+
+    \begin{description}
+        \item[RESTful Web services] Crea API REST con anotaciones sobre POJOs
+        \item[Contexts and Dependency Injection] Se encarga de gestionar el ciclo de vida de los objetos
+        \item[Jakarta Persistence API] Para interactuar con bases de datos automáticamente y no necesitar escribir SQL
+        \item[Jakarta Bean Validation] Valida datos con anotaciones simples
+    \end{description}
+
+    Se hicieron Perfiles para no tener que incluir todas las especificaciones que no se fesen  usar. WebProfile esuna versión ligera, Core Profile incluye lo mínimo para APIs REST y contenedores, y Full-Platform incluyte todo. Algunas versiones son WildFly, GlassFish, Apache TomEE, Open Library, JBoss, WebLogic o IBM WebSphere Liberty.
+
+
+\subsection{Ecosistema}
+
+    \subsubsection{Librerías}
+        Paquetes de código que solucionan prblemas específicos como Log4j, Hibernate, JUnit, lombook o Jackson
+
+    \subsubsection{Herramientas}
+        Existen multitud de herramientas para el desarrollo Java realizadas a lo largo de los años.
+        \begin{description}
+            \item[Maven y Gradle] Gestión del ciclo de vida
+            \item[SonarQube] Inspección de calidad del código
+        \end{description}
+
+    \subsubsection{Framework}
+        Son esqueletos de software que proporciona estructura y metodología de trabajo.. Por ejemplo JakartaEE, Spring o Quarkus
+
+    \subsubsection{Spring}
+        Es el framework  mas popular para realizar aplicaciones. Ya que simplificaba en gran medida la construcción en comparación con J2EE. Se usa sobre todo para el desarrollo web, servicios REST, persistencia con base de datos, seguridad y mensajería/
+
+    \subsubsection{Lenguajes sobre la JVM}
+        Ya que la máquina virtual no ejecuta Java, sino Bytecode, se han creado multitud de leguajes que se compian a bytecode y se ejecutan ahí. Los mas importantes son
+        \begin{description}
+            \item[Kotlin] Hecho por JetBrains, se usa para desarollo Android
+            \item[Scala] Programación funcional estandar en BigData
+            \item[Grovy] Java Pero modernizado, ya que no tiene que ser fiel al legacy. Se usa en Jenkins
+            \item[Clojure] Dialecto de lisp
+        \end{description}

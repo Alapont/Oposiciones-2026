@@ -14,11 +14,15 @@
   - [IV. Redes, comunicaciones e Internet](#ivredes-comunicaciones-e-internet)
 
 ## Leyenda
+Los distintos valores se pueden combinar en uno solo
 - [ ] Por escribir
 - [x] Escrito
 - [C] Corto
 - [M] Medio
 - [L] Largo
+- [b] Prioridad baja
+- [m] Prioridad media
+- [a] Prioridad alta
 
 # A. Temas generales
 ## I. Marco constitucional español y Unión Europea

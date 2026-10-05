@@ -17,6 +17,9 @@ Las fuentes del derecho son, por orden: Ley escrita, la Costúmbre, los Principi
     - [Real decreto Ley](#real-decreto-ley)
     - [Real decreto Legislativo](#real-decreto-legislativo)
     - [Reglamento](#reglamento)
+      - [Reglamentos Ejecutivos](#reglamentos-ejecutivos)
+      - [Reglamentos Independientes](#reglamentos-independientes)
+      - [Reglamentos de necesidad](#reglamentos-de-necesidad)
 
 
 ## Jerarquía normativa
@@ -79,12 +82,13 @@ Es una norma escrita con rango inferior a la ley, dictada por la Administración
 
 Prevalecen las leyes ante los reglamentos. No hay materias reservadas a los reglamentos, una ley puede (posteriormente) regular algo que diga un reglamento. Muchas leyes establecen que, determinadas partes, se establecen de forma reglamentarias.
 
+La administración pública está obligada a seguir los reglamentos, ya que está sujeta a la Ley y al resto del ordenamiento jurídico.
 
 Reciben el nombre de la jerarquíúa normativa:
 
 Norma             | Origen
 ------------------|---
-REal decreto      | Oresidencia o Consejo de Ministros
+Real decreto      | Oresidencia o Consejo de Ministros
 Orden ministerial | Uno o varios Ministerios, Orden Ministerial del Ministerio de Presidencia
 Circular, resolución, instrucción, Ordenes de servicio |  Según el órgano
 
@@ -93,4 +97,11 @@ Ejemplos:
 - RD 829.2023 por el que se reestructuran los ministerios
 - RD 203/2021 por el que se aprueba el reglamento de funcionamiento electrónico del Sector público
 
-Hay una clasificación ulterior de reglametos: Ejecutivos, independientes, de necesidad. 
+#### Reglamentos Ejecutivos
+O _Secundum Legem_ Desarrollan la aplicación de una ley. De esta manera la ley define las líneas generales, y los detalles se pueden detallar en un reglamento. También pueden cambiarse estos detalles, quedando la ley fija.
+
+#### Reglamentos Independientes
+O _Praeter legem_ Se dictan en ausencia de una ley. Surgen al margen de una habilitación legal previa (suplen la inexistencia de una ley). Ha quedado relegado prácticamente a organización interna de la administración. Estos reglamentos no pueden crear derechos o imponer obligaciones que no estén marcados en la ley.
+
+#### Reglamentos de necesidad
+O _Contra legem_ se dictan con caracter excepcional contra las normas vigentes, incluso por órganos distintos a los que tienen la potestad reglamentaria, por motivos de emergencia o anormalidad transitorias. Tienen vigencia hasta que se supera la situación excepcional.

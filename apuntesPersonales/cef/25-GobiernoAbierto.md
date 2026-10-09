@@ -2,6 +2,20 @@
 La gobernanza pública y el gobierno abierto. Concepto y principios informadores del gobierno abierto: colaboración, participación, transparencia y rendición de cuentas. Datos abiertos y reutilización. El marco jurídico y los planes de gobierno abierto en España. La Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno. El Consejo de Transparencia y Buen Gobierno: Real Decreto 919/2014, de 31 de octubre, por el que se aprueba su estatuto. Funciones. La Oficina de Transparencia y Acceso a la Información (OTAI): Funciones. El Portal de Transparencia. Las Unidades de Información y Transparencia (UITS): Funciones. La transparencia y el acceso a la información en las comunidades autónomas y entidades locales.
 
 - [Gobierno Abierto](#gobierno-abierto)
+- [Gobernanza pública](#gobernanza-pública)
+- [Gobierno abierto](#gobierno-abierto-1)
+  - [Participación](#participación)
+  - [Colaboración](#colaboración)
+  - [Rendición de cuentas](#rendición-de-cuentas)
+- [Ley de transparencia, acceso a la información y buen gobierno](#ley-de-transparencia-acceso-a-la-información-y-buen-gobierno)
+  - [Información pública](#información-pública)
+  - [Portal de transparencia](#portal-de-transparencia)
+    - [La web](#la-web)
+    - [Límites](#límites)
+    - [El procedimiento de acceso](#el-procedimiento-de-acceso)
+    - [Unidades de información](#unidades-de-información)
+    - [Reclamación de Transparencia y buen gobierno](#reclamación-de-transparencia-y-buen-gobierno)
+
 
 # Gobernanza pública
 > Gobernanza es la forma de gobernar
@@ -77,7 +91,7 @@ La colaboración incluye la participación en la ejecución de la política púb
 ## Rendición de cuentas
 El deber de los servidores públicos de informar, justifica, responsabilizarse pública y periódicamente sobre el uso  de los fondos asignados y resultados obtenidos. La rendición de cuentas trata mas de la evolución que de la foto
 
-
+<!-- Marcapáginas -->
 # Ley de transparencia, acceso a la información y buen gobierno
 La ley 19/2013 de la transparencia, Acceso a la información Publica y Buen gobierno estipula cómo se 
 <!-- Aquí te has vuelta aperder -->

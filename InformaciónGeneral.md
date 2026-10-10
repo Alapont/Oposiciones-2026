@@ -4,6 +4,7 @@ Información no asociada a ningún tema, que puede ser de interés para entender
 
 - [Información general](#información-general)
 - [Legislaturas](#legislaturas)
+- [Proceso selectivo](#proceso-selectivo)
 
 
 # Legislaturas
@@ -27,3 +28,14 @@ XIII           | 2019-05-21 | 2019-12-02 | Sánchez
 XIV            | 2019-12-03 | 2023-08-16 | Sánchez
 XV             | 2023-08-17 | 2026-11-29 | Sánchez
 XVI            | 2026-09-30 |            |
+
+# Proceso selectivo
+Hay un acuerdo con ASTIC para no cambiar mas de un 7% de temas al año. Esto implica unos 10 temas. Para no hacer una putada gorda.
+Temario de ASTIC. Casi todo solía estar en el temario, pero últimamente se creen que nos sabemos todo del temario y no sacan todo del temario ASTIC. Con la IA es fácil hacer un cuestionario del temario y no de cosas de fuera.
+Clasificar temas por rentabilidad. Estadísticamente es dificil porque el tribunal cambia, la distribución es muy plana. Mejor buscar las fuerzas propias. El derecho es rentable. Los temas de derecho tienen fondo y no hay mas que estudiar. Hay suficientes preguntas de derecho como para tener una buena base de nota, y poder símplemente rascar de lo demás.
+Preparar estrategia de repaso previo al examen.
+Preparar los simulacros de examen de forma realista.
+
+Para el test. cronmetro de 60 minutos y sin corregir. (Opción de hacer los examenes con handicap de tiempo). En primera pasada contestar lo que se sepa a fuego, también vale para sacar la dificultad del examen. En segunda vuelta, contestar las que estás entre dos. Opciones de tachar en primera las que no se tenga idea, o se esté entre tres. Si se está entre dos, tachar las que se sepan incorrectas. Si se hace una sección a sucio, poner en la hoja del examen las que se sepan. Hacer estadística de resultados de examen, incluido cuantas preguntas de primera vuelta y cuantas de segunda.
+
+Examenes de preparatic y de baquedano. No quemar ya los examenes recientes. Ctrl+F al boe actual con convocatoria, ahí sale todo.

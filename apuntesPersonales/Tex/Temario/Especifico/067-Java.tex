@@ -58,3 +58,8 @@ Nombre completo: Entorno de desarrollo Java
             \item[Grovy] Java Pero modernizado, ya que no tiene que ser fiel al legacy. Se usa en Jenkins
             \item[Clojure] Dialecto de lisp
         \end{description}
+
+\subsection{Gestión de Memoria}
+    Java utiliza una gestión centralizada de la memoria. Todos los objetos son punteros y su creación y destruccion se oculta al desarrollador. La memoria puede compartirse entre hilos. Siendo mas fácil su gestión centralizada. Históricamente ha habido varios recolectores de basura encargados de liberar memoria.
+
+    Java trabaja dividiéndo el heap en varias regiones. Poniendo los datos en las regiones mas rápidas y moviéndolos a las mas lentas con el tiempo, si consiguen sobrevivir al borrado (Datos en uso durante mas tiempo). De esta manera entran en el Young Gen, primero en Eden y luego en Survivor. Para pasar al Old Gen en Tenured. Todos los parámetros del tamaño de estos espacios son confiugurables en la máquina de java. Hay dos momentos en los que pasa el Garbage Collector: Cuando se llama a Eden se hace una recolección menor a survivor, o se elimina. Y temporalmente, cuando se revisa la memoria completa, se borra y compacta. (Mark, Swipe, Compact) En primeras versiones del GC esta acción pausaba los hilos irremediablemente

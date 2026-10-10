@@ -6,40 +6,69 @@ Nombre completo: Tipos de sistemas de información multiusuario. Sistemas grande
 \localtableofcontents
 
 \subsection{Sistemas de información multiusuario}
-La clasificación es aproximada, y tiene herencias legacy. De mayor a menor son
+    La clasificación es aproximada, y tiene herencias legacy. De mayor a menor son
 
-\begin{description}
-    \item[Mainframes] Soportan una elevada carga de trabajo y usuarios. Son estructuras centralizadas. Tienen una alta fiabilidad y se diseñan para trabajar sin interrupción durante años
-    \item[Super ordenadores] Gran potencia en base a arquitecturas paralelas. Se gestionan por personal especializado.
-    \item[Miniordenador o Servidor] Ordenador medio. Puede realizar cálculos complejos y soporta una gran cantidad de usuarios. Están a mitad de camino entre el mainframe y el microordenador.
-    \item[Estaciones de trabajo] Ordenadores personales con altas prestaciones. Se usan comúnmente para CAD o diseño 3D
-    \item[Microordenadores] Ordenadores de sobremesa o portátiles.
-    \item[Otros] Tablets y smartphones.
-\end{description}
+    \begin{description}
+        \item[Mainframes] Soportan una elevada carga de trabajo y usuarios. Son estructuras centralizadas. Tienen una alta fiabilidad y se diseñan para trabajar sin interrupción durante años
+        \item[Super ordenadores] Gran potencia en base a arquitecturas paralelas. Se gestionan por personal especializado.
+        \item[Miniordenador o Servidor] Ordenador medio. Puede realizar cálculos complejos y soporta una gran cantidad de usuarios. Están a mitad de camino entre el mainframe y el microordenador.
+        \item[Estaciones de trabajo] Ordenadores personales con altas prestaciones. Se usan comúnmente para CAD o diseño 3D
+        \item[Microordenadores] Ordenadores de sobremesa o portátiles.
+        \item[Otros] Tablets y smartphones.
+    \end{description}
 
 \subsection{Servidores de datos y aplicaciones}
-Según el papel que asumen se pueden clasificar como \textbf{dedicados} si se usan para un único fin. o \textbf{no dedicados} si aceptan varios servicios simultáneamente.
+    Según el papel que asumen se pueden clasificar como \textbf{dedicados} si se usan para un único fin. o \textbf{no dedicados} si aceptan varios servicios simultáneamente.
 
-Los usos mas comunes son
-\begin{description}
-    \item[web] se encargan de la capa de presentación
-    \item[aplicaciones] Ejecutan la lógica de negocio
-    \item[datos] Sistemas de base de datos
-    \item[correo]
-    \item[multimedia] Distribuye contenido multimedia
-    \item[noticias]
-    \item[colaboración] Provee de herramientas colavorativas para sincronizar el trabajo de varios usuarios
-    \item[proxy] Intermediario de conexión para sus usuarios
-\end{description}
+    Los usos mas comunes son
+    \begin{description}
+        \item[web] se encargan de la capa de presentación
+        \item[aplicaciones] Ejecutan la lógica de negocio
+        \item[datos] Sistemas de base de datos
+        \item[correo]
+        \item[multimedia] Distribuye contenido multimedia
+        \item[noticias]
+        \item[colaboración] Provee de herramientas colavorativas para sincronizar el trabajo de varios usuarios
+        \item[proxy] Intermediario de conexión para sus usuarios
+    \end{description}
 
 \subsection{Virtualización}
-Gracias a tecnologías como la nube se permite una reducción de costes operativos. Cambiando el paradigma a los servicios por uso en lugar de por disponibiilidad. Gracias a ello se pueden hacer despliegues automáticos, escalado bajo demanda o continuidad de negocio.
+    Gracias a tecnologías como la nube se permite una reducción de costes operativos. Cambiando el paradigma a los servicios por uso en lugar de por disponibiilidad. Gracias a ello se pueden hacer despliegues automáticos, escalado bajo demanda o continuidad de negocio.
 
-Según cuanto se virtualiza y qué capa queda expuesta, la virtualización puede ser de varios tipos.
-\begin{description}
-    \item[Emulación] se emulta completamente un tipo de arquitectura en otra. (DosBox)
-    \item[Nativa o total] La máquina virtual emula una cantidad suficiente de hardware para que el entorno virtualizado funcione completamente sin modificar (VMWare, VirtualBox)
-    \item[para-virtualización] El host no emula el hardware, sino que ofrece una serie de APIs a un sistema convenientemente modificado (UML, xVM)
-    \item[Virtualización a nivel de SO] Los huéspedes comparten el mismo kernel que el host. Creandose instancias independientes entre si. (Linux V Server, OpenVZ)
-    \item[Virtualización de aplicaciones] Las aplicaciones tienen su propio entorno virtualizado con lo necesario para ejecutarse tanto sobre un servidor, como un cliente.
-\end{description}
+    Según cuanto se virtualiza y qué capa queda expuesta, la virtualización puede ser de varios tipos.
+    \begin{description}
+        \item[Emulación] se emulta completamente un tipo de arquitectura en otra. (DosBox)
+        \item[Nativa o total] La máquina virtual emula una cantidad suficiente de hardware para que el entorno virtualizado funcione completamente sin modificar (VMWare, VirtualBox)
+        \item[para-virtualización] El host no emula el hardware, sino que ofrece una serie de APIs a un sistema convenientemente modificado (UML, xVM)
+        \item[Virtualización a nivel de SO] Los huéspedes comparten el mismo kernel que el host. Creandose instancias independientes entre si. (Linux V Server, OpenVZ)
+        \item[Virtualización de aplicaciones] Las aplicaciones tienen su propio entorno virtualizado con lo necesario para ejecutarse tanto sobre un servidor, como un cliente.
+    \end{description}
+
+\subsection{Generaciones de Ordenadores}
+    Para hablar de tamaños de ordenadores se usan escalas dependientes del número de transistores, repartidos en órdenes de magnitud:
+    \begin{table}[H]
+    \begin{tabular}{ll}
+        SSI & Small Scale Integration \\
+        MSI & Medium Scale Integratrion \\
+        LSI & Large Scale Integration\\
+        VLSI & Very Large Scale Integration\\
+        ULSI & Ultra Large Scale Integration\\
+    \end{tabular}
+    \end{table}
+
+    \subsubsection{1940 a 1956}
+        El Eniac es el primer ordenador de propósito general. Establecido en la universidad de Pensilvania, ocupaba \begin{math}167m^2\end{math}. Utilizaba válvuilas de vacío, utilizaba 160KW y generaba 50° en la sala. Von Neuman establece las referencias de lo que debe ser una máquina multipropósito.
+
+        El EDVAC es el primer ordenador con memoria. Utiliza diodos y tubos de vacío. La programación se hacía físicamente y usaba un lenguaje máquina.
+
+    \subsubsection{1955 a 1964 (SSI)}
+        Uso de transistores y circuitos integrados. Programación a mas alto nivel con Cobol y Fortran. Ordenadores como el UNIVAC y el IBM.
+
+    \subsubsection{1964 a 1971 (MSI - LSI)}
+        Primeros microprocesadores gestionando sistemas enteros como el 4004 y el 8008. Empiezan los lenguajes de alto nivel como Pascal o Basic. Las unidades tienen un alto coste, asumible por grandes corporaciones. Empiezan los primeros Mainframes como IBM S/360, Cray o ILLIAC
+
+    \subsubsection{1977 a 1989 VLSI}
+        Principio de la informática personal con tamaño reducido. Ordenadores como el Apple I y II, IBM PC o el Macintosh.
+
+    \subsubsection{1980 a Actualidad}
+        No ha cambiado la forma, solo la potencia y el tamaño. Ordenadores multiprocesador, multiprocesamiento, distribución, conexiones de red y popularización.

@@ -72,3 +72,18 @@ Nombre completo: Tipos de sistemas de información multiusuario. Sistemas grande
 
     \subsubsection{1980 a Actualidad}
         No ha cambiado la forma, solo la potencia y el tamaño. Ordenadores multiprocesador, multiprocesamiento, distribución, conexiones de red y popularización.
+\subsection{Componentes de sistemas multiusuario}
+    Un sistema es multiusuario si da servicio compartiendo recursos simultáneanos a múltiples usuarios concurrentes. Según sus prestaciones son pequeños, medianos o grandes. No se ponen cifras por su tamaño.
+    
+    Los sistemas grandes son o Mainframes o Supercomputadores. Un mainframe se usa para carga pesada y crítica. Soporta carga con mucho IO, almacenamiento, etc. Todo ocurre en el mismo dispositivo. Tiene un alto coste de licencia, fabricante, certificación\dots Puede generar clientes cautivos. También es poco popular en favor de los supercomputadores. Un supercomputador por otro lado está pensado para cargas paralelas, menos complegidad y ES.
+
+    Los sistemas pequeños atienden a un número limitado de usuarios. Se usan en entornos reducidos. Se asemejan a ordenadores personales o blades.
+
+    Los sistemas medios están en la frontera entre ambos. Para dimensionar un sistema se suele tener en cuenta el número de usuarios, la carga, disponibilidad, aplicaciones y los criterios del ENS.
+
+    Otras clasificaciones tienen en cuenta la utilidad, interoperabilidad con otros sistemas o la arquitectura. También puede haber requisitos en cuanto a la arquitectura.
+
+\subsection{Servidores}
+Según la RFC 2616 sobre HTTP, es un software que atiende peticiones. Se denomina bundle al conjunto de elementos que permiten atender estas peticiones. 
+
+A la hora de dividir, se suele hacer entre cliente y servidor. Aunque hay mas divisiones subyacentes, como la arquitectura de 3 capas, que divide el cliente en cliente y presentación y el servidor entre el Software de Aplicación y el Software de datos. Ulteriormente, en N capas, se divide la aplicación en diferentes applets. La de presentación se encarga de servir de interfaz entre la parte pública y privada, filtrando y delegando a las capas siguientes, que quedan aisladas del exterior.

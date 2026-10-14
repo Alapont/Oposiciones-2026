@@ -1,30 +1,33 @@
-Ley         ; Nombre corto; Estado  ; Descargada; Leida; Estudiada; Nombre
-Null        ;             ;         ;           ;      ;          ; Carta de los Derechos Fundamentales de la Unión Europea
-CE          ; CE          ;         ; Descargada; Leida;          ; Constitución española
-Null        ; RCD         ;         ; Descargada;      ;          ; Reglamento del Congreso de los diputados
-RUE 2016/679; RGPD        ;         ; Descargada;      ;          ; Protección de datos
-RUE 910/2014; IDAS        ;         ; Descargada;      ;          ; relativo a la identificación electrónica y los servicios de confianza para las transacciones electrónicas en el mercado interior
-LO    2/1979; LOTC        ;         ; Descargada;      ;          ; del Tribunal Constitucional
-LO    3/1981;             ;         ; Descargada;      ;          ; del Defensor del Pueblo
-LO    2/1982;             ;         ; Descargada;      ;          ; del tribunal de Cuentas
-LO    5/1985; LOREG       ;         ; Descargada;      ;          ; de Régimen Electoral General
-LO    6/1985; LOPJ        ;         ; Descargada;      ;          ; del Poder Judicial
-LO    5/1992;             ; Derogada; Descargada;      ;          ; de tratamiento automatizado de datos personales
-LO    6/2002; LOPP        ;         ; Descargada;      ;          ; de partidos políticos.
-LO    3/2018; LOPD        ;         ; Descargada;      ;          ; de Protección de Datos Personales y garantía de derechos digitales
-L     7/1985;             ;         ; Descargada;      ;          ; de Regulación de bases del régimen local
-L     7/1988;             ;         ; Descargada;      ;          ; de funcionamiento del tribunal de cuentas
-L    50/1997; LG          ;         ; Descargada;      ;          ; del Gobierno
-L    11/2007;             ; Derogada; Descargada;      ;          ; de acceso electrónico de los ciudadanos a los Servicios Públicos
-L    19/2013; LTBG        ;         ; Descargada;      ;          ; de Transparencia, acceso a la información pública y buen gobierno
-L    25/2013;             ;         ; Descargada;      ;          ; de impulso de la factura electrónica y creación del registro contable de facturas en el Sector Público
-L    27/2013; LRSAL       ;         ; Descargada;      ;          ; de Racionalización y Sostenibilidad de la Administración Local
-L     3/2015;             ;         ; Descargada;      ;          ; reguladora del ejercicio del alto cargo de la administración general del estado
-L    39/2015; LPACAP      ;         ; Descargada;      ;          ; de Procedimiento administrativo
-L    40/2015; RJSP        ;         ; Descargada;      ;          ; de Régimen Jurídico del Sector Público.
-L     9/2017;             ;         ; Descargada;      ;          ; Contratos de sector público.
-RD  799/2005;             ;         ; Descargada;      ;          ; por el que se regulan las inspecciones generales de servicios de los departamentos ministeriales.
-RD    4/2010; ENI         ;         ; Descargada;      ;          ; Esquema Nacional de Interoperabilidad en el ámbito de la Administración Electrónica
-RD  931/2017;             ;         ; Descargada;      ;          ; Por el que se regula la Memoria del Análisis de Impacto Normativo
-RD 1112/2018;             ;         ; Descargada;      ;          ; Accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.
-RD  311/2022; ENS         ;         ; Descargada;      ;          ; Esquema Nacional de Seguridad.
+Ley         ; Nombre corto; Estado  ; Descargada; Hits; Leida; Estudiada; Nombre
+Null        ;             ;         ;           ;     ;      ;          ; Carta de los Derechos Fundamentales de la Unión Europea
+CE          ; CE          ;         ; Descargada;     ; Leida;          ; Constitución española
+Null        ; RCD         ;         ; Descargada;     ;      ;          ; Reglamento del Congreso de los diputados
+RUE 2016/679; RGPD        ;         ; Descargada;     ;      ;          ; Protección de datos
+RUE 910/2014; IDAS        ;         ; Descargada;     ;      ;          ; relativo a la identificación electrónica y los servicios de confianza para las transacciones electrónicas en el mercado interior
+LO    2/1979; LOTC        ;         ; Descargada;     ;      ;          ; del Tribunal Constitucional
+LO    3/1981;             ;         ; Descargada;     ;      ;          ; del Defensor del Pueblo
+LO    2/1982;             ;         ; Descargada;     ;      ;          ; del tribunal de Cuentas
+LO    5/1985; LOREG       ;         ; Descargada;     ;      ;          ; de Régimen Electoral General
+LO    6/1985; LOPJ        ;         ; Descargada;     ;      ;          ; del Poder Judicial
+LO    5/1992;             ; Derogada; Descargada;     ;      ;          ; de tratamiento automatizado de datos personales
+LO    6/2002; LOPP        ;         ; Descargada;     ;      ;          ; de partidos políticos.
+LO    3/2018; LOPD        ;         ; Descargada;     ;      ;          ; de Protección de Datos Personales y garantía de derechos digitales
+L     7/1985;             ;         ; Descargada;     ;      ;          ; de Regulación de bases del régimen local
+L     7/1988;             ;         ; Descargada;     ;      ;          ; de funcionamiento del tribunal de cuentas
+L    50/1997; LG          ;         ; Descargada;     ;      ;          ; del Gobierno
+L    11/2007;             ; Derogada; Descargada;     ;      ;          ; de acceso electrónico de los ciudadanos a los Servicios Públicos
+L    19/2013; LTBG        ;         ; Descargada;     ;      ;          ; de Transparencia, acceso a la información pública y buen gobierno
+L    25/2013;             ;         ; Descargada;     ;      ;          ; de impulso de la factura electrónica y creación del registro contable de facturas en el Sector Público
+L    27/2013; LRSAL       ;         ; Descargada;     ;      ;          ; de Racionalización y Sostenibilidad de la Administración Local
+L     3/2015;             ;         ; Descargada;     ;      ;          ; reguladora del ejercicio del alto cargo de la administración general del estado
+L    39/2015; LPACAP      ;         ; Descargada;    2;      ;          ; de Procedimiento administrativo
+L    40/2015; RJSP        ;         ; Descargada;    2;      ;          ; de Régimen Jurídico del Sector Público.
+L     9/2017;             ;         ; Descargada;     ;      ;          ; Contratos de sector público.
+RD  799/2005;             ;         ; Descargada;     ;      ;          ; por el que se regulan las inspecciones generales de servicios de los departamentos ministeriales.
+RD    3/2010; ENS         ; Derogada; null      ;    1 ;      ;          ; Esquema Nacional de seguridad
+RD    4/2010; ENI         ;         ; Descargada;     ;      ;          ; Esquema Nacional de Interoperabilidad en el ámbito de la Administración Electrónica
+RD  806/2014;             ;         ; Descargada;    1;      ;          ; sobre organización e instrumentos operativos de las tecnologías de la información y las comunicaciones en la Administración General del Estado y sus Organismos Públicos.
+RD  931/2017;             ;         ; Descargada;     ;      ;          ; Por el que se regula la Memoria del Análisis de Impacto Normativo
+RD  863/2018;             ;         ; Descargado;    1;      ;          ; por el que se desarrolla la estructura orgánica básica del Ministerio de Política Territorial y Función Pública.
+RD 1112/2018;             ;         ; Descargada;     ;      ;          ; Accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.
+RD  311/2022; ENS         ;         ; Descargada;    1;      ;          ; Esquema Nacional de Seguridad

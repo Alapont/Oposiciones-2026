@@ -1,0 +1,100 @@
+\setcounter{section}{77} % tema número N-1
+\section{Cifrado}
+
+Nombre completo: El cifrado. Algoritmos de cifrado simétricos y asimétricos. La función hash. El notariado.
+
+\localtableofcontents
+
+\subsection{Introducción y Cifrado} %4
+    El cifrado nace de la necesidad de ocultar información a parte de los lectores de forma selectiva. Ejemplos de esto están en las escítalas griegas (reordenación del mensaje), el cifrado césar (sustitución alfabética). La Piedra Roseta (primer ataque de texto claro conocido) y la máquina enigma.
+
+    Un sistema criptográfico consta de un algoritmo (la función en sí), una clave y un texto en claro (o legible) que se transforma en un mensaje cifrado, que se obtiene aplicando la clave al texto claro por el algoritmo.
+
+    La computación supuso un cambio en los métodos de cifrado manuales y mecánicos. La criptografía clásica opera sobre alfabetos, mientras que la moderna sobre bits. Los conceptos clave de la criptografía clásica son: sustitución, transposición, clave secreta, confidencialidad y criptoanálisis. 
+
+    En los cifrados monoalfabéticos se usa un único alfabeto de sustitución (como el \textbf{cesar}), siendo vulnerables a los ataques de frecuencia. Los cifrados polialfabéticos emplean múltiples sustituciones de forma cíclica como el \textbf{cifrado de Vigenere}(similar al césar, pero con una clave distinta para cada letra) sobre el cual se evolucionaría hacia el \textbf{enigma}. Permiten bloquear análisis de frecuencia.
+
+    La criptografía moderna comienza con el uso de computadoras en los 70. El Data Encryption Standard \textbf{DES} introduce operaciones de sustitución y permutación aplicadas a bloques de bits. \textbf{Diffie-Hellman} resuelve el problema de la distribución de claves, permitiendo intercambiarlas por un medio no seguro de antemano. RSA es el primer algoritmo de cifrado asimétrico como firma digital.
+
+    Actualmente DES se desaconseja y se eligió AES \textbf{Advanced Encryption Standard} como sustituto. Los principios se basan en la estandarización y transparencia, obviando la seguridad por oscuridad. Otros usos son las funciones hash para comprobar la integridad de datos.
+
+    Shanon definió el secreto perfecto como un sistema que , ante un atacante con el mensaje cifrado, sea incapaz de obtener información sobre el contenido original. Otros retos son el harvest now-decrypt later y la confidencialidad de datos en la nube.
+
+    \subsubsection{Esquema Nacional de Seguridad}
+        El esquema Nacional de Seguridad se vale de la criptografía como herramienta técnica.
+        \begin{description}
+            \item[Confidencialidad] se garantiza que la información solo está disponible para quienes poseen la clave de descifrado
+            \item[Integridad] La capacidad de detectar si un mensaje ha sido o no alterado
+            \item[Autenticidad] Asegurar que el emisor es quien dice ser
+            \item[No Repudio] Incapacidad del emisor de negar haber emitido el mensaje
+            \item[Trazabilidad] reconstrucción del camino de un dato
+            \item[Disponibilidad] Independientemente de que se bloqueen los sistemas, permitir que el servicio sea operativo y confiable.
+        \end{description}
+
+        La directiva NIS de la UE sobre ciberseguridad, también la vincula con medidas técnicas, incluye algoritmos de cifrado, firmas digitales y gestión de claves criptográficas.
+
+\subsection{Algoritmos simétricos} %10
+    Se denomina algoritmo simétrico a aquel que utiliza la misma clave y algoritmo para cifrar y dscifrar un mensaje. Es mas eficiente en general, pero requiere del intercambio de clave antes de comenzar. Si cada usuario comparte una clave, el número sería \begin{math}n^2\end{math}. Se usa para el cifrado de grandes volúmenes de datos.
+
+    Pueden dividirse en algoritmos de flujo o de bloque, aunque todos utilizan combinaciones de xor, sustituciones, permutaciones y rotaciones. Los modos de operación definen cómo aplicar el algoritmo a mensajes mas grandes que el bloque (el tamaño de mensaje cifrable por el algoritmo)
+    
+    \subsubsection{Cifrado de flujo}
+        Algoritmo que cifra los datos a nivel de bit o de byte, generando un flujo de clave que se comiba con texto claro. Utiliza un Vector de inicialización o nonce (Number only used ONCE) comoforma de evitar patrones y un generador de flujo de clave que genera una secuencia pseudoaleatoria a partir de la clave y el IV. Cifrando y descifrando mediante una Xor entre este flujo y el mensaje. Se usa para transmisiones en tiempo real y cifrados variables.
+
+        Los algoritmos síncronos dependen de obtener el mensaje completo, si éste se trunca en un momento, la clave usada para cifrar se dessincroniza con la usada para dessincronizar. Ante esto se crean los algoritmos auto-sincronizantes en el que si se pierde iun bit, afecta a unos pocos bits a continuación antes de sincronizar de nuevo.
+
+        Un riesgo es el nonce Reuse, donde dos mensajes cifrados con el mismo flujo pueden usarse para exponer el texto plano.
+
+        Los algoritmos de referencia son \textbf{ChaCha20} y \textbf{AES-GCM}
+    
+    \subsubsection{Cifrado de Bloque}
+        Se trata el mensaje en bloques, generalmente de tamaño \begin{math}2^n\end{math}, rellenando con valores prefijados. Se aplican dos principios: el de confusión y Difusión. Dado que los mensajes son mas largos que el bloque, se aplican ciertas estrategias para encadenarlos:
+        \begin{description}
+            \item[Electronic Codebook] Se cifra cada bloque con la misma clave, es inseguro con patrones, porque bloques idénticos producen resultados idénticos.
+            \item[Cipher Block Chaining] Cada bloque en plano se combina mediante xor con el bloque cifrado anterior. Esto oculta patrones, pero impide su procesamiento paralelo
+            \item[Galois/Counter Mode] Permite cifrar en paralelo y ofrece autenticidad. Cifra un contador y lo combina mediante xor al bloque en claro antes de cifrarlo
+        \end{description}
+
+    \subsubsection{Advanced Encryption Standard}
+        El algoritmo AES es el paradigma de la criptografía moderna por estándares. Surgió por un concurso público convocado por el NIST en 1997. El algoritmo debía ser de dominio público, simétrico con bloques de al menos 128 bits e implementable en HW y SW. El algoritmo es eficiente en HW y SW, no se conocen ataques prácticos si se usa correctamente y es imposible encontrar patrones. Cambiar un bit del mensaje original cambia mas de la mitad de los bits finales.
+
+        El cifrado en HArdware supuso un punto importante. Los Hardware Security Module son dispositivos que protegen y gestionan claves digitales, cifran y descifran y ofrecen autenticación fuerte.
+
+    \subsection{Funciones Resumen} %14
+        Son funciones criptográficas para comprobar la integridad de un texto. Transforma datos variables en un valor fijo. Para que un hash sea útil debe cumplir las siguientes reglas:
+        \begin{description}
+            \item[Determinista] Debe producir siempre el mismo resultado
+            \item[Irreversible] Debe ser imposible recuperar el mensaje original
+            \item[Avalancha] Cambiar una parte pequeña debe alterar el hash al completo
+            \item[Resistencia a colisiones] Debe ser dificil encontrar dos entradas diferentes al mismo hash.
+        \end{description}
+        Estos algoritmos se usan para almacenar contraseñas, verificar descargas, indexar datos y blockchain.
+        
+        Los algoritmos mas comunes son MD5 y Sha. MD5 y SHA-1 tienen colisiones y no se permiten en el ENS. SHA-2 comprende varios algoritmos mas, y SHA-3 es una versión moderna con una estructura resistente a ataques cuánticos, esta diferencia no se basa en la longitud de las claves.
+
+\subsection{Criptografía Asimétrica} %15
+    También llamada de clave pública. Se basa en un par de claves, una que puede conocer todo el mundo y que se usa para cifrar un mensaje, que solo puede ser descifrafdo con la clave privada.
+
+    En este esquema hay 2n claves, y cada persona necesita n claves. El almacenamiento de estas no necesita ser seguro, ya que son públicas.
+    
+    \subsubsection{Firma Digital}
+        El objetivo de las firmas digitales no es ocutar el mensaje, sino demostrar quién lo ha enviado y que no lo ha modificado. En práctica, se desaconseja usar el mismo par de claves para firmar y cifrar un mensaje, tampoco para el login a máquinas.
+
+        El procedimiento es el siguiente:
+        \begin{itemize}
+            \item El emisor redacta un mensaje
+            \item El emisor calcula su hash
+            \item El emisor cifra ese hash con su clave privada
+            \item El receptor puede usar la clave pública del emisor para comprobar el hash con el calculado.
+        \end{itemize}
+        Si los dos hashes coinciden, significa que el emisor firmó el mensaje y que este no ha sido alterado. Si no, el mensaje pudo ser alterado, o el emisor suplantado.
+
+        Tradicionalmente se han usado los algoritmos de DSA y El Gamal. Actualmente se usa RSA, aunque en retroceso frente a alternativas mas eficientes como ECDSA y EdSA, basados en curvas elípticas.
+
+        El algoritmo de sello es idéntico al de firma. Estos se usan para verificación de certificados digitales, factura electrónica, firma digital, trámites con la administración pública o validación de tiempo y documental
+
+        \subsubsection{Infraestructura PKI, Certificados digitales y SSI}
+        
+\subsection{Notariado y sellado de tiempo} %22
+\subsection{Criptoanálisis Matemáticas y eficiencia computacional} % 25
+\subsection{Tendencias} %28

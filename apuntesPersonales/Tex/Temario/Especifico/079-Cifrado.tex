@@ -93,8 +93,66 @@ Nombre completo: El cifrado. Algoritmos de cifrado simétricos y asimétricos. L
 
         El algoritmo de sello es idéntico al de firma. Estos se usan para verificación de certificados digitales, factura electrónica, firma digital, trámites con la administración pública o validación de tiempo y documental
 
-        \subsubsection{Infraestructura PKI, Certificados digitales y SSI}
-        
+    \subsubsection{Infraestructura PKI, Certificados digitales y SSI}
+        Un Certificado digital es un documento electrónico, firmado por una autoridad de confianza, que vincula unos datos de verificación de firma (clave pública) con una identidad (persona física, jurídica, organismo, servidor)
+
+        Una PKI (Public Key Infrastructure) es el conjunto de HW SW políticas y procedimientos necesarios para crear, gestionar, distribuir, usar, almacenar y revocar certificados digitales. Su misión es establecer una relación de confianza vinculando una clave pública con su identidad de forma fehaciente.
+
+        Actualmente se está pasando de las autoridades de confianza (como la FNMT) a un modelo de Identidad Soberana Autogestionada (Self Sovereign Identity) donde el usuario usa un wallet para custodiar sus claves (como Bitcoin). El usuario usa un identificador descentralizado, una URL que apunta a un documento alojado en una red descentralizada.
+
+        La firma digital garantiza autenticidad, integridad y no repudio, pero no garantiza la confidencialidad. A la hora de verificar documentos firmados se cuenta con VALIDe donde se revisa la firma y la cadena de confianza de la clave pública
+
+    \subsection{Comparativa con la criptografía simétrica}
+        Las dos criptografías no son excluyentes ni se usan de forma sustitutiva. Se utiliza criptografía híbrida. Se usa un sistema asimétrico para el intercambio de claves y acordar una clave secreta, que una vez acordada, se usa para el resto de la sesión.
+
+        Algunos sistemas híbridos son los siguientes, aunque la mayoríá utiliza una parte asimétrica para establecer una clave que se mantendrá en el resto de la sesión, mensaje o flujo.
+        \begin{description}
+            \item[TLS] Seguridad sobre http con RSA/AES
+            \item[PGP/GPG] Cifrado de archivos con RSA/AES
+            \item[S/MIME] Correo corporativo con Cifrado y Firma digital
+            \item[Whatsapp/Signal] X3DH para intercambio de claves y AES
+            \item[ssh] DH y ChaCha20 o AES, muy versátil en cuanto a algoritmos
+            \item[IPsec] IKE/AES o 3DES
+        \end{description}
+
 \subsection{Notariado y sellado de tiempo} %22
-\subsection{Criptoanálisis Matemáticas y eficiencia computacional} % 25
-\subsection{Tendencias} %28
+    Dentro de la criptografía se intenta dar respuesta a las siguientes preguntas. ¿Se puede validar la identidad del firmante? ¿Se firmó voluntariamente? ¿Cuando se firmó?
+
+    La validación se hace mediante certificados y PKI, La voluntariedad es imposible criptográficamente, pero se suele requerir algún tipo de mecanismo de confirmación. En el tiempo es importante para establecer el órden original de las operaciones
+
+    \subsubsection{Firma Electrónica}
+        Se utiliza la criptografía asimétrica para garantizar la autenticidad del origen, la integridad y en ciertas condiciones el no repudio. La firma digital no proporciona confidencialidad, siendo necesario usar otras técnicas.
+
+        El No Repudio y la Autenticidad dependen del uso de infraestructuras de confianza como los prestadores cualificados de servicios de confianza.
+
+        Se denomina \textbf{Firma Digital} al concepto técnico, mientras que la \textbf{Firma Electrónica} es un concepto jurídico, que hace referencia a un conjunto de datos utilizados poruna persona para manifestar su voluntad de firmar.
+
+        El reglamento eIDAS la define como "Los datos en formato electrónico anejos a otros datos electrónicos o asociados de manera lógica con ellos que utiliza el firmante para firmar"
+
+    \subsubsection{Sellado de Tiempo}
+        Es un mecanismo criptográfico que permite demostrar que un conjunto de datos exisitió en un momento determinado, y que no ha sido alterado desde entonces. Se basa en una función hash unida a una fecha y hora proporcionada por una fuente de tiempo fiable. Resultando en un sello firmado digitalmente por una Autoridad de Sellado de Tiempo (TSA).
+
+        La importancia radica en la creación de una fecha electrónica, superando la vulnerabilidad de los relojes locals de los ordenadores.
+
+        En el Notariado, el sellado temporal actúa como la evolución del acta de presencia: el notario, como tercero de confianza cualificado, garantiza mediante este proceso la integridad cronológica de los documentos en su protocolo, asegurando que un archivo digital existía exactamente en el momento de su autorización y otorgándole confianza frente a terceros.
+
+        El \textbf{sello de tiempo simple} es aquel que asocia unos datos con un instante, pero carece de garantías legales automáticas sobre la precisión de la fuente de tiempo o su emisor. El \textbf{sello de tiempo cualificado} debe cumplir con los requisitos del reglamento eIDAS
+
+    \subsubsection{Notario Digital TSA}
+        El notario digital garantiza jurídicamente la criptografía de manera que se ha ajustado conforme a la legalidad. El proceso asegura que el emisor no tiene que enviar el documento real a la autoridad (manteniendo confidencialidad). El proceso es el que sigue:
+        \begin{description}
+            \item[Generación de Hash] El usuario genera el hash del documento
+            \item[Envío de Solicitur] Se envía el hash a la TSA
+            \item[Agregación de fecha] Se añade el timestamp al hash
+            \item[Firma del sello] Firma del conjunto de hash y timestamp con clave privada
+            \item[Entrega del Token] fichero .tsr que se adjunta al documento original.
+        \end{description}
+        Para su validación se siguen ciertos pasos inversos:
+        \begin{description}
+            \item[Cálculo del Hash] 
+            \item[Extracción del hash sellado] dentro del fichero .tsr
+            \item[Comparación de huellas]
+            \item[Validación de autoridad] Verificación de la firma electrónica de la TSA contra su clave pública y la vigencia entonces de su certificado
+        \end{description}
+% \subsection{Criptoanálisis Matemáticas y eficiencia computacional} % 25
+% \subsection{Tendencias} %28

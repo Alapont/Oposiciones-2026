@@ -4,6 +4,7 @@ Información no asociada a ningún tema, que puede ser de interés para entender
 
 - [Información general](#información-general)
 - [Legislaturas](#legislaturas)
+- [Monarcas](#monarcas)
 - [Proceso selectivo](#proceso-selectivo)
 
 
@@ -28,6 +29,38 @@ XIII           | 2019-05-21 | 2019-12-02 | Sánchez
 XIV            | 2019-12-03 | 2023-08-16 | Sánchez
 XV             | 2023-08-17 | 2026-11-29 | Sánchez
 XVI            | 2026-09-30 |            |
+
+# Monarcas
+
+Rey           | Sobrenombre    | Casa       | Fechas
+--------------|----------------|------------|--------
+Isabel I      | La católica    | Trastámara |
+Fernando II   | El católico    | Trastámara |
+Juana I       | La loca        | Trastámara |
+Felipe I      | El Hermoso     | Austria    |
+Carlos I      | El César       | Austria    |
+Felipe II     | El Prudente    | Austria    |
+Felipe III    | El Piadoso     | Austria    |
+Felipe IV     | El Grande      | Austria    |
+Carlos II     | El Hechizado   | Austria    |
+Felipe V      | El Animoso     | Borbón     |
+Luis I        | El Bienamado   | Borbón     |
+Felipe V      | El Animoso     | Borbón     |
+Fernando VI   | El prudente    | Borbón     |
+Carlos III    | El político    | Borbón     |
+Carlos IV     | El Cazador     | Borbón     |
+Fernando VII  | El Deseado     | Borbón     |
+José I        | Pepe Botella   | Borbón     |
+Fernando VII  | El deseado     | Borbón     |
+Isabel II     |
+Amadeo I      | El electo      | Borbón     |
+Primera República
+Alfonso XII   | El Pacificador | Borbón     |
+Alfonso XIII  | El africano    | Borbón     |
+Segunda República
+Franquismo
+Juan Carlos I |                | Borbón     |
+Felipe VI     |                | Borbón     |
 
 # Proceso selectivo
 Hay un acuerdo con ASTIC para no cambiar mas de un 7% de temas al año. Esto implica unos 10 temas. Para no hacer una putada gorda.

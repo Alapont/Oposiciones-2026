@@ -3,12 +3,14 @@
 Información no asociada a ningún tema, que puede ser de interés para entender el concepto de algúnas cosas, especialmente de leyes.
 
 - [Información general](#información-general)
-- [Legislaturas](#legislaturas)
-- [Monarcas](#monarcas)
+- [Listas históricas](#listas-históricas)
+  - [Legislaturas](#legislaturas)
+  - [Monarcas](#monarcas)
+  - [Unión Europea](#unión-europea)
 - [Proceso selectivo](#proceso-selectivo)
 
-
-# Legislaturas
+# Listas históricas
+## Legislaturas
 
 Legislatura    | Inicio     | Fin        | Presidente
 ---------------|------------|------------|-------------------------------------------
@@ -30,7 +32,7 @@ XIV            | 2019-12-03 | 2023-08-16 | Sánchez
 XV             | 2023-08-17 | 2026-11-29 | Sánchez
 XVI            | 2026-09-30 |            |
 
-# Monarcas
+## Monarcas
 
 Rey           | Sobrenombre    | Casa       | Fechas
 --------------|----------------|------------|--------
@@ -61,6 +63,27 @@ Segunda República
 Franquismo
 Juan Carlos I |                | Borbón     |
 Felipe VI     |                | Borbón     |
+
+## Unión Europea
+Año  | cantidad | Ingreso
+-----|----------|---------
+1957 |          | TFUE - Tratado de Roma
+1958 |    0+6=6 | Alemania, Bélgica, Francia, Italia, Luxemburgo, Países Bajos
+1973 |    6+3=9 | Dinamarca, Irlanda y Reino Unido
+1981 |   9+1=10 | Grecia
+1986 |  10+2=12 | España y Portugal
+1992 |          | TUE - Tratado de Maastritch
+1995 |  12+3=15 | Austria, Finlandia y Suecia
+1997 |          | TUE - Tratado de Amsterdam
+2000 |          | CDF - Tratado de Niza
+2004 | 15+10=25 | Chequia, Chipre, Eslovaquia, Estonia, Hungría, Letonia, Lituania, Malta y Polonia
+2007 |  25+2=27 | Bulgaria y Rumanía
+2007 |          | TUE y TCCE - Tratado de Lisboa
+2013 |  25+1=28 | Croacia
+2020 |  28-1=27 | Reino Unido
+
+
+
 
 # Proceso selectivo
 Hay un acuerdo con ASTIC para no cambiar mas de un 7% de temas al año. Esto implica unos 10 temas. Para no hacer una putada gorda.

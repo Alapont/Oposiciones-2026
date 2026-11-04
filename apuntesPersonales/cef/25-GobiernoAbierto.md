@@ -15,6 +15,7 @@ La gobernanza pública y el gobierno abierto. Concepto y principios informadores
     - [El procedimiento de acceso](#el-procedimiento-de-acceso)
     - [Unidades de información](#unidades-de-información)
     - [Reclamación de Transparencia y buen gobierno](#reclamación-de-transparencia-y-buen-gobierno)
+- [Consejo de transparencia y buen gobierno](#consejo-de-transparencia-y-buen-gobierno)
 
 
 # Gobernanza pública
@@ -148,3 +149,52 @@ Las administraciones deben establecer sistemas para integrar la gestión de soli
 Ante toda reclamación expresa o presunta (Silencio administrativo) podrá ponerse una reclamación ante el consejo de Transparencia y Buen Gobierno. Previo a su ipugnación en vía contencioso-administrativa, ir al juzgado prohibe este paso. Se debe poner antes de un mes de la respuesta, o de la finalización del plazo del silencio administrativo. Se deben resolver en un plazo de 3 meses.
 
 > Revisar ley 3/2015 sobre altos cargos y conflictos de intereses
+
+# Consejo de transparencia y buen gobierno
+Se crea por el Art. 33 y a través del RD 614/2024 y lo denomina como Consejo de Transparencia y Buen Gboierno Autoridad Administrativa Independiente. Se vincula en los términos de la ley 40/2015. Como AAI, no recibe órdenes del ministerio (ya que pretende revisar la actuación de la Administración Pública).
+
+Ley | Motivo
+---|---
+19/2013 | Ley de transparencia
+40/2015 | Administración pública
+39/2015 | sector público
+47/2013 | presupuestos
+33/2003 | Patrimonio público
+9/2017
+2014/23/UE
+2014/24/UE
+RDL 5/2015
+LO 2/2012 | Presupuestario
+
+Las funciones son:
+- Adoptar decomendaciones
+- asesorar
+- informar preceptivamente
+- evaluar el grado de aplicación
+- promover la elaboración de informes preceptivos
+- colaborar en las materias que le son propias
+
+El mismo consejo está sujeto a la transparencia. Las resoluciones se deben publicar en la web del consejo y en el portal de transparencia.
+> Suelen preguntar sobre la independencia del consejo, cual es su norma que lo regula y cómo está organizado.
+
+La comisión (salvo presidente, diputado y senador) debe tener rango de Subdirector General. El presidente tiene rango de subsecretario
+
+Las comunidades que no tengan organismo propio, es la Subdirección General de Transparencia y Buen Gobierno.
+
+Los mandatos son de cinco años, prorrogables otros 5. Los miembros que lo fueren por un motivo, perderán el cargo si perdiesen la condición que les habilita a ser miembro (si eres miembro por ser senador y dejas de ser senador, dejas de ser miembro).
+
+> Delito doloso es delito con engaño
+
+El presidente tiene las siguientes funciones:
+- Adoptar criterios de interpretación uniformes.
+- velar por el cumplimiento de las obligaciones de publicidad
+- Conocer las reclamaciones
+- Iniciar de oficio lo previsto en el título II
+- Aprobar anteproyecto de presupuesto
+- Otros (de rango legal o reglamentario)
+
+Con la resolución del presidente finaliza la vía de reclamación administrativa. (y te vas al procedimiento contencioso administrativo)
+
+Por el RD 210/2024 le corresponden las funciones previstas en la ley 19/2013. Este RD establece la estructura del Ministerio de Transformación Digital y Función pública, es decir, la de todo el ministerio.
+
+Ministerio de Transformación Digital y Función Pública > Secretaría general de función pública > Dirección general de Gobernanza Pública > Subdirección general de Transparencia y Atención al Ciudadano

@@ -54,15 +54,15 @@ Carlos IV     | El Cazador     | Borbón     |
 Fernando VII  | El Deseado     | Borbón     |
 José I        | Pepe Botella   | Borbón     |
 Fernando VII  | El deseado     | Borbón     |
-Isabel II     |
-Amadeo I      | El electo      | Borbón     |
-Primera República
-Alfonso XII   | El Pacificador | Borbón     |
-Alfonso XIII  | El africano    | Borbón     |
-Segunda República
-Franquismo
-Juan Carlos I |                | Borbón     |
-Felipe VI     |                | Borbón     |
+Isabel II     |                | Borbón     | 1833 - 1868
+Amadeo I      | El electo      | Saboya     | 1871 - 1873
+Primera República |            |            | 1873 - 1874
+Alfonso XII   | El Pacificador | Borbón     | 1874 - 1885
+Alfonso XIII  | El africano    | Borbón     | 1886 - 1931
+Segunda República |            |            | 1931 - 1939
+Franquismo    |                |            | 1939 - 1975
+Juan Carlos I |                | Borbón     | 1975 - 2014
+Felipe VI     |                | Borbón     | 2014 - Actualidad
 
 ## Unión Europea
 Año  | cantidad | Ingreso

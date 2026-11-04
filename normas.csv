@@ -6,3 +6,8 @@ ISO 15504;             ; Derogada;           ;    1;      ;          ;
 ISO 12207;             ;         ;           ;    1;      ;          ; 
 ISO 25010;             ;         ;           ;    1;      ;          ; 
 CNN-STIC-804;
+ISO 11801
+EN 50173-1
+EIA/TIA 568
+# -----------------------------------------------
+# UIT-T G711; como forma de codificar la voz

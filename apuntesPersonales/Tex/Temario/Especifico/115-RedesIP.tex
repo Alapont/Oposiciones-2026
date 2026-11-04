@@ -1,0 +1,331 @@
+\setcounter{section}{114}
+\section{Redes IP}
+
+Nombre completo: Redes IP: arquitectura de redes, encaminamiento y calidad de servicio. Transición y convivencia IPv4 – IPv6. Funcionalidades específicas de IPv6.
+
+Orígen de los apuntes: ASTIC
+
+\localtableofcontents
+
+\subsection{Redes IP Arquitectura de redes, encaminamiento y calidad de servicio}
+    IP es el protocolo de la capa de red en TCP/IP. Siendo esta parte la fundamental dentro del estudio de red. IP se establece en la RFC 791 en Septiembre de 1981.
+
+    IP transmite bloques de datos denominados datagramas o paquetes. Emisor y receptor se identifican mediante direcciones de 32 bits. No se detallan en este tema los protocolos de enrutamiento.
+
+    \subsubsection{Arquitectura de Redes} %4
+        \paragraph{Características de IPv4} %4
+            Un paquete IP se divide en cabecera y cuerpo. La cabecera es un conjunto de 20 bytes donde se encuentran los siguientes datos:
+            \begin{description}
+                \item[Versión] indica que es IPv4
+                \item[Longitud] de la cabecera en palabras de 32 bits
+                \item[Tipo de servicio] para favorecer unas u otras políticas de enrutamiento
+                \item[Longitud total] en bytes
+                \item[Identificación] para marcar fragmentos del mismo paquete
+                \item[Flags] 3 bits que indican si el paquete puede fragmentarse o si hay mas fragmentos después.
+                \item[Offset del fragmento] en 8 bytes desde el inicio del paquete
+                \item[TTL] cuenta el número de saltos que ha usado el paquete, si llega a 0 se descarta
+                \item[Protocolo] definido en la RFC 1700
+                \item[Comprobación de cabecera] la suma de comprobación debe ser cero.
+                \item[Dirección IP Origen]
+                \item[Dirección IP Destino]
+                \item[Opciones]Raramente utilizado, puede hacer que varíe la longitud de la cabecera. Incluye opciones de registro de la ruta, timestamp o especificar la ruta a utilizar
+                \item[Relleno]
+                \item[Cuerpo]
+            \end{description}
+        \paragraph{Direccionamiento IPv4} %6
+            Cubriendo los distintos tipos de direcciones, incluyendo el privado, y NAT. Inicialmente el direccionamiento se dividió en cinco clases de A a E. Siendo las tres primeras direcciones de un solo host. Las clase D son multicast y las clase E están reservadas. Hay direcciones que pueden interpretarse como broadcast, en las que se envía a una multitud de destinatarios, normalmente las de una subred.
+
+            \subparagraph{Clases de direcciones IPv4} 
+                El direccionamiento por clases se realiza por los bits mas significativos. Las clases A, B y C son unicast, las clase D se reenvían y las clase E son para uso experimental. 
+
+                IANA es la encargada de asignar direcciones, delegándolo a Registros Regionales de Internet (RIR):
+                \begin{description}
+                    \item[ARIN] Estados Unidos, Canada y parte del caribe
+                    \item[RIPE NCC] Europa, Oriente medio y Asia Central
+                    \item[APNIC] Asia Pacifico
+                    \item[LACNIC] América latina y parte del caribe
+                    \item[AfriNIC] áfrica.
+                \end{description}
+
+                Las clases se definen de la siguiente manera:
+                \begin{table}[H]
+                \begin{tabular}{rll}
+                    Clase & Bits & Decimal \\
+                    \midrule
+                    A & 0xxxxx &   0 a 127 \\
+                    B & 10xxxx & 128 a 191 \\
+                    C & 110xxx & 192 a 223 \\
+                    D & 1110xx & 224 a 239 \\
+                    E & 1111xx & 240 a 254 \\
+                \end{tabular}
+                \end{table}
+            \subparagraph{Direcciones privadas IPv4}
+
+                La clase A incluye 127/8 que está reservada para localhost y la subred 10/8 reservada para redes privadas. Clase B tiene 16 redes reservadas para uso privado en el rango 172.16/12. La clase C tiene 256 direcciones reservadas en 192.168/16. Algunas direcciones de la clase D están asignadas por la IANA. Por último, la red 255.255.255.255 está reservada como broadcast universal y la 0.0.0.0 como el nombre de la red.
+
+            \subparagraph{NAT}
+
+                Hoy en día solo se deberían usar IP públicas para dar servicio a la red, dejando los ordenadores internos dentro de redes NAT.
+
+                Los dispositivos \textbf{Network Address Translation} convierten el espacio de direcciones IP en direcciones únicas a nivel mundial, especificado por las RFC 1631 y actualmente por RFC 3022. Puede ser estático o dinámico, siendo el último el que permite una sobrecarga de múltiples IPs a una externa y el parche al límite de direcciones IPv4.
+
+            \subparagraph{Subredes IPv4}
+                Una red IPv4 se puede partir en subredes. Gracias a las máscaras se puede saber qué parte de la dirección corresponde a la red y cual al host. Comparándola con la propia se puede saber si está en el mismo segmento o no. Las subredes no estámn limitadas en tamaño, siendo las máscaras mas comunes las de clase A, B y C.
+
+            \subparagraph{Nomenclatura de máscara CDIR}
+                Alternativamente CDIR utiliza una nomenclatura diferente a la máscara de bits. Si IP utiliza la referencia binaria de la máscara, CDIR asume que siempre empieza por 1 y siempre termina en 0 y añade la cantidad de 1 a la dirección original.
+
+                la red 192.168.1.0 con una máscara 255.255.255.0 se podría escribir como 147.96.81.11/24.
+
+        \paragraph{Características de ICMP} %11
+            ICMP reside en la capa 3 del modelo OSI, junto con IP. \textbf{Internet Message Control Protocol}. El programa mas conocido es ping, aunque tiene otros roles.
+
+            La cabecera tiene 64 bits, siendo un byte para el tipo, otro para el cdigo, dos para la verificacin y el resto para otros datos segn el tipo. Los mensajes mas importantes de ICMP son Echo, Destino inalcanzable y Redireccionamiento.
+
+        \paragraph{Características de TCP} %11
+            TCP es un mecanismo de transporte confiable (en comparación con UDP). TCP trabaja con unidades de datos llamados segmentos. Los mecanismos están reflejados en su cabecera. Con 7 palabras de 32 bits:
+            \begin{description}
+                \item[Puerto Origen] 16 bits
+                \item[Puerto Destino] 16 bits
+                \item[Número de secuencia] 32 bits, indican la cantidad de datos enviado. Junto con el Acuse de recibo se utiliza para saber cuanto mensaje ha recibido la otra parte
+                \item[Acuse de recibo] número del mensaje que se espera recibir
+                \item[Longitud de cabecera] o inicio del mensaje
+                \item[Reservado] no se usa, se deja a 0
+                \item[Flags] 9 bits con diferentes parámetros
+                \item[Ventana] número de bytes que el remitente está dispuesto a recibir sin acuse de recibo.
+                \item[Checksum]
+                \item[Puntero urgente]
+                \item[Opciones y Padding] Las opciones pueden ser hasta 10 palabras (320 bits) con parámetros del segmento.
+            \end{description}
+
+            \subparagraph{Protocolo de enlace de tres vías}
+                TCP está orientado a la conexión. Antes de transmitir datos, se tiene que establecer una conexión fiable. El protocolo de 3 vías se usa para comenzar y para finalizar conexión activamente.
+                \begin{itemize}
+                    \item El iniciador manda un SYN al destino
+                    \item El destinatario manda un acuse de recibo ACK, y su propio SYN
+                    \item El iniciador manda su propio ACK
+                \end{itemize}
+
+            \subparagraph{Protocolo de ventana deslizante}
+                TCP permite el envío de varios segmentos a la vez. El receptor, al acusar el recibo, confirma que ha recibido todos los paquetes hasta cierto punto. El tamaño de la ventana indica cuantos paquetes está dispuesto a mandar el emisor sin confirmar todos. El tamaño de la ventana se va duplicando con cada paquete que se manda hasta que el receptor no acusa todos los paquetes de un periodo de tiempo (o hasta que se alcanza un máximo). Si un paquete cae, la ventana se reduce a la mitad, y vuelve a crecer de manera lineal. 
+
+        \paragraph{Características de UDP} %14
+            UDP se considera un protocolo sin conexión y poco fiable. No necesita apertura de conexión ni resiste a pérdidas de paquetes o desórdenes. 
+
+            La cabecera TCP contiene las direcciones de origen y destino, un protocolo, longitud, y checksum (opcional). UDP es un buen protocolo de cara a maximizar ancho de banda y minimizar latencias, normalmente para aplicaciones de voz en las que un paquete perdido no tiene sentido de recuperar.
+
+    \subsubsection{Encaminamiento} %15
+                El enrutamiento se produce cuando un enrutador (o cualquier dispositivo de capa 3) toma una decisión de reenvío basada en la información de la dirección de red.
+
+                Esta decisión se toma en función de la información de enrutamiento. Esto puede ser símplemente porque una de sus interfaces conecta con esa red, porque haya configurado estáticamente la ruta. Los protocolos de enrutamiento dinámico se ven en redes mas grandes, permiten a los enrutadores intercambiar información de ruta y actualizar esta en función de las condiciones cambiantes de la red.
+
+        \paragraph{tipos de tráfico de red}
+            Pueden ser unicast (a un nodo), a una subred y todos sus nodos (broadcast) o a una colección concreta (multicast y anycast). Los primeros protocolos son RIP e IGRP, estos usaban mensajes de broadcast para anunciar informacion de enrutamiento, aunque los IGP modernos usan multicast para estos anuncios.
+
+            La mayoría del tráfico es \textbf{unicast}, es decir, de punto a punto. En IPv6 se usan direcciones unicast globales que empiezan por 2000::/3. El tráfico de \textbf{broadcast} (a toda una subred). El tráfico de broadcast no tiene que estar dirigido a la misma subred en la que se origina, aunque puede ser bloqueado. La tecnología \textbf{multicast} permite una selección de destinatarios para reducir el ancho de banda sin tener que llegar a todos. El multicast en IPv4 se hace a través de direcciones clase D, los usuarios que quieran recibir este tráfico pueden unirse al grupo de multicast. Por el contrario, \textbf{anycast} es un comportamiento mas local. Estgos paquetes se envían al servidor con la IP correspondiente mas cercanos. Esto se utiliza para el balanceo de carga a nivel de enrutadores.
+
+        \paragraph{Asignación de rutas estáticas y dinámicas}
+            Rutas estáticas mal (pero van to rápidas). Se recomienda para tipologías en estrella con conexiones de baja velocidad.
+            
+            Los enrutamientos dinámicos distribuyen información sobre la topología de red entre ellos y proporcionan actualizaciones sin intervención cuando hay cambios. También permiten seleccionar la mejor ruta sin bucles. Una red de enrutadores interconectados y sistemas administrados en común se conoce como un Sistema Autónomo, o un Dominio de enrutamiento. Internet se compone de miles de sistemas autónomos. Los protocolos de enrutamiento dinámico comunes son los siguientes:
+            \begin{description}
+                \item[RIPv2] Route Information Protocol
+                \item[EIGRP] Enhanced Interior Gateway Routing Protocol
+                \item[OSPF] Open Shortest Path First
+                \item[IS-IS] Intermediate System to Intermediate System
+                \item[BGP] Border Gateway Protocol
+            \end{description}
+        \paragraph{protocolos de enrutamiento interiores y exteriores}
+            Los protocolos se pueden clasificar como de puerta de enlace exterior o interior. Según si la información de enrutamiento se intercambia o no entre dominios administrativos. El único protocolo de enrutamiento exterior es BGP, mientras que los protocolos interiores son RIP, EIGRP, OSPF y IS-IS.
+
+        \paragraph{Categorías de protocolo de enrutamiento por algoritmos distribuidos}
+            También se pueden categorizar según la forma de comunicar y almacenar la información. Los tres enfoques mas usados son Vector de Distancia, Estado del Enlace y Vector de ruta.
+
+            \subparagraph{Vector de distancia}
+                De forma periódica se envía una copia de la tabla de enrutamiento, incluso si no ha habido cambios. El anuncio periódico es ineficiente, ya que no se hace por cambios topológicos.
+
+                Los protocolos tienen mecanismos para evitar anunciar una ruta aprendida por una interfas por esa misma interfaz (Split horizon) y para evitar que una ruta recibida por esa interfaz se anuncie con métrica infinita (poison reverse).
+
+                Los protocolos que usan vectores de distancia son RIP y EIGRP
+
+            \subparagraph{Estado de enlace}
+                Los enrutadores envían anuncios de estado de enlace para anunciar las redes a las que saben llegar. Estos mensajes se usan paraconstruir el mapa topológico de la red, buscando las rutas para los destinos con algoritmos como Djistra. Los enrutadores realizan un mapa de la red similar a un mapa físico.
+
+                Los algoritmos que usan estado de enlace son OSPF y IS-IS.
+
+            \subparagraph{Vector de ruta}
+                El algoritmo de enrutamiento incluye información sobre la ruta que toman los paquetes para llegar a una red específica. Generalmente consiste en sistemas autónomos a través de los cuales viajan los paquetes. BGO es el protocolo de vector de ruta mas probable que se encuentre hoy día. Aunque la cantidad de saltos influte, hay otros parámetros, ninguno es la velocidad del enlace. BGP es escalable, aunque no converge rápidamente en caso de cambios. Las últimas versiones soportan IPv4 e IPv6.
+
+        \paragraph{Protocolos de enrutamiento jerárquico y planos}
+            Algunos protocolos dependen de una topología de red con una red troncal que conecte el resto de redes. Los enrutadores troncales dan servicio a otros enrutadores fuera de la red troncal. La jerarquí es superficial, normalmente dos niveles son suficientes. Los enrutadores planos no permiten una ordenación jerárquica y propagan la información de todos los nodos cada vez, sin dividir la red en áreas.
+
+        \paragraph{protocolos de enrutamiento classless y classful}
+            La clase se refiere a la máscara de subred. Hay protocolos que la anuncian y protocolos que no. De esta manera todos los nodos de una red tienen que tener la misma máscara, y cada superred debe tener una máscara mayor que la de la subred. Los protocolos classless permiten agregación de redes con clase.
+
+        \paragraph{Protocolos de enrutamiento IPv4 e IPv6}
+            Los protocolos de enrutamiento debieron actualizarse con la definición de IPv6. Ningún protocolo es compatible con ambos, pero una red puede contener ambos protocolos, conteniendo dos protocolos de enrutamiento. Los protocolos clásicos tienen su propia versión en IPv6:
+
+            \begin{table}[H]
+            \begin{tabular}{ll}
+                IPv4   & IPv6               \\
+                \midrule
+                RIPv2  & RIPng              \\
+                EIGRP  & EIGRP para IPv6    \\
+                OSPFv2 & OSPv3              \\
+                IS-IS  & IS-IS para IPv6    \\
+                BGP    & BGP multiprotocolo \\
+            \end{tabular}
+            \end{table}
+
+        \paragraph{Cambios en el protocolo de enrutamiento}
+            La migración de un protocolo a otro se puede realizar por diversos motivos. Los protocolos para la migración son los siguientes:
+            \begin{description}
+                \item[Distancia administrativa] se pueden configurar ambos protocolos simultáneamente y coexistir. La distancia del nuevo protocolo debe ser mayor para asegurarse de que el nuevo ha aprendido todos los saltos necesarios. Una vez hecho se reduce y se para el algoritmo viejo.
+                \item[redistribución de rutas] Como alternativa se puede ir transfiriendo la responsabilidad de las rutas por partes, cortando partes de las rutas cada vez y dándosela a los protocolos nuevos.
+            \end{description}
+
+    \subsubsection{Calidad de servicio} %23
+        Las aplicaciones multimedia en tiempo real, como la VoIP o la telepresencia, son sensibles a los retrasos de la entrega. Cuando un servicio se retrasa, o entrega los paquetes en desorden, el servicio se ve degradado. Los principales problemas pueden ser de ancho de banda, latencia, jitter o pérdida de paquetes.
+        
+        \paragraph{Modelos de calidad de servicio} %24
+            QoS es una tecnología que ofrece a los operadores técnicas para ayudar a a administrar los recursos de red y mejorar la experiencia de usuarios finales.
+
+            \subparagraph{Best Effort QoS} %24
+                Modelo predeterminado, no proporciona prioridad del tráfico. No hay que hacer nada para implementar este modelo.
+
+            \subparagraph{DiffServ} %24
+                Separa el tráfico en clases para satisfacer requisitos. Los paquetes se clasifican para recibir un comportamiento por salto en el borde de la red, para utilizar el valor DSCP para proporcionar el tratamiento adecuado. 
+
+            \subparagraph{IntServ} %24
+                Diseñado con las aplicaciones en tiempo real en mente. Proporciona tratamiento de extremo a extremo, reservando recursos de la red explicitamente a lo largo de todo el trayecto.
+
+        \paragraph{Políticas de diseño QoS de extremo a extremo} %25
+            Existen diferentes mecanismos de QoS para administrar el flujo de la red.
+            \subparagraph{Clasificación y marcado} %25
+                Si no se reconoce el flujo prioritario de alguna manera no se puede discriminar. Puede ser una inspección del contenido de los paquetes (no solo el puerto al que ataca). Tamvién puede ser mediante límites de velocidad según la procedencia.
+
+                El marcado se puede realizar a nivel de capa 3 (TCP/UDP) para soportar multitud de protocolos por encima. Aunque estos se han incorporado en IPv6.
+
+            \subparagraph{Policing and Shaping} %26
+                El policing implica etiquetar o eliminar el tráfico según criterios de coincidencia. Normalmente para establecer ratios máximos de transferencia mediante el algoritmo del cubo con fugas.
+
+                El policing se usa para dar trato preferencial a aplicaciones críticas dándoles acceso prioritario contra el resto de aplicaciones.
+
+            \subparagraph{Colas} %26
+                Es el proceso de almacenamiento en buffer. Las colas no tienen por qué ser FIFO, puede haber mecanismos que afecten a algun tipo de política.
+
+            \subparagraph{Optimización del ancho de banda mediante QoS} %27
+                QoS es una herramienta eficaz para gestionar el ancho de banda disponible en una WAN. Aunque este no agrega, solo permite hacer un uso mejor. Aunque no es la solución a los problemas crónicos.
+
+                Se utilizan dos tipos de colas, las gestionadas por software y las implementadas en hardware. Las colas HW son FIFO y las software pueden utilizar otros algoritmos. Las \textbf{Colas prioritarias} establecen cuatro colas de salida cada una asociada a un nivel. Esto puede inutilizar las colas de menos prioridad al tener que vaciar las colas prioritarias. Las \textbf{colas personalizadas} usan 16 colas de salida. Cuando una cola alcanza su límite de tamaño pasen a la siguiente cola. Permiten cierto nivel de tráfico en las colas no prioritarias. Las \textbf{colas justas ponderadas} permiten separar el tráfico en flujos individuales sin necesidad de definir políticas. Se separa según ancho de banda alto y ancho de banda bajo, dando prioridad al tráfico de bajo ancho de banda. La \textbf{Cola justa ponderada basada en clases} amplía las capacidades y permite establecer criterios que correpondan a coincidencias (incluido ACL). Cada clase tiene una cola definida y le corresponde una interfaz. Es un protocolo flexible. La \textbf{Cola de baja latencia} añade una cola prioritaria estricta a la anterior, generalmente para tráfico de tiempo real.
+
+                Hay mas mecanismos de eficiencia de enlaces, basados en fragmentación e intercalación de enlaces, o la compresión de encabezados.
+
+                El tamaño de ventana puede modificarse para los vínculos WAN mas grandes según el factor de retardo.
+
+\subsection{IPv6} % 29 % Funcionalidades específicas de IPv6
+            La implementación de IPv6 es gradual y aún no se ha abandonado IPv4. Aunque en algún momento se tendrá que abandonar este. La tecnología NAT ha hecho que este cambio se ralentice. IPv6 proporciona 128 bits de dirección frente a los 32 de IPv4. Numerosos RFC definen IPv6 con las siguientes mejoras:
+            \begin{description}
+                \item[Mayor espacio de direcciones] con mas jerarquías de direcciones
+                \item[Direcciones únicas a nivel mundial]
+                \item[Elimina la necesidad de NAT] 
+                \item[Eficiencia en procesado del encabezado] al ser fijo
+                \item[Mejor mecanismo de opciones] en cabeceras de extensión
+                \item[Configuración automática de direcciones]
+                \item[Capacidad de etiquetado de flujo]
+                \item[Características de autenticación y privacidad] IPSec es un requisito.
+                \item[Detección de MTU máxima] evitando fragmentar paquetes
+                \item[Multihoming] hosts con múltiples direcciones y redes con múltiples prefijos
+                \item[Soporte para movilidad] un nodo puede cambiar su ubicación y mantener las conexiones.
+            \end{description}
+
+    \subsubsection{Cabecera IPv6} %30
+            La cabecera se simplifica con respecto a IPv4. Algunos campos se eliminan o pasan a campos opcionales.
+            \begin{description}
+                \item[Version] 4 bits fijos a 0110
+                \item[Clase de tráfico] similar al Tipo de Servicio en IPv4
+                \item[Etiqueta de flujo] Secuencia de paquetes entre origen y destino
+                \item[Longitud del paquete] tamaño en bytes, incluidos los header de extensión
+                \item[Siguiente cabecera] el tipo de cabecera de extensión si existe
+                \item[Límite de salto] TTL
+                \item[Origen]
+                \item[Destino]
+            \end{description}
+
+    \subsubsection{Direcciones IPv6} %32
+        las direcciones tienen 128 bits que se visualizan como ocho grupos de 16 bits en hexadecimal. Los grupos con 0s se pueden representar con un solo 0 y si son varios grupos contíguos de 0s con :: (una vez por dirección). Los ceros iniciales deben ser suprimidos. IPv6 también admite la notación CDIR (100c:1b:1100::/40). El prefijo de subred se puede acompañar de la dirección de un nodo para indicar qué parte de la dirección es de la red y qué parte es del nodo en sí.
+
+        Una dirección global es única y enrutable a nivel mundial. Se divide en tres partes, un identificador de red pública de 48 bits (16 mas que en IPv4), un identificador de subred de 16 bits, y un identificador de 64 bits de interfaz obtenido de la dirección MAC.
+
+        Las direcciones locales de enlace son importantes para los nodos en un único enlace. Se identifica mediante FE8, 54 bits a 0 y la dirección MAC de la interfaz.
+
+    \subsubsection{Mecanismos IPv6} %35
+        \paragraph{ICMPv6}
+            Descrito en la RFC 2463, todos los nodos deben implementar para realizar funciones de capa de red. Hay mensajes informativos (echo request y response), mensajes de error (destino inalcanzable, paquete demasiado grande, tiempo excedido y problema de parámetros), con detalles al destino inalcanzable.
+
+        \paragraph{Neighbor Discovery}
+            IPv4 utiliza ARP, mientras que IPv6 utiliza ND, descrito en RFC 2461. Estas son funciones plug and play que descubren los nodos en el mismo enlace, comprueban direcciones duplicadas y encuentran enrutadores. Utiliza ICMPv6 para algunas funciones con mensajes como Anuncio de Enrutador, Solicitud de Enrutador, Solicitud de Vecinos, Anuncio de Vecinos y Redireccionamiento.
+
+        \paragraph{Resolución de nombres}
+            La resolución sigue pudiendo ser estática o dinámica. Sigue habiendo una resolución dinámica de nombres con DNS.
+
+            IPv4 utiliza registros para transformar FQDN a IPv4. La RFC3596 describe un nuevo tipo de registro DNS para admitir la transición a IPv6, los registros AAAA. Los registros AAAARR quedan obsoletos por los registros A6. Igualmente los registros A tienen prioridad sobre los A4 y A6. Los dispositivos que admitan doble pila pueden decidir por sí mismos qué registros usar.
+
+        \paragraph{descubrimiento de MTU de ruta}
+            IPv6 no permite fragmentación de paquetes a mitad de camino, solo en origen. Se especifica una MTU mínima de 1280bytes. Recomenbdándose que los nodos utilicen ICMPv6 para detectar rutas con MTU mayores y en caso de no poder mandar los mensajes entrantes por ninguna interfaz, devuelven el mensaje de paquete demasiado grande.
+
+        \paragraph{DHCPv6}
+            Descrito en la RFC 3315. Proporciona asignación dinámica de direcciones IP. Incluye las mismas funciones que DHCP con mas control y con renumeración sin enrutadores.
+
+        \paragraph{Seguridad IPv6}
+            IPv6 es compatible con IPsec nativamente. Existen encabezados de extensión IPsec AH y ESP. Estos hashean y encriptan el contenido respectivamente.
+
+\subsection{Transición y convivencia IPv4-IPv6} %39
+    El cambio entre tecnologías comenzó hace años. Se espera que convivan ambas versiones y que la implantación de IPv6 incremente de forma gradual. Esto depende de los proveedores de internet y la oferta no siempre es elástica.
+
+    Existen mecanismos que permiten la convivencia y migración progresiva.
+
+    \subsubsection{Estrategias de migración IPv4 a IPv6} %39
+        Los modelos y mecanismos de transición . Ya que ambos pueden coexistir en la red. El que se recomienda es el mecanismo de doble pila, aunque hay mas.
+
+        \paragraph{migración de doble pila} %39
+            Los dispositivos que ejecutan doble pila pueden comunicarse con ambos protocolos. Siendo la aplicación quien decide qué pila utilizar para comunicarse. Un host puede usar DNS para determinar qué pila usar para llegar a un destino. Los sistemas actuales están configurados para preferir IPv6 sobre IPv4.
+
+        \paragraph{migración de tunel IPv6 sobre IPv4} %40
+            En esta estategia las redes exclusivas de IPv6 se conectan mediantes túneles IPv4, encapsulando los paquetes IPv6 en tráfico IPv4. Pudiendo configurarse como puestos fronterizos  o entre este y un host.
+
+            Esto implica una sobrecarga de protocolos y reducen la MTU en 20 bytes. Los nodos fronterizos deben soportar los dos protocolos. 
+        \paragraph{Mecanismos automáticos de tunel} %40
+            \subparagraph{6to4} %41
+                Se asigna un prefijo IPv6 único provisional en el rango 2002::/16. Cada sitio 6to4 usa un prefijo /48 concatenado con 2002. Configurando un túnel 6to4 autoático. Extrayendo la dirección IPv4 en la de destino IPv6 y encapsula el paquete IPv6 en uno IPv4 con la dirección extraida.
+
+            \subparagraph{6RD} %41
+                Son una extensión de 6to4 que permiten proporcionar un servicio IPv6 de unidifusión a través de IPv4. Los proveedores usan un prefijo de su propio bloque de direcciones. La dirección se obtiene a partir de una combinación de bits en el encabezado e información del enrutador. 
+
+            \subparagraph{ISATAP IPv6} %41
+                Intra Site Automatic Tunel Adressing Protocol. Se crea un túnel entre host o enrutadores de doble pila. No requiere que IPv4 esté habilitado para multidifusión. Utiliza un prefijo de unidifusión local o global, a continuación utiliza los 32 bits de la dirección ISATAP que termina con los 32 bits de la dirección del vínculo.
+
+            \paragraph{Traducción IPv6/IPv4} %41
+                Entre hosts individuales hay una traducción de protocolos. Es una extensión de técnicas NAT.
+                \subparagraph{DNS64} %41
+                    si no hay registros AAAA DNS64 permite que el servidor sintetice uno a partir de su registro A. La dirección se genera con un prefijo IPv6 y otros parámetros. Hay un prefijo reconocido para expresar direcciones IPv4 en el espacio IPv6 (64:ff9b::/96), otra opción es asignar un prefijo específico de la red.
+
+                \subparagraph{NAT64} %42
+                    Hay dos especificaciones de NAT, con y sin estado. ESte separa las funciones de DNS de su mecanismo.
+
+                    En el NAT64 sin estado, una dirección IPv4 se incrusta en una IPv6. Solo traduce las opciones con contrapartidas directas y no traduce ninguna cabecera de extensión mas allá de la de fragmentación. Estas limitaciones no son significativas.
+
+                    En el NAT64 con estado, se multiplexan multitud de direcciones IPv4 en una IPv6. El dispositivo crea un estado y solo se admiten flujos iniciados por IPv6, a no ser que haya una configuración expresa para ello.
+
+                    DNS64 es necesario y funciona con ambos NAT
+
+    \subsubsection{Modelos de despliegue IPv6} %42
+        \paragraph{Modelo de doble pila} %42
+            Uso de los dos stacks en los nodos. Es el modelo preferido para la transición. Permite que los nodos que usan solo IPv4 sigan funcionando.
+
+        \paragraph{Modelo híbrido} %43
+            Uso de mecanismos de transición mencionados arriba. Es compatible con mecanismos de doble pila.
+
+        \paragraph{Modelo de bloque de servicio} %44
+            Se crea una capa central que da servicio a dispositivos de doble pila con túneles configurados manualmente.
+% 44

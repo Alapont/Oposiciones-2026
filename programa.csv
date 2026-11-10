@@ -51,7 +51,7 @@ Tema; Nombre Corto          ; Ap-Bq; Prio ; V1; CPráctico; Tex; Clase; Size; No
   42;                       ; 2-1  ; Media; Si;          ;    ;      ;     ; La rentabilidad de las inversiones en los proyectos de tecnologías de la información.
   43; PropiedadIntelectual  ; 2-1  ; Media; No; No       ;    ; Si   ; S   ; La protección jurídica de los programas de ordenador. Los medios de comprobación de la legalidad y control del software.
   44;                       ; 2-1  ; Media; Si;          ;    ;      ;     ; Accesibilidad y usabilidad. W3C. Diseño universal. Diseño web adaptativo.
-  45;                       ; 2-1  ; Alta ; Si; Si       ;    ;      ;     ; Interoperabilidad de sistemas (1). El Esquema Nacional de Interoperabilidad. Dimensiones de la interoperabilidad.
+  45; ENI                   ; 2-1  ; Alta ; Si; Si       ;    ;      ;     ; Interoperabilidad de sistemas (1). El Esquema Nacional de Interoperabilidad. Dimensiones de la interoperabilidad.
   46;                       ; 2-1  ; Media; Si; Si       ;    ;      ;     ; Interoperabilidad de sistemas (2). Las Normas Técnicas de Interoperabilidad. Interoperabilidad de los documentos y expedientes electrónicos y normas para el intercambio de datos entre Administraciones Públicas.
   47;                       ; 2-1  ; Alta ; Si;          ;    ;      ;     ; Seguridad de sistemas (1). Análisis y gestión de riesgos. Herramientas.
   48;                       ; 2-1  ; Alta ; Si; Si       ;    ;      ;     ; Seguridad de sistemas (2). El Esquema Nacional de Seguridad. Adecuación al Esquema Nacional de Seguridad. Estrategia Nacional de Seguridad. CCN-STIC.
@@ -124,7 +124,7 @@ Tema; Nombre Corto          ; Ap-Bq; Prio ; V1; CPráctico; Tex; Clase; Size; No
  112;                       ; 2-4  ; Baja ; No; No       ;    ;      ;     ; Tecnologías de acceso: fibra (GPON, FTTH), móviles (LTE), inalámbrica.1
  113;                       ; 2-4  ; Media; Si; No       ;    ;      ;     ; Redes de transporte: JDSxWDM, MPLS. Redes de agregación: ATM, Carrier Ethernet-VPLS (H-VPLS).
  114;                       ; 2-4  ; Alta ; Si; No       ;    ;      ;     ; Redes inalámbricas: el estándar IEEE 802.11. Características funcionales y técnicas. Sistemas de expansión del espectro. Sistemas de acceso. Autenticación.Modos de operación. Bluetooth. Seguridad, normativa reguladora.
- 115;                       ; 2-4  ; Alta ; Si; No       ;    ;      ;     ; Redes IP: arquitectura de redes, encaminamiento y calidad de servicio. Transición y convivencia IPv4 - IPv6. Funcionalidades específicas de IPv6.
+ 115; RedesIP               ; 2-4  ; Alta ; Si; No       ; Si ;      ; M   ; Redes IP: arquitectura de redes, encaminamiento y calidad de servicio. Transición y convivencia IPv4 - IPv6. Funcionalidades específicas de IPv6.
  116;                       ; 2-4  ; Baja ; No; No       ;    ;      ;     ; Redes de nueva generación y servicios convergentes (NGN/IMS). VoIP, ToIP ycomunicaciones unificadas
  117;                       ; 2-4  ; Baja ; No; No       ;    ;      ;     ; La transformación digital e industria 4.0: ciudades inteligentes. Internet de las Cosas (IoT).
  118;                       ; 2-4  ; Alta ; Si; No       ;    ;      ;     ; Redes de área local. Arquitectura. Tipología. Medios de transmisión. Métodos de acceso. Dispositivos de interconexión. Gestión de dispositivos. Administración deredes LAN. Gestión de usuarios en redes locales. Monitorización y control de tráfico Gestión SNMP. Configuración y gestión de redes virtuales (VLAN). Redes de área extensa.

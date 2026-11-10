@@ -1,6 +1,7 @@
 Sigla, significado, Campo
 ACL,Access Control List, Redes
 AD,Administrative Distance, Redes
+AGE, Administración General del Estado, Administración Pública
 AS,Autonomous System, Redes
 BGP,Border Gateway Protocol, Redes
 CAR,Commited Access Rate, Redes
@@ -12,6 +13,7 @@ DNS,Domain Name System, Redes
 DSCP,Differentiated Services Code Point, Redes
 EGP,Exterior Gateway Protocol, Redes
 EIGRP,Enhanced Interior Gateway Routing Protocol, Redes
+FFCCSE, Fuerzas y Cuerpos de Seguridad del Estado, Administración Pública
 FIFO,First In First Out, Informática
 FQDN,Fully Qualified Domain Name, Redes
 GRE,Generic Route Encapsulation, Redes

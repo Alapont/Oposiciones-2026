@@ -72,6 +72,7 @@ Nombre completo: Tipos de sistemas de información multiusuario. Sistemas grande
 
     \subsubsection{1980 a Actualidad}
         No ha cambiado la forma, solo la potencia y el tamaño. Ordenadores multiprocesador, multiprocesamiento, distribución, conexiones de red y popularización.
+
 \subsection{Componentes de sistemas multiusuario}
     Un sistema es multiusuario si da servicio compartiendo recursos simultáneanos a múltiples usuarios concurrentes. Según sus prestaciones son pequeños, medianos o grandes. No se ponen cifras por su tamaño.
     
@@ -84,6 +85,34 @@ Nombre completo: Tipos de sistemas de información multiusuario. Sistemas grande
     Otras clasificaciones tienen en cuenta la utilidad, interoperabilidad con otros sistemas o la arquitectura. También puede haber requisitos en cuanto a la arquitectura.
 
 \subsection{Servidores}
-Según la RFC 2616 sobre HTTP, es un software que atiende peticiones. Se denomina bundle al conjunto de elementos que permiten atender estas peticiones. 
+    Según la RFC 2616 sobre HTTP, es un software que atiende peticiones. Se denomina bundle al conjunto de elementos que permiten atender estas peticiones. 
 
-A la hora de dividir, se suele hacer entre cliente y servidor. Aunque hay mas divisiones subyacentes, como la arquitectura de 3 capas, que divide el cliente en cliente y presentación y el servidor entre el Software de Aplicación y el Software de datos. Ulteriormente, en N capas, se divide la aplicación en diferentes applets. La de presentación se encarga de servir de interfaz entre la parte pública y privada, filtrando y delegando a las capas siguientes, que quedan aisladas del exterior.
+    A la hora de dividir, se suele hacer entre cliente y servidor. Aunque hay mas divisiones subyacentes, como la arquitectura de 3 capas, que divide el cliente en cliente y presentación y el servidor entre el Software de Aplicación y el Software de datos. Ulteriormente, en N capas, se divide la aplicación en diferentes applets. La de presentación se encarga de servir de interfaz entre la parte pública y privada, filtrando y delegando a las capas siguientes, que quedan aisladas del exterior.
+
+\subsection{Redes corporativas}
+    El tráfico de redes corporativas se divide en tres partes: internet, la DMZ y la intranet o Lan. Estas se dividen por firewalls y ninguna comunicación puede pasar diréctamente de internet a lan. Para ello, cada tecnología tiene su propia soluición
+
+    \subsubsection{Correo}
+        En la intranet se coloca un servidor que gestiona todo el correo interno sin necesidad de salir a internet. Para el correo saliente se coloca en la DMZ un relay y para el correo entrante se coloca un filtro anti spam. Un tercer servidor es el correo web, que permite el uso del correo interno desde el exterior.
+    \subsubsection{Directorios}
+        Los servidores x.500 gestionan directorios de usuarios. Tradicionalmente eran agendas telefónicas, aunque han ido evolucionando. Active Directory es la tecnología de Microsoft, mientras que LDAP es la versión libre. Los servidores de autentificación Radius, utilizan directorios.
+
+    \subsubsection{Wifi}
+        Se busca que una conexión wifi sea tan segura como una cableada. Esa es la filosofía de Wired Equivalent Protection. Utiliza reglas de conexión y servicio de Radius para permitir a los usuarios conectarse y autenticarse antes de permitir el tráfico normal. Esto se permite gestionar desde los servidores wifi, que permiten tener estos servicios. También es normal separar en varias redes y poder desplegar redes de empleados, de invitados, por eventos.
+    
+    \subsubsection{CA}
+        Servidores que permitan gestionar certificados PKI.
+        
+\subsection{Hierro}
+    Se denomina coloquialmente hierro al servidor físico. Normalmente estos se integran en armariors (racks) y divididos en unidades. Un ordenador puede ocupar desde 4u, hasta menos de una u (varios ordenadores compartiendo unidades). Esto permite establecer un backbone que aune electricidad (con redundancia) comunicaciones y servicio. También permite tratar los ordenadores como fungible y permitir su sustitución en caliente según necesidades. También se usan para gestionar la ventilación de manera eficiente
+
+\subsection{Virtualización}
+    Es una tecnología que permite optimizar el uso de recursos físicos, separando los servidores físicos de los lógicos y su gestión automatizada. Poner en común el márgen de operar los servidores, o facilitar los distintos horarios de uso. De esta forma se adelanta el retorno de la inversión, se simplifica la gestión y el aprovisionamiento. Se denomina \textbf{Consolidación} a reducir el hardware combinando varias utilidades en una misma máquina, y \textbf{Contención} a evitar desplegar hardware nuevo.
+
+    Se denomina \textbf{hipervisor} al software que crea, gestiona y ejecuta máquinas virtuales. Según la integración de este con el host y los guest, se denomina una u otra virtualización.
+
+    La virtualización completa consiste en usar el hipervisor como un software que emula hardware completo. De esta forma el invitado se ejecuta completamente en un hardware real sin ninguna modificación previa y sin conocimiento del anfitrión.
+
+    En la paravirtualización el hipervisor gestiona recursos y el invitado debe pedirlas. En algunas virtualizaciones el hipervisor se queda en el anillo -1 de instrucciones (en CPUs compatibles) permitiendo que el invitado utilice los 4 anillos normales de instrucciones. Esta aproximación en la que el hipervisor no se ejecuta en un Sistema operativo permite ahorrar consumo de recursos y facilita la virtualización.
+
+    En todas ellas se pueden imponer cuotas mas o menos estrictas de uso de CPU y RAM. Los gestores de hipervisores tienen diferentes políticas que pueden llegar a aunar con otros productos. Microsoft por ejemplo otorga una licencia de datacenter, que se extiende a todas las máquinas windows emuladas dentro.

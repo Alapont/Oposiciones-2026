@@ -2,18 +2,21 @@ Ley          ; Nombre corto; Estado  ; Descargada; Hits; Leida; Estudiada; Nombr
 Null         ; CDFUE       ;         ;           ; 1   ;      ;          ; Carta de los Derechos Fundamentales de la Unión Europea
 TUE          ; TUE         ;         ; Descargado; 1   ;      ;          ; Tratado de la unión europea
 TFUE         ; TFUE        ;         ; Descargado; 1   ;      ;          ; Tratado Funcionamiento de la Unión europea
-CE           ; CE          ;         ; Descargada; 5   ; Leida;          ; Constitución española
+CE           ; CE          ;         ; Descargada; 6   ; Leida;          ; Constitución española
 Null         ; RCD         ;         ; Descargada; 1   ;      ;          ; Reglamento del Congreso de los diputados
 RUE  2016/679; RGPD        ;         ; Descargada; 2   ;      ;          ; Protección de datos
 RUE  910/2014; IDAS        ;         ; Descargada; 2   ;      ;          ; relativo a la identificación electrónica y los servicios de confianza para las transacciones electrónicas en el mercado interior
 LO     2/1979; LOTC        ;         ; Descargada; 1   ;      ;          ; del Tribunal Constitucional
 LO     3/1981;             ;         ; Descargada; 1   ;      ;          ; del Defensor del Pueblo
+LO     1/1982;             ;         ; Descargada; 1   ;      ;          ; de protección civil del derecho al honor, a la intimidad personal y familiar y a la propia imagen
 LO     2/1982;             ;         ; Descargada; 1   ;      ;          ; del tribunal de Cuentas
+LO     2/1984;             ;         ; Descargada; 1   ; Leida;          ; reguladora del derecho de rectificación.
 LO     5/1985; LOREG       ;         ; Descargada; 1   ;      ;          ; de Régimen Electoral General
-LO     6/1985; LOPJ        ;         ; Descargada; 1   ; Leida;          ; del Poder Judicial
+LO     6/1985; LOPJ        ;         ; Descargada; 2   ; Leida;          ; del Poder Judicial
 LO     2/1986;             ;         ; Descargada;     ;      ;          ; de Fuerzas y Cuerpos de Seguridad
 LO     5/1992;             ; Derogada; Descargada; 1   ;      ;          ; de tratamiento automatizado de datos personales
 LO     6/2002; LOPP        ;         ; Descargada; 1   ;      ;          ; de partidos políticos.
+LO     6/2015;             ;         ;           ; 1   ;      ;          ; del Poder Judicial
 LO     3/2018; LOPD        ;         ; Descargada; 4   ;      ;          ; de Protección de Datos Personales y garantía de derechos digitales
 L     49/1960; LPD         ;         ; Descargada; 0   ;      ;          ; Ley sobre propiedad horizontal
 L     70/1978;             ;         ; Descargada; 1   ; Leida;          ; de Reconocimiento de Servicios Previos en la Administración pública
@@ -22,8 +25,9 @@ L     53/1984;             ;         ; Descargada; 1   ;      ;          ; de In
 L      7/1985;             ;         ; Descargada; 1   ;      ;          ; de Regulación de bases del régimen local
 L      7/1988;             ;         ; Descargada; 1   ;      ;          ; de funcionamiento del tribunal de cuentas
 L     50/1997; LG          ;         ; Descargada; 1   ;      ;          ; del Gobierno
-L     11/2007;             ; Derogada; Descargada; 1   ;      ;          ; de acceso electrónico de los ciudadanos a los Servicios Públicos
+L     11/2007;             ; Derogada; Descargada; 2   ;      ;          ; de acceso electrónico de los ciudadanos a los Servicios Públicos
 L     37/2007;             ;         ; Descargada; 1   ;      ;          ; sobre reutilización de la información del sector público
+L     18/2011;             ;         ; Descargada; 1   ;      ;          ; reguladora del uso de las tecnologías de la información y la comunicación en la Administración de Justicia
 L     19/2013; LTBG        ;         ; Descargada; 2   ;      ;          ; de Transparencia, acceso a la información pública y buen gobierno
 L     25/2013;             ;         ; Descargada; 1   ;      ;          ; de impulso de la factura electrónica y creación del registro contable de facturas en el Sector Público
 L     27/2013; LRSAL       ;         ; Descargada; 1   ;      ;          ; de Racionalización y Sostenibilidad de la Administración Local

@@ -1,0 +1,537 @@
+\setcounter{section}{117}
+\section{Redes Lan}
+
+Nombre completo:  Redes de área local. Arquitectura. Tipología. Medios de transmisión. Métodos de acceso. Dispositivos de interconexión. Gestión de dispositivos. Administración de Redes LAN. Gestión de usuarios en redes locales. Monitorización y control de tráfico. Gestión SNMP. Configuración y gestión de redes virtuales (VLAN). Redes de área extensa.
+
+Orígen de los apuntes: ASTIC 2022
+
+\localtableofcontents
+
+\subsection{Clasificación de redes} %2
+    Existen diversas formas de clasificar una red. Tradicionalmente se clasifican por su extensión, aunque hay mas.
+    \subsubsection{Según tamaño} %2
+        Normalmente se clasifican según su extensión física. No son datos oficiales, pero si se cumplen:
+        \begin{table}[H]
+        \begin{tabular}{rll}
+            Tamaño & Área & Ejemplo \\
+            \midrule
+            1m       & PAN - red de área personal & bluetooth, NFC\\
+            1km      & LAN - Red de área Local & casa, oficinas pequeñas, campus \\
+            10km     & MAN - Red de área metropolitana & Ciudades\\
+            1.000km  & WAN - Red de área extensa & País o Continente\\
+            10.000km & Internet & Planeta\\
+        \end{tabular}
+        \end{table}
+
+        Las \textbf{redes de área personal} se usa para dispositivos cercanos. También son una parte de IoT.
+
+        Las \textbf{redes de área local} operan dentro de un edificio. Está ámpliamente extendido, conectando múltiples dispositivos electrónicos. A las redes LAN de organizaciones se les conoce como redes corporativas, en el hogar son redes domésticas. El coste de estas redes es bajo y el hardware necesario está disponible.
+
+        Las \textbf{redes de área Metropolitana} cubren una ciudad.
+
+        Las \textbf{redes de área amplia} cubren grandes áreas geográficas, pueden incluir varios países. Esto se usa en empresas que quieren conectar varias oficinas, cada una con su red LAN, esta división se denomina subred.
+
+        Las \textbf{interredes} son conjuntos de redes interconectadas entre sí. Siendo la mas famosa Internet (con mayúscula). Otras son la red IRIS o eduroam
+
+    \subsubsection{Según tecnología de transmisión} %4
+        Según cómo se comparta el medio pueden ser redes de difusión o redes de punto a punto. Las redes de difusión tienen un solo canal donde todos los participantes escuchan los mensajes, mientras que las redes punto a punto son conexiones directas entre par de terminales. Estas son simplex, half duplex o full duplex si solo pueden transmitir en un solo sentido, en ambos por turnos o en ambos simultáneamente.
+
+    \subsubsection{Según acceso al medio} %5
+        En un medio compartido, no se puede comunicar varios terminales simultáneamente, estos deben organizarse para acceder al medio (Medium Access Control)
+        \paragraph{Metodos de acceso controlado}
+            Los terminales se consultan para determinar quien tiene turno para enviar, solo pudiéndo hacerlo si tiene autorización.
+
+            Por \textbf{Reserva} un terminal solicita un slot para transmitir. Mientras que por \textbf{polling} existe un nodo central que pregunta a los demás nodos si quieren enviar y se lo permite o pasa al siguiente nodo. En la \textbf{reserva de token} los nodos van pasando un token entre si, y solo pueden transmitir si tienen el token. Este Token puede ser \textbf{Roken-Bus} si las estaciones tienen una posición en la secuencia ordenada y circular y conoce la identidad de la anterior y posterior. O \textbf{Token Ring} si pasan el testigo en anillo, y el testigo circula aunque no se esté transmitiendo.
+        
+        \paragraph{Métodos de aceso aleatorio}
+            Los terminales esperan un tiempo aleatorio e intentan transmmitir, en caso de colisión ambos mensajes se pierden. Una mitigación es esperar a que el medio esté libre para comenzar a transmitir.
+
+            \subparagraph{Aloha}
+                El receptor envía un ACK si recibe el mensaje correctamente, si no se recibe, se espera un tiempo aleatorio para volver a transmitir. 
+
+                En Aloha ranurado se divide el tiempo para envío en slots constantes. De esta forma se sabe cuando termina un mensaje y reduce las colisiones
+
+            \subparagraph{CSMA}
+                (Carrier Sense Multiple Access) Los métodos CSMA comprueban que nadie esté usando el medio, reduciendo la posibilidad de colisión. CSMA son varios métodos:
+
+                \textbf{CSMA 1-persistente} es la versión mas simple, escucha el medio para saber si puede enviar una trama, y en cuanto esté disponible transmite.
+
+                \textbf{CSMA 1-no persistente} mitiga el problema en el que varios nodos intenten transmitir al finalizar una trama, esperando un tiempo aleatorio.
+
+                \textbf{CSMA 1-p persistente} intenta combinar las ventajas de los anteriores. Esperando a liberar el medio para transmitir, con una probabilidad p de hacerlo. Este valor se puede ajustar según el funcionamiento.
+
+                \textbf{CSMA/CD} desarrlla una mejora en la que puede detectar si ha habido colisión al transmitir, terminando la transmisión antes de enviar todo el mensaje. Esto se usa en ethernet
+
+        \paragraph{Canalización}
+            Métodos en los que se puede dividir el canal para posibilitar la coexistencia. Se puede hacer por división de tiempo, de frecuéncia o códigos
+
+            \subparagraph{División de frecuencia (FDMA)}
+                Se divide el medio en canales. En radio frecuencia se trabaja por bandas, mientras que en fibra óptica se pueden solapar portadoras distintas
+
+            \subparagraph{División de tiempo (TDMA)}
+                Las estaciones comparten todo el ancho de banda del canal. Cada una tiene asignado un slot de tiempo que debe conocer, todas las estaciones deben estar sincronizadas. La telefonía GSM/GPRS usa TDMA
+
+            \subparagraph{División con código}
+                La señal se multiplica por un código ortogonal al resto de códigos. De esta forma se puede transmitir todo el tiempo y por todo el ancho de banda.
+
+    \subsubsection{Según topología} %7
+        Clasifica las redes según la posición entre las estaciones. Se tiene que distinguir entre topología física y lógica. Las cuatro tipologías básicas son bus, estrella, anillo y malla, aunque hay mas.
+
+        En la topología en Bus, los terminales se conectan a lo largo de un medio de transmisión. No existe redundancia de conexiones, la transmisión es por difusión y un mensaje se transmite a todos los nodos.
+
+        En la topología en estrella todos los nodos se conectan a un nodo central. Este nodo debe hacer de repetidor entre todos los nodos de la red.
+
+        En una red en anillo los nodos se conectan en un bucle cerrado al nodo anterior y al siguiente. Al contrario que en bus, no se comparte medio. Todos los nodos son necesarios como relés de información.
+
+        En una estructura en malla se permite la comunicación indistintamente entre nodos. Normalmente esto se produce en las comunicaciones inalámbricas.
+
+        En caso de combinarse varias topologías se considera una red híbrida.
+
+    \subsubsection{Según su uso} %9
+        En las aplicaciones de negocios se tiende a disponer de muchos ordenadores, estos comparten recursos de modo que estos tienen que estar disponibles para todos, también se comunican por VoIP y gestionan servicios en la misma red.
+
+        Mie ntras que en aplicaciones domésticas, no son tantos nodos, pero si que hay multitud de dispositivos personales, además de dispositivos del hogar conectados a internet.
+
+\subsection{Redes de Área Local} %10
+        Las redes LAN suelen llegar a unos 2km, con un acceso compartido al medio. Aunque este broadcast se segmenta por el uso de conmutadores o switches. Son redes privadas. La velocidad de transmisión es elevada y asegura una buena fiabilidad con una tasa de errores limitadas. También son baratas, lo que implica que suelen ser propietarias y no alquiladas.
+
+        Las redes LAN se definen en las capas 1 y 2 del modelo OSI. Siendo la mas popular ethernet. 
+
+    \subsubsection{Estándares IEEE 802} %10
+        En el proyecto 802. Los grupos mas importantes son los 802.3 (Ethernet) y 802.11 (Wifi). Estos estándares se nombran en ISO como 8802. Muchos grupos de trabajo se han disuelto.
+
+    \subsubsection{Redes Ethernet} %11
+        Las redes ethernet nacen en 1972. Se diseña un protocolo de red mediante CSMA/CD. El IEEE inicia el proyecto 802 en 1985 para permitir las comunicaciones entre distintos fabricantes.
+        
+        Se sigue un protocolo de capa de enlace, inicialmente con CSMA y topología física en estrella y lógica en bus. Tiene un rendimiento de 10mbps en su concepción y alcanza actualmente los 100gbps. Cada estación tiene una dirección MAC única de 6 bytes.
+
+        Como todos los protocolos 802, se divide en dos subcapas:
+        \begin{description}
+            \item[MAC - Control de acceso al medio] Capa inferior próxima a la capa física
+            \item[LLC - Control de enlace lógico] Capa superiror.
+        \end{description}
+
+        La capa MAC, junto con la capa física, es la que define ethernet
+    \subsubsection{Capa de Enlace} %12
+        \paragraph{Subcapa mac} %12
+            Esta capa está relacionada e implementada con el hardware. Tiene dos funciones. Por un lado el tratamiento de datos, dividiendo en tramas, direccionando y detectando errores. Por otro lado el control de acceso, que dirige mediante deposición y captura de tramas y la recuperación de fallos tras errores.
+            
+            \subparagraph{trama ethernet} %12
+                Los paquetes de la capa de red se encapsulan en tramas ethernet, con una cabecera y una cola.
+                \begin{table}[H]
+                \begin{tabular}{rll}
+                    Tamaño & Elemento & función \\
+                    \midrule
+                    7B & Preámbulo & 10101010 para sincronización\\
+                    1B & SFD & 10101011 Inicio de la trama  \\
+                    6B & Mac destino & \\
+                    6B & Mac Origen & \\
+                    2B & tipo/ longitud & \\
+                    46 - 1500 B & Carga + Padding & Se rellena hasta los 46 bytes\\
+                    \midrule
+                    4B & CRC \\
+                    12B & gap & guarda hasta la siguiente trama\\
+                \end{tabular}
+                \end{table}
+
+                Existen varios tipos de tramas:
+                \begin{description}
+                    \item[DIX] soporta IPv4, IPv6, ARP y 802.1Q
+                    \item[LLC SAP header] Añade bytes de control y punto de acceso
+                    \item[LLC + SNAP] Añade tres bytes fijos, y 5 snap con un campo del código de fabricante y el tipo de protocolo, similar al ethertype de DIX
+                \end{description}
+
+            \subparagraph{dirección MAC} %14
+                Identificadores de hardware. Se incluyen tres tipos de numeración con el mimso formato y distinto tamaño: MAC-48, EUI-48 y EUI-64. Se pueden transformar a EUI añadiendo dos bytes 0xFFFF entre el tercer y cuarto byte. Se espera que MAC-48 se acabe después de 2100 y no se estima cuando puede acabarse EUI-64.
+
+                Las direcciones pueden ser administradas localmente o universalmente, segun el bit U/L. Las direcciones locales se definen por el usuario y las universales se asignan por el fabricante. Estas incluyen un código propio del fabricante del chio
+
+                Las direcciones también pueden ser únicas o grupales. Siendo habituales las primeras. Las direcciones de grupo se pueden indicar con el bit I/G. Si todos los bits se ponen a 1, el destinatario es broadcast: FF:FF:FF:FF:FF:FF
+
+        \paragraph{subcapa LLC} %15
+            Se encarga de comunicar capas software con hardware. Establece conexión con capas superiores, entrama el paquete de red e identifica su protocolo. Se intenta permanecer independiente del equípo físico.
+
+            Esta capa se implementa en software, pero depende del equipo físico. Depende del driver de la tarjeta de red.
+
+            \subparagraph{Protocolos de resolución de direcciones} %16
+                se usan los protocolos \textbf{ARP} y \textbf{Reverse ARP} para encontrar la dirección mac dada una IP y viceversa.
+
+                ARP se utiliza por un dispositivo conectado a una LAN para obtener la dirección MAC de otro dispositivo. Se envía un paquete ARP Request al broadcast con la IP por la que se pregunta y se espera a un ARP reply con la dirección necesaria. Cada máquina mantiene una caché con las direcciones conocidas.
+
+                Por el contrario, el protocolo RARP obtiene la IP consultando un ordenador central, es sustituida por BOOTP y esta por DHCP.
+
+    \subsubsection{Capa física} %16
+
+        \paragraph{Elementos de red} %16
+            Para entender los dispositivos que forma una red es importante conocer el dominio de difusión y dominio de colisión.
+
+            Se llama Dominio de Difusión al alcance de una trama, los nodos que recibirán dicha trama como un broadcast.
+
+            Se llama dominio de colisión al conjunto de nodos cuyas tramas pueden colisionar en una transmisión.
+
+            Inicialmente en redes ethernet estos dominios coincidían, aunque actualmente el dominio de colisión se ha dividido para un mismo dominio de difusión.
+
+            Los elementos mas destacados son los hubs, bridges (puente), switch (Conmutador), repetidores, enrutadores y gateways (puerta de enlace).
+
+            \subparagraph{Hub} %17
+                Un hub conecta estaciones directamente entre sí, de forma que comparten dominio de colisión y de difusión.
+
+            \subparagraph{Bridge} %17
+                Un bridge divide el dominio de difusión en varios dominios de colisión. Tiene dos o mas interfaces y registra las estaciones conectadas en una tabla. Cuando recibe una trama, es capaz de enviarla sólo por la interfaz necesaria. Funciona hasta la capa 2.
+
+                El funcionamiento puede ser transparente y sin enrutamiento en origen (para token ring). Según su interoperabilidad son homogéneos o eterogéneos si usan la misma o distinta tecnología en sus interfaces.
+
+            \subparagraph{Switch}  %18
+                Evolución del switch que divide el dominio de difusión entre tantos nodos como conecta. En conexiones full duples la colisión se reduce a 0 y un rendimiento óptimo.
+
+                También funcionan hasta capa 2. Algunos switches son capaces de traducir tramas para trabajar con VLan. Algunos incluyen mas servicios y pueden conecgtarse entre ellos.
+
+                Puede ser que varios se conecten entre sí (por error o no). De esta forma se puede conseguir redundancia. Para solucionar los problemas de búcles se usa el algoritmo Spanning Tree. Los Switches pueden cambiar información entre sí sobre sus conexiones mediante Bridge Protocol Data Units. De esta forma se puede calcular el grafo, detectar y eliminar bucles.
+
+        \paragraph{Medios de transmisión} %18
+            Resumen del tema de Sistemas de Cableado estructurado. Los mas populares son cable coaxial, par trenzado y fibra óptica.
+
+            \subparagraph{Cable Coaxial} %18
+                Se usó para la primera implementación de Ethernet un cable coaxial de $75\Omega$. Se uusansna de dos tipos, ambos para redes de 10mbps: coaxial grueso de 10mm para redes de 500m y coaxial fino para grosores de hasta 5mm y redes de 185m
+
+            \subparagraph{Par trenzado} %19
+                Facilitó el comportamiento de las redes. Ethernet usa 4 pares de par trenzao en clavijas RJ-45. Permite extensiones de unos 100m. Según el blindaje puede ser:
+                \begin{description}
+                    \item[UTP] sin blindaje
+                    \item[FTP] el cable se blinda con aluminio o cobre trenzado
+                    \item[STP] blindaje de cada par de cobre
+                    \item[SFTP] blindaje de cada par de cobre y del cable completo.
+                \end{description}
+                Se divide en categorías según sus cualidades de transmisión.
+
+            \subparagraph{Fibra óptica} %19
+                La fibra óptica es una forma barata de alcanzar grandes distancias. Estas pueden ser monomodo o multimodo, permitiendo las primeras un único haz de luz y siendo mas caras. Existen también varios tipos de conectores, siendo los mas populares SC y LC
+
+        \paragraph{Codificación de la información} %19
+            Se considera parte de la capa física. Las codificaciones mas usadas son Mánchester y Mánchester diferencial hasta Fast Ethernet donde se introdujo 4B/5B y Gigabit Ethernet con 8B/10B.
+
+            Mánchester incluía reloj en cada bit, doblando efectivamente la cantidad de cambios contra la cantidad de bits. 4B/5B y 8B/10B trabajan incluyendo bits adicionales para reducir las cadenas con bits repetidos y permitir que los relojes se sincronicen con la propia información.
+
+            \subparagraph{Mánchester} %19
+                Se codifican unos o ceros marcando en un pulso de reloj si el flanco es de subida o de bajada, forzando así un reloj que sincroniza.
+
+            \subparagraph{4B/5B en Fast Ethernet} %20
+                Se utiliza una tabla para transformar bloques de 4 bits en 5 bits, de forma que se evitan mas de 3 repeticiones seguidas de 0s. Tras esto se utiliza una codificación NRZ donde se cambia de estado cada vez que se transmite un 1. Esto permite una eficiencia de un 0.8, frente a un 0.5 de Mánchester.
+
+    \subsubsection{Evolución de ethernet} %20
+        Con el tiempo ethernet ha evolucionado mediante estudio y generación de normas. La nomenclatura de cada versión incluye:
+        \begin{itemize}
+            \item La velocidad de transmisión
+            \item La banda de transmisión (BASE para banda base)
+            \item Características de la tecnología \begin{description}
+                \item[T] par trenzado
+                \item[F] fibra óptica
+                \item[X] 8B/10B
+                \item[S,L,E] tamaño de longitud de ónda de la portadora en fibra óptica
+                \item[ER] Alcance extendido
+                \item[LM] Alcance medio
+                \item[LMR] Multimodo Largo Alcance
+                \item[] otros
+            \end{description}
+        \end{itemize}
+
+        La evolución de Ethernet ha ido pareja de la tecnología. Tanenbaum lo divide en Ethernet Clásica y Ethernet Conmutada.
+
+        \paragraph{Ethernet Clásica} %21
+            Se resuelve el problema de acceso múltiple mediante CSMA/CD y codificación mánchester. Se consiguen velocidades del órden de 3 y 10mbps:
+            \begin{itemize}
+                \item 10Base5 coaxial grueso
+                \item 10Base2 coaxial fino
+                \item 10BaseT par trenzado
+                \item 10BaseF fibra óptica a un hub óptico
+            \end{itemize}
+
+        \paragraph{Ethernet Conmutada} %21
+            Con la aparición de los conmutadores los equipos ahora se conectan a estos, consiguiendo velocidades de entre 100mbps y 100gbps
+
+        \paragraph{Fast Ethernet} %21
+            10mbps se empieza a quedar corta con la aparición de los conmitadores. En 1992 se reune un comité de 802.3 que decide mantener la estructura y mejorar la velocidad, coloquialmente conocido como Fast Ethernet.
+
+            Se mantienen las interfaces y se reducen los tiempos de bits de 100ns a 10ns. En parte gracias a la probabilidad de colisión nula de los conmutadores, aunque sigue permitiendo hubs.
+
+            Por esta retrocompatibilidad se debe asegurar el uso de CSMA/CD y la limitación sobre el tamaño de las tramas. Permitiendo interconectar FastEthernet con dispositivos  anteriores.
+
+            Los estándares son 100Base-\{T4, Tx, FX\}.
+
+        \paragraph{Gigabit Ethernet} %22
+            Una vez terminado de establecer fast-ethernet. Se buscó un desempeño de un órden de magnitud manteniendo la compatibilidad con los estándares existentes.
+
+            Gigabit ethernet siempre usa punto a punto en half y full duplex sin contención ni CSDMA.CD. La longitud del cable se limita a pérdidas de transmisión y características del medio.
+
+            1000BASE-\{SX, LX, CX, T\} en fibra óptica, par trenzado y UTP. Se usa la codificación 8B/10B. Para el par trenzado se mejoraron las características, obligando a evolucionar la categoría. Se introducen tramas jumbo de hasta 9KB aunque no reconocidas, ya que rompen retrocompatibilidad.
+
+        \paragraph{10 Gigabit ethernet} %22
+            Igualmente se sigue la filosofía de mejorar un órden de magnitud. Esta velocidad no está tan extendida en la electrónica de consumo. Se usa para conexión de electrónica de consumo a la red general o para servidores de alta gama.
+
+            Toda la implementación es full-duplex. La compatibilidad se asegura mediante autonegociación. Para fibra óptica se introduce la codificación 64B/66B se usa en fibra.
+
+            En par trenzado se requiere categoría 6, aunque se puede usar una categoría inferior para distancias mas cortas. Se usan 16 niveles de voltaje en lugar de dos, protegiendo los datos con un código de paridad LDPC.
+
+        \paragraph{40 y 100 Gigabit Ethernet} %23
+            Se comenzó el trabajo antes de establecer 10G. el objetivo es conectar centros de datos mas que oficinas, y no usuarios finales. Se contempla para backbone de internet. Por ejemplo en redes privadas virtuales.
+
+            Se busca la retrocompatibilidad hasta 1G Ethernet. Mantener los tamaños de tramas, la tasa de error por debajo de $10 ^{-12}$, uso de redes ópticas y fibras monomodo y multimodo.
+
+            Se abandona el par de cobre y se soportan seis esquemas de modulación. Se usan 10 carriles 10gbps para llegar a 100gbps.
+
+            Actualmente se trabaja en estándares con velocidades de hasta 400gbps.
+
+    \subsubsection{Extensión de ethernet a redes MAN} %24
+        La especificación 802.6 o DQDB especifica cómo operar entre 34 y 155mbps en distancias de hasta 160km. Esto ha sido superada por ehernet, que permite operar en espacios característicos de redes metropolitanas.
+
+        Permite conectar en capa 2 con ordenadores de un edificio o un campus. Tecnologías para interconectar sedes de clientes en una misma área metropolitana se han hecho históricamente mediante Jerarquía Digital síncrona, y actualmente mediante metro ethernet.
+
+        Metro Ethernet usa fibra óptica como medio de transmisión y establece VLans para los clientes. Comercialmente se le denomina Carrier Ethernet. Se pretende reducir el uso de routers a nodos donde se proveen servicios IPs, relegando el resto de la red a Carrier Ethernet en capa 2. Permitiendo ser granular y controlar el servicio. 
+
+    \subsubsection{Redes privadas virtuales} %24
+        Tradicionalmente las redes corporativas se organizan por medios geográficos. En las redes conmutadas se requieren tantos conmutadores como redes. Organizando las redes manualmente en los CPDs. Permitiendo esta organización y segmentación según la estructura de la empresa. Los cambios organizativos impactan los cambios estructurales de la empresa.
+
+        Las redes VLan permiten separar la topología física de la lógica. Se utilizan conmutadores para este proósito. 
+        
+        Se pueden usar tres niveles:
+        \begin{description}
+            \item[Puerto] Un enrutador tiene un puerto para cada subred
+            \item[Etiquetas] en la trama ethernet, introducido en el estándar 802.1Q
+            \item[Enrutadores] en lugar de conmutadores
+        \end{description}
+
+    \subsubsection{Red de comunicación principal de CPD con respaldo} %26
+        Es habitual hacerlo mediante tecnología Fiber Channel. Usada para conectar cabinas de almacenamiento SAN. Las tarjetas de red se conocen como Host Bus Adapter. Soporta velocidades de hasta 16gbps y se prevee que llegue a 32gbps. Las conexiones se realizan a través de un conmutador.
+
+        El protocolo FCP es un protocolo de transporte similar a TCP. Las cabinas SAN suelen estar duplicadas en ubicaciones distintas a distancias inferiores a 20km. De esta manera las transacciones pueden quedar abiertas hasta que no se encuentran en la cabina de respaldo. 
+
+        El uso de VLAN con tamaño significativo permite la aparición de redundancias que reducen el rendimiento, se mitiga con Spanning Tree. La extensión de redes virtuales implica la extensión de dominios de difusión, es conveniente usar medidas paliativas para evitar tormentas de broadcast.
+
+        Hay medidas que permiten la mejora de problemas en nivel 2, tanto en el propio CPD como entre ellos. VXLAN (Virtual Extensive Lan) permite crear redes virtuales en capa 2 sobre capa 3 de forma transparente. Permitiendo las ventajas de una red en capa 3.
+
+    \subsubsection{Redes definidas por software} %26
+        Software Defined Network. Se populariza la sustitución de redes clásicas por redes definidas por Software.
+
+        Se basan en el principio de mantener el control de las redes. Permite establecer el compartimiento de las redes, las rutas que recorren los paquetes o cómo se redirige el tráfico.
+
+        Una vez realizada la separación entre ambos planos, la idea es que el plano de control no necesita formar parte del hardware del dispositivo (o de ningún dispositivo en concreto).
+
+        Los programas de control son responsables de la lógica de la red como calcular rutas o las tablas de encaminamiento. Permiten simplificar el trabajo de las operaciones de red controlando los encaminamientos de los enrutadores.
+
+\subsection{Planificación y gestión de redes Lan} %28
+    \subsubsection{Planificación de redes LAN} %29 
+        La planificación de las redes LAN se puede resumir en conocer bien las comunicaciones de la organización para saber a dónde las queremos llevar.
+
+        La planificación estratégica se plasma en el plan de sistemas y comunicaciones o en el plan director de comunicaciones del Ministerio exigido por el RD 541/2001.
+
+        El plan Director permite coordinar procesos de contratación y facilita la agregación de servicios por licitación conjunta, necesidades del servicio por 5 años, revisiones anuales y programas de vigencia de dos años. 
+
+        El contenido es el siguiente:
+        \begin{itemize}
+            \item Licitaciones para cubrir necesidades
+            \item Adecuación de los servicios con las necesidades previstas
+            \item los excesos y redundancias se deben justificar
+            \item Identificación de los órganos responsables
+            \item Otros elementos relevantes técnicamente o por buenas prácticas
+        \end{itemize}
+
+        La planificación de redes de comunicación se divide en las siguientes fases:
+        \begin{description}
+            \item[Recogida de información] mediante cuestionarios y herramientas de gestión de red
+            \item[Descripción de la situación actual] Plasmar la información en la situación actual
+            \item[Análisis de la situación actual] dedeterminar las acciones de mejora necesarias en respuesta a los objetivos estratégicos y tácticos. Se busca obtener: \begin{itemize}
+                \item Programación temporal de los proyectos
+                \item Dotación de recursos humanos
+                \item Fuentes de financiación
+                \item Priorización de proyectos
+            \end{itemize}
+            \item[Proyectos para la evolución de las comunicaciones]
+            \item[Proyectos horizontales] El Concurso de comunicaciones debe \begin{itemize}
+                \item Estructurado por lotes homogéneos
+                \item garantía de calidad de servicio
+            \end{itemize}
+            \item[Proyectos verticales]
+        \end{description}
+
+    \subsubsection{Administración de redes LAN} %30
+        Una vez implantada la red, hay que asegurarse de que permanece en condiciones. Entre las operaciones necesarias se encuentran:
+        \begin{description}
+            \item[Operación diaria de la red] CRUD de usuarios, circuitos, provisionamiento, actualizaciones
+            \item[monitorizar el funcionamiento] como garantía de calidad y proyección de futuro
+            \item[supervisión del funcionamiento de la red]
+            \item[Mantenimiento correctivo de los fallos]
+            \item[Mantenimiento preventivo]
+        \end{description}
+
+        La gestión de la red es el conjunto de procedimientos, facilidades y utilidades que permiten la coordinación, supervisión, mantenimiento y control de recursos.
+
+        Según el modelo ISO de gestión de red se distinguen varias áreas funcionales:
+        \begin{description}
+            \item[Gestión de configuración]\begin{itemize}
+                \item Seguimiento de los elementos de red, actualizaciones y configuración
+                \item Inventario de elementos
+                \item Velar por hardware actualizado y compatible
+            \end{itemize}
+            \item[Gestión de fallos] \begin{itemize}
+                \item Mecanismos de detección, aislamiento, diagnóstico y corrección
+                \item Área importante, ya que los fallos pueden paralizar una organización
+                \item Precisa conocer la red, disponer de herramientas de diagnóstico y procedimientos para localizar y solucionar incidentes
+            \end{itemize}
+            \item[Gestión de Presentaciones] Diferentes parámetros del rendimiento y uso de red.
+            \item[Gestión de Contabilidad] Si es necesario, una política de uso, coste y tarificación de los recursos. Permite el control del uso y abuso de determinados recursos.
+            \item[Gestión de seguridad] Control de acceso según políticas o por personas sin autorización. Exige la gestión de usuarios y recursos, el control de acceso y la protección de información confidencial.
+        \end{description}
+
+        \paragraph{Gestión de dispositivos} %31
+
+            \subparagraph{Gestión del elemento} %31
+                Para redes simples se pueden gestionar directamente los elementos por red o conectándose físicamente. Esto solo es viable con pocos elementos y dificulta el crecimiento de la red.
+
+            \subparagraph{Gestión del fabricante} %31
+                Los proveedores ofrecen paquetes de gestión centralizada con una interfaz homogénea. Permiten cambios de configuración, gestión integrada de fallos y métricas. A cambio produce vendor-locking
+
+            \subparagraph{Gestión integrada de la red} %31
+                Se buscan soluciones que permitan monitorizar y actuar sobre servidores y elementos de red. De forma que se junta con la gestión de sistemas.
+
+                Es común usar una red aislada sólo para la gestión. Según el tamaño, la monitorización puede hacerse de manera manual o automatizada, y migrar según se crezca.
+
+                Existen varios enfoques para una gestión integrada:
+                \begin{description}
+                    \item[Gestión por plataforma] Se utiliza un Software que proporciona servicios a aplicaciones de gestión con capacidad de supervisión. Las plataformas permiten los desarrollos propios para aumentar capacidades. \begin{itemize}
+                        \item Vista de la topología de red dinámicamente y enriquecida
+                        \item visor de alarma de red
+                        \item Filtrado de alarmas por criterios
+                    \end{itemize}
+                    \item[Gestión por solución de integración a medida] es una solución a medida con el coste que ello implica. Requiere un nivel de integración alto.
+                \end{description}
+
+        \paragraph{Arquitecturas de gestión de red} %32
+            Hay una serie de elementos comunes a cualquier arquitectura:
+            \begin{description}
+                \item[Entidad de gestión] conjunto HW y SW con el que interactúa el técnico de gestión. Es un punto central.
+                \item[Agente de gestión]Software en los elementos de red que interactúa con la entidad gestora y ejecuta acciones localmente
+                \item[Proxy] Agente que permite la gestión indirecta con elementos con capacidades limitadas y que no disponen de agente embebido
+                \item[Base de datos] Información recogida por la entidad gestora
+                \item[Protocolo] reglas de comunicación entre la entidad gestora y los agentes. 
+            \end{description}
+
+            \subparagraph{Modelo de gestión de red OSI ISO/IEC} %33
+                Hace referencia a los estándares ISO 7498/4 y X.700 (marco de gestión OSI) e ISO 10040 (Visión general de la gestión de sistemas OSI).
+
+                Se basa en teoría de objetos, conjunto de interacciones entre uno o mas procesos de gestión y uno o mas procesos gestionados o agentes. Los agentes pueden gestionar uno o mas objetos.
+
+                Consta de un repositorio con la información de todos los elementos gestionados, el Management Information Base.
+
+                Se definen los CMIS (Common Management Information Service), un conjunto de servicios para la manipulación por parte de un proceso. El transporte de la información se realiza a través de un protocolo de gestión que permite: CRUD de atributos y objetos, control de los objetos, realizar acciones físicas y notificar sucesos.
+
+                El CMIP equivale al SNMP. OSI utiliza los recursos de red para el intercambio de información de gestión. Es un estándar comlejo y caro que no se termina de cumplir.
+
+            \subparagraph{Modelo de gestión de red de internet} %33
+                Conocido como SNMP (Simple Network Management Protocol) se usa para la gestión de redes TCP/IP
+
+                Creado por el IETF como extensión del SGMP dedicado a la gestión de routers y gateways. No existe una RFC dedicada a la gestión de red, hay múltiples referencias en diversos manuales.
+
+                En \textbf{Protocolo de gestión de red} SNMP define los mensajes que pueden intercambiar la entidad de gestión y los agentes. Define los nombres y direcciones de los agentes. Actualmente existe la versión 3 tras sucesivas mejoras con los años.
+
+                Tradicionalmente ha trabajado sobre UDP poco seguro y vulnerable. Permite pedir y devolver información, establecer datos o el envío de datos no solicitados.
+
+                Tras la segunda versión se permiten mensajes para obtener bloques grandes, informar los agentes al gestor (trap con confirmación) y lanzar excepciones. Esta versión sigue teniendo falta de seguridad, ya que no hay autentificación ninguna.
+
+                En la tercera versión se incluyen mecanismos de autentificación, privacidad y control de accesos.
+
+                \textbf{Estructura y contenido de la información de gestión}
+
+                La información de gestión se divide en dos partes. Por un lado un lenguaje y por otro las bases de datos. El lenguaje SMI (Structure Management Information) permite representar los modelos de objetos que se van a gestionar. El MIB (Management Information Base) es el conjunto de los objetos que posee cada agente. La MIB proporciona información a la aplicación de gestión acerca de las funciones de gestión disponibles para cada dispositivo, los datos que deben mantener y las operaciones sobre ellos.
+
+                El primer MIB es limitado, y se completó con MIB-II, con un mayor número de datos posibles. Permite que cada fabricante añada características específicas no incluidas en MIB-I. Estandarizando MIB específicas.
+
+            % \subparagraph{Otros modelos } %36
+
+        \paragraph{ejemplos de aplicaciones y productos para la gestión de la red} %36
+            \subparagraph{Soluciones clásicas} %37
+                \begin{description}
+                    \item[Cisco Works] sustituido por Cisco Primer NCS
+                    \item[Cisco Prime NCS]
+                    \item[Cisco Tetration]
+                    \item[Ericsson Telecomunications Management and Operations Support]
+                    \item[Alcatel-Lucen Regional Manager]
+                    \item[IBM Tivoli NetView]
+                    \item[HP OpenView]
+                    \item[Nagios]
+                    \item[HP SiteScope]
+                \end{description}
+            % \subparagraph{Tendencias del mercado de herramientas de monitorizacion de red} %38
+
+        \paragraph{Gestión de usuarios en redes locales} %38
+            Los recursos de red solo deben usarse por usuarios legítimos.
+
+            Los usuarios de red pueden ser personas físicas, pero también pueden ser usuarios técnicos asociados a dispositivos o servicios y grupos de usuarios.
+
+            \subparagraph{Procedimientos de provisión y gestión de usuarios} %38
+                La provisión y gestión requiere establecer procedimientos que involucran a distintos departamentos, tradicionalmente recursos humanos e IT.
+
+                Un ejemplo para personas físicas puede ser:
+                \begin{description}
+                    \item[Departamento de RRHH] gestión de altas y bajas de usuarios.
+                    \item[Departamento de IT/ directorios] Encargados de gestionar y mantener los directorios
+                    \item[Departamento de informática] Encargados de proveer de dispositivos y licencias al usuario, junto con certificados y medidas de seguridad
+                    \item[Departamento de negocio] Encargados de solicitar acceso a un usuario a un determinado recurso.
+                \end{description}
+
+            \subparagraph{Authentication, Authorization, Acounting} %39
+                Es necesario que los usuarios, cuando deseen usar la red y los servicios, demuestren quienes son, y que la red les proporcione acceso a unos servicios u otros. También debe establecer control y registro de las acciones que se realizan:
+                \begin{description}
+                    \item[Autenticación] El usuario ofrece garantía de que es quien dice ser. Distintas garantías pueden ofrecer distintos niveles de acceso
+                    \item[Autorización] El sistema reconoce una serie de permisos en función del perfil del usuario
+                    \item[Auditoría] Recogida de evidencias de la actividad de los usuarios.
+                \end{description}
+
+            \subparagraph{Sistemas de directorio} %39
+                Un directorio es un conjunto de objetos con atributos que se organizan de forma jerárquica. Este tipo de estructuras automatiza las funciones AAA y sirven de base de datos de usuarios, dispositivos, servicios, aplicaciones\dots Entre los atributos puede incluirse la contraseña, políticas de usuarios o localización física.
+
+                \textbf{X.500} es un estándar desarrollado con ISO. Implementa el protocolo DAP de acceso. Por su complegidad y pesadez se creó LDAP que terminó por reemplazarlo. X.500 es residual y ha sido sustituido, aunque LDAP sigue vigente y hace de X.500 base para otros sistemas.
+
+                \textbf{Active Directory} es la solución de Microsoft parcialmente basada en X.500.
+
+                \textbf{Sistemas de directorio en nube} cada vez mas populares, por servicios concretos y computación en general. Muchas organizaciones se encuentran en una solución híbrida que obliga a una gestión dual de usuarios.
+
+                Muchas organizaciones migran su directorio a la nube (o por lo menos lo sincronizan). Algunas soluciones son Azure AD y Okta.
+
+\subsection{Redes de área extensa (WAN)} %42
+    Las redes de área extensa pueden tener sus propios problemas diferentes de las LAN. Pueden tener un mayor retardo, cercano al segundo, un precio elevado y con dificil interoperabilidad.
+
+    \subsubsection{Historia de redes WAN} %42
+        Iniciada con ARPANET y los primeros protocolos de internet. Se hicieron redes independientes de la red telefónica. En España, Telefónica establece la Red Espacial de Transmisión de Datos, con protocolos propietarios de Red Secundaria De Alto nivel. En los años 2000, Telefónica comercializa con la red CINCO (Comunicaciones Integrales Corporativas).
+
+    \subsubsection{Tipos de redes WAN según su tecnología} %42
+        \paragraph{Redes de conmutación de circuitos} %42
+            Se establece un circuito físico entre dos abonados con un ancho de banda garantizado en RTB de 300 a 3400Hz.
+
+            El circuito permanece ocupado para toda la comunicación independientemente del uso. 
+
+        \paragraph{Redes de conmutación de mensajes} %43
+            Antes de automatizar la red telegráfica, el envío de datos era tramo a tramo. De la misma manera con las redes de datos. De esta manera no hay que establecer una ruta dedicada entre estaciones, los mensajes contienen la información necesaria para llegar a su destino y no necesitan nada mas.
+
+        \paragraph{Redes de conmutación de paquetes} %43
+            El envío por paquetes permite trocear la información. Permitiendo ocupar varios canales simultáneamente y proporcionar mas ancho de banda que el mayor de los canales. La contra son los retardos y la desordenación de los paquetes al ir por rutas distintas.
+
+            \subparagraph{Modo datagrama}
+                En este modo cada paquete tiene el destino y cada nodo decide para cada paquete por dónde encaminarlo. Pudiendo llegar desordenados y con retrasos.
+
+            \subparagraph{Modo circuito virtual}
+                Todos los paquetes que pertenecen a un mismo flujo siguen la misma ruta. Para ello es necesario establecer previamente la ruta.
+
+                Se pueden establecer de diversas maneras: permanente, conmutado o semipermanente.
+
+    \subsubsection{Tipos de redes WAN según su ámbito} %44
+        \paragraph{Redes públicas} %44
+            Las ofrecidas por operadoras públicas a sus clientes, la mayoría de las interconexiones se realizan por fibra óptica, aunque para algunos enlaces se puede usar satélite o microondas.
+
+        \paragraph{Redes privadas }%45
+            Redes de grandes corporaciones con infraestructura de fibra. Una red semi-privada consta de nodos privados y solo contrata la comunicación entre ellos.
+
+        \paragraph{Redes privadas virtuales} %45
+            Construidas sobre infraestructura pública pero configurada de forma privada. Son populares por temas de privacidad o GEO-fencing.
+
+            Las VPNs permiten conectar dispositivos móviles a redes corporativas de forma segura. Se realizan túneles cifrados entre el dispositivo y la propia red
+        % Resumen %47

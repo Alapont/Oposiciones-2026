@@ -1,47 +1,55 @@
-Sigla, significado, Campo
-ACL,Access Control List, Redes
-AD,Administrative Distance, Redes
-AGE, Administración General del Estado, Administración Pública
-AS,Autonomous System, Redes
-BGP,Border Gateway Protocol, Redes
-CAR,Commited Access Rate, Redes
-CBWFQ,Class Based Weighted Fair Queueing, Redes
-CLI,Comman Line Interface, Informática
-CQ,Customized Queue, Redes
-DHCP,Dynamic Host Configuration Protocol, Redes
-DNS,Domain Name System, Redes
-DSCP,Differentiated Services Code Point, Redes
-EGP,Exterior Gateway Protocol, Redes
-EIGRP,Enhanced Interior Gateway Routing Protocol, Redes
-FFCCSE, Fuerzas y Cuerpos de Seguridad del Estado, Administración Pública
-FIFO,First In First Out, Informática
-FQDN,Fully Qualified Domain Name, Redes
-GRE,Generic Route Encapsulation, Redes
-IANA,Internet Assigned Numbers Authority, Redes
-ICMP,Internet Control Message Protocol, Redes
-IGP,Interior Gateway Protocol, Redes
-IP,Internet Protocol, Redes
-IPsec,Internet Protocol security, Redes
-IS-IS,Intermediate system to Intermediate System, Redes
-ISATAP, Intra-Site Automatic Tunel Addessing Protocol, Redes
-LLQ,Low Latency Queueing, Redes
-LSA,Link State Advertisment, Redes
-MQC,Modular QoS CLI, Redes
-MTU,Maximum Transmission Unit, Redes
-NAT,Network Addess Translation, Redes
-NBAT,Network Based Application Recognition, Redes
-ND,Neighbor Discovery, Redes
-NLA,Next-Level Aggregator, Redes
-OSPF,Open Short Path First, Redes
-PQ,Priority Queue, Redes
-QoS,Quality Of Service, Redes
-RIP,Routing Information Protocol, Redes
-RSVP,Resource Reservation Protocol, Redes
-RTP,Realtime Transport Protocol, Redes
-SLA,Site-Level Aggregator, Redes
-TCP,Transmission Control Protocol, Redes
-TLA,Top Level Aggregator, Redes
-UDP,User Datagram Protocol, Redes
-ULA,Unique Local Access, Redes
-WFQ,Weighted Fair Queue, Redes
-WRED,Weighted Random Early Detection, Redes
+Sigla  , significado                                                                            , Campo
+ACL    , Access Control List                                                                    , Redes
+AD     , Administrative Distance                                                                , Redes
+AGE    , Administración General del Estado                                                      , Administración Pública
+AS     , Autonomous System                                                                      , Redes
+ASTIC  , Asociación Profesional de Cuerpo superiores de Sistemas y Tecnologías de la información, Oposiciones
+BGP    , Border Gateway Protocol                                                                , Redes
+CAR    , Committed Access Rate                                                                  , Redes
+CBWFQ  , Class Based Weighted Fair Queueing                                                     , Redes
+CLI    , Command Line Interface                                                                 , Informática
+CQ     , Customized Queue                                                                       , Redes
+DHCP   , Dynamic Host Configuration Protocol                                                    , Redes
+DNS    , Domain Name System                                                                     , Redes
+DRP    , Disaster Recovery Plan                                                                 , Negocio
+DSCP   , Differentiated Services Code Point                                                     , Redes
+EGP    , Exterior Gateway Protocol                                                              , Redes
+EIGRP  , Enhanced Interior Gateway Routing Protocol                                             , Redes
+FFCCSE , Fuerzas y Cuerpos de Seguridad del Estado                                              , Administración Pública
+FIFO   , First In First Out                                                                     , Informática
+FQDN   , Fully Qualified Domain Name                                                            , Redes
+GRE    , Generic Route Encapsulation                                                            , Redes
+IANA   , Internet Assigned Numbers Authority                                                    , Redes
+ICMP   , Internet Control Message Protocol                                                      , Redes
+IGP    , Interior Gateway Protocol                                                              , Redes
+IP     , Internet Protocol                                                                      , Redes
+IPsec  , Internet Protocol security                                                             , Redes
+IS-IS  , Intermediate system to Intermediate System                                             , Redes
+ISATAP , Intra-Site Automatic Tunnel Addressing Protocol                                        , Redes
+LLQ    , Low Latency Queueing                                                                   , Redes
+LSA    , Link State Advertisement                                                               , Redes
+MQC    , Modular QoS CLI                                                                        , Redes
+MTU    , Maximum Transmission Unit                                                              , Redes
+NAT    , Network Address Translation                                                            , Redes
+NBAT   , Network Based Application Recognition                                                  , Redes
+ND     , Neighbor Discovery                                                                     , Redes
+NLA    , Next-Level Aggregator                                                                  , Redes
+OSPF   , Open Short Path First                                                                  , Redes
+PCN    , Plan de Continuidad de Negocio                                                         , Negocio
+PCN-TIC, Plan de Continuidad de Negocio en las TIC                                              , Negocio
+PQ     , Priority Queue                                                                         , Redes
+PRD    , Plan de Recuperación ante Desastres                                                    , Negocio
+QoS    , Quality Of Service                                                                     , Redes
+RIP    , Routing Information Protocol                                                           , Redes
+RSVP   , Resource Reservation Protocol                                                          , Redes
+RTP    , Realtime Transport Protocol                                                            , Redes
+SGCN   , Sistema de Gestión de Continuidad de Negocio                                           , Negocio
+SLA    , Site-Level Aggregator                                                                  , Redes
+TCP    , Transmission Control Protocol                                                          , Redes
+TLA    , Top Level Aggregator                                                                   , Redes
+UDP    , User Datagram Protocol                                                                 , Redes
+ULA    , Unique Local Access                                                                    , Redes
+WFQ    , Weighted Fair Queue                                                                    , Redes
+WRED   , Weighted Random Early Detection                                                        , Redes
+EIRA   , Arquitectura Europea de Interoperabilidad                                              , Administración Pública
+SGBD   , Sistema Gestor de Bases de Datos                                                       , Informática
